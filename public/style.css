@@ -1,0 +1,71 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: arial, sans-serif;
+  margin: 2em;
+}
+
+
+
+/* CleanData */
+
+.clean-data-list {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.datapoint {
+  border: 1px dotted blue;
+  padding: 5px;
+  margin: 5px;
+}
+
+.sighting-data-list {
+  border: 1px dashed orange;
+  min-height: 50px;
+}
+
+.sighting-data {
+  border: 1px dashed green;
+  padding: 5px;
+  margin: 5px;
+}
+
+
+
+/* ShapeDataPoint */
+
+.shape-data-point {
+  border: 1px solid black;
+  min-height: 50px;
+  min-width: 100px;
+  margin: 15px;
+  display: block;
+}
+
+.shape-data-point > div {
+  display: inline-block;
+}
+
+/*
+  .shape-data-point > ul
+  but needs to be specific for when it is being dragged
+*/
+ul.shape-data-point-list {
+  list-style-type: none;
+  display: inline-block;
+  border: 1px dashed red;
+  margin: 5px;
+  width: 200px;
+  justify-content: space-between;
+  padding: 0;
+}
+
+ul.shape-data-point-list > li {
+  display: inline-block;
+  border: 1px dotted blue;
+  padding: 5px;
+  margin: 5px;
+}
