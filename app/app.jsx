@@ -100,6 +100,16 @@ class App extends React.Component {
       }
     });
   }
+  
+  moveShape(shape, dataPoint) {
+    console.log(shape);
+    console.log(dataPoint);
+    this.setState((prevState, props) => {
+      return {
+        data: prevState.data
+      }
+    });
+  }
 
 
 
@@ -120,6 +130,7 @@ class App extends React.Component {
           shapeSets={this.state.data.shapeSets}
           setActions={setActions}
           pointActions={pointActions}
+          moveShape={this.moveShape}
           currentSection={this.state.currentSection}
         ></Section>
       </div>
