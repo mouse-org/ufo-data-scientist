@@ -33,10 +33,11 @@ class Section extends React.Component {
 
       var currentSection =
           <CleanData
-             validShapes={validShapes}
-             duplicateShapes={duplicateShapes}
-             setActions={this.props.setActions}
-             pointActions={this.props.pointActions}
+            validShapes={validShapes}
+            duplicateShapes={duplicateShapes}
+            moveShape={this.props.moveShape}
+            setActions={this.props.setActions}
+            pointActions={this.props.pointActions}
           ></CleanData>
     }
 

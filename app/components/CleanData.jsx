@@ -14,10 +14,7 @@ class CleanData extends React.Component {
         revertOnSpill: true
       })
       .on('drop', (el, cont) => {
-        console.log("cont");
-        console.log(cont.id);
-        console.log("el");
-        console.log(el.id);
+        this.props.moveShape(el.id, cont.id);
       })
     }
   }
