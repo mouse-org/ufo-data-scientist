@@ -102,7 +102,8 @@ class App extends React.Component {
     });
   }
 
-  moveShape(shapeId, droppedIntoDataPointId, sourceDataPointId) {
+  moveShape(shapeId, droppedIntoDataPointId, sourceDataPointId, nextShapeId) {
+    console.log("Next: " + nextShapeId)
     console.log(shapeId);
     console.log(droppedIntoDataPointId);
     console.log(sourceDataPointId);
@@ -111,6 +112,8 @@ class App extends React.Component {
       var movedToSet = false;
       var sourceSet = false;
       var movedShape;
+      var previousIndex = false;
+      // Find dragged shape from previous dataPoint
       for (var i = 0; i < newData.shapeSets.length; i++) {
         var set = newData.shapeSets[i];
         if (set.dataPointId === sourceDataPointId) {
@@ -124,15 +127,29 @@ class App extends React.Component {
             }
           }
         }
+
+
+        // Find new dataPoint parent and new previous sibling
         if (set.dataPointId === droppedIntoDataPointId) {
           movedToSet = set;
+          for (var j = 0; j < set.shapes.length; j++) {
+            var shape = set.shapes[j];
+            if (shape.shapeId === nextShapeId) {
+              previousIndex = j;
+              break;
+            }
+          }
+
         }
+
+
         if (sourceSet && movedToSet) {
           break;
         }
       }
 
-      movedToSet.shapes.push(movedShape);
+      // Not working correctly
+      movedToSet.shapes.splice(previousIndex + 1, 0, movedShape);
 
       return {
         data: newData

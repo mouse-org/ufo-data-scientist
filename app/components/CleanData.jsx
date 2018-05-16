@@ -25,21 +25,20 @@ class CleanData extends React.Component {
     var draggedSource;
     var drake = this.state.drake;
     drake
-    .on('drag', (el, source) => {
-      console.log("Source:");
-      console.log(source);
-      draggedSource = source;
-    })
-    .on('drop', (el, cont) => {
+    .on('drop', (el, target, source, sibling) => {
       drake.cancel();
-      this.moveDataShape(el, cont, draggedSource)
+      this.moveDataShape(el, target, source, sibling)
 
     })
   }
 
-  moveDataShape(el, cont, source) {
+  moveDataShape(el, target, source, sibling) {
     var drake = this.state.drake;
-    this.props.moveShape(el.id, cont.id, source.id);
+    var nextShape = false;
+    if (sibling) {
+      nextShape = sibling.id;
+    }
+    this.props.moveShape(el.id, target.id, source.id, nextShape);
     drake.remove();
   }
 
