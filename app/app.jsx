@@ -12,6 +12,7 @@ class App extends React.Component {
     super(props);
     this.sort = this.sort.bind(this);
     this.toggleDuplicate = this.toggleDuplicate.bind(this);
+    this.moveShape = this.moveShape.bind(this);
 
     const ufoDataMap = data.ufoShapes.map(shape => {
       return {
@@ -100,13 +101,41 @@ class App extends React.Component {
       }
     });
   }
-  
-  moveShape(shape, dataPoint) {
-    console.log(shape);
-    console.log(dataPoint);
+
+  moveShape(shapeId, droppedIntoDataPointId, sourceDataPointId) {
+    console.log(shapeId);
+    console.log(droppedIntoDataPointId);
+    console.log(sourceDataPointId);
     this.setState((prevState, props) => {
+      var newData = prevState.data;
+      var movedToSet = false;
+      var sourceSet = false;
+      var movedShape;
+      for (var i = 0; i < newData.shapeSets.length; i++) {
+        var set = newData.shapeSets[i];
+        if (set.dataPointId === sourceDataPointId) {
+          sourceSet = set;
+          for (var j = 0; j < set.shapes.length; j++) {
+            var shape = set.shapes[j];
+            if (shape.shapeId === shapeId) {
+              movedShape = shape;
+              set.shapes.splice(j, 1);
+              break;
+            }
+          }
+        }
+        if (set.dataPointId === droppedIntoDataPointId) {
+          movedToSet = set;
+        }
+        if (sourceSet && movedToSet) {
+          break;
+        }
+      }
+
+      movedToSet.shapes.push(movedShape);
+
       return {
-        data: prevState.data
+        data: newData
       }
     });
   }

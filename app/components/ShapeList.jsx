@@ -8,13 +8,13 @@ class ShapeList extends React.Component {
     super(props);
     this.componentDidMount = this.componentDidMount.bind(this);
   }
-    
+
   componentDidMount() {
-    this.props.addDragContainer(this.itemRow); 
+    this.props.addDragContainer(this.itemRow);
   }
-    
+
   render() {
-  
+
     var dataPointList = this.props.shapeContainer.shapes.map((shape, index) => {
       return (
           <li

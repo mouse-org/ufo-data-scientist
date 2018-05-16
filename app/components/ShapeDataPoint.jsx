@@ -5,11 +5,14 @@ class ShapeDataPoint extends React.Component {
   constructor(props) {
     super(props);
   }
-  
-  
+
+  componentDidMount() {
+  }
+
+
   render() {
     console.log(this.props.shapeList);
-    
+
     /*
     const pointActions = this.props.pointActions.map((action, index) => {
       if (this.props.shape.duplicate) {
@@ -30,7 +33,7 @@ class ShapeDataPoint extends React.Component {
         )
       }
 
-    }); 
+    });
     */
 
     return (
@@ -42,13 +45,10 @@ class ShapeDataPoint extends React.Component {
         <li>Name: {this.props.shape.shape}</li>
         <li>Sightings: {this.props.shape.sightings}</li>
         <br/>
-      </ul>   
-      
+      </ul>
+
     );
   }
 }
 
 module.exports = ShapeDataPoint;
-
-
-
