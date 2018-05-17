@@ -102,25 +102,29 @@ class App extends React.Component {
     });
   }
 
-  moveShape(shapeId, droppedIntoDataPointId, sourceDataPointId, nextShapeId) {
+  moveShape(draggedShapeId, droppedIntoDataPointId, sourceDataPointId, nextShapeId) {
+
     console.log("Next: " + nextShapeId)
+    /*
     console.log(shapeId);
     console.log(droppedIntoDataPointId);
     console.log(sourceDataPointId);
+    */
     this.setState((prevState, props) => {
       var newData = prevState.data;
-      var movedToSet = false;
-      var sourceSet = false;
+      var movedToSet;
+      var sourceSet;
       var movedShape;
-      var previousIndex = false;
-      // Find dragged shape from previous dataPoint
+      var shapeNewIndex;
+
+      // Find dragged shape from source dataPoint
       for (var i = 0; i < newData.shapeSets.length; i++) {
         var set = newData.shapeSets[i];
         if (set.dataPointId === sourceDataPointId) {
           sourceSet = set;
           for (var j = 0; j < set.shapes.length; j++) {
             var shape = set.shapes[j];
-            if (shape.shapeId === shapeId) {
+            if (shape.shapeId === draggedShapeId) {
               movedShape = shape;
               set.shapes.splice(j, 1);
               break;
@@ -128,20 +132,22 @@ class App extends React.Component {
           }
         }
 
-
-        // Find new dataPoint parent and new previous sibling
+        // Find new dataPoint parent and new (next) sibling
         if (set.dataPointId === droppedIntoDataPointId) {
           movedToSet = set;
-          for (var j = 0; j < set.shapes.length; j++) {
-            var shape = set.shapes[j];
-            if (shape.shapeId === nextShapeId) {
-              previousIndex = j;
-              break;
+          if (nextShapeId) {
+            for (var j = 0; j < set.shapes.length; j++) {
+              var shape = set.shapes[j];
+              if (shape.shapeId === nextShapeId) {
+                shapeNewIndex = j;
+                break;
+              }
             }
+          } else {
+          // If shape is dropped as last in new list
+            shapeNewIndex = movedToSet.shapes.length;
           }
-
         }
-
 
         if (sourceSet && movedToSet) {
           break;
@@ -149,7 +155,7 @@ class App extends React.Component {
       }
 
       // Not working correctly
-      movedToSet.shapes.splice(previousIndex + 1, 0, movedShape);
+      movedToSet.shapes.splice(shapeNewIndex, 0, movedShape);
 
       return {
         data: newData

@@ -11,8 +11,6 @@ class ShapeDataPoint extends React.Component {
 
 
   render() {
-    console.log(this.props.shapeList);
-
     /*
     const pointActions = this.props.pointActions.map((action, index) => {
       if (this.props.shape.duplicate) {
