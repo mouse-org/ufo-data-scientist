@@ -157,6 +157,10 @@ class App extends React.Component {
       // Not working correctly
       movedToSet.shapes.splice(shapeNewIndex, 0, movedShape);
 
+      var totalSightingsReducer = (accumulator, currentValue) => accumulator + currentValue.sightings;
+      sourceSet.totalSightings = sourceSet.shapes.reduce(totalSightingsReducer, 0);
+      movedToSet.totalSightings = movedToSet.shapes.reduce(totalSightingsReducer, 0);
+
       return {
         data: newData
       }
