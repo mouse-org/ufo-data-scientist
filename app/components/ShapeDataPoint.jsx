@@ -14,8 +14,6 @@ class ShapeDataPoint extends React.Component {
       <ul
         className="sighting-data"
       >
-        <li><strong>Sighting</strong></li>
-        <li>{this.props.dataPoint.dataPointId}</li>
         <li>Name: {this.props.dataPoint.shape}</li>
         <li>Sightings: {this.props.dataPoint.sightings}</li>
         <br/>

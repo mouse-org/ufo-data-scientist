@@ -19,6 +19,7 @@ class App extends React.Component {
       return {
         dataGroupId: uuidv4(),
         dataGroupName: shape.shape,
+        customGroupName: "",
         dataPoints: [Object.assign({}, {dataPointId: uuidv4()}, shape)]
       }
     });
@@ -156,11 +157,24 @@ class App extends React.Component {
       }
 
       destDataGroup.dataPoints.splice(dataPointNewIndex, 0, movedDataPoint);
+      sourceDataGroup = this.updateDataGroupName(sourceDataGroup);
+      destDataGroup = this.updateDataGroupName(destDataGroup);
 
       return {
         data: newData
       }
     });
+  }
+
+  updateDataGroupName(group) {
+    if (!group.customGroupName){
+      if (group.dataPoints.length > 0){
+        group.dataGroupName = group.dataPoints[0].shape
+      } else {
+        group.dataGroupName = "";
+      }
+    }
+    return group;
   }
 
   render() {
