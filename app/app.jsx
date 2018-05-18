@@ -10,24 +10,26 @@ const Section = require('./components/Section');
 class App extends React.Component {
   constructor(props) {
     super(props);
-    this.sort = this.sort.bind(this);
-    this.toggleDuplicate = this.toggleDuplicate.bind(this);
-    this.moveShape = this.moveShape.bind(this);
+    //this.sort = this.sort.bind(this);
+    //this.toggleDuplicate = this.toggleDuplicate.bind(this);
+    this.moveDataPoint = this.moveDataPoint.bind(this);
 
     const ufoDataMap = data.ufoShapes.map(shape => {
+      // dataGroup
       return {
-        dataPointId: uuidv4(),
-        dataPointName: shape.shape,
-        shapes: [Object.assign({}, {shapeId: uuidv4()}, shape)]
+        dataGroupId: uuidv4(),
+        dataGroupName: shape.shape,
+        dataPoints: [Object.assign({}, {dataPointId: uuidv4()}, shape)]
       }
     });
 
     this.state = {
       title: "UFO Data Scientist",
       data: {
-        shapeSets: ufoDataMap
+        shapeDataGroups: ufoDataMap
       },
       currentSection: "CleanData",
+      /*
       setActions: {
         CleanData: [
           {
@@ -49,6 +51,7 @@ class App extends React.Component {
           }
         ]
       }
+      */
     }
   }
 
@@ -58,6 +61,7 @@ class App extends React.Component {
   componentWillUnmount() {
   }
 
+/*
   compare(p, a, b) {
     var aU, bU;
     if (typeof a[p] === 'string' && typeof b[p] === 'string') {
@@ -84,7 +88,6 @@ class App extends React.Component {
       data: newData
       }
     });
-
   }
 
   toggleDuplicate(index) {
@@ -100,60 +103,59 @@ class App extends React.Component {
       }
     });
   }
+*/
 
-  moveShape(draggedShapeId, droppedIntoDataPointId, sourceDataPointId, nextShapeId) {
+  moveDataPoint(movedDataPointId, destDataGroupId, sourceDataGroupId, nextDataPointId) {
 
-    console.log("Next: " + nextShapeId)
-    /*
-    console.log(shapeId);
-    console.log(droppedIntoDataPointId);
-    console.log(sourceDataPointId);
-    */
     this.setState((prevState, props) => {
       var newData = prevState.data;
-      var movedToSet;
-      var sourceSet;
-      var movedShape;
-      var shapeNewIndex;
+      var destDataGroup;
+      var sourceDataGroup;
+      var movedDataPoint;
+      var dataPointNewIndex;
 
-      // Find dragged shape from source dataPoint
-      for (var i = 0; i < newData.shapeSets.length; i++) {
-        var set = newData.shapeSets[i];
-        if (set.dataPointId === sourceDataPointId) {
-          sourceSet = set;
-          for (var j = 0; j < set.shapes.length; j++) {
-            var shape = set.shapes[j];
-            if (shape.shapeId === draggedShapeId) {
-              movedShape = shape;
-              set.shapes.splice(j, 1);
+      // From each dataGroup:
+      for (var i = 0; i < newData.shapeDataGroups.length; i++) {
+
+        // Find dragged dataPoint in source dataGroup
+        var group = newData.shapeDataGroups[i];
+        if (group.dataGroupId === sourceDataGroupId) {
+          sourceDataGroup = group;
+          for (var j = 0; j < group.dataPoints.length; j++) {
+            var dataPoint = group.dataPoints[j];
+            if (dataPoint.dataPointId === movedDataPointId) {
+              movedDataPoint = dataPoint;
+              // Remove dragged dataPoint from source Group
+              group.dataPoints.splice(j, 1);
               break;
             }
           }
         }
 
         // Find new dataPoint parent and new (next) sibling
-        if (set.dataPointId === droppedIntoDataPointId) {
-          movedToSet = set;
-          if (nextShapeId) {
-            for (var j = 0; j < set.shapes.length; j++) {
-              var shape = set.shapes[j];
-              if (shape.shapeId === nextShapeId) {
-                shapeNewIndex = j;
+        if (group.dataGroupId === destDataGroupId) {
+          destDataGroup = group;
+          // new index is not last in group
+          if (nextDataPointId) {
+            for (var j = 0; j < group.dataPoints.length; j++) {
+              var dataPoint = group.dataPoints[j];
+              if (dataPoint.dataPointId === nextDataPointId) {
+                dataPointNewIndex = j;
                 break;
               }
             }
           } else {
-          // If shape is dropped as last in new list
-            shapeNewIndex = movedToSet.shapes.length;
+            //new index *is* last in group
+            dataPointNewIndex = destDataGroup.dataPoints.length;
           }
         }
 
-        if (sourceSet && movedToSet) {
+        if (sourceDataGroup && destDataGroup) {
           break;
         }
       }
 
-      movedToSet.shapes.splice(shapeNewIndex, 0, movedShape);
+      destDataGroup.dataPoints.splice(dataPointNewIndex, 0, movedDataPoint);
 
       return {
         data: newData
@@ -161,28 +163,19 @@ class App extends React.Component {
     });
   }
 
-
-
-
-
   render() {
 
     let setActions = [];
     let pointActions = [];
     if (this.state.currentSection === "CleanData") {
-      setActions = this.state.setActions.CleanData;
-      pointActions = this.state.pointActions.CleanData;
     }
-
 
     return (
       <div id="app">
         <h1>{this.state.title}</h1>
         <Section
-          shapeSets={this.state.data.shapeSets}
-          setActions={setActions}
-          pointActions={pointActions}
-          moveShape={this.moveShape}
+          shapeDataGroups={this.state.data.shapeDataGroups}
+          moveDataPoint={this.moveDataPoint}
           currentSection={this.state.currentSection}
         ></Section>
       </div>

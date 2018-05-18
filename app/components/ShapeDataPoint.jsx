@@ -9,39 +9,15 @@ class ShapeDataPoint extends React.Component {
   componentDidMount() {
   }
 
-
   render() {
-    /*
-    const pointActions = this.props.pointActions.map((action, index) => {
-      if (this.props.shape.duplicate) {
-        return(
-          <li>
-            <button onClick={(e) => {action.action(this.props.shape.index)}}>
-              {action.enabledText}
-            </button>
-          </li>
-        )
-      } else {
-        return (
-          <li>
-            <button onClick={(e) => {action.action(this.props.shape.index)}}>
-              {action.notEnabledText}
-            </button>
-          </li>
-        )
-      }
-
-    });
-    */
-
     return (
       <ul
         className="sighting-data"
       >
         <li><strong>Sighting</strong></li>
-        <li>{this.props.shape.shapeId}</li>
-        <li>Name: {this.props.shape.shape}</li>
-        <li>Sightings: {this.props.shape.sightings}</li>
+        <li>{this.props.dataPoint.dataPointId}</li>
+        <li>Name: {this.props.dataPoint.shape}</li>
+        <li>Sightings: {this.props.dataPoint.sightings}</li>
         <br/>
       </ul>
 

@@ -1,9 +1,7 @@
 const React = require('react');
 const ShapeDataPoint = require('./ShapeDataPoint');
 
-//const ShapeList = function(props) {
-
-class ShapeList extends React.Component {
+class ShapeDataGroup extends React.Component {
   constructor(props) {
     super(props);
     this.componentDidMount = this.componentDidMount.bind(this);
@@ -15,19 +13,19 @@ class ShapeList extends React.Component {
 
   totalSightings() {
     var totalSightingsReducer = (accumulator, currentValue) => accumulator + currentValue.sightings;
-    var totalSightings = this.props.shapeContainer.shapes.reduce(totalSightingsReducer, 0);
+    var totalSightings = this.props.dataGroup.dataPoints.reduce(totalSightingsReducer, 0);
     return totalSightings;
   }
 
   render() {
 
-    var dataPointList = this.props.shapeContainer.shapes.map((shape, index) => {
+    var dataPointItems = this.props.dataGroup.dataPoints.map((dataPoint, index) => {
       return (
           <li
-            id={shape.shapeId}
+            id={dataPoint.dataPointId}
           >
             <ShapeDataPoint
-              shape={shape}
+              dataPoint={dataPoint}
               addDragContainer={this.props.addDragContainer}
             ></ShapeDataPoint>
           </li>
@@ -38,14 +36,14 @@ class ShapeList extends React.Component {
     return(
       <ul
         className="datapoint">
-        <li>{this.props.shapeContainer.dataPointId}</li>
+        <li>{this.props.dataGroup.dataGroupId}</li>
         <li>Total Sightings: {this.totalSightings()}</li>
         <ul
-          id={this.props.shapeContainer.dataPointId}
+          id={this.props.dataGroup.dataGroupId}
           className="sighting-data-list"
           ref={(itemRow) => { this.itemRow = itemRow; }}
         >
-          {dataPointList}
+          {dataPointItems}
         </ul>
       </ul>
     );
@@ -55,4 +53,4 @@ class ShapeList extends React.Component {
 
 
 
-module.exports = ShapeList;
+module.exports = ShapeDataGroup;

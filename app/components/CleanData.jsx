@@ -1,7 +1,7 @@
 const React = require('react');
 var dragula = require('react-dragula');
 
-const ShapeList = require('./ShapeList');
+const ShapeDataGroup = require('./ShapeDataGroup');
 
 //const CleanData = function(props) {
 
@@ -16,96 +16,53 @@ class CleanData extends React.Component {
     }
   }
 
+  // Enables Dragula for each dataGroup
   addDragContainer(cont) {
-    console.log("adding!");
     this.state.drake.containers.push(cont);
   }
 
   componentDidMount() {
-    var draggedSource;
+    var draggedSource;    // 🚸
     var drake = this.state.drake;
     drake
     .on('drop', (el, target, source, sibling) => {
       drake.cancel();
       this.moveDataShape(el, target, source, sibling)
-
     })
   }
 
   moveDataShape(el, target, source, sibling) {
     var drake = this.state.drake;
-    var nextShape = false;
+    var nextShape = false;     // 🚸
     if (sibling) {
       nextShape = sibling.id;
     }
-    this.props.moveShape(el.id, target.id, source.id, nextShape);
+    this.props.moveDataPoint(el.id, target.id, source.id, nextShape);
     drake.remove();
   }
 
   render() {
-
-    const setActions = this.props.setActions.map((action, index) =>
-      <li key={index}>
-        {index}:
-        <button onClick={action.action}>
-          {action.text}
-        </button>
-      </li>
-    );
-
-    const validShapeListItems = this.props.validShapes.map((shapeContainer, index) =>
-
-        <ShapeList
+    const dataGroupItems = this.props.dataGroups.map((dataGroup, index) =>
+        <ShapeDataGroup
           key={index}
-          shapeContainer={shapeContainer}
+          dataGroup={dataGroup}
           addDragContainer={this.addDragContainer}
-        ></ShapeList>
+        ></ShapeDataGroup>
     );
-
-    /*
-        pointActions={this.props.pointActions}
-
-    */
-
-
-    /*
-    const duplicateShapeListItems = this.props.duplicateShapes.map((shape, index) =>
-      <ShapeDataPoint
-        key={index}
-        shape={shape}
-        pointActions={this.props.pointActions}
-      ></ShapeDataPoint>
-    );
-    */
 
     return (
       <div id="clean-data">
         <ul className="actions">
-          {setActions}
         </ul>
-        <div id='valid-shapes-list' className='clean-data-list'>
-          <h3>Valid Shapes:</h3>
+        <div id='data-group-list' className='data-group-list'>
+          <h3>Shapes:</h3>
           <ul
-            id='valid-shapes'
-            className='container'
-
-          >
-            {validShapeListItems}
-          </ul>
-        </div>
-
-        {/*
-        <div id='duplicate-shapes-list' className='clean-data-list'>
-          <h3>Duplicate Shapes:</h3>
-          <ul
-            id='duplicate-shapes'
+            id='shapes'
             className='container'
           >
-            {duplicateShapeListItems}
+            {dataGroupItems}
           </ul>
         </div>
-        */}
-
       </div>
     );
   }
