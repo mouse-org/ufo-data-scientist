@@ -15,6 +15,7 @@ class Section extends React.Component {
           <CleanData
             dataGroups={this.props.shapeDataGroups}
             moveDataPoint={this.props.moveDataPoint}
+            groupActions={this.props.groupActions.CleanData}
           ></CleanData>
     }
 

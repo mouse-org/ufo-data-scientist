@@ -3,8 +3,6 @@ var dragula = require('react-dragula');
 
 const ShapeDataGroup = require('./ShapeDataGroup');
 
-//const CleanData = function(props) {
-
 class CleanData extends React.Component {
   constructor(props) {
     super(props);
@@ -42,6 +40,16 @@ class CleanData extends React.Component {
   }
 
   render() {
+    const groupActions = this.props.groupActions.map((action, index) =>
+      <li key={index}>
+        {index}:
+        <button onClick={action.action}>
+          {action.text}
+        </button>
+      </li>
+    );
+
+
     const dataGroupItems = this.props.dataGroups.map((dataGroup, index) =>
         <ShapeDataGroup
           key={index}
@@ -53,6 +61,7 @@ class CleanData extends React.Component {
     return (
       <div id="clean-data">
         <ul className="actions">
+          {groupActions}
         </ul>
         <div id='data-group-list' className='data-group-list'>
           <h3>Shapes:</h3>

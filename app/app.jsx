@@ -10,8 +10,8 @@ const Section = require('./components/Section');
 class App extends React.Component {
   constructor(props) {
     super(props);
-    //this.sort = this.sort.bind(this);
-    //this.toggleDuplicate = this.toggleDuplicate.bind(this);
+    this.sort = this.sort.bind(this);
+    this.updateGroup = this.updateGroup.bind(this);
     this.moveDataPoint = this.moveDataPoint.bind(this);
 
     const ufoDataMap = data.ufoShapes.map(shape => {
@@ -20,6 +20,7 @@ class App extends React.Component {
         dataGroupId: uuidv4(),
         dataGroupName: shape.shape,
         customGroupName: "",
+        totalSightings: shape.sightings,
         dataPoints: [Object.assign({}, {dataPointId: uuidv4()}, shape)]
       }
     });
@@ -30,19 +31,19 @@ class App extends React.Component {
         shapeDataGroups: ufoDataMap
       },
       currentSection: "CleanData",
-      /*
-      setActions: {
+      groupActions: {
         CleanData: [
           {
             text: "A - Z",
-            action: this.sort.bind(null, "shape")
+            action: this.sort.bind(null, "dataGroupName")
           },
           {
             text: "📈",
-            action: this.sort.bind(null, "sightings")
+            action: this.sort.bind(null, "totalSightings")
           }
         ]
       },
+      /*
       pointActions: {
         CleanData: [
           {
@@ -62,7 +63,12 @@ class App extends React.Component {
   componentWillUnmount() {
   }
 
-/*
+  updateGroup(group) {
+    group = this.updateTotalSightings(group);
+    group = this.updateDataGroupName(group);
+    return group;
+  }
+
   compare(p, a, b) {
     var aU, bU;
     if (typeof a[p] === 'string' && typeof b[p] === 'string') {
@@ -81,30 +87,14 @@ class App extends React.Component {
 
   sort(prop) {
     this.setState((prevState, props) => {
-      const newOrder = prevState.data.shapes.sort(this.compare.bind(null, prop));
       let newData = prevState.data;
-      newData.shapes = newOrder;
+      newData.shapeDataGroups.sort(this.compare.bind(null, prop));
 
       return {
       data: newData
       }
     });
   }
-
-  toggleDuplicate(index) {
-    this.setState((prevState, props) => {
-      let data = prevState.data;
-      if (data.shapes[index].duplicate) {
-        data.shapes[index].duplicate = false;
-      } else {
-        data.shapes[index].duplicate = true;
-      }
-      return {
-        data: data
-      }
-    });
-  }
-*/
 
   moveDataPoint(movedDataPointId, destDataGroupId, sourceDataGroupId, nextDataPointId) {
 
@@ -157,8 +147,8 @@ class App extends React.Component {
       }
 
       destDataGroup.dataPoints.splice(dataPointNewIndex, 0, movedDataPoint);
-      sourceDataGroup = this.updateDataGroupName(sourceDataGroup);
-      destDataGroup = this.updateDataGroupName(destDataGroup);
+      sourceDataGroup = this.updateGroup(sourceDataGroup);
+      destDataGroup = this.updateGroup(destDataGroup);
 
       return {
         data: newData
@@ -177,6 +167,12 @@ class App extends React.Component {
     return group;
   }
 
+  updateTotalSightings(group) {
+    var totalSightingsReducer = (accumulator, currentValue) => accumulator + currentValue.sightings;
+    group.totalSightings = group.dataPoints.reduce(totalSightingsReducer, 0);
+    return group;
+  }
+
   render() {
 
     let setActions = [];
@@ -191,6 +187,7 @@ class App extends React.Component {
           shapeDataGroups={this.state.data.shapeDataGroups}
           moveDataPoint={this.moveDataPoint}
           currentSection={this.state.currentSection}
+          groupActions={this.state.groupActions}
         ></Section>
       </div>
     )

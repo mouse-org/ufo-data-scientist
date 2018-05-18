@@ -11,12 +11,6 @@ class ShapeDataGroup extends React.Component {
     this.props.addDragContainer(this.itemRow);
   }
 
-  totalSightings() {
-    var totalSightingsReducer = (accumulator, currentValue) => accumulator + currentValue.sightings;
-    var totalSightings = this.props.dataGroup.dataPoints.reduce(totalSightingsReducer, 0);
-    return totalSightings;
-  }
-
   render() {
 
     var dataPointItems = this.props.dataGroup.dataPoints.map((dataPoint, index) => {
@@ -40,7 +34,7 @@ class ShapeDataGroup extends React.Component {
           {this.props.dataGroup.dataGroupName}
           <button>✏️</button>
         </li>
-        <li>Total Sightings: {this.totalSightings()}</li>
+        <li>Total Sightings: {this.props.dataGroup.totalSightings}</li>
         <ul
           id={this.props.dataGroup.dataGroupId}
           className="sighting-data-list"
