@@ -13,6 +13,12 @@ class ShapeList extends React.Component {
     this.props.addDragContainer(this.itemRow);
   }
 
+  totalSightings() {
+    var totalSightingsReducer = (accumulator, currentValue) => accumulator + currentValue.sightings;
+    var totalSightings = this.props.shapeContainer.shapes.reduce(totalSightingsReducer, 0);
+    return totalSightings;
+  }
+
   render() {
 
     var dataPointList = this.props.shapeContainer.shapes.map((shape, index) => {
@@ -33,7 +39,7 @@ class ShapeList extends React.Component {
       <ul
         className="datapoint">
         <li>{this.props.shapeContainer.dataPointId}</li>
-        <li>Total Sightings: {this.props.shapeContainer.totalSightings}</li>
+        <li>Total Sightings: {this.totalSightings()}</li>
         <ul
           id={this.props.shapeContainer.dataPointId}
           className="sighting-data-list"

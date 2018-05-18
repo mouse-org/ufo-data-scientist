@@ -18,7 +18,6 @@ class App extends React.Component {
       return {
         dataPointId: uuidv4(),
         dataPointName: shape.shape,
-        totalSightings: shape.sightings,
         shapes: [Object.assign({}, {shapeId: uuidv4()}, shape)]
       }
     });
@@ -154,7 +153,6 @@ class App extends React.Component {
         }
       }
 
-      // Not working correctly
       movedToSet.shapes.splice(shapeNewIndex, 0, movedShape);
 
       return {
@@ -162,6 +160,8 @@ class App extends React.Component {
       }
     });
   }
+
+
 
 
 
