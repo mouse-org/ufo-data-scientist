@@ -18,7 +18,6 @@ class App extends React.Component {
       return {
         dataPointId: uuidv4(),
         dataPointName: shape.shape,
-        totalSightings: shape.sightings,
         shapes: [Object.assign({}, {shapeId: uuidv4()}, shape)]
       }
     });
@@ -154,18 +153,15 @@ class App extends React.Component {
         }
       }
 
-      // Not working correctly
       movedToSet.shapes.splice(shapeNewIndex, 0, movedShape);
-
-      var totalSightingsReducer = (accumulator, currentValue) => accumulator + currentValue.sightings;
-      sourceSet.totalSightings = sourceSet.shapes.reduce(totalSightingsReducer, 0);
-      movedToSet.totalSightings = movedToSet.shapes.reduce(totalSightingsReducer, 0);
 
       return {
         data: newData
       }
     });
   }
+
+
 
 
 
