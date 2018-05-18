@@ -36,6 +36,7 @@ class ShapeDataGroup extends React.Component {
     return(
       <ul
         className="datapoint">
+        <li>{this.props.dataGroup.dataGroupName}</li>
         <li>{this.props.dataGroup.dataGroupId}</li>
         <li>Total Sightings: {this.totalSightings()}</li>
         <ul
