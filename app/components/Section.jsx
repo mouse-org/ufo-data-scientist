@@ -21,6 +21,7 @@ class Section extends React.Component {
             toggleEditGroupName={this.props.toggleEditGroupName}
             removeDataGroup={this.props.removeDataGroup}
             toggleCollapse={this.props.toggleCollapse}
+            newDataGroup={this.props.newDataGroup}
           ></CleanData>
     }
 

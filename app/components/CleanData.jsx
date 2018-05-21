@@ -84,7 +84,19 @@ class CleanData extends React.Component {
             id='shapes'
             className='container'
           >
+            <button
+              onClick={() => this.props.newDataGroup("beginning")}
+            >
+              ➕ New Empty Group
+            </button>
             {dataGroupItems}
+            <li>
+              <button
+                onClick={() => this.props.newDataGroup("end")}
+              >
+                ➕ New Empty Group
+              </button>
+            </li>
           </ul>
         </div>
       </div>

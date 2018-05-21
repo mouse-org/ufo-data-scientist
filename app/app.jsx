@@ -3,6 +3,7 @@ const ReactDOM = require('react-dom');
 const uuidv4 = require('uuid/v4');
 
 const data = require('./data');
+const defaultGroup = require('./helpers/defaultGroup')
 
 // Components:
 const Section = require('./components/Section');
@@ -17,23 +18,11 @@ class App extends React.Component {
     this.toggleEditGroupName = this.toggleEditGroupName.bind(this);
     this.removeDataGroup = this.removeDataGroup.bind(this);
     this.toggleCollapse = this.toggleCollapse.bind(this);
+    this.newDataGroup = this.newDataGroup.bind(this);
 
     const ufoDataMap = data.ufoShapes.map(shape => {
       // dataGroup
-
-      let metaData = {
-        dataPointId: uuidv4()
-      }
-
-      return {
-        dataGroupId: uuidv4(),
-        dataGroupName: shape.shape,
-        customGroupName: false,
-        totalSightings: shape.sightings,
-        editing: false,
-        collapsed: false,
-        dataPoints: [Object.assign({}, metaData, shape)]
-      }
+      return defaultGroup.data(shape.shape, shape.sightings);
     });
 
     this.state = {
@@ -236,6 +225,20 @@ class App extends React.Component {
     });
   }
 
+  newDataGroup(position) {
+    this.setState((prevState, props) => {
+      let newData = prevState.data;
+      if (position === "beginning") {
+        newData.shapeDataGroups.unshift(defaultGroup.data("", 0));
+      } else {
+        newData.shapeDataGroups.push(defaultGroup.data("", 0));
+      }
+      return {
+        data: newData
+      }
+    });
+  }
+
   updateTotalSightings(group) {
     var totalSightingsReducer = (accumulator, currentValue) => accumulator + currentValue.sightings;
     group.totalSightings = group.dataPoints.reduce(totalSightingsReducer, 0);
@@ -247,11 +250,20 @@ class App extends React.Component {
     let setActions = [];
     let pointActions = [];
     if (this.state.currentSection === "CleanData") {
+      var nextSectionText = "Set Up Data Visualization"
     }
 
     return (
       <div id="app">
         <h1>{this.state.title}</h1>
+        <div
+          className="step-nav"
+        >
+          <h3>I'm Done! </h3>
+          <button>
+            {nextSectionText}
+          </button>
+        </div>
         <Section
           shapeDataGroups={this.state.data.shapeDataGroups}
           currentSection={this.state.currentSection}
@@ -262,6 +274,7 @@ class App extends React.Component {
           toggleEditGroupName={this.toggleEditGroupName}
           removeDataGroup={this.removeDataGroup}
           toggleCollapse={this.toggleCollapse}
+          newDataGroup={this.newDataGroup}
         ></Section>
       </div>
     )

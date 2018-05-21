@@ -7,6 +7,11 @@ body {
   margin: 2em;
 }
 
+.step-nav {
+  border: 1px solid purple;
+  padding: .5em;
+}
+
 
 
 /* CleanData */
