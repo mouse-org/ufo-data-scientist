@@ -13,15 +13,23 @@ class App extends React.Component {
     this.sort = this.sort.bind(this);
     this.updateGroup = this.updateGroup.bind(this);
     this.moveDataPoint = this.moveDataPoint.bind(this);
+    this.onDataGroupNameChange = this.onDataGroupNameChange.bind(this);
+    this.toggleEditGroupName = this.toggleEditGroupName.bind(this);
 
     const ufoDataMap = data.ufoShapes.map(shape => {
       // dataGroup
+
+      let metaData = {
+        dataPointId: uuidv4()
+      }
+
       return {
         dataGroupId: uuidv4(),
         dataGroupName: shape.shape,
-        customGroupName: "",
+        customGroupName: false,
         totalSightings: shape.sightings,
-        dataPoints: [Object.assign({}, {dataPointId: uuidv4()}, shape)]
+        editing: false,
+        dataPoints: [Object.assign({}, metaData, shape)]
       }
     });
 
@@ -34,12 +42,14 @@ class App extends React.Component {
       groupActions: {
         CleanData: [
           {
-            text: "A - Z",
-            action: this.sort.bind(null, "dataGroupName")
+            text: ["A - Z", "Z - A"],
+            action: this.sort.bind(null, "dataGroupName"),
+            toggle: false
           },
           {
-            text: "📈",
-            action: this.sort.bind(null, "totalSightings")
+            text: ["📈", "📉"],
+            action: this.sort.bind(null, "totalSightings"),
+            toggle: false
           }
         ]
       },
@@ -69,27 +79,37 @@ class App extends React.Component {
     return group;
   }
 
-  compare(p, a, b) {
+  compare(prop, toggle, a, b) {
     var aU, bU;
-    if (typeof a[p] === 'string' && typeof b[p] === 'string') {
-      aU = a[p].toUpperCase();
-      bU = b[p].toUpperCase();
+    if (typeof a[prop] === 'string' && typeof b[prop] === 'string') {
+      aU = a[prop].toUpperCase();
+      bU = b[prop].toUpperCase();
     } else {
-      aU = a[p];
-      bU = b[p];
+      aU = a[prop];
+      bU = b[prop];
     }
     if (aU < bU)
-      return -1;
+      if (toggle) {
+        return 1;
+      } else {
+        return -1;
+      }
     if (aU > bU)
-      return 1;
+      if (toggle) {
+        return -1;
+      } else {
+        return 1;
+      }
     return 0;
   }
 
-  sort(prop) {
+  sort(prop, index, toggle) {
     this.setState((prevState, props) => {
       let newData = prevState.data;
-      newData.shapeDataGroups.sort(this.compare.bind(null, prop));
-
+      newData.shapeDataGroups.sort(this.compare.bind(null, prop, toggle));
+      // Toggle the 'toggle' property for the clicked groupAction
+      let newGroupActions = prevState.groupActions
+      newGroupActions[prevState.currentSection][index].toggle = !toggle;
       return {
       data: newData
       }
@@ -156,6 +176,29 @@ class App extends React.Component {
     });
   }
 
+  toggleEditGroupName(index) {
+    this.setState((prevState, props) => {
+      let newData = prevState.data;
+      var group = newData.shapeDataGroups[index];
+      group.editing = !group.editing;
+      return {
+        data: newData
+      }
+    });
+  }
+
+  onDataGroupNameChange(index, newName) {
+    this.setState((prevState, props) => {
+      let newData = prevState.data;
+      var group = newData.shapeDataGroups[index];
+      group.customGroupName = true;
+      group.dataGroupName = newName;
+      return {
+        data: newData
+      }
+    });
+  }
+
   updateDataGroupName(group) {
     if (!group.customGroupName){
       if (group.dataPoints.length > 0){
@@ -185,9 +228,12 @@ class App extends React.Component {
         <h1>{this.state.title}</h1>
         <Section
           shapeDataGroups={this.state.data.shapeDataGroups}
-          moveDataPoint={this.moveDataPoint}
           currentSection={this.state.currentSection}
           groupActions={this.state.groupActions}
+
+          moveDataPoint={this.moveDataPoint}
+          onDataGroupNameChange={this.onDataGroupNameChange}
+          toggleEditGroupName={this.toggleEditGroupName}
         ></Section>
       </div>
     )

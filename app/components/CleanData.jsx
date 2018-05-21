@@ -40,21 +40,34 @@ class CleanData extends React.Component {
   }
 
   render() {
-    const groupActions = this.props.groupActions.map((action, index) =>
-      <li key={index}>
-        {index}:
-        <button onClick={action.action}>
-          {action.text}
-        </button>
-      </li>
-    );
+    var groupActions = this.props.groupActions.map((action, index) => {
+
+      var textIndex;
+      if (action.toggle) {
+        textIndex = 1;
+      } else {
+        textIndex = 0;
+      }
+
+      return (
+        <li key={index}>
+          {index}:
+          <button onClick={() => action.action(index, action.toggle)}>
+            {action.text[textIndex]}
+          </button>
+        </li>
+      )
+    });
 
 
     const dataGroupItems = this.props.dataGroups.map((dataGroup, index) =>
         <ShapeDataGroup
           key={index}
+          index={index}
           dataGroup={dataGroup}
           addDragContainer={this.addDragContainer}
+          onDataGroupNameChange={this.props.onDataGroupNameChange}
+          toggleEditGroupName={this.props.toggleEditGroupName}
         ></ShapeDataGroup>
     );
 

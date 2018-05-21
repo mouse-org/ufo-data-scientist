@@ -26,14 +26,39 @@ class ShapeDataGroup extends React.Component {
         )
     });
 
+    var name;
+    if (!this.props.dataGroup.editing) {
+      name =
+        <li>
+          Name: {this.props.dataGroup.dataGroupName}
+          <button
+            onClick={() => this.props.toggleEditGroupName(this.props.index)}
+          >
+            ✏️
+          </button>
+        </li>;
+    } else {
+      name =
+      <li>
+        Name:
+        <input
+          type="text"
+          value={this.props.dataGroup.dataGroupName}
+          onChange={e => this.props.onDataGroupNameChange(this.props.index, e.target.value)}
+        ></input>
+        <button
+          onClick={() => this.props.toggleEditGroupName(this.props.index)}
+        >
+          ✅
+        </button>
+      </li>
+    }
+
 
     return(
       <ul
         className="datapoint">
-        <li>
-          {this.props.dataGroup.dataGroupName}
-          <button>✏️</button>
-        </li>
+        {name}
         <li>Total Sightings: {this.props.dataGroup.totalSightings}</li>
         <ul
           id={this.props.dataGroup.dataGroupId}

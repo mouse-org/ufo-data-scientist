@@ -14,8 +14,11 @@ class Section extends React.Component {
       var currentSection =
           <CleanData
             dataGroups={this.props.shapeDataGroups}
-            moveDataPoint={this.props.moveDataPoint}
             groupActions={this.props.groupActions.CleanData}
+
+            moveDataPoint={this.props.moveDataPoint}
+            onDataGroupNameChange={this.props.onDataGroupNameChange}
+            toggleEditGroupName={this.props.toggleEditGroupName}
           ></CleanData>
     }
 

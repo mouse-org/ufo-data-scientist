@@ -10,7 +10,7 @@ class ShapeDataPoint extends React.Component {
   }
 
   render() {
-    return (
+  return (
       <ul
         className="sighting-data"
       >
