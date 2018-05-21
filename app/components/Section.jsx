@@ -1,52 +1,41 @@
 const React = require('react');
-
 const CleanData = require('./CleanData');
+const DataViz = require('./DataViz');
 
-//const Section = function(props) {
+function Section(props) {
+  var currentSection = null;
+  if (props.currentSection === 'CleanData') {
 
-class Section extends React.Component {
-  constructor(props) {
-    super(props);
+    currentSection =
+        <CleanData
+          dataGroups={props.shapeDataGroups}
+          groupActions={props.groupActions.CleanData}
+
+          moveDataPoint={props.moveDataPoint}
+          onDataGroupNameChange={props.onDataGroupNameChange}
+          toggleEditGroupName={props.toggleEditGroupName}
+          removeDataGroup={props.removeDataGroup}
+          toggleCollapse={props.toggleCollapse}
+          newDataGroup={props.newDataGroup}
+        ></CleanData>
+  }
+
+  if (props.currentSection === 'DataViz') {
+
+    currentSection =
+      <DataViz
+        dataGroups={props.shapeDataGroups}
+      >
+      </DataViz>
   }
 
 
-
-  render() {
-
-    var currentSection = null;
-    if (this.props.currentSection === 'CleanData') {
-
-      let validShapes = [];
-      let duplicateShapes = [];
-      this.props.shapeSets.map((shape, index) => {
-        shape.index = index;
-        if (shape.duplicate) {
-          duplicateShapes.push(shape);
-        } else {
-          //console.log(shape.shape);
-          validShapes.push(shape);
-        }
-      });
-
-
-
-
-      var currentSection =
-          <CleanData
-             validShapes={validShapes}
-             duplicateShapes={duplicateShapes}
-             setActions={this.props.setActions}
-             pointActions={this.props.pointActions}
-          ></CleanData>
-    }
-
-
-    return (
-      <div className="section">
-        {currentSection}
-      </div>
-    );
-  }
+  return (
+    <div className="section">
+      {currentSection}
+    </div>
+  );
 }
+
 
 module.exports = Section;

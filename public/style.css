@@ -7,11 +7,16 @@ body {
   margin: 2em;
 }
 
+.step-nav {
+  border: 1px solid purple;
+  padding: .5em;
+}
+
 
 
 /* CleanData */
 
-.clean-data-list {
+.data-group-list {
   display: inline-block;
   vertical-align: top;
 }
@@ -31,6 +36,14 @@ body {
   border: 1px dashed green;
   padding: 5px;
   margin: 5px;
+}
+
+.hidden-data-points {
+  display: none;
+}
+
+.shown-data-points {
+  display: list-item;
 }
 
 
