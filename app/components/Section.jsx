@@ -1,5 +1,6 @@
 const React = require('react');
 const CleanData = require('./CleanData');
+const DataViz = require('./DataViz');
 
 function Section(props) {
   var currentSection = null;
@@ -22,7 +23,10 @@ function Section(props) {
   if (props.currentSection === 'DataViz') {
 
     currentSection =
-      <h1>{props.currentSection}</h1>
+      <DataViz
+        dataGroups={props.shapeDataGroups}
+      >
+      </DataViz>
   }
 
 
