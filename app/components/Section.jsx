@@ -1,37 +1,37 @@
 const React = require('react');
 const CleanData = require('./CleanData');
 
-class Section extends React.Component {
-  constructor(props) {
-    super(props);
+function Section(props) {
+  var currentSection = null;
+  if (props.currentSection === 'CleanData') {
+
+    currentSection =
+        <CleanData
+          dataGroups={props.shapeDataGroups}
+          groupActions={props.groupActions.CleanData}
+
+          moveDataPoint={props.moveDataPoint}
+          onDataGroupNameChange={props.onDataGroupNameChange}
+          toggleEditGroupName={props.toggleEditGroupName}
+          removeDataGroup={props.removeDataGroup}
+          toggleCollapse={props.toggleCollapse}
+          newDataGroup={props.newDataGroup}
+        ></CleanData>
   }
 
-  render() {
+  if (props.currentSection === 'DataViz') {
 
-    var currentSection = null;
-    if (this.props.currentSection === 'CleanData') {
-
-      var currentSection =
-          <CleanData
-            dataGroups={this.props.shapeDataGroups}
-            groupActions={this.props.groupActions.CleanData}
-
-            moveDataPoint={this.props.moveDataPoint}
-            onDataGroupNameChange={this.props.onDataGroupNameChange}
-            toggleEditGroupName={this.props.toggleEditGroupName}
-            removeDataGroup={this.props.removeDataGroup}
-            toggleCollapse={this.props.toggleCollapse}
-            newDataGroup={this.props.newDataGroup}
-          ></CleanData>
-    }
-
-
-    return (
-      <div className="section">
-        {currentSection}
-      </div>
-    );
+    currentSection =
+      <h1>{props.currentSection}</h1>
   }
+
+
+  return (
+    <div className="section">
+      {currentSection}
+    </div>
+  );
 }
+
 
 module.exports = Section;

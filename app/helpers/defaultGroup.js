@@ -2,18 +2,15 @@ const uuidv4 = require('uuid/v4');
 
 
 function data(shape, sightings) {
-  let metaData = {
-    dataPointId: uuidv4()
-  }
 
   return {
     dataGroupId: uuidv4(),
-    dataGroupName: shape,
+    dataGroupName: shape.shape,
     customGroupName: false,
     totalSightings: sightings,
     editing: false,
     collapsed: false,
-    dataPoints: [Object.assign({}, metaData, shape)]
+    dataPoints: []
   }
 }
 

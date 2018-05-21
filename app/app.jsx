@@ -8,6 +8,9 @@ const defaultGroup = require('./helpers/defaultGroup')
 // Components:
 const Section = require('./components/Section');
 
+
+const sections = ["CleanData", "DataViz"]
+
 class App extends React.Component {
   constructor(props) {
     super(props);
@@ -19,10 +22,16 @@ class App extends React.Component {
     this.removeDataGroup = this.removeDataGroup.bind(this);
     this.toggleCollapse = this.toggleCollapse.bind(this);
     this.newDataGroup = this.newDataGroup.bind(this);
+    this.changeSection = this.changeSection.bind(this);
 
     const ufoDataMap = data.ufoShapes.map(shape => {
       // dataGroup
-      return defaultGroup.data(shape.shape, shape.sightings);
+      let shapeMetaData = {
+        dataPointId: uuidv4()
+      }
+      var dataGroup = defaultGroup.data(shape.shape, shape.sightings);
+      dataGroup.dataPoints.push(Object.assign({}, shapeMetaData, shape));
+      return dataGroup;
     });
 
     this.state = {
@@ -30,7 +39,7 @@ class App extends React.Component {
       data: {
         shapeDataGroups: ufoDataMap
       },
-      currentSection: "CleanData",
+      currentSection: sections[0],
       groupActions: {
         CleanData: [
           {
@@ -63,6 +72,16 @@ class App extends React.Component {
   }
 
   componentWillUnmount() {
+  }
+
+  changeSection(change) {
+    this.setState((prevState, props) => {
+      let oldSectionIndex = sections.indexOf(prevState.currentSection);
+      let newSection = sections[oldSectionIndex + change];
+      return {
+        currentSection: newSection
+      }
+    });
   }
 
   updateGroup(group) {
@@ -253,17 +272,50 @@ class App extends React.Component {
       var nextSectionText = "Set Up Data Visualization"
     }
 
-    return (
-      <div id="app">
-        <h1>{this.state.title}</h1>
-        <div
-          className="step-nav"
-        >
+    if (this.state.currentSection === "DataViz") {
+      var nextSectionText = "Finalize";
+      var prevSectionText = "Edit data"
+
+    }
+
+    var nextNav;
+    if (true) {
+      nextNav =
+        <div>
           <h3>I'm Done! </h3>
-          <button>
+          <button
+            onClick={() => this.changeSection(1)}
+          >
             {nextSectionText}
           </button>
         </div>
+    }
+
+    var prevNav;
+    if (this.state.currentSection != "CleanData") {
+      prevNav =
+        <div>
+          <h3>Go Back! </h3>
+          <button
+            onClick={() => this.changeSection(-1)}
+          >
+            {prevSectionText}
+          </button>
+        </div>
+    }
+
+    var sectionNav =
+      <div
+        className="step-nav"
+      >
+        {prevNav}
+        {nextNav}
+      </div>
+
+    return (
+      <div id="app">
+        <h1>{this.state.title}</h1>
+        {sectionNav}
         <Section
           shapeDataGroups={this.state.data.shapeDataGroups}
           currentSection={this.state.currentSection}
