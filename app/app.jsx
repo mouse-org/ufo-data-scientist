@@ -15,6 +15,8 @@ class App extends React.Component {
     this.moveDataPoint = this.moveDataPoint.bind(this);
     this.onDataGroupNameChange = this.onDataGroupNameChange.bind(this);
     this.toggleEditGroupName = this.toggleEditGroupName.bind(this);
+    this.removeDataGroup = this.removeDataGroup.bind(this);
+    this.toggleCollapse = this.toggleCollapse.bind(this);
 
     const ufoDataMap = data.ufoShapes.map(shape => {
       // dataGroup
@@ -29,6 +31,7 @@ class App extends React.Component {
         customGroupName: false,
         totalSightings: shape.sightings,
         editing: false,
+        collapsed: false,
         dataPoints: [Object.assign({}, metaData, shape)]
       }
     });
@@ -200,14 +203,37 @@ class App extends React.Component {
   }
 
   updateDataGroupName(group) {
-    if (!group.customGroupName){
-      if (group.dataPoints.length > 0){
+    if (group.dataPoints.length > 0){
+      if (!group.customGroupName){
         group.dataGroupName = group.dataPoints[0].shape
-      } else {
-        group.dataGroupName = "";
       }
+    } else {
+      group.dataGroupName = "";
+      group.customGroupName = false;
     }
+
     return group;
+  }
+
+  removeDataGroup(index) {
+    this.setState((prevState, props) => {
+      let newData = prevState.data;
+      newData.shapeDataGroups.splice(index, 1);
+      return {
+        data: newData
+      }
+    });
+  }
+
+  toggleCollapse(index) {
+    this.setState((prevState, props) => {
+      let newData = prevState.data;
+      var group = newData.shapeDataGroups[index];
+      group.collapsed = !group.collapsed;
+      return {
+        data: newData
+      }
+    });
   }
 
   updateTotalSightings(group) {
@@ -234,6 +260,8 @@ class App extends React.Component {
           moveDataPoint={this.moveDataPoint}
           onDataGroupNameChange={this.onDataGroupNameChange}
           toggleEditGroupName={this.toggleEditGroupName}
+          removeDataGroup={this.removeDataGroup}
+          toggleCollapse={this.toggleCollapse}
         ></Section>
       </div>
     )

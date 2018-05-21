@@ -33,6 +33,14 @@ body {
   margin: 5px;
 }
 
+.hidden-data-points {
+  display: none;
+}
+
+.shown-data-points {
+  display: list-item;
+}
+
 
 
 /* ShapeDataPoint */

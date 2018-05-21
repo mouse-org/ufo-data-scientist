@@ -54,19 +54,60 @@ class ShapeDataGroup extends React.Component {
       </li>
     }
 
+    var deleteButton;
+    if (this.props.dataGroup.dataPoints.length === 0) {
+      deleteButton =
+        <button
+          className="remove-data-group"
+          onClick={() => this.props.removeDataGroup(this.props.index)}
+        >
+          ⛔️
+        </button>
+    }
+
+    var collapseExpandText;
+    if (this.props.dataGroup.collapsed) {
+      collapseExpandText = "↕️";
+    } else {
+      collapseExpandText = "⤴️";
+    }
+    var collapseExpandButton =
+      <button
+        className="collapse-expand-button"
+        onClick={() => this.props.toggleCollapse(this.props.index)}
+      >{collapseExpandText}</button>
+
+    // Have to hide this way instead of conditionally rendering because conditionally rendering breaks the drag and drop when toggled.
+    var dataPointListClass;
+    var dataPointTotalClass;
+    if (!this.props.dataGroup.collapsed) {
+      dataPointListClass = "shown-data-points"
+      dataPointTotalClass = "hidden-data-points"
+    } else {
+      dataPointListClass = "hidden-data-points"
+      dataPointTotalClass = "shown-data-points"
+    }
+    var dataPointList =
+    <li>
+      <ul
+        id={this.props.dataGroup.dataGroupId}
+        className={"sighting-data-list " + dataPointListClass}
+        ref={(itemRow) => { this.itemRow = itemRow; }}
+      >
+        {dataPointItems}
+      </ul>
+      <span className={dataPointTotalClass}>Data Points: {this.props.dataGroup.dataPoints.length}</span>
+    </li>
+
 
     return(
       <ul
         className="datapoint">
+        {deleteButton}
         {name}
         <li>Total Sightings: {this.props.dataGroup.totalSightings}</li>
-        <ul
-          id={this.props.dataGroup.dataGroupId}
-          className="sighting-data-list"
-          ref={(itemRow) => { this.itemRow = itemRow; }}
-        >
-          {dataPointItems}
-        </ul>
+        {dataPointList}
+        {collapseExpandButton}
       </ul>
     );
   }

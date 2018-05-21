@@ -68,6 +68,8 @@ class CleanData extends React.Component {
           addDragContainer={this.addDragContainer}
           onDataGroupNameChange={this.props.onDataGroupNameChange}
           toggleEditGroupName={this.props.toggleEditGroupName}
+          removeDataGroup={this.props.removeDataGroup}
+          toggleCollapse={this.props.toggleCollapse}
         ></ShapeDataGroup>
     );
 
