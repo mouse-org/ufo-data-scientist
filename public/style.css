@@ -25,17 +25,29 @@ body {
   border: 1px dotted blue;
   padding: 5px;
   margin: 5px;
+  position: relative;
+}
+
+.data-group-edit-button {
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
 .sighting-data-list {
   border: 1px dashed orange;
-  min-height: 50px;
+  padding: 0;
 }
 
 .sighting-data {
-  border: 1px dashed green;
-  padding: 5px;
-  margin: 5px;
+  background-color: #CED;
+  padding: 0;
+  margin: 1px;
+}
+
+.sighting-data > li {
+  display: inline-block;
+  padding: 0 5px 0 0;
 }
 
 .hidden-data-points {

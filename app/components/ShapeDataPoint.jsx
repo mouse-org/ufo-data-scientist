@@ -5,8 +5,8 @@ function ShapeDataPoint(props) {
       <ul
         className="sighting-data"
       >
-        <li>Name: {props.dataPoint.shape}</li>
-        <li>Sightings: {props.dataPoint.sightings}</li>
+        <li><strong>{props.dataPoint.shape}</strong></li>
+        <li>{props.dataPoint.sightings}</li>
         <br/>
       </ul>
     );

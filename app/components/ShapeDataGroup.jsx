@@ -32,6 +32,7 @@ class ShapeDataGroup extends React.Component {
         <li>
           Name: {this.props.dataGroup.dataGroupName}
           <button
+            className="data-group-edit-button"
             onClick={() => this.props.toggleEditGroupName(this.props.index)}
           >
             ✏️
@@ -47,6 +48,7 @@ class ShapeDataGroup extends React.Component {
           onChange={e => this.props.onDataGroupNameChange(this.props.index, e.target.value)}
         ></input>
         <button
+          className="data-group-edit-button"
           onClick={() => this.props.toggleEditGroupName(this.props.index)}
         >
           ✅
