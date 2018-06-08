@@ -2,8 +2,9 @@ const React = require('react');
 const ReactDOM = require('react-dom');
 const uuidv4 = require('uuid/v4');
 
-const data = require('./data');
-const defaultGroup = require('./helpers/defaultGroup')
+const data = require('./fullData');
+const defaultGroup = require('./helpers/defaultGroup');
+const getShapes = require('./helpers/getShapes');
 
 // Components:
 const Section = require('./components/Section');
@@ -24,7 +25,8 @@ class App extends React.Component {
     this.newDataGroup = this.newDataGroup.bind(this);
     this.changeSection = this.changeSection.bind(this);
 
-    const ufoDataMap = data.ufoShapes.map(shape => {
+    //const ufoDataMap = data.ufoShapes.map(shape => {
+      const ufoDataMap = getShapes(data).map(shape => {
       // dataGroup
       let shapeMetaData = {
         dataPointId: uuidv4()
