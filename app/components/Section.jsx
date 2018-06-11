@@ -10,6 +10,7 @@ function Section(props) {
     currentSection =
     <SeeAllData
       dataGroups={props.shapeDataGroups}
+      data={props.data}
     ></SeeAllData>
   }
 

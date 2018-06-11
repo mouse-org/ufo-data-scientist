@@ -325,6 +325,8 @@ class App extends React.Component {
           currentSection={this.state.currentSection}
           groupActions={this.state.groupActions}
 
+          data={data}
+
           moveDataPoint={this.moveDataPoint}
           onDataGroupNameChange={this.onDataGroupNameChange}
           toggleEditGroupName={this.toggleEditGroupName}
