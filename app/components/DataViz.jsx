@@ -1,5 +1,6 @@
 const React = require('react');
 var BarChart = require("react-chartjs-2").Bar;
+var BubbleChart = require("react-chartjs-2").Bubble;
 
 function DataViz(props) {
 

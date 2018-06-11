@@ -32,6 +32,7 @@ class ShapeDataGroup extends React.Component {
         <li>
           Name: {this.props.dataGroup.dataGroupName}
           <button
+            className="data-group-edit-button"
             onClick={() => this.props.toggleEditGroupName(this.props.index)}
           >
             ✏️
@@ -47,6 +48,7 @@ class ShapeDataGroup extends React.Component {
           onChange={e => this.props.onDataGroupNameChange(this.props.index, e.target.value)}
         ></input>
         <button
+          className="data-group-edit-button"
           onClick={() => this.props.toggleEditGroupName(this.props.index)}
         >
           ✅
@@ -71,11 +73,15 @@ class ShapeDataGroup extends React.Component {
     } else {
       collapseExpandText = "⤴️";
     }
-    var collapseExpandButton =
-      <button
-        className="collapse-expand-button"
-        onClick={() => this.props.toggleCollapse(this.props.index)}
-      >{collapseExpandText}</button>
+    var collapseExpandButton;
+
+    if (dataPointItems.length > 1) {
+      collapseExpandButton =
+        <button
+          className="collapse-expand-button"
+          onClick={() => this.props.toggleCollapse(this.props.index)}
+        >{collapseExpandText}</button>
+    }
 
     // Have to hide this way instead of conditionally rendering because conditionally rendering breaks the drag and drop when toggled.
     var dataPointListClass;
@@ -88,7 +94,7 @@ class ShapeDataGroup extends React.Component {
       dataPointTotalClass = "shown-data-points"
     }
     var dataPointList =
-    <li>
+    <div>
       <ul
         id={this.props.dataGroup.dataGroupId}
         className={"sighting-data-list " + dataPointListClass}
@@ -97,18 +103,19 @@ class ShapeDataGroup extends React.Component {
         {dataPointItems}
       </ul>
       <span className={dataPointTotalClass}>Data Points: {this.props.dataGroup.dataPoints.length}</span>
-    </li>
+    </div>
 
 
     return(
-      <ul
-        className="datapoint">
+      <div className="datapoint">
         {deleteButton}
-        {name}
-        <li>Total Sightings: {this.props.dataGroup.totalSightings}</li>
+        <ul>
+          {name}
+          <li>Total Sightings: {this.props.dataGroup.totalSightings}</li>
+        </ul>
         {dataPointList}
         {collapseExpandButton}
-      </ul>
+      </div>
     );
   }
 }
