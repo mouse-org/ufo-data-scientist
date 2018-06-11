@@ -4,7 +4,7 @@ const uuidv4 = require('uuid/v4');
 
 const data = require('./fullData');
 const defaultGroup = require('./helpers/defaultGroup');
-const getShapes = require('./helpers/getShapes');
+const breakApartData = require('./helpers/breakApartData');
 
 // Components:
 const Section = require('./components/Section');
@@ -25,7 +25,7 @@ class App extends React.Component {
     this.changeSection = this.changeSection.bind(this);
 
     //const ufoDataMap = data.ufoShapes.map(shape => {
-    const ufoDataMap = getShapes(data).map(shape => {
+    const ufoDataMap = breakApartData(data, "shape", "sightings").map(shape => {
     // dataGroup
       let shapeMetaData = {
         dataPointId: uuidv4()
@@ -35,7 +35,7 @@ class App extends React.Component {
       return dataGroup;
     });
 
-    console.log(JSON.stringify(ufoDataMap));
+    //console.log(JSON.stringify(ufoDataMap));
 
 
     this.state = {
