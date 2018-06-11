@@ -1,10 +1,7 @@
 {
-  "//1": "describes your app and its dependencies",
-  "//2": "https://docs.npmjs.com/files/package.json",
-  "//3": "updating this file will download and update your packages",
-  "name": "hello-express",
+  "name": "ufo-data-scientist",
   "version": "0.0.1",
-  "description": "A simple Node app built on Express, instantly up and running.",
+  "description": "A data visualization experiment",
   "main": "server.js",
   "scripts": {
     "build": "webpack",
@@ -26,7 +23,7 @@
     "node": "8.x"
   },
   "repository": {
-    "url": "https://glitch.com/edit/#!/hello-express"
+    "url": "https://github.com/mouse-org/ufo-data-scientist"
   },
   "license": "MIT",
   "keywords": [
