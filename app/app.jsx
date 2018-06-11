@@ -9,8 +9,7 @@ const getShapes = require('./helpers/getShapes');
 // Components:
 const Section = require('./components/Section');
 
-
-const sections = ["CleanData", "DataViz"]
+const sections = ["CleanData", "DataViz"];
 
 class App extends React.Component {
   constructor(props) {
@@ -26,8 +25,8 @@ class App extends React.Component {
     this.changeSection = this.changeSection.bind(this);
 
     //const ufoDataMap = data.ufoShapes.map(shape => {
-      const ufoDataMap = getShapes(data).map(shape => {
-      // dataGroup
+    const ufoDataMap = getShapes(data).map(shape => {
+    // dataGroup
       let shapeMetaData = {
         dataPointId: uuidv4()
       }
@@ -35,6 +34,9 @@ class App extends React.Component {
       dataGroup.dataPoints.push(Object.assign({}, shapeMetaData, shape));
       return dataGroup;
     });
+
+    console.log(JSON.stringify(ufoDataMap));
+
 
     this.state = {
       title: "UFO Data Scientist",
