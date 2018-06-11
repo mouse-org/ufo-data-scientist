@@ -9,7 +9,7 @@ const getShapes = require('./helpers/getShapes');
 // Components:
 const Section = require('./components/Section');
 
-const sections = ["CleanData", "DataViz"];
+const sections = ["SeeAllData", "CleanData", "DataViz"];
 
 class App extends React.Component {
   constructor(props) {
