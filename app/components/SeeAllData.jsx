@@ -4,12 +4,25 @@ function SeeAllData(props) {
 
   const breakApartData = require('../helpers/breakApartData');
 
-  const stateData = breakApartData(props.data, "state", "sightings");
-  const dateTimeData = breakApartData(props.data, "date_time", "sightings");
-  const shapeData = breakApartData(props.data, "shape", "sightings");
-  const durationData = breakApartData(props.data, "duration_minutes", "sightings");
-  const latData = breakApartData(props.data, "city_latitude", "sightings");
-  const longData = breakApartData(props.data, "city_longitude", "sightings");
+  const dateTimeRounding = (scope, dateTime) => {
+    switch (scope) {
+      case "YYYY":
+        return dateTime.substring(0, 4);
+      case "YYYY-MM":
+        return dateTime.substring(0, 7);
+      case "MM":
+        return dateTime.substring(5, 7);
+      default:
+        return dateTime;
+    }
+  }
+
+  const stateData = [] //breakApartData(props.data, "state", "sightings", false);
+  const dateTimeData = breakApartData(props.data, "date_time", "sightings", dateTimeRounding.bind(null, "MM"));
+  const shapeData = []//breakApartData(props.data, "shape", "sightings", false);
+  const durationData = []//breakApartData(props.data, "duration_minutes", "sightings", false);
+  const latData = []//breakApartData(props.data, "city_latitude", "sightings", false);
+  const longData = []//breakApartData(props.data, "city_longitude", "sightings", false);
 
   var states = stateData.map((state, index) => {
     return (

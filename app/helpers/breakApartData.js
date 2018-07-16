@@ -1,11 +1,23 @@
-function breakApartData(data, property, metric) {
+function breakApartData(data, property, metric, mutation) {
   var propertyList = [];
   for (var i in data) {
-    var p = data[i];
+    var dataPoint = data[i];
+    dataPointProperty = dataPoint[property];
+
+    //console.log("")
+    //console.log(property)
+    //console.log(mutation)
+  
+    if (mutation) {
+      //console.log("TRUE")
+      dataPointProperty = mutation(dataPointProperty);
+    } else {
+      //console.log("FALSE")
+    }
     var found = false;
     for (var j in propertyList) {
       var s = propertyList[j];
-      if (p[property] === s[property]) {
+      if (dataPointProperty === s[property]) {
         s.sightings++;
         found = true;
         break;
@@ -13,7 +25,7 @@ function breakApartData(data, property, metric) {
     }
     if (!found) {
       var o = {};
-      o[property] = p[property];
+      o[property] = dataPointProperty;
       o[metric] = 1;
       propertyList.push(o);
     }
