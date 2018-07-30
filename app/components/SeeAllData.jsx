@@ -3,19 +3,7 @@
 function SeeAllData(props) {
 
   const breakApartData = require('../helpers/breakApartData');
-
-  const dateTimeRounding = (scope, dateTime) => {
-    switch (scope) {
-      case "YYYY":
-        return dateTime.substring(0, 4);
-      case "YYYY-MM":
-        return dateTime.substring(0, 7);
-      case "MM":
-        return dateTime.substring(5, 7);
-      default:
-        return dateTime;
-    }
-  }
+  const dateTimeRounding = require('../helpers/dateTime').rounding;
 
   const stateData = [] //breakApartData(props.data, "state", "sightings", false);
   const dateTimeData = breakApartData(props.data, "date_time", "sightings", dateTimeRounding.bind(null, "MM"));
@@ -33,14 +21,18 @@ function SeeAllData(props) {
     )
   });
 
+  console.log(dateTimeData)
+  for (var i in dateTimeData) {
+    console.log(i)
+    console.log(dateTimeData[i]);
+    console.log("");
+  }
+  //const dateTimeDataSorted;
   var dateTime = dateTimeData.map((dateTime, index) => {
-    console.log(dateTime);
-    console.log(typeof dateTime);
-    console.log("* * * * * * * *")
     return (
       <li>
-        {dateTime.date_time}<br/>
-        {dateTime.sightings}<br/>
+        Time Period: {dateTime.date_time}<br/>
+        Sightings: {dateTime.sightings}<br/>
       </li>
     )
   });
