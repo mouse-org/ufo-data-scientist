@@ -26,18 +26,38 @@ function DataViz(props) {
   }
 
   var barOptions = {
-      legend: { display: false },
-      title: {
-        display: true,
-        text: 'UFO Sightings by Shape'
-      }
+    legend: { display: false },
+    title: {
+      display: true,
+      text: 'UFO Sightings by Shape'
     }
+  }
+
+  var bubbleData = {
+
+  }
+
+  var bubbleOptions = {
+
+  }
+
+  var barChart = <BarChart data={barData} options={barOptions} width="600" height="250"/>
+  var bubbleChart = <BubbleChart data={barData} options={barOptions} width="600" height="250" />
+
+  var chart = props.chartType === "bar" ? barChart : bubbleChart
 
   return (
     <div id="data-viz">
       <h1>Data Viz</h1>
-
-      <BarChart data={barData} options={barOptions} width="600" height="250"/>
+      <h2>Chart Type: {props.chartType}</h2>
+      <button
+        onClick={() => props.onChartTypeChange("bar")} 
+      >Bar</button>
+      <button
+        onClick={() => props.onChartTypeChange("bubble")}
+      >Bubble</button>
+        
+      {chart}
 
     </div>
   );

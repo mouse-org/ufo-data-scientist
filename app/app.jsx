@@ -23,6 +23,7 @@ class App extends React.Component {
     this.toggleCollapse = this.toggleCollapse.bind(this);
     this.newDataGroup = this.newDataGroup.bind(this);
     this.changeSection = this.changeSection.bind(this);
+    this.onChartTypeChange = this.onChartTypeChange.bind(this);
 
     //const ufoDataMap = data.ufoShapes.map(shape => {
     const ufoDataMap = getShapes(data).map(shape => {
@@ -58,6 +59,7 @@ class App extends React.Component {
           }
         ]
       },
+      chartType: "bar",
       /*
       pointActions: {
         CleanData: [
@@ -268,6 +270,14 @@ class App extends React.Component {
     return group;
   }
 
+  onChartTypeChange(newType) {
+    this.setState((prevState, props) => {
+      return {
+        chartType: newType
+      }
+    });
+  }
+
   render() {
 
     let setActions = [];
@@ -323,6 +333,7 @@ class App extends React.Component {
         <Section
           shapeDataGroups={this.state.data.shapeDataGroups}
           currentSection={this.state.currentSection}
+          chartType={this.state.chartType}
           groupActions={this.state.groupActions}
 
           moveDataPoint={this.moveDataPoint}
@@ -331,6 +342,7 @@ class App extends React.Component {
           removeDataGroup={this.removeDataGroup}
           toggleCollapse={this.toggleCollapse}
           newDataGroup={this.newDataGroup}
+          onChartTypeChange={this.onChartTypeChange}
         ></Section>
       </div>
     )

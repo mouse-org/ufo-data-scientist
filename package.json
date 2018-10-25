@@ -5,7 +5,7 @@
   "main": "server.js",
   "scripts": {
     "build": "webpack",
-    "start": "webpack && node server.js"
+    "start": "npm run build && node server.js"
   },
   "dependencies": {
     "chart.js": "^2.7.2",
