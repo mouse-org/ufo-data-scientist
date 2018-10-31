@@ -1,6 +1,7 @@
 const React = require('react');
 var BarChart = require("react-chartjs-2").Bar;
 var BubbleChart = require("react-chartjs-2").Bubble;
+var LineChart = require("react-chartjs-2").Line;
 
 function DataViz(props) {
 
@@ -34,17 +35,37 @@ function DataViz(props) {
   }
 
   var bubbleData = {
-
   }
 
   var bubbleOptions = {
-
   }
 
-  var barChart = <BarChart data={barData} options={barOptions} width="600" height="250"/>
-  var bubbleChart = <BubbleChart data={barData} options={barOptions} width="600" height="250" />
+  var lineData = {
+    // Each shape could be a dataset
+  }
 
-  var chart = props.chartType === "bar" ? barChart : bubbleChart
+  var lineOptions = {
+    legend: { display: false },
+    title: {
+      display: true,
+      text: 'UFO Sightings by Shape over Time'
+    }
+  }
+
+  var barChart = <BarChart data={barData} options={barOptions} width="600" height="250" />
+  var bubbleChart = <BubbleChart data={barData} options={barOptions} width="600" height="250" />
+  var lineChart = <LineChart data={lineData} options={lineOptions} width="600" height="250" />
+
+  var chart = barChart;
+  if(props.chartType != 'bar') {
+    if (props.chartType === 'bubble') {
+      chart = bubbleChart;
+    } else if (props.chartType === 'line') {
+      chart = lineChart;
+    } else {
+      chart = barChart;
+    }
+  }
 
   return (
     <div id="data-viz">
@@ -56,6 +77,9 @@ function DataViz(props) {
       <button
         onClick={() => props.onChartTypeChange("bubble")}
       >Bubble</button>
+      <button
+        onClick={() => props.onChartTypeChange("line")}
+      >Line</button>
         
       {chart}
 
