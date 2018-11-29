@@ -2,10 +2,12 @@ const React = require('react');
 var BarChart = require("react-chartjs-2").Bar;
 var BubbleChart = require("react-chartjs-2").Bubble;
 var LineChart = require("react-chartjs-2").Line;
+var distinctColors = require("distinct-colors");
+const rgbHex = require('rgb-hex');
 
 function DataViz(props) {
 
-  var c = ["#3e95cd", "#8e5ea2","#3cba9f"];
+  var c = distinctColors({count: 25}).map(x => '#' + rgbHex(x._rgb[0], x._rgb[1], x._rgb[2]));
   function backgroundColors(c) {
     return (
       props.dataGroups.map((group, index) => {
