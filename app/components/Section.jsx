@@ -36,6 +36,8 @@ function Section(props) {
     currentSection =
       <DataViz
         dataGroups={props.shapeDataGroups}
+        chartType={props.chartType}
+        onChartTypeChange={props.onChartTypeChange}
       >
       </DataViz>
   }
