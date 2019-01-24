@@ -114,3 +114,8 @@ ul.shape-data-point-list > li {
   margin: 5px;
 }
 */
+
+#see-all-data ol {
+  display: inline-block;
+  vertical-align: top;
+}

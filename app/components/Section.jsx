@@ -1,9 +1,20 @@
 const React = require('react');
+const SeeAllData = require('./SeeAllData');
 const CleanData = require('./CleanData');
 const DataViz = require('./DataViz');
 
 function Section(props) {
   var currentSection = null;
+
+  if (props.currentSection === 'SeeAllData') {
+    currentSection =
+    <SeeAllData
+      dataGroups={props.shapeDataGroups}
+      data={props.data}
+    ></SeeAllData>
+  }
+
+
   if (props.currentSection === 'CleanData') {
 
     currentSection =
