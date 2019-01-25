@@ -2,146 +2,65 @@ const React = require('react')
 //var BarChart = require("react-chartjs-2").Bar;
 var d3 = require("d3")
 
+class BarChart extends React.Component {
 
-
-function BarChart(props) {
-
-  /*
-  var barData = {
-    labels: props.dataGroups.map(group => group.dataGroupName),
-    datasets: [
-      {
-        label: "Sightings",
-        //backgroundColor: backgroundColors(c),
-        data: props.dataGroups.map(group => group.totalSightings)
-      }
-    ]
+  componentShouldUpdate() {
+    //return false
   }
 
-  var barOptions = {
-    legend: { display: false },
-    title: {
-      display: true,
-      text: 'UFO Sightings by Shape'
-    }
+  componentDidMount() {
+    this.drawChart([1,2,3,4,5,6,19,20].map((d,i) => { return {name: i, value: d}}))
   }
 
-  var barChart = <BarChart data={barData} options={barOptions} width="600" height="250" />
-  */
+  drawChart(data) {
+    var width = 960,
+    height = 500;
 
- const sample = [
-  {
-    language: 'Rust',
-    value: 78.9,
-    color: '#000000'
-  },
-  {
-    language: 'Kotlin',
-    value: 75.1,
-    color: '#00a2ee'
-  },
-  {
-    language: 'Python',
-    value: 68.0,
-    color: '#fbcb39'
-  },
-  {
-    language: 'TypeScript',
-    value: 67.0,
-    color: '#007bc8'
-  },
-  {
-    language: 'Go',
-    value: 65.6,
-    color: '#65cedb'
-  },
-  {
-    language: 'Swift',
-    value: 65.1,
-    color: '#ff6e52'
-  },
-  {
-    language: 'JavaScript',
-    value: 61.9,
-    color: '#f9de3f'
-  },
-  {
-    language: 'C#',
-    value: 60.4,
-    color: '#5d2f8e'
-  },
-  {
-    language: 'F#',
-    value: 59.6,
-    color: '#008fc9'
-  },
-  {
-    language: 'Clojure',
-    value: 59.6,
-    color: '#507dca'
+    var margin = ({top: 20, right: 0, bottom: 30, left: 40})
+
+    var x = d3.scaleBand()
+      .domain(data.map(d => d.name))
+      .range([margin.left, width - margin.right])
+      .padding(0.1)
+
+    var y = d3.scaleLinear()
+      .domain([0, d3.max(data, d => d.value)]).nice()
+      .range([height - margin.bottom, margin.top])
+
+    var chart = d3.select("#viz")
+        .attr("width", width)
+        .attr("height", height);
+
+    var bar = chart.selectAll("g")
+        .data(data)
+      .enter().append("g")
+        .attr("transform", function(d) { return "translate(" + x(d.name) + ",0)"; });
+  
+    bar.append("rect")
+        .attr("y", function(d) { return y(d.value); })
+        .attr("height", function(d) { return height - y(d.value); })
+        .attr("width", x.bandwidth());
+  
+    bar.append("text")
+        .attr("x", x.bandwidth() / 2)
+        .attr("y", function(d) { return y(d.value) + 3; })
+        .attr("dy", ".75em")
+        .text(function(d) { return d.value; });
+
+
   }
-];
 
-const svg = d3.select('svg');
-const svgContainer = d3.select('#container');
+  render() {
+    return (
+      <div id="container">
+        <h3>Bar Chart:</h3>
 
-const margin = 80;
-const width = 1000 - 2 * margin;
-const height = 600 - 2 * margin;
+        <div id="viz"></div>
 
-const chart = svg.append('g')
-  .attr('transform', `translate(${margin}, ${margin})`);
-
-const xScale = d3.scaleBand()
-  .range([0, width])
-  .domain(sample.map((s) => s.language))
-  .padding(0.4)
-
-const yScale = d3.scaleLinear()
-  .range([height, 0])
-  .domain([0, 100]);
-
-// vertical grid lines
-// const makeXLines = () => d3.axisBottom()
-//   .scale(xScale)
-
-const makeYLines = () => d3.axisLeft()
-  .scale(yScale)
-
-chart.append('g')
-  .attr('transform', `translate(0, ${height})`)
-  .call(d3.axisBottom(xScale));
-
-chart.append('g')
-  .call(d3.axisLeft(yScale));
-
-  console.log("BELOW")
-// vertical grid lines
-// chart.append('g')
-//   .attr('class', 'grid')
-//   .attr('transform', `translate(0, ${height})`)
-//   .call(makeXLines()
-//     .tickSize(-height, 0, 0)
-//     .tickFormat('')
-//   )
-
-chart.append('g')
-  .attr('class', 'grid')
-  .call(makeYLines()
-    .tickSize(-width, 0, 0)
-    .tickFormat('')
-  )
-
-  return (
-    <div>
-      <h2>Bar Chart</h2>
-      <div id='layout'>
-        <div id="container">
-          <svg />
-        </div>
       </div>
-    </div>
-  )
+    )
+  }
+
 }
 
-module.exports = BarChart
+module.exports = BarChart;
