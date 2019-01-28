@@ -42,7 +42,7 @@ class App extends React.Component {
       <div id="app">
         <h1>{this.state.title}</h1>
         <BarChart
-          data={data}
+          data={[24, 26, 38, 41, 56, 69]}
           x={this.extractSet(data, 'shape')}
           y={this.extractSet(data, 'duration_minutes')}
         />
