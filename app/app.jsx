@@ -2,7 +2,8 @@ const React = require('react');
 const ReactDOM = require('react-dom');
 const uuidv4 = require('uuid/v4');
 
-const data = require('./fullData');
+const data = require('./newData');
+//const data = require('./fullData');
 //const data = require('./data');
 //const defaultGroup = require('./helpers/defaultGroup');
 //const breakApartData = require('./helpers/breakApartData');
@@ -40,39 +41,73 @@ class App extends React.Component {
   }
 
   extractProperty(data, label, transformation = (i => i)) {
-    console.log("Before Extract Property:", data)
+    console.log("LENGTH:", data.length)
+    //console.log("Before Extract Property:", data)
     const extractedData = data.map(d => d[label])
-    console.log("Extracted:", extractedData)
-    return extractedData;
-    //return extractedData.map(transformation)
+    //console.log("Extracted:", extractedData)
+    //return extractedData;
+    return extractedData.map(transformation)
   }
 
   // Takes data with 1 property (created using extractProperty())
   consolidateData(extData) {
     var extDataSet = [...new Set(extData)];
-    console.log("SET:", extDataSet)
+    //console.log("SET:", extDataSet)
     var consolidatedDataObj = {};
     extDataSet.map(d => consolidatedDataObj[d] = 0)
-    console.log("ZEROS:", consolidatedDataObj)
+    //console.log("ZEROS:", consolidatedDataObj)
     extData.map(d => consolidatedDataObj[d] += 1)
-    console.log("VALUES:", consolidatedDataObj)
+    //console.log("VALUES:", consolidatedDataObj)
     var consolidatedData = [];
     for (var i in consolidatedDataObj) {
       var d = consolidatedDataObj[i];
       var name = isNaN(parseFloat(i)) ? i : parseFloat(i);
       consolidatedData.push({name: name, value: parseInt(d), oldName: i})
     }
-    consolidatedData.sort(compareObjects.bind(this, 'name'));
     return consolidatedData;
+  }
+
+  // 🚸 'name is hard coded
+  groupData(data, spacing) {
+    var newData = [];
+    const sortedData = data.sort(compareObjects.bind(this, 'name'))
+    console.log("SORTED:", sortedData)
+    var min = Math.floor(sortedData[0].name);
+    var max = Math.ceil(sortedData[sortedData.length - 2].name);
+    console.log("MINMAX:", min, max)
+    for (var i = min; i <= max + spacing; i += spacing) {
+      newData.push({name: i, value: 0})
+    }
+    console.log("NEWDATA:", newData)
+    var j = 0;
+    for (var i = 0; i < sortedData.length; i++) {
+      if (sortedData[i].name > newData[j].name) {
+        j++;
+        i--;
+        continue;
+      }
+      //🚸 Unknowns are being included:
+      newData[j].value += sortedData[i].value;
+      console.log('**', sortedData[i].name, sortedData[i].value)
+    }
+    return newData;
+    // Min/Max
+    // Spacing grouping
+    // Exclude
   }
 
   //splitIntoCategories(set)
 
   render() {
-
-    const chartData = this.consolidateData(
-      this.extractProperty(this.state.data, 'duration_minutes')
-    )
+    
+    // 🚸 'name is hard coded
+    const chartData = this.groupData(
+      this.consolidateData(
+        this.extractProperty(this.state.data, 3)
+        //d => { if (d > 1){ return d }}
+      ).sort(compareObjects.bind(this, 'name')),
+      1000000
+    );
 
     return (
       <div id="app">
