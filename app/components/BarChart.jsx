@@ -17,7 +17,7 @@ class BarChart extends React.Component {
   }
 
   componentDidMount() {
-    this.drawChart(this.props.data.map((d,i) => { return {name: i, value: d}}))
+    this.drawChart(this.props.data)
   }
 
   drawChart(data) {
@@ -30,7 +30,7 @@ class BarChart extends React.Component {
       var sel = d3.select("#viz")
       .selectAll("div")
       .data(data)
-      .style("width", d => d.value * 10 + 'px')
+      .style("width", d => d.value * 1 + 'px')
       .text(d => d.name + ': ' + d.value)
 
       sel.enter()
@@ -45,9 +45,9 @@ class BarChart extends React.Component {
   }
 
   render() {
-
-    const showData = this.props.data.map((d,i) => 
-      <li>{i}: {d}</li>
+    console.log("DATA:", this.props.data)
+    const showData = this.props.data.map(d => 
+      <li>{d.name}: {d.value}</li>
     )
 
     return (
