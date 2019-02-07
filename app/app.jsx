@@ -1,13 +1,15 @@
-const React = require('react');
-const ReactDOM = require('react-dom');
-const uuidv4 = require('uuid/v4');
+const React = require('react')
+const ReactDOM = require('react-dom')
+const uuidv4 = require('uuid/v4')
 
-const data = require('./newData');
+const data = require('./newData')
+const dataStructures = require('./helpers/dataStructure')
+console.log("DS:", dataStructures)
 //const data = require('./fullData');
 //const data = require('./data');
 //const defaultGroup = require('./helpers/defaultGroup');
 //const breakApartData = require('./helpers/breakApartData');
-const compareObjects = require('./helpers/compareObjects');
+const compareObjects = require('./helpers/compareObjects')
 
 // Components:
 //const Section = require('./components/Section');
@@ -20,9 +22,13 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.handleChange = this.handleChange.bind(this)
+    this.groupData = this.groupData.bind(this)
+    this.onDataPropertyChanged = this.onDataPropertyChanged.bind(this)
     this.state = {
       title: "UFO Data Scientist",
-      data: data
+      data: data,
+      dataPropertyIndex: 3,
+      max: 1
       //data: [25, 35, 50, 66, 87]
     }
   }
@@ -67,30 +73,39 @@ class App extends React.Component {
     return consolidatedData;
   }
 
+  isNumber() {
+    return dataStructures[this.state.dataPropertyIndex].type === 'number'
+  }
+
   // 🚸 'name is hard coded
   groupData(data, spacing) {
     var newData = [];
     const sortedData = data.sort(compareObjects.bind(this, 'name'))
     console.log("SORTED:", sortedData)
-    var min = Math.floor(sortedData[0].name);
-    var max = Math.ceil(sortedData[sortedData.length - 2].name);
-    console.log("MINMAX:", min, max)
-    for (var i = min; i <= max + spacing; i += spacing) {
-      newData.push({name: i, value: 0})
-    }
-    console.log("NEWDATA:", newData)
-    var j = 0;
-    for (var i = 0; i < sortedData.length; i++) {
-      if (sortedData[i].name > newData[j].name) {
-        j++;
-        i--;
-        continue;
+    if (this.isNumber()){
+      console.log("# #*# *# *# NUMBER")
+      var min = Math.floor(sortedData[0].name);
+      var max = Math.ceil(sortedData[sortedData.length - 2].name);
+      for (var i = min; i <= max + spacing; i += spacing) {
+        newData.push({name: i, value: 0})
       }
-      //🚸 Unknowns are being included:
-      newData[j].value += sortedData[i].value;
-      console.log('**', sortedData[i].name, sortedData[i].value)
+      console.log("NEWDATA:", newData)
+      var j = 0;
+      for (var i = 0; i < sortedData.length; i++) {
+        if (sortedData[i].name > newData[j].name) {
+          j++
+          i--
+          continue
+        }
+        //🚸 Unknowns are being included:
+        newData[j].value += sortedData[i].value
+        //console.log('**', sortedData[i].name, sortedData[i].value)
+      }
+      return newData
+    } else {
+      console.log("* * * NOT NUMBER")
+      return sortedData
     }
-    return newData;
     // Min/Max
     // Spacing grouping
     // Exclude
@@ -98,14 +113,34 @@ class App extends React.Component {
 
   //splitIntoCategories(set)
 
+  onDataPropertyChanged(e) {
+    this.setState({
+      dataPropertyIndex: e.currentTarget.value
+    })
+  }
+
   render() {
+    console.log("DSDS:", dataStructures)
+    const selectDataProperty = dataStructures.map((ds, index) => 
+      <li>
+        <span><input
+          type="radio"
+          name="data"
+          value={index}
+          checked={this.state.dataPropertyIndex === index}
+          onChange={this.onDataPropertyChanged}
+        /> {ds.name}</span><br/>
+      </li>
+    )
+
     
     // 🚸 'name is hard coded
     const chartData = this.groupData(
       this.consolidateData(
-        this.extractProperty(this.state.data, 3)
+        this.extractProperty(this.state.data, this.state.dataPropertyIndex)
         //d => { if (d > 1){ return d }}
       ).sort(compareObjects.bind(this, 'name')),
+      //Math.pow(10, String(this.state.max).length - 2)
       1000000
     );
 
@@ -128,10 +163,15 @@ class App extends React.Component {
         
         </div>
         */}
+        <ul>
+          {selectDataProperty}
+        </ul>
+
         <h3>Data:</h3>
 
         <BarChart
           data={chartData}
+          numbe={this.isNumber}
           x={this.extractProperty(data, 'shape')}
           y={this.extractProperty(data, 'duration_minutes')}
         />

@@ -3,13 +3,29 @@ const React = require('react')
 var d3 = require("d3")
 
 class BarChart extends React.Component {
+  constructor(props) {
+    super(props);
+    this.drawChart = this.drawChart.bind(this)
+    this.viz = this.viz.bind(this)
+    this.state = {
+      vizMultiplier: 5
+    }
+  }
 
   componentShouldUpdate() {
     //return false
   }
 
   componentDidUpdate(prevProps) {
-    this.drawChart(this.props.data.map((d,i) => { return {name: i, value: d}}))
+    this.viz()
+  }
+
+  viz() {
+    if (this.props.number) {
+      this.drawChart(this.props.data.map((d,i) => { return {name: i, value: d}}), this.state.vizMultiplier)
+    } else {
+      this.drawChart(this.props.data, this.state.vizMultiplier)
+    }
   }
 
   componentWillReceiveProps() {
@@ -17,11 +33,12 @@ class BarChart extends React.Component {
   }
 
   componentDidMount() {
-    this.drawChart(this.props.data)
+    this.viz()
   }
 
-  drawChart(data) {
-
+  drawChart(data, vizMultiplier) {
+    console.log("DRAW CHARAT DATA:", data)
+    console.log("VM:", vizMultiplier)
     var width = 960,
     height = 500;
 
@@ -30,12 +47,12 @@ class BarChart extends React.Component {
       var sel = d3.select("#viz")
       .selectAll("div")
       .data(data)
-      .style("width", d => d.value * 1 + 'px')
+      .style("width", d => d.value * vizMultiplier + 'px')
       .text(d => d.name + ': ' + d.value)
 
       sel.enter()
       .append("div")
-      .style("width", d => d.value * 10 + 'px')
+      .style("width", d => d.value * vizMultiplier + 'px') //this.state.vizMultiplier
       .text(d => d.name + ': ' + d.value)
 
       sel.exit().remove()
