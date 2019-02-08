@@ -64,13 +64,18 @@ class App extends React.Component {
     var consolidatedDataObj = {};
     // Add property with value 0 for every unique value in extDataSet
     extDataSet.map(d => consolidatedDataObj[d] = 0)
-    
+
+    //console.log('EDC:', extDataSet)
+    //console.log("BEFOREBF:", consolidatedDataObj)
     // For every data point increment value of corresponding property
     extData.map(d => consolidatedDataObj[d] += 1)
     
-    // Remove unknown/blank values here:
-    const exclude = dataStructures[labelIndex].exclude;
-    console.log("** EXCLUDE:", exclude)
+    //console.log("BEFORE:", consolidatedDataObj)
+    // Separate and remove unknown/blank values here:
+    const exclude = dataStructures[labelIndex].exclude
+    const excludedDataPoints = consolidatedDataObj[exclude]
+    delete consolidatedDataObj[exclude]
+    //console.log("AFTER:", consolidatedDataObj)
 
     var consolidatedData = [];
     for (var i in consolidatedDataObj) {
@@ -78,28 +83,34 @@ class App extends React.Component {
       var name = isNaN(parseFloat(i)) ? i : parseFloat(i);
       consolidatedData.push({name: name, value: parseInt(d), oldName: i})
     }
-    return consolidatedData;
+    return {
+      consolidatedData: consolidatedData,
+      excludedDataPoints: excludedDataPoints
+    }
   }
 
-  isNumber() {
-    return dataStructures[this.state.dataPropertyIndex].type === 'number'
+  dataType() {
+    return dataStructures[this.state.dataPropertyIndex].type
   }
 
   // 🚸 'name is hard coded
   groupData(data, spacing) {
     var newData = [];
     const sortedData = data.sort(compareObjects.bind(this, 'name'))
-    console.log("SORTED:", sortedData)
-    if (this.isNumber()){
-      console.log("# #*# *# *# NUMBER")
+    //console.log("SORTED:", sortedData)
+    if (this.dataType() === 'number'){
+      // Number data points:
+      // Consolidate into vectors and values
       var min = Math.floor(sortedData[0].name);
-      var max = Math.ceil(sortedData[sortedData.length - 2].name);
+      // Change to last item because 'unknowns' and '' should be removed.
+      var max = Math.ceil(sortedData[sortedData.length - 1].name);
       for (var i = min; i <= max + spacing; i += spacing) {
         newData.push({name: i, value: 0})
       }
-      console.log("NEWDATA:", newData)
+      //console.log("NEWDATA:", newData)
       var j = 0;
       for (var i = 0; i < sortedData.length; i++) {
+        //console.log('sortedData[i].name', sortedData[i].name, 'newData[j].name', newData[j].name)
         if (sortedData[i].name > newData[j].name) {
           j++
           i--
@@ -110,8 +121,10 @@ class App extends React.Component {
         //console.log('**', sortedData[i].name, sortedData[i].value)
       }
       return newData
+    } else if (this.dataType() === 'datetime') {
+      return sortedData
     } else {
-      console.log("* * * NOT NUMBER")
+      // String data points:
       return sortedData
     }
     // Min/Max
@@ -128,7 +141,6 @@ class App extends React.Component {
   }
 
   render() {
-    console.log("DSDS:", dataStructures)
     const selectDataProperty = dataStructures.map((ds, index) => 
       <li>
         <span><input
@@ -143,14 +155,24 @@ class App extends React.Component {
 
     
     // 🚸 'name is hard coded
-    const chartData = this.groupData(
-      this.consolidateData(
-        this.extractProperty(
-          this.state.data, this.state.dataPropertyIndex
-        ), this.state.dataPropertyIndex
-      ).sort(compareObjects.bind(this, 'name')),
+    var consolidatedAndExcludedData =
+    this.consolidateData(
+      this.extractProperty(
+        this.state.data,
+        this.state.dataPropertyIndex
+      ),
+      this.state.dataPropertyIndex
+    )
+    var consolidatedData = consolidatedAndExcludedData.consolidatedData.sort(compareObjects.bind(this, 'name'))
+    const excludedData = consolidatedAndExcludedData.excludedDataPoints
+    
+    var chartData = 
+    this.groupData(
+      consolidatedData,
       1000000
     );
+    // 🚸 'unknown is hard coded
+    chartData.push({name: 'Unknown', value: excludedData})
 
     return (
       <div id="app">

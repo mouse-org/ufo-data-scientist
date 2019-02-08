@@ -8,7 +8,7 @@ class BarChart extends React.Component {
     this.drawChart = this.drawChart.bind(this)
     this.viz = this.viz.bind(this)
     this.state = {
-      vizMultiplier: 5
+      vizMultiplier: .5
     }
   }
 
@@ -37,8 +37,8 @@ class BarChart extends React.Component {
   }
 
   drawChart(data, vizMultiplier) {
-    console.log("DRAW CHARAT DATA:", data)
-    console.log("VM:", vizMultiplier)
+    //console.log("DRAW CHARAT DATA:", data)
+    //console.log("VM:", vizMultiplier)
     var width = 960,
     height = 500;
 
@@ -62,7 +62,7 @@ class BarChart extends React.Component {
   }
 
   render() {
-    console.log("DATA:", this.props.data)
+    //console.log("DATA:", this.props.data)
     const showData = this.props.data.map(d => 
       <li>{d.name}: {d.value}</li>
     )
