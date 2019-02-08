@@ -46,24 +46,32 @@ class App extends React.Component {
   componentWillUnmount() {
   }
 
-  extractProperty(data, label, transformation = (i => i)) {
+  extractProperty(data, labelIndex, transformation = (i => i)) {
     console.log("LENGTH:", data.length)
     //console.log("Before Extract Property:", data)
-    const extractedData = data.map(d => d[label])
+    const extractedData = data.map(d => d[labelIndex])
     //console.log("Extracted:", extractedData)
     //return extractedData;
     return extractedData.map(transformation)
   }
 
   // Takes data with 1 property (created using extractProperty())
-  consolidateData(extData) {
+  consolidateData(extData, labelIndex) {
+    // Store unique values in extDataSet:
     var extDataSet = [...new Set(extData)];
-    //console.log("SET:", extDataSet)
+
+    // Create empty object for value vectors and labels
     var consolidatedDataObj = {};
+    // Add property with value 0 for every unique value in extDataSet
     extDataSet.map(d => consolidatedDataObj[d] = 0)
-    //console.log("ZEROS:", consolidatedDataObj)
+    
+    // For every data point increment value of corresponding property
     extData.map(d => consolidatedDataObj[d] += 1)
-    //console.log("VALUES:", consolidatedDataObj)
+    
+    // Remove unknown/blank values here:
+    const exclude = dataStructures[labelIndex].exclude;
+    console.log("** EXCLUDE:", exclude)
+
     var consolidatedData = [];
     for (var i in consolidatedDataObj) {
       var d = consolidatedDataObj[i];
@@ -127,9 +135,9 @@ class App extends React.Component {
           type="radio"
           name="data"
           value={index}
-          checked={this.state.dataPropertyIndex === index}
+          checked={parseInt(this.state.dataPropertyIndex) === index}
           onChange={this.onDataPropertyChanged}
-        /> {ds.name}</span><br/>
+          /> {ds.name}</span><br/>
       </li>
     )
 
@@ -137,10 +145,10 @@ class App extends React.Component {
     // 🚸 'name is hard coded
     const chartData = this.groupData(
       this.consolidateData(
-        this.extractProperty(this.state.data, this.state.dataPropertyIndex)
-        //d => { if (d > 1){ return d }}
+        this.extractProperty(
+          this.state.data, this.state.dataPropertyIndex
+        ), this.state.dataPropertyIndex
       ).sort(compareObjects.bind(this, 'name')),
-      //Math.pow(10, String(this.state.max).length - 2)
       1000000
     );
 

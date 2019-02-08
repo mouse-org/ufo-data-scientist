@@ -6,12 +6,13 @@ module.exports = [
     },
     {
         name: "date_time",
-        type: "datetime"
+        type: "datetime",
+        exclude: "" // None in data
     },
     {
         name: "shape",
         type: "string",
-        exclude: "unknown" // SIC
+        exclude: "unknown" // SIC (lowercase)
     },
     {
         name: "duration_minutes",
@@ -20,11 +21,13 @@ module.exports = [
     },
     {
         name: "city_latitude",
-        type: "number"
+        type: "number",
+        exclude: ""
     },
     {
         name: "city_longitude",
-        type: "number"
+        type: "number",
+        exclude: ""
     }
 
 ]
