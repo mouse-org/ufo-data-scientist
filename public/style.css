@@ -24,6 +24,11 @@ ul, li {
 
 .slider {
   display: block;
+  width: 100%;
+}
+
+#min-max-sliders {
+  width: 100%;
 }
 
 /* D3 */

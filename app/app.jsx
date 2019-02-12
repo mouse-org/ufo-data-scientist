@@ -28,7 +28,8 @@ class App extends React.Component {
       title: "UFO Data Scientist",
       data: data,
       dataPropertyIndex: 3,
-      max: 1
+      min: null,
+      max: null
       //data: [25, 35, 50, 66, 87]
     }
   }
@@ -46,19 +47,16 @@ class App extends React.Component {
   componentWillUnmount() {
   }
 
+  /* Extracts a single data set from the full data
+  also applies an optional transformationon to the data. */
   extractProperty(data, labelIndex, transformation = (i => i)) {
-    console.log("LENGTH:", data.length)
-    //console.log("Before Extract Property:", data)
     const extractedData = data.map(d => d[labelIndex])
-    //console.log("Extracted:", extractedData)
-    //return extractedData;
     return extractedData.map(transformation)
   }
 
   // Takes data with 1 property (created using extractProperty())
-  consolidateData(extData, labelIndex) {
-    // Store unique values in extDataSet:
-    var extDataSet = [...new Set(extData)];
+  consolidateData(extData, labelIndex, extDataSet) {
+
 
     // Create empty object for value vectors and labels
     var consolidatedDataObj = {};
@@ -93,10 +91,14 @@ class App extends React.Component {
     return dataStructures[this.state.dataPropertyIndex].type
   }
 
+  getMinMax(sortedData) {
+
+  }
+
   // 🚸 'name is hard coded
   groupData(data, spacing) {
     var newData = [];
-    const sortedData = data.sort(compareObjects.bind(this, 'name'))
+    const sortedData = data.sort(compareObjects.bind(this, 'name', dataStructures[this.state.dataPropertyIndex].exclude))
     //console.log("SORTED:", sortedData)
     if (this.dataType() === 'number'){
       // Number data points:
@@ -104,6 +106,14 @@ class App extends React.Component {
       var min = Math.floor(sortedData[0].name);
       // Change to last item because 'unknowns' and '' should be removed.
       var max = Math.ceil(sortedData[sortedData.length - 1].name);
+      console.log("MAX:", sortedData[sortedData.length - 1], Math.ceil(sortedData[sortedData.length - 1].name))
+      console.log("min:", sortedData[0], Math.floor(sortedData[0].name))
+      /*
+      this.setState({
+        min: min,
+        max: max
+      })
+      */
       for (var i = min; i <= max + spacing; i += spacing) {
         newData.push({name: i, value: 0})
       }
@@ -153,17 +163,30 @@ class App extends React.Component {
       </li>
     )
 
+    // Get the data for the chosen property
+    const propertyData = this.extractProperty(
+      this.state.data,
+      this.state.dataPropertyIndex
+    )
+
+    // Unique values from propertyData
+    const excludedValue = dataStructures[this.state.dataPropertyIndex].exclude
+    var propertySet = [...new Set(propertyData)].sort(compareObjects.bind(this, null, excludedValue))
+
+    // Remove and store excluded value data points:
+    var comparableSet = propertySet;
+    if (propertySet[0] === excludedValue) {
+      comparableSet = propertySet.slice(1, propertySet.length)
+    }
     
     // 🚸 'name is hard coded
     var consolidatedAndExcludedData =
     this.consolidateData(
-      this.extractProperty(
-        this.state.data,
-        this.state.dataPropertyIndex
-      ),
-      this.state.dataPropertyIndex
+      propertyData,
+      this.state.dataPropertyIndex,
+      propertySet
     )
-    var consolidatedData = consolidatedAndExcludedData.consolidatedData.sort(compareObjects.bind(this, 'name'))
+    var consolidatedData = consolidatedAndExcludedData.consolidatedData.sort(compareObjects.bind(this, 'name', dataStructures[this.state.dataPropertyIndex].exclude))
     const excludedData = consolidatedAndExcludedData.excludedDataPoints
     
     var chartData = 
@@ -177,6 +200,8 @@ class App extends React.Component {
     return (
       <div id="app">
         <h1>{this.state.title}</h1>
+        <p>Min: {this.state.min}</p>
+        <p>Max: {this.state.max}</p>
         
         {/*
         <div id="sliders">
@@ -193,6 +218,16 @@ class App extends React.Component {
         
         </div>
         */}
+        <div id="min-max-sliders">
+          <input
+            type="range"
+            min="1"
+            max="100"
+            value="50"
+            class="slider"
+            id="myRange"
+          />
+        </div>
         <ul>
           {selectDataProperty}
         </ul>
