@@ -55,36 +55,22 @@ class App extends React.Component {
   }
 
   // Takes data with 1 property (created using extractProperty())
-  consolidateData(extData, labelIndex, extDataSet) {
-
-
+  vectorsFromSetAndValues(values, valuesSet, excludedValue) {
     // Create empty object for value vectors and labels
-    var consolidatedDataObj = {};
-    // Add property with value 0 for every unique value in extDataSet
-    extDataSet.map(d => consolidatedDataObj[d] = 0)
-
-    //console.log('EDC:', extDataSet)
-    //console.log("BEFOREBF:", consolidatedDataObj)
-    // For every data point increment value of corresponding property
-    extData.map(d => consolidatedDataObj[d] += 1)
-    
-    //console.log("BEFORE:", consolidatedDataObj)
-    // Separate and remove unknown/blank values here:
-    const exclude = dataStructures[labelIndex].exclude
-    const excludedDataPoints = consolidatedDataObj[exclude]
-    delete consolidatedDataObj[exclude]
-    //console.log("AFTER:", consolidatedDataObj)
-
-    var consolidatedData = [];
-    for (var i in consolidatedDataObj) {
-      var d = consolidatedDataObj[i];
-      var name = isNaN(parseFloat(i)) ? i : parseFloat(i);
-      consolidatedData.push({name: name, value: parseInt(d), oldName: i})
+    var vectorObj = {}
+    // Add property with value 0 for every unique value
+    valuesSet.map(d => vectorObj[d] = 0)
+    // For every data point increment value of corresponding
+    // property in vector object
+    values.map(d => vectorObj[d] += 1)
+    // Transofrm vectorObj to an array
+    var vectors = []
+    for (var d in vectorObj) {
+      var name = isNaN(parseFloat(d)) ? d : parseFloat(d)
+      vectors.push({name: name, value: vectorObj[d]})
     }
-    return {
-      consolidatedData: consolidatedData,
-      excludedDataPoints: excludedDataPoints
-    }
+
+    return vectors.sort(compareObjects.bind(this, 'name', excludedValue))
   }
 
   dataType() {
@@ -96,10 +82,8 @@ class App extends React.Component {
   }
 
   // 🚸 'name is hard coded
-  groupData(data, spacing) {
+  groupData(sortedData, spacing) {
     var newData = [];
-    const sortedData = data.sort(compareObjects.bind(this, 'name', dataStructures[this.state.dataPropertyIndex].exclude))
-    //console.log("SORTED:", sortedData)
     if (this.dataType() === 'number'){
       // Number data points:
       // Consolidate into vectors and values
@@ -171,31 +155,31 @@ class App extends React.Component {
 
     // Unique values from propertyData
     const excludedValue = dataStructures[this.state.dataPropertyIndex].exclude
-    var propertySet = [...new Set(propertyData)].sort(compareObjects.bind(this, null, excludedValue))
+    var propertySet = [...new Set(propertyData)]
 
-    // Remove and store excluded value data points:
-    var comparableSet = propertySet;
-    if (propertySet[0] === excludedValue) {
-      comparableSet = propertySet.slice(1, propertySet.length)
-    }
-    
-    // 🚸 'name is hard coded
-    var consolidatedAndExcludedData =
-    this.consolidateData(
-      propertyData,
-      this.state.dataPropertyIndex,
-      propertySet
+    // Turn array of values into vectors with values and frequency
+    const vectors =
+    this.vectorsFromSetAndValues(
+      propertyData, propertySet, excludedValue
     )
-    var consolidatedData = consolidatedAndExcludedData.consolidatedData.sort(compareObjects.bind(this, 'name', dataStructures[this.state.dataPropertyIndex].exclude))
-    const excludedData = consolidatedAndExcludedData.excludedDataPoints
-    
+
+    // If excludedValue is included in vectors then remove it:
+    var comparableVectors = vectors
+    var excluded = null
+    if (vectors[0].name === excludedValue) {
+      comparableVectors = vectors.slice(1, vectors.length)
+      excluded = vectors.slice(0, 1)[0].value
+    } 
+
     var chartData = 
     this.groupData(
-      consolidatedData,
+      comparableVectors,
       1000000
     );
-    // 🚸 'unknown is hard coded
-    chartData.push({name: 'Unknown', value: excludedData})
+
+    // Need to extract value above and add in 'Unknown'
+    // here because of differente excluded values in data
+    chartData.push({name: 'Unknown', value: excluded})
 
     return (
       <div id="app">
