@@ -12,8 +12,8 @@ class BarChart extends React.Component {
     }
   }
 
-  componentShouldUpdate() {
-    //return false
+  shouldComponentUpdate() {
+    return true
   }
 
   componentDidUpdate(prevProps) {
@@ -64,7 +64,7 @@ class BarChart extends React.Component {
   render() {
     //console.log("DATA:", this.props.data)
     const showData = this.props.data.map(d => 
-      <li>{d.name}: {d.value}</li>
+      <li key={d.name}>{d.name}: {d.value}</li>
     )
 
     return (
