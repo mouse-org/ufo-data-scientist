@@ -16,6 +16,8 @@ const compareObjects = require('./helpers/compareObjects')
 
 //const sections = ["SeeAllData", "CleanData", "DataViz"];
 
+const maxNumberZoom = 50;
+
 const BarChart = require('./components/BarChart')
 
 class App extends React.Component {
@@ -25,6 +27,7 @@ class App extends React.Component {
     this.groupData = this.groupData.bind(this)
     this.onDataPropertyChanged = this.onDataPropertyChanged.bind(this)
     this.onMinMaxRangeChanged = this.onMinMaxRangeChanged.bind(this)
+    this.onNumberZoomChanged = this.onNumberZoomChanged.bind(this)
     this.state = {
       title: "UFO Data Scientist",
       data: data,
@@ -33,6 +36,8 @@ class App extends React.Component {
       max: 50,
       rangeMin: 0,
       rangeMax: 50,
+      numberZoom: data.length > 10 ? 10 : data.length > maxNumberZoom ? maxNumberZoom : data.length,
+      maxNumberZoom: maxNumberZoom,
       chartData: []
       //data: [25, 35, 50, 66, 87]
     }
@@ -68,13 +73,13 @@ class App extends React.Component {
     // For every data point increment value of corresponding
     // property in vector object
     values.map(d => vectorObj[d] += 1)
+
     // Transofrm vectorObj to an array
     var vectors = []
     for (var d in vectorObj) {
       var name = isNaN(parseFloat(d)) ? d : parseFloat(d)
       vectors.push({name: name, value: vectorObj[d]})
     }
-
     return vectors.sort(compareObjects.bind(this, 'name', excludedValue))
   }
 
@@ -87,6 +92,7 @@ class App extends React.Component {
   }
 
   getChartData() {
+    
     // Get the data for the chosen property
     const propertyData = this.extractProperty(
       this.state.data,
@@ -115,7 +121,7 @@ class App extends React.Component {
 
     // Group data
     var chartData = this.groupData(
-      comparableVectors, 10
+      comparableVectors, this.state.numberZoom
     );
 
     // Need to extract value above and add in 'Unknown'
@@ -161,17 +167,22 @@ class App extends React.Component {
   }
 
   onDataPropertyChanged(e) {
-    console.log(e.currentTarget.value)
     this.setState({
       dataPropertyIndex: e.currentTarget.value
-    })
-    this.getChartData()
+    }, this.getChartData)
   }
 
   onMinMaxRangeChanged(e) {
     this.setState({
       rangeMax: e.target.value
     })
+  }
+  onNumberZoomChanged(e) {
+    var zoom = e.target.value;
+    zoom = zoom > maxNumberZoom ? maxNumberZoom : zoom;
+    this.setState({
+      numberZoom: zoom
+    }, this.getChartData)
   }
 
   render() {
@@ -194,6 +205,7 @@ class App extends React.Component {
         <h1>{this.state.title}</h1>
         <p>Min: {this.state.rangeMin}</p>
         <p>Max: {this.state.rangeMax}</p>
+        <p>Number Zoom: {this.state.numberZoom}</p>
         
         {/*
         <div id="sliders">
@@ -210,6 +222,7 @@ class App extends React.Component {
         
         </div>
         */}
+        <label>Min Max:</label>
         <div id="min-max-sliders">
           <input
             type="range"
@@ -218,7 +231,19 @@ class App extends React.Component {
             value={this.state.rangeMax}
             onChange={this.onMinMaxRangeChanged}
             className="slider"
-            id="myRange"
+            id="min-max"
+          />
+        </div>
+        <label>Number Zoom:</label>
+        <div id="number-zoom-slider">
+          <input
+            type="range"
+            min="2"
+            max={this.state.data.length > maxNumberZoom ? maxNumberZoom : this.state.data.length}
+            value={this.state.numberZoom}
+            onChange={this.onNumberZoomChanged}
+            className="slider"
+            id="number-zoom"
           />
         </div>
         <ul>
