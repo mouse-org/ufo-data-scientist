@@ -25,8 +25,10 @@ class App extends React.Component {
     super(props);
     this.handleChange = this.handleChange.bind(this)
     this.groupData = this.groupData.bind(this)
+    this.extractProperty = this.extractProperty.bind(this)
     this.onDataPropertyChanged = this.onDataPropertyChanged.bind(this)
-    this.onMinMaxRangeChanged = this.onMinMaxRangeChanged.bind(this)
+    this.onRangeMaxChanged = this.onRangeMaxChanged.bind(this)
+    this.onRangeMinChanged = this.onRangeMinChanged.bind(this)
     this.onNumberZoomChanged = this.onNumberZoomChanged.bind(this)
     this.state = {
       title: "UFO Data Scientist",
@@ -57,38 +59,10 @@ class App extends React.Component {
   componentWillUnmount() {
   }
 
-  /* Extracts a single data set from the full data
-  also applies an optional transformationon to the data. */
-  extractProperty(data, labelIndex, transformation = (i => i)) {
-    const extractedData = data.map(d => d[labelIndex])
-    return extractedData.map(transformation)
-  }
-
-  // Takes data with 1 property (created using extractProperty())
-  vectorsFromSetAndValues(values, valuesSet, excludedValue) {
-    // Create empty object for value vectors and labels
-    var vectorObj = {}
-    // Add property with value 0 for every unique value
-    valuesSet.map(d => vectorObj[d] = 0)
-    // For every data point increment value of corresponding
-    // property in vector object
-    values.map(d => vectorObj[d] += 1)
-
-    // Transofrm vectorObj to an array
-    var vectors = []
-    for (var d in vectorObj) {
-      var name = isNaN(parseFloat(d)) ? d : parseFloat(d)
-      vectors.push({name: name, value: vectorObj[d]})
-    }
-    return vectors.sort(compareObjects.bind(this, 'name', excludedValue))
-  }
+  
 
   dataType() {
     return dataStructures[this.state.dataPropertyIndex].type
-  }
-
-  getMinMax(sortedData) {
-
   }
 
   getChartData() {
@@ -129,10 +103,52 @@ class App extends React.Component {
     chartData.push({name: 'Unknown', value: excluded})
 
     this.setState({
-      min: min,
-      max: max,
       chartData: chartData
     })
+  }
+
+  /* Extracts a single data set from the full data
+  also applies an optional transformationon to the data. */
+  extractProperty(data, labelIndex, transformation = (i => i)) {
+    var extractedData = data.map(d => d[labelIndex])
+    var extractedData2 = extractedData.map(transformation)
+    var min = false
+    var max = false
+    extractedData2.map((d, i) => {
+      if (min === false || d < min) {
+        min = d;
+      }
+      if (max === false || d > max) {
+        max = d;
+      }
+    })
+    this.setState({
+      min: min,
+      max: max,
+    })
+    return extractedData2
+  }
+
+  // Takes data with 1 property (created using extractProperty())
+  vectorsFromSetAndValues(values, valuesSet, excludedValue) {
+    // Create empty object for value vectors and labels
+    var vectorObj = {}
+    // Add property with value 0 for every unique value
+    valuesSet.map(d => vectorObj[d] = 0)
+    // For every data point increment value of corresponding
+    // property in vector object
+    values.map(d => vectorObj[d] += 1)
+
+    // Transofrm vectorObj to an array
+    var vectors = []
+    for (var d in vectorObj) {
+      var value = vectorObj[d];
+      var name = isNaN(parseFloat(d)) ? d : parseFloat(d)
+      if (name <= this.state.rangeMax && name >= this.state.rangeMin) {
+        vectors.push({name: name, value: value})
+      }
+    }
+    return vectors.sort(compareObjects.bind(this, 'name', excludedValue))
   }
 
   groupData(sortedData, groups) {
@@ -172,10 +188,16 @@ class App extends React.Component {
     }, this.getChartData)
   }
 
-  onMinMaxRangeChanged(e) {
+  onRangeMaxChanged(e) {
     this.setState({
       rangeMax: e.target.value
-    })
+    }, this.getChartData)
+  }
+
+  onRangeMinChanged(e) {
+    this.setState({
+      rangeMin: e.target.value
+    }, this.getChartData)
   }
   onNumberZoomChanged(e) {
     var zoom = e.target.value;
@@ -203,8 +225,10 @@ class App extends React.Component {
     return (
       <div id="app">
         <h1>{this.state.title}</h1>
-        <p>Min: {this.state.rangeMin}</p>
-        <p>Max: {this.state.rangeMax}</p>
+        <p>Min: {this.state.min}</p>
+        <p>Max: {this.state.max}</p>
+        <p>Range Min: {this.state.rangeMin}</p>
+        <p>Range Max: {this.state.rangeMax}</p>
         <p>Number Zoom: {this.state.numberZoom}</p>
         
         {/*
@@ -222,14 +246,25 @@ class App extends React.Component {
         
         </div>
         */}
-        <label>Min Max:</label>
+        
         <div id="min-max-sliders">
+          <label>Max:</label>
           <input
             type="range"
             min={this.state.min}
             max={this.state.max}
             value={this.state.rangeMax}
-            onChange={this.onMinMaxRangeChanged}
+            onChange={this.onRangeMaxChanged}
+            className="slider"
+            id="min-max"
+          />
+          <label>Min:</label>
+          <input
+            type="range"
+            min={this.state.min}
+            max={this.state.max}
+            value={this.state.rangeMin}
+            onChange={this.onRangeMinChanged}
             className="slider"
             id="min-max"
           />
@@ -255,8 +290,6 @@ class App extends React.Component {
         <BarChart
           data={this.state.chartData}
           number={this.isNumber}
-          x={this.extractProperty(data, 'shape')}
-          y={this.extractProperty(data, 'duration_minutes')}
         />
       </div>
     )
