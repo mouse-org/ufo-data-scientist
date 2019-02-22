@@ -246,16 +246,33 @@ class App extends React.Component {
       </li>
     )
 
+    var controls = []
+    if (this.dataType() === 'number') {
+      controls.push(<NumberDataSetControls
+        label={dataStructures[this.state.dataPropertyIndex].name}
+        key={dataStructures[this.state.dataPropertyIndex].name}
+        rangeMin={this.state.rangeMin}
+        rangeMax={this.state.rangeMax}
+        min={this.state.min}
+        max={this.state.max}
+        onRangeMaxChanged={this.onRangeMaxChanged}
+        onRangeMinChanged={this.onRangeMinChanged}
+        data={this.state.data}
+        numberZoom={this.state.numberZoom}
+        maxNumberZoom={maxNumberZoom}
+        onNumberZoomChanged={this.onNumberZoomChanged}
+      />)
+    }
+
+
+
     
 
     return (
       <div id="app">
         <h1>{this.state.title}</h1>
-        <p>Min: {this.state.min}</p>
-        <p>Max: {this.state.max}</p>
-        <p>Range Min: {this.state.rangeMin}</p>
-        <p>Range Max: {this.state.rangeMax}</p>
-        <p>Number Zoom: {this.state.numberZoom}</p>
+        <p>Dataset Min: {this.state.min}</p>
+        <p>Dataset Max: {this.state.max}</p>
         
         {/*
         <div id="sliders">
@@ -272,49 +289,14 @@ class App extends React.Component {
         
         </div>
         */}
-        
-        <div id="min-max-sliders">
-          <label>Range Max:</label>
-          <input
-            type="range"
-            min={this.state.min}
-            max={this.state.max}
-            value={this.state.rangeMax}
-            onChange={this.onRangeMaxChanged}
-            className="slider"
-            id="min-max"
-          />
-          <label>Range Min:</label>
-          <input
-            type="range"
-            min={this.state.min}
-            max={this.state.max}
-            value={this.state.rangeMin}
-            onChange={this.onRangeMinChanged}
-            className="slider"
-            id="min-max"
-          />
-        </div>
-        <label>Number Zoom:</label>
-        <div id="number-zoom-slider">
-          <input
-            type="range"
-            min="2"
-            max={this.state.data.length > maxNumberZoom ? maxNumberZoom : this.state.data.length}
-            value={this.state.numberZoom}
-            onChange={this.onNumberZoomChanged}
-            className="slider"
-            id="number-zoom"
-          />
-        </div>
-
-        <NumberDataSetControls
-          label={dataStructures[this.state.dataPropertyIndex].name}
-        />
 
         <ul>
           {selectDataProperty}
         </ul>
+
+        <div id="controls">
+          {controls}
+        </div>
 
         <h3>Data:</h3>
 
