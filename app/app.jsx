@@ -33,7 +33,7 @@ class App extends React.Component {
     this.state = {
       title: "UFO Data Scientist",
       data: data,
-      dataPropertyIndex: 3,
+      dataPropertyIndex: 5,
       min: 0,
       max: 50,
       rangeMin: 0,
@@ -85,13 +85,18 @@ class App extends React.Component {
     // If excludedValue is included in vectors then remove it:
     var comparableVectors = vectors
     var excluded = null
-    if (vectors[0].name === excludedValue) {
+    
+    if (vectors[0] && vectors[0].name === excludedValue) {
       comparableVectors = vectors.slice(1, vectors.length)
       excluded = vectors.slice(0, 1)[0].value
     }
 
-    const min = comparableVectors[0].name
-    const max = comparableVectors[comparableVectors.length - 1].name
+    if (comparableVectors[0]){
+      const min = comparableVectors[0].name
+      const max = comparableVectors[comparableVectors.length - 1].name
+    } else {
+
+    }
 
     // Group data
     var chartData = this.groupData(
@@ -100,7 +105,9 @@ class App extends React.Component {
 
     // Need to extract value above and add in 'Unknown'
     // here because of differente excluded values in data
-    chartData.push({name: 'Unknown', value: excluded})
+    if (excluded) {
+      chartData.push({name: 'Unknown', value: excluded})
+    }
 
     this.setState({
       chartData: chartData
@@ -135,6 +142,7 @@ class App extends React.Component {
     var vectorObj = {}
     // Add property with value 0 for every unique value
     valuesSet.map(d => vectorObj[d] = 0)
+
     // For every data point increment value of corresponding
     // property in vector object
     values.map(d => vectorObj[d] += 1)
@@ -142,11 +150,20 @@ class App extends React.Component {
     // Transofrm vectorObj to an array
     var vectors = []
     for (var d in vectorObj) {
-      var value = vectorObj[d];
-      var name = isNaN(parseFloat(d)) ? d : parseFloat(d)
-      if (name <= this.state.rangeMax && name >= this.state.rangeMin) {
+      var value = vectorObj[d]
+      // If label (name) is a number use min/max sliders:
+      var name;
+      if (!isNaN(parseFloat(d))) {
+        name = parseFloat(d)
+        if (name <= this.state.rangeMax && name >= this.state.rangeMin) {
+          vectors.push({name: name, value: value})
+        } else {
+          // 
+        }
+      } else {
+        name = d;
         vectors.push({name: name, value: value})
-      }
+      }      
     }
     return vectors.sort(compareObjects.bind(this, 'name', excludedValue))
   }
@@ -154,8 +171,16 @@ class App extends React.Component {
   groupData(sortedData, groups) {
     var newData = [];
     if (this.dataType() === 'number'){
-      const min = Math.floor(sortedData[0].name);
-      const max = Math.ceil(sortedData[sortedData.length - 1].name);
+      var min, max
+      if (sortedData[0]) {
+        min = Math.floor(sortedData[0].name)
+        max = Math.ceil(sortedData[sortedData.length - 1].name)
+      } else {
+        // 🚸 Placeholder?
+        min = this.state.rangeMin
+        max = this.state.rangeMax
+      }
+
       var spacing = (max - min) / groups;
 
       // Make a new array with fewer datapoints
@@ -170,9 +195,9 @@ class App extends React.Component {
         }
         newData[j].value += sortedData[i].value
       }
-
       return newData
     } else if (this.dataType() === 'datetime') {
+      console.log("DATE TIME NOT DONE YET")
       return sortedData
     } else {
       // String data points:
@@ -248,7 +273,7 @@ class App extends React.Component {
         */}
         
         <div id="min-max-sliders">
-          <label>Max:</label>
+          <label>Range Max:</label>
           <input
             type="range"
             min={this.state.min}
@@ -258,7 +283,7 @@ class App extends React.Component {
             className="slider"
             id="min-max"
           />
-          <label>Min:</label>
+          <label>Range Min:</label>
           <input
             type="range"
             min={this.state.min}
