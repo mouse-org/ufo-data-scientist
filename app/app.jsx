@@ -56,21 +56,31 @@ class App extends React.Component {
   }
 
   getChartData() {
-    
+
+    var transformation = i => i
+    if (this.dataType() === 'datetime') {      
+      transformation = i => new Date(i).getDay().toString()
+    }
+
     // Get the data for the chosen property
     const propertyData = this.extractProperty(
       this.state.data,
-      this.state.dataPropertyIndex
+      this.state.dataPropertyIndex,
+      transformation
     )
 
     // Unique values from propertyData
     const excludedValue = dataStructures[this.state.dataPropertyIndex].exclude
     var propertySet = [...new Set(propertyData)]
 
+    //console.log("PS:", propertySet)
+
     // Turn array of values into vectors with values and frequency
     const vectors = this.vectorsFromSetAndValues(
-      propertyData, propertySet, excludedValue
+      propertyData, propertySet, excludedValue, this.dataType()
     )
+
+    //console.log("V:", vectors)
 
     // If excludedValue is included in vectors then remove it:
     var comparableVectors = vectors
@@ -89,8 +99,14 @@ class App extends React.Component {
     }
 
     // Group data
+    /*
+    var transformation = i => i
+    if (this.dataType() === 'datetime') {      
+      transformation = i => new Date(i).getFullYear().toString()
+    }
+    */
     var chartData = this.groupData(
-      comparableVectors, this.state.numberZoom
+      comparableVectors, this.dataType(), this.state.numberZoom
     );
 
     // Need to extract value above and add in 'Unknown'
@@ -127,15 +143,19 @@ class App extends React.Component {
   }
 
   // Takes data with 1 property (created using extractProperty())
-  vectorsFromSetAndValues(values, valuesSet, excludedValue) {
+  vectorsFromSetAndValues(values, valuesSet, excludedValue, dataType) {
     // Create empty object for value vectors and labels
     var vectorObj = {}
     // Add property with value 0 for every unique value
     valuesSet.map(d => vectorObj[d] = 0)
 
+    console.log("VO1:", vectorObj)
+
     // For every data point increment value of corresponding
     // property in vector object
     values.map(d => vectorObj[d] += 1)
+
+    console.log("VO2:", vectorObj)
 
     // Transofrm vectorObj to an array
     var vectors = []
@@ -143,14 +163,19 @@ class App extends React.Component {
       var value = vectorObj[d]
       // If label (name) is a number use min/max sliders:
       var name;
-      if (!isNaN(parseFloat(d))) {
+
+      if (dataType === 'number') {
         name = parseFloat(d)
         if (name <= this.state.rangeMax && name >= this.state.rangeMin) {
           vectors.push({name: name, value: value})
         } else {
           // 
         }
-      } else {
+      } /*else if (dataType === 'datetime') {
+        // This is a string, maybe it should get datafied here?
+        name = d;
+        vectors.push({name: name, value: value})
+      } */else { // dataType === 'string'
         name = d;
         vectors.push({name: name, value: value})
       }      
@@ -158,9 +183,11 @@ class App extends React.Component {
     return vectors.sort(compareObjects.bind(this, 'name', excludedValue))
   }
 
-  groupData(sortedData, groups) {
+  groupData(sortedData, dataType, groups, transformation = i => i) {
+    console.log("SD:", sortedData)
     var newData = [];
-    if (this.dataType() === 'number'){
+    if (dataType === 'number'){
+      // Number Data Sets: duration_minutes, city_latitude, city_longitude
       var min, max
       if (sortedData[0]) {
         min = Math.floor(sortedData[0].name)
@@ -186,11 +213,18 @@ class App extends React.Component {
         newData[j].value += sortedData[i].value
       }
       return newData
-    } else if (this.dataType() === 'datetime') {
-      console.log("DATE TIME NOT DONE YET")
-      return sortedData
+    } else if (dataType === 'datetime') {
+      // Date/Time Data Sets: date_time
+      console.log(0, sortedData[0])
+
+      const transformedSortedData = sortedData.map(d => {return {name: transformation(d.name), value: d.value} })
+      console.log("TSD", transformedSortedData)
+      return this.groupData(transformedSortedData, 'string', groups)
+
     } else {
-      // String data points:
+      // String Data Sets: state, shape
+
+      // No transformations as groups are already created
       return sortedData
     }
     // Spacing grouping
