@@ -2,10 +2,14 @@ const React = require('react');
 
 function NumberDataSetControls(props) {
 
-  const maxNumberZoom = 50;
+  const controlStyle = {
+    border: '1px solid green',
+    padding: '10px',
+    margin: '10px'
+  }
 
   return (
-    <div className="control">
+    <div className="control" style={controlStyle} >
       <h2>Number Data Set: { props.label }</h2>
       <p>Number Zoom: {props.numberZoom}</p>
       <label>Number Zoom:</label>
@@ -13,7 +17,7 @@ function NumberDataSetControls(props) {
         <input
           type="range"
           min="2"
-          max={props.data.length > maxNumberZoom ? maxNumberZoom : props.data.length}
+          max={props.data.length > props.maxNumberZoom ? props.maxNumberZoom : props.data.length}
           value={props.numberZoom}
           onChange={props.onNumberZoomChanged}
           className="slider"

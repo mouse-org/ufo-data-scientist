@@ -1,20 +1,10 @@
 const React = require('react')
 const ReactDOM = require('react-dom')
-const uuidv4 = require('uuid/v4')
+//const uuidv4 = require('uuid/v4')
 
 const data = require('./newData')
 const dataStructures = require('./helpers/dataStructure')
-console.log("DS:", dataStructures)
-//const data = require('./fullData');
-//const data = require('./data');
-//const defaultGroup = require('./helpers/defaultGroup');
-//const breakApartData = require('./helpers/breakApartData');
 const compareObjects = require('./helpers/compareObjects')
-
-// Components:
-//const Section = require('./components/Section');
-
-//const sections = ["SeeAllData", "CleanData", "DataViz"];
 
 const maxNumberZoom = 50;
 
@@ -42,7 +32,6 @@ class App extends React.Component {
       numberZoom: data.length > 10 ? 10 : data.length > maxNumberZoom ? maxNumberZoom : data.length,
       maxNumberZoom: maxNumberZoom,
       chartData: []
-      //data: [25, 35, 50, 66, 87]
     }
   }
   handleChange(event) {
@@ -264,31 +253,11 @@ class App extends React.Component {
       />)
     }
 
-
-
-    
-
     return (
       <div id="app">
         <h1>{this.state.title}</h1>
         <p>Dataset Min: {this.state.min}</p>
         <p>Dataset Max: {this.state.max}</p>
-        
-        {/*
-        <div id="sliders">
-          <label>1</label>
-          <input type="range" min="1" max="100" value={this.state.data[0]} className="slider" id="slider-1" onChange={this.handleChange}></input>
-          <label>2</label>
-          <input type="range" min="1" max="100" value={this.state.data[1]} className="slider" id="slider-2" onChange={this.handleChange}></input>
-          <label>3</label>
-          <input type="range" min="1" max="100" value={this.state.data[2]} className="slider" id="slider-3" onChange={this.handleChange}></input>
-          <label>4</label>
-          <input type="range" min="1" max="100" value={this.state.data[3]} className="slider" id="slider-4" onChange={this.handleChange}></input>
-          <label>5</label>
-          <input type="range" min="1" max="100" value={this.state.data[4]} className="slider" id="slider-5" onChange={this.handleChange}></input>
-        
-        </div>
-        */}
 
         <ul>
           {selectDataProperty}
