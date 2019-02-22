@@ -10,6 +10,8 @@ const maxNumberZoom = 50;
 
 const BarChart = require('./components/BarChart')
 const NumberDataSetControls = require('./components/NumberDataSetControls')
+const DateTimeDataSetControls = require('./components/DateTimeDataSetControls')
+const datePartOptions = require('./helpers/datePartOptions')
 
 class App extends React.Component {
   constructor(props) {
@@ -21,6 +23,7 @@ class App extends React.Component {
     this.onRangeMaxChanged = this.onRangeMaxChanged.bind(this)
     this.onRangeMinChanged = this.onRangeMinChanged.bind(this)
     this.onNumberZoomChanged = this.onNumberZoomChanged.bind(this)
+    this.onDatePartChanged = this.onDatePartChanged.bind(this)
     this.state = {
       title: "UFO Data Scientist",
       data: data,
@@ -31,6 +34,7 @@ class App extends React.Component {
       rangeMax: 50,
       numberZoom: data.length > 10 ? 10 : data.length > maxNumberZoom ? maxNumberZoom : data.length,
       maxNumberZoom: maxNumberZoom,
+      datePart: datePartOptions[0],
       chartData: []
     }
   }
@@ -58,8 +62,13 @@ class App extends React.Component {
   getChartData() {
 
     var transformation = i => i
-    if (this.dataType() === 'datetime') {      
-      transformation = i => new Date(i).getDay().toString()
+    if (this.dataType() === 'datetime') {    
+      transformation = i => {
+        const subtransform = this.state.datePart.transformation
+        const datePart = new Date(i)[this.state.datePart.method]()
+        const datePartString = subtransform(datePart).toString()
+        return datePartString
+      }
     }
 
     // Get the data for the chosen property
@@ -183,7 +192,7 @@ class App extends React.Component {
     return vectors.sort(compareObjects.bind(this, 'name', excludedValue))
   }
 
-  groupData(sortedData, dataType, groups, transformation = i => i) {
+  groupData(sortedData, dataType, groups) {
     console.log("SD:", sortedData)
     var newData = [];
     if (dataType === 'number'){
@@ -213,15 +222,11 @@ class App extends React.Component {
         newData[j].value += sortedData[i].value
       }
       return newData
-    } else if (dataType === 'datetime') {
-      // Date/Time Data Sets: date_time
-      console.log(0, sortedData[0])
+    } /*else if (dataType === 'datetime') {
+      // Date/Time Data Sets: date_time)
+      return this.groupData(sortedData, 'string', groups)
 
-      const transformedSortedData = sortedData.map(d => {return {name: transformation(d.name), value: d.value} })
-      console.log("TSD", transformedSortedData)
-      return this.groupData(transformedSortedData, 'string', groups)
-
-    } else {
+    } */else {
       // String Data Sets: state, shape
 
       // No transformations as groups are already created
@@ -256,6 +261,13 @@ class App extends React.Component {
     }, this.getChartData)
   }
 
+  onDatePartChanged(e) {
+    const index = e.currentTarget.value
+    this.setState({
+      datePart: datePartOptions[index]
+    }, this.getChartData)
+  }
+
   render() {
     const selectDataProperty = dataStructures.map((ds, index) => 
       <li key={ds.name}>
@@ -284,6 +296,13 @@ class App extends React.Component {
         numberZoom={this.state.numberZoom}
         maxNumberZoom={maxNumberZoom}
         onNumberZoomChanged={this.onNumberZoomChanged}
+      />)
+    } else if (this.dataType() === 'datetime') {
+      controls.push(<DateTimeDataSetControls
+        label={dataStructures[this.state.dataPropertyIndex].name}
+        key={dataStructures[this.state.dataPropertyIndex].name}
+        datePart={this.state.datePart.name}
+        onDatePartChanged={this.onDatePartChanged}
       />)
     }
 
