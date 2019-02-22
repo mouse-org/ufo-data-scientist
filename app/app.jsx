@@ -19,6 +19,7 @@ const compareObjects = require('./helpers/compareObjects')
 const maxNumberZoom = 50;
 
 const BarChart = require('./components/BarChart')
+const NumberDataSetControls = require('./components/NumberDataSetControls')
 
 class App extends React.Component {
   constructor(props) {
@@ -306,6 +307,11 @@ class App extends React.Component {
             id="number-zoom"
           />
         </div>
+
+        <NumberDataSetControls
+          label={dataStructures[this.state.dataPropertyIndex].name}
+        />
+
         <ul>
           {selectDataProperty}
         </ul>
