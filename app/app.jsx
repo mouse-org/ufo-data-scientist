@@ -158,13 +158,13 @@ class App extends React.Component {
     // Add property with value 0 for every unique value
     valuesSet.map(d => vectorObj[d] = 0)
 
-    console.log("VO1:", vectorObj)
+    //console.log("VO1:", vectorObj)
 
     // For every data point increment value of corresponding
     // property in vector object
     values.map(d => vectorObj[d] += 1)
 
-    console.log("VO2:", vectorObj)
+    //console.log("VO2:", vectorObj)
 
     // Transofrm vectorObj to an array
     var vectors = []
@@ -211,7 +211,9 @@ class App extends React.Component {
 
       // Make a new array with fewer datapoints
       for (var i = min; i <= max + spacing; i += spacing) {
-        newData.push({name: i, value: 0})
+        console.log("i:", i, typeof i)
+        var name = isNaN(i) ? 0 : i.toFixed(2)
+        newData.push({name: name, value: 0})
       }
       for (var i = 0, j = 0; i < sortedData.length; i++) {
         if (sortedData[i].name > newData[j].name) {
@@ -244,13 +246,13 @@ class App extends React.Component {
 
   onRangeMaxChanged(e) {
     this.setState({
-      rangeMax: e.target.value
+      rangeMax: parseFloat(e.target.value)
     }, this.getChartData)
   }
 
   onRangeMinChanged(e) {
     this.setState({
-      rangeMin: e.target.value
+      rangeMin: parseFloat(e.target.value)
     }, this.getChartData)
   }
   onNumberZoomChanged(e) {
