@@ -10,10 +10,10 @@ function DateTimeDataSetControls(props) {
   }
 
   const options = datePartOptions.map((o, i) => 
-    <div>
+    <div key={o.name}>
       <input
         type="radio"
-        key={o.name}
+        
         value={i}
         checked={props.datePart === o.name}
         onChange={props.onDatePartChanged}

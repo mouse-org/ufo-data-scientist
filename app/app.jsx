@@ -8,6 +8,7 @@ const compareObjects = require('./helpers/compareObjects')
 
 const maxNumberZoom = 50;
 
+/* Components */
 const BarChart = require('./components/BarChart')
 const NumberDataSetControls = require('./components/NumberDataSetControls')
 const DateTimeDataSetControls = require('./components/DateTimeDataSetControls')
@@ -189,11 +190,11 @@ class App extends React.Component {
         vectors.push({name: name, value: value})
       }      
     }
-    return vectors.sort(compareObjects.bind(this, 'name', excludedValue))
+    return vectors.sort(compareObjects.bind(this, 'name', excludedValue, this.state.dataPropertyIndex, this.state.datePart['name']))
   }
 
   groupData(sortedData, dataType, groups) {
-    console.log("SD:", sortedData)
+    //console.log("SD:", sortedData)
     var newData = [];
     if (dataType === 'number'){
       // Number Data Sets: duration_minutes, city_latitude, city_longitude
