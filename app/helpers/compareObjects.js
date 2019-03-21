@@ -31,6 +31,30 @@ module.exports = function(p, excludedValue, dataPropertyIndex, datePart, a, b) {
             return 0
         }
 
+        if (datePart === 'monthAndYear') {
+          aL = a[p].length
+          const aYear = parseInt(a[p].substring(aL - 4, aL))
+          const aMonth = a[p].substring(0, aL - 5)
+          bL = b[p].length
+          const bYear = parseInt(b[p].substring(bL - 4, bL))
+          const bMonth = b[p].substring(0, bL - 5)
+          console.log(aYear, bYear, aMonth, bMonth)
+          
+          if (aYear < bYear) {
+            return -1
+          } else if (aYear > bYear) {
+            return 1
+          } else {
+            if (months.indexOf(aMonth) < months.indexOf(bMonth)) {
+              return -1
+            }
+            if (months.indexOf(aMonth) > months.indexOf(bMonth)) {
+              return  1
+            }
+              return 0
+          }
+        }
+
         if (datePart === 'date' || datePart === 'minute') {
           const intA = parseInt(a[p]);
           const intB = parseInt(b[p])

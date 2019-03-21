@@ -66,7 +66,10 @@ class App extends React.Component {
     if (this.dataType() === 'datetime') {    
       transformation = i => {
         const subtransform = this.state.datePart.transformation
-        const datePart = new Date(i)[this.state.datePart.method]()
+        var datePart = new Date(i)
+        if (this.state.datePart.method) {
+          datePart = datePart[this.state.datePart.method]()
+        }
         const datePartString = subtransform(datePart).toString()
         return datePartString
       }

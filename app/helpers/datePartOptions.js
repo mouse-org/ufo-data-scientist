@@ -22,10 +22,46 @@ function amPm(d) {
 }
 
 module.exports = [
-  { name: 'year', method: 'getFullYear', transformation: identity },
-  { name: 'month', method: 'getMonth', transformation: d => months[d]},
-  { name: 'date', method: 'getDate', transformation: identity },
-  { name: 'dayOfTheWeek', method: 'getDay', transformation: d => daysOfTheWeek[d] },
-  { name: 'hour', method: 'getHours', transformation: amPm },
-  { name: 'minute', method: 'getMinutes', transformation: identity }
+  {
+    textName: 'Year',
+    name: 'year',
+    method: 'getFullYear',
+    transformation: identity
+  },
+  {
+    textName: 'Month',
+    name: 'month',
+    method: 'getMonth',
+    transformation: d => months[d]
+  },
+  {
+    textName: 'Month and Year',
+    name: 'monthAndYear',
+    method: false,
+    transformation: d => `${months[d.getMonth()]} ${d.getFullYear()}`
+  },
+  {
+    textName: 'Date Number',
+    name: 'date',
+    method: 'getDate',
+    transformation: identity
+  },
+  {
+    textName: 'Day of the Week',
+    name: 'dayOfTheWeek',
+    method: 'getDay',
+    transformation: d => daysOfTheWeek[d]
+  },
+  {
+    textName: 'Hour',
+    name: 'hour',
+    method: 'getHours',
+    transformation: amPm
+  },
+  {
+    textName: 'Minute',
+    name: 'minute',
+    method: 'getMinutes',
+    transformation: identity
+  }
 ]
