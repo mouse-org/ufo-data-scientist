@@ -137,22 +137,24 @@ class App extends React.Component {
   also applies an optional transformationon to the data. */
   extractProperty(data, labelIndex, transformation = (i => i)) {
     var extractedData = data.map(d => d[labelIndex])
-    var extractedData2 = extractedData.map(transformation)
+    var extractedDataTransformed = extractedData.map(transformation)
     var min = false
     var max = false
-    extractedData2.map((d, i) => {
-      if (min === false || d < min) {
+    extractedDataTransformed.map((d, i) => {
+      if (min === false || parseInt(d) < min) {
         min = d;
       }
-      if (max === false || d > max) {
+      if (max === false || parseInt(d) > max) {
         max = d;
       }
     })
     this.setState({
       min: min,
-      max: max,
+      max: max//,
+      //rangeMin: min,
+      //rangeMax: max
     })
-    return extractedData2
+    return extractedDataTransformed
   }
 
   // Takes data with 1 property (created using extractProperty())
