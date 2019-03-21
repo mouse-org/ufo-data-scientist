@@ -48,7 +48,7 @@ class App extends React.Component {
   }
 
   componentDidMount() {
-    this.getChartData()
+    this.extractProperty(false, false)
   }
 
   componentWillUnmount() {
@@ -60,27 +60,7 @@ class App extends React.Component {
     return dataStructures[this.state.dataPropertyIndex].type
   }
 
-  getChartData() {
-
-    var transformation = i => i
-    if (this.dataType() === 'datetime') {    
-      transformation = i => {
-        const subtransform = this.state.datePart.transformation
-        var datePart = new Date(i)
-        if (this.state.datePart.method) {
-          datePart = datePart[this.state.datePart.method]()
-        }
-        const datePartString = subtransform(datePart).toString()
-        return datePartString
-      }
-    }
-
-    // Get the data for the chosen property
-    const propertyData = this.extractProperty(
-      this.state.data,
-      this.state.dataPropertyIndex,
-      transformation
-    )
+  getChartData(propertyData) {
 
     // Unique values from propertyData
     const excludedValue = dataStructures[this.state.dataPropertyIndex].exclude
@@ -118,6 +98,7 @@ class App extends React.Component {
       transformation = i => new Date(i).getFullYear().toString()
     }
     */
+
     var chartData = this.groupData(
       comparableVectors, this.dataType(), this.state.numberZoom
     );
@@ -135,7 +116,27 @@ class App extends React.Component {
 
   /* Extracts a single data set from the full data
   also applies an optional transformationon to the data. */
-  extractProperty(data, labelIndex, transformation = (i => i)) {
+  extractProperty(updatedRangeMin, updatedRangeMax) {
+    
+
+    const data = this.state.data
+    const labelIndex = this.state.dataPropertyIndex
+
+    // Default identity transformation
+    var transformation = i => i
+    // Datetime only transformation
+    if (this.dataType() === 'datetime') {    
+      transformation = i => {
+        const subtransform = this.state.datePart.transformation
+        var datePart = new Date(i)
+        if (this.state.datePart.method) {
+          datePart = datePart[this.state.datePart.method]()
+        }
+        const datePartString = subtransform(datePart).toString()
+        return datePartString
+      }
+    }
+
     var extractedData = data.map(d => d[labelIndex])
     var extractedDataTransformed = extractedData.map(transformation)
     var min = false
@@ -148,13 +149,23 @@ class App extends React.Component {
         max = d;
       }
     })
-    this.setState({
+
+    const newState = {
       min: min,
-      max: max//,
-      //rangeMin: min,
-      //rangeMax: max
-    })
-    return extractedDataTransformed
+      max: max,
+    }
+
+    // Runs on component mount
+    if (!updatedRangeMin) {
+      newState.rangeMin = min
+    }
+
+    if (!updatedRangeMax) {
+      newState.rangeMax = max
+    }
+
+
+    this.setState(newState, () => this.getChartData(extractedDataTransformed))
   }
 
   // Takes data with 1 property (created using extractProperty())
@@ -195,6 +206,7 @@ class App extends React.Component {
         vectors.push({name: name, value: value})
       }      
     }
+
     return vectors.sort(compareObjects.bind(this, 'name', excludedValue, this.state.dataPropertyIndex, this.state.datePart['name']))
   }
 
@@ -217,8 +229,11 @@ class App extends React.Component {
 
       // Make a new array with fewer datapoints
       for (var i = min; i <= max + spacing; i += spacing) {
-        console.log("i:", i, typeof i)
-        var name = isNaN(i) ? 0 : i.toFixed(2)
+        if (i.length > 100) {
+          return
+        }
+        //console.log("i:", i, typeof i)
+        var name = isNaN(i) ? 0 : parseFloat(i).toFixed(2)
         newData.push({name: name, value: 0})
       }
       for (var i = 0, j = 0; i < sortedData.length; i++) {
@@ -247,33 +262,35 @@ class App extends React.Component {
   onDataPropertyChanged(e) {
     this.setState({
       dataPropertyIndex: e.currentTarget.value
-    }, this.getChartData)
+    }, this.extractProperty)
   }
 
   onRangeMaxChanged(e) {
+    const updatedMax = parseFloat(e.target.value)
     this.setState({
-      rangeMax: parseFloat(e.target.value)
-    }, this.getChartData)
+      rangeMax: updatedMax
+    }, () => this.extractProperty(false, updatedMax))
   }
 
   onRangeMinChanged(e) {
+    const updatedMin = parseFloat(e.target.value)
     this.setState({
-      rangeMin: parseFloat(e.target.value)
-    }, this.getChartData)
+      rangeMin: updatedMin
+    }, () => this.extractProperty(updatedMin))
   }
   onNumberZoomChanged(e) {
     var zoom = e.target.value;
     zoom = zoom > maxNumberZoom ? maxNumberZoom : zoom;
     this.setState({
       numberZoom: zoom
-    }, this.getChartData)
+    }, this.extractProperty)
   }
 
   onDatePartChanged(e) {
     const index = e.currentTarget.value
     this.setState({
       datePart: datePartOptions[index]
-    }, this.getChartData)
+    }, this.extractProperty)
   }
 
   render() {
