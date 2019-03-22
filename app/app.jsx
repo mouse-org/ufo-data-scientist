@@ -2,43 +2,45 @@ const React = require('react')
 const ReactDOM = require('react-dom')
 //const uuidv4 = require('uuid/v4')
 
-const data = require('./newData')
-const dataStructures = require('./helpers/dataStructure')
-const compareObjects = require('./helpers/compareObjects')
+//*const data = require('./newData')
 
-const maxNumberZoom = 50;
+//*const compareObjects = require('./helpers/compareObjects')
+
+//*const maxNumberZoom = 50;
 
 /* Components */
-const BarChart = require('./components/BarChart')
-const NumberDataSetControls = require('./components/NumberDataSetControls')
-const DateTimeDataSetControls = require('./components/DateTimeDataSetControls')
-const datePartOptions = require('./helpers/datePartOptions')
+const SelectDataProperty = require('./components/SelectDataProperty')
+//*const BarChart = require('./components/BarChart')
+//*const NumberDataSetControls = require('./components/NumberDataSetControls')
+//*const DateTimeDataSetControls = require('./components/DateTimeDataSetControls')
+//*const datePartOptions = require('./helpers/datePartOptions')
 
 class App extends React.Component {
   constructor(props) {
     super(props);
-    this.handleChange = this.handleChange.bind(this)
-    this.groupData = this.groupData.bind(this)
-    this.extractProperty = this.extractProperty.bind(this)
+    //*this.handleChange = this.handleChange.bind(this)
+    //*this.groupData = this.groupData.bind(this)
+    //*this.extractProperty = this.extractProperty.bind(this)
     this.onDataPropertyChanged = this.onDataPropertyChanged.bind(this)
-    this.onRangeMaxChanged = this.onRangeMaxChanged.bind(this)
-    this.onRangeMinChanged = this.onRangeMinChanged.bind(this)
-    this.onNumberZoomChanged = this.onNumberZoomChanged.bind(this)
-    this.onDatePartChanged = this.onDatePartChanged.bind(this)
+    //*this.onRangeMaxChanged = this.onRangeMaxChanged.bind(this)
+    //*this.onRangeMinChanged = this.onRangeMinChanged.bind(this)
+    //*this.onNumberZoomChanged = this.onNumberZoomChanged.bind(this)
+    //*this.onDatePartChanged = this.onDatePartChanged.bind(this)
     this.state = {
       title: "UFO Data Scientist",
-      data: data,
+      //*data: data,
       dataPropertyIndex: 5,
-      min: 0,
-      max: 50,
-      rangeMin: 0,
-      rangeMax: 50,
-      numberZoom: data.length > 10 ? 10 : data.length > maxNumberZoom ? maxNumberZoom : data.length,
-      maxNumberZoom: maxNumberZoom,
-      datePart: datePartOptions[0],
-      chartData: []
+      //*min: 0,
+      //*max: 50,
+      //*rangeMin: 0,
+      //*rangeMax: 50,
+      //*numberZoom: data.length > 10 ? 10 : data.length > maxNumberZoom ? maxNumberZoom : data.length,
+      //*maxNumberZoom: maxNumberZoom,
+      //*datePart: datePartOptions[0],
+      //*chartData: []
     }
   }
+  /*
   handleChange(event) {
     let index = (parseInt(event.target.id.substring(7, 8)))
     const oldData = this.state.data;
@@ -90,6 +92,7 @@ class App extends React.Component {
     } else {
 
     }
+    **/
 
     // Group data
     /*
@@ -99,6 +102,7 @@ class App extends React.Component {
     }
     */
 
+    /**
     var chartData = this.groupData(
       comparableVectors, this.dataType(), this.state.numberZoom
     );
@@ -113,9 +117,12 @@ class App extends React.Component {
       chartData: chartData
     })
   }
+  **/
 
   /* Extracts a single data set from the full data
   also applies an optional transformationon to the data. */
+
+  /**
   extractProperty(updatedRangeMin, updatedRangeMax) {
     
 
@@ -197,11 +204,12 @@ class App extends React.Component {
         } else {
           // 
         }
-      } /*else if (dataType === 'datetime') {
+      } //else if (dataType === 'datetime') {
         // This is a string, maybe it should get datafied here?
-        name = d;
-        vectors.push({name: name, value: value})
-      } */else { // dataType === 'string'
+        //name = d;
+       // vectors.push({name: name, value: value})
+      //} 
+      else { // dataType === 'string'
         name = d;
         vectors.push({name: name, value: value})
       }      
@@ -245,11 +253,12 @@ class App extends React.Component {
         newData[j].value += sortedData[i].value
       }
       return newData
-    } /*else if (dataType === 'datetime') {
+    } //else if (dataType === 'datetime') {
       // Date/Time Data Sets: date_time)
-      return this.groupData(sortedData, 'string', groups)
+     //return this.groupData(sortedData, 'string', groups)
 
-    } */else {
+    //} 
+    else {
       // String Data Sets: state, shape
 
       // No transformations as groups are already created
@@ -258,13 +267,15 @@ class App extends React.Component {
     // Spacing grouping
     // Exclude
   }
-
-  onDataPropertyChanged(e) {
-    this.setState({
-      dataPropertyIndex: e.currentTarget.value
-    }, this.extractProperty)
+  **/
+  onDataPropertyChanged(event) {
+    this.setState(
+        {
+        dataPropertyIndex: event.currentTarget.value
+      }//, this.extractProperty
+    )
   }
-
+  /**
   onRangeMaxChanged(e) {
     const updatedMax = parseFloat(e.target.value)
     this.setState({
@@ -292,20 +303,13 @@ class App extends React.Component {
       datePart: datePartOptions[index]
     }, this.extractProperty)
   }
+  **/
 
   render() {
-    const selectDataProperty = dataStructures.map((ds, index) => 
-      <li key={ds.name}>
-        <span><input
-          type="radio"
-          name="data"
-          value={index}
-          onChange={this.onDataPropertyChanged}
-          checked={parseInt(this.state.dataPropertyIndex) === index}
-          /> {ds.name}</span><br/>
-      </li>
-    )
+    
+    
 
+    /*
     var controls = []
     if (this.dataType() === 'number') {
       controls.push(<NumberDataSetControls
@@ -330,17 +334,19 @@ class App extends React.Component {
         onDatePartChanged={this.onDatePartChanged}
       />)
     }
-
+    */
     return (
       <div id="app">
         <h1>{this.state.title}</h1>
+        {/*
         <p>Dataset Min: {this.state.min}</p>
         <p>Dataset Max: {this.state.max}</p>
-
-        <ul>
-          {selectDataProperty}
-        </ul>
-
+        */}
+        <SelectDataProperty
+          onDataPropertyChanged = {this.onDataPropertyChanged}
+          dataPropertyIndex = {this.state.dataPropertyIndex}
+        />
+        {/*
         <div id="controls">
           {controls}
         </div>
@@ -350,7 +356,7 @@ class App extends React.Component {
         <BarChart
           data={this.state.chartData}
           number={this.isNumber}
-        />
+        />*/}
       </div>
     )
   }
