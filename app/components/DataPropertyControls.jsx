@@ -1,5 +1,5 @@
 const React = require('react');
-const dataStructures = require('../helpers/dataStructure')
+const dataStructures = require('../helpers/dataStructures')
 const NumberDataSetControls = require('./NumberDataSetControls')
 const DateTimeDataSetControls = require('./DateTimeDataSetControls')
 
@@ -21,7 +21,7 @@ module.exports = function DataPropertyControls(props) {
         max={props.max}
         onRangeMaxChanged={props.onRangeMaxChanged}
         onRangeMinChanged={props.onRangeMinChanged}
-        data={props.data}
+        dataLength={props.dataLength}
         numberZoom={props.numberZoom}
         maxNumberZoom={settings.maxNumberZoom}
         onNumberZoomChanged={props.onNumberZoomChanged}

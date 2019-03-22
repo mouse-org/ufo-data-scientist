@@ -1,5 +1,5 @@
 const React = require('react');
-const dataStructures = require('../helpers/dataStructure')
+const dataStructures = require('../helpers/dataStructures')
 
 module.exports = function SelectDataProperty(props) {
     const selectDataProperty = dataStructures.map((ds, index) => 

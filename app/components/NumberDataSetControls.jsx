@@ -17,7 +17,7 @@ function NumberDataSetControls(props) {
         <input
           type="range"
           min="2"
-          max={props.data.length > props.maxNumberZoom ? props.maxNumberZoom : props.data.length}
+          max={props.dataLength > props.maxNumberZoom ? props.maxNumberZoom : props.dataLength}
           value={props.numberZoom}
           onChange={props.onNumberZoomChanged}
           className="slider"

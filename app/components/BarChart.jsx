@@ -12,9 +12,11 @@ class BarChart extends React.Component {
     }
   }
 
+  /*
   shouldComponentUpdate() {
     return true
   }
+  */
 
   componentDidUpdate(prevProps) {
     this.viz()

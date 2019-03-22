@@ -1,13 +1,9 @@
-const dataStructures = require('./dataStructure')
 const months = require('./dateOrders').months
 const daysOfTheWeek = require('./dateOrders').daysOfTheWeek
 
-module.exports = function(p, excludedValue, dataPropertyIndex, datePart, a, b) {
-    
+module.exports = function(p, excludedValue, dataType, datePart, a, b) {
+
   if (p) {
-    //console.log("DPI:", dataPropertyIndex)
-    const dataType = dataStructures[dataPropertyIndex][p]
-    //console.log("DT:", dataType, "DP:", datePart)
     // Array of objects sort by property
 
       if (a[p] === excludedValue) {
