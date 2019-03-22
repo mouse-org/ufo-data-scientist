@@ -2,18 +2,16 @@ const React = require('react')
 const ReactDOM = require('react-dom')
 //const uuidv4 = require('uuid/v4')
 
-//*const data = require('./newData')
+const data = require('./newData')
 
 //*const compareObjects = require('./helpers/compareObjects')
 
-//*const maxNumberZoom = 50;
-
 /* Components */
 const SelectDataProperty = require('./components/SelectDataProperty')
+const DataPropertyControls = require('./components/DataPropertyControls')
 //*const BarChart = require('./components/BarChart')
-//*const NumberDataSetControls = require('./components/NumberDataSetControls')
-//*const DateTimeDataSetControls = require('./components/DateTimeDataSetControls')
-//*const datePartOptions = require('./helpers/datePartOptions')
+
+const datePartOptions = require('./helpers/datePartOptions')
 
 class App extends React.Component {
   constructor(props) {
@@ -28,15 +26,14 @@ class App extends React.Component {
     //*this.onDatePartChanged = this.onDatePartChanged.bind(this)
     this.state = {
       title: "UFO Data Scientist",
-      //*data: data,
+      data: data,
       dataPropertyIndex: 5,
-      //*min: 0,
-      //*max: 50,
-      //*rangeMin: 0,
-      //*rangeMax: 50,
-      //*numberZoom: data.length > 10 ? 10 : data.length > maxNumberZoom ? maxNumberZoom : data.length,
-      //*maxNumberZoom: maxNumberZoom,
-      //*datePart: datePartOptions[0],
+      min: 0,
+      max: 50,
+      rangeMin: 0,
+      rangeMax: 50,
+      numberZoom: data.length > 10 ? 10 : data.length > maxNumberZoom ? maxNumberZoom : data.length,
+      datePart: datePartOptions[0],
       //*chartData: []
     }
   }
@@ -309,32 +306,10 @@ class App extends React.Component {
     
     
 
-    /*
-    var controls = []
-    if (this.dataType() === 'number') {
-      controls.push(<NumberDataSetControls
-        label={dataStructures[this.state.dataPropertyIndex].name}
-        key={dataStructures[this.state.dataPropertyIndex].name}
-        rangeMin={this.state.rangeMin}
-        rangeMax={this.state.rangeMax}
-        min={this.state.min}
-        max={this.state.max}
-        onRangeMaxChanged={this.onRangeMaxChanged}
-        onRangeMinChanged={this.onRangeMinChanged}
-        data={this.state.data}
-        numberZoom={this.state.numberZoom}
-        maxNumberZoom={maxNumberZoom}
-        onNumberZoomChanged={this.onNumberZoomChanged}
-      />)
-    } else if (this.dataType() === 'datetime') {
-      controls.push(<DateTimeDataSetControls
-        label={dataStructures[this.state.dataPropertyIndex].name}
-        key={dataStructures[this.state.dataPropertyIndex].name}
-        datePart={this.state.datePart.name}
-        onDatePartChanged={this.onDatePartChanged}
-      />)
-    }
-    */
+    
+
+    
+
     return (
       <div id="app">
         <h1>{this.state.title}</h1>
@@ -343,9 +318,30 @@ class App extends React.Component {
         <p>Dataset Max: {this.state.max}</p>
         */}
         <SelectDataProperty
-          onDataPropertyChanged = {this.onDataPropertyChanged}
-          dataPropertyIndex = {this.state.dataPropertyIndex}
+          onDataPropertyChanged={this.onDataPropertyChanged}
+          dataPropertyIndex={this.state.dataPropertyIndex}
         />
+
+        <DataPropertyControls
+          dataPropertyIndex = {this.state.dataPropertyIndex}
+
+          // Number
+          rangeMin={this.state.rangeMin}
+          rangeMax={this.state.rangeMax}
+          min={this.state.min}
+          max={this.state.max}
+          onRangeMaxChanged={this.onRangeMaxChanged}
+          onRangeMinChanged={this.onRangeMinChanged}
+          data={this.state.data}
+          numberZoom={this.state.numberZoom}
+          onNumberZoomChanged={this.onNumberZoomChanged}
+
+          // DateTime
+          datePart = {this.state.datePart.name}
+          onDatePartChanged={this.onDatePartChanged}
+        />
+
+
         {/*
         <div id="controls">
           {controls}
