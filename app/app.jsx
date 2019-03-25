@@ -9,8 +9,11 @@ const dataLength = data.length
 const extractDataForSelectedProperty = require('./helpers/extractDataForSelectedProperty')
 const vectorsFromSetAndValues = require('./helpers/vectorsFromSetAndValues')
 const groupData = require('./helpers/groupData')
+
+
 const settings = require('./helpers/settings')
 const maxNumberZoom = settings.maxNumberZoom
+const defaultDataProperty = settings.defaultDataProperty
 
 /* Components */
 const SelectDataProperty = require('./components/SelectDataProperty')
@@ -29,13 +32,20 @@ class App extends React.Component {
     this.onRangeMinChanged = this.onRangeMinChanged.bind(this)
     this.onNumberZoomChanged = this.onNumberZoomChanged.bind(this)
     this.onDatePartChanged = this.onDatePartChanged.bind(this)
+    console.log("DATA PROPERTY INDEX:", defaultDataProperty)
     this.state = {
       title: "UFO Data Scientist",
-      dataPropertyIndex: 5,
+      dataPropertyIndex: defaultDataProperty,
       min: 0,
       max: 50,
-      rangeMin: false,
-      rangeMax: false,
+      ranges: {
+        [defaultDataProperty]: {
+          min: false,
+          max: false
+        }
+      },
+      //rangeMin: false,
+      //rangeMax: false,
       numberZoom: data.length > 10 ?
                     10 :
                     (
@@ -49,6 +59,7 @@ class App extends React.Component {
   }
 
   componentDidMount() {
+    
     this.processDataForChart()
   }
 
@@ -67,8 +78,10 @@ class App extends React.Component {
     const datePartIndex = this.state.datePartIndex
     const datePart = this.datePart(datePartIndex)
     const numberZoom = this.state.numberZoom
-    var rangeMin = this.state.rangeMin
-    var rangeMax = this.state.rangeMax
+    //var rangeMin = this.state.rangeMin
+    //var rangeMax = this.state.rangeMax
+    var rangeMin = this.state.ranges[dataPropertyIndex].min
+    var rangeMax = this.state.ranges[dataPropertyIndex].max
 
     const selectedData = extractDataForSelectedProperty(data, dataPropertyIndex, dataType, datePart)
 
@@ -132,31 +145,60 @@ class App extends React.Component {
     var newState = {
       min: absMin,
       max: absMax,
-      rangeMin: rangeMin,
-      rangeMax: rangeMax,
+      //rangeMin: rangeMin,
+      //rangeMax: rangeMax,
       chartData: chartData
     }
 
-    this.setState(newState)
+    this.setState((state, props) => {
+      
+      var newRanges = state.ranges
+      newRanges[dataPropertyIndex] = {
+        min: rangeMin,
+        max: rangeMax
+      }
+      newState.ranges = newRanges
+
+      return newState
+    })
   }
 
   onDataPropertyChanged(event) {
-    this.setState(
-      {
-        dataPropertyIndex: event.currentTarget.value,
-        rangeMin: false,
-        rangeMax: false
-      }, this.processDataForChart
-    )
+    const newDataPropertyIndex = event.currentTarget.value
+    this.setState((state, props) => {
+      var newRanges = state.ranges
+      if (!newRanges[newDataPropertyIndex]) {
+        newRanges[newDataPropertyIndex] = {
+          min: false,
+          max: false
+        }
+      }
+
+      const newState = {
+        dataPropertyIndex: newDataPropertyIndex,
+        ranges: newRanges
+        //rangeMin: false,
+        //rangeMax: false
+      }
+
+      console.log("NEW STATE:", newState)
+
+      return newState
+    }, this.processDataForChart)
   }
 
   onRangeMaxChanged(e) {
     const updatedMax = parseFloat(e.target.value)
     
     this.setState((state, props) => {
-      if (updatedMax <= state.rangeMin) { return {} }
-      return {
-        rangeMax: updatedMax
+      var newRanges = state.ranges
+      if (updatedMax <= newRanges[state.dataPropertyIndex].min) {
+        return {}
+      } else {
+        newRanges[state.dataPropertyIndex].max = updatedMax
+        return {
+          ranges: newRanges
+        }
       }
     }, this.processDataForChart)
   }
@@ -164,10 +206,16 @@ class App extends React.Component {
   onRangeMinChanged(e) {
     const updatedMin = parseFloat(e.target.value)
     this.setState((state, props) => {
-      if (updatedMin >= state.rangeMax) { return {} }
-      return {
-        rangeMin: updatedMin
+      var newRanges = state.ranges
+      if (updatedMin >= newRanges[state.dataPropertyIndex].max) {
+        return {}
+      } else {
+        newRanges[state.dataPropertyIndex].min = updatedMin
+        return {
+          ranges: newRanges
+        }
       }
+      
     }, this.processDataForChart)
   }
   onNumberZoomChanged(e) {
@@ -191,8 +239,8 @@ class App extends React.Component {
       <div id="app">
         <h1>{this.state.title}</h1>
 
-        <p>Dataset Min: {this.state.rangeMin}</p>
-        <p>Dataset Max: {this.state.rangeMax}</p>
+        <p>Dataset Min: {this.state.ranges[this.state.dataPropertyIndex].min}</p>
+        <p>Dataset Max: {this.state.ranges[this.state.dataPropertyIndex].max}</p>
 
         <SelectDataProperty
           onDataPropertyChanged={this.onDataPropertyChanged}
@@ -203,8 +251,8 @@ class App extends React.Component {
           dataPropertyIndex = {this.state.dataPropertyIndex}
 
           // Number
-          rangeMin={this.state.rangeMin}
-          rangeMax={this.state.rangeMax}
+          rangeMin={this.state.ranges[this.state.dataPropertyIndex].min}
+          rangeMax={this.state.ranges[this.state.dataPropertyIndex].max}
           min={this.state.min}
           max={this.state.max}
           onRangeMaxChanged={this.onRangeMaxChanged}
