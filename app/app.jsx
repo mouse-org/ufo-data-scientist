@@ -14,8 +14,10 @@ const groupData = require('./helpers/groupData')
 const settings = require('./helpers/settings')
 const maxNumberZoom = settings.maxNumberZoom
 const defaultDataProperty = settings.defaultDataProperty
+const defaultSecondaryDataProperty = settings.defaultSecondaryDataProperty
 
 /* Components */
+const ChartTypeControls = require('./components/ChartTypeControls')
 const SelectDataProperty = require('./components/SelectDataProperty')
 const DataPropertyControls = require('./components/DataPropertyControls')
 const BarChart = require('./components/BarChart')
@@ -27,6 +29,7 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.processDataForChart = this.processDataForChart.bind(this)
+    this.onChartTypeChanged = this.onChartTypeChanged.bind(this)
     this.onDataPropertyChanged = this.onDataPropertyChanged.bind(this)
     this.onRangeMaxChanged = this.onRangeMaxChanged.bind(this)
     this.onRangeMinChanged = this.onRangeMinChanged.bind(this)
@@ -35,7 +38,10 @@ class App extends React.Component {
     console.log("DATA PROPERTY INDEX:", defaultDataProperty)
     this.state = {
       title: "UFO Data Scientist",
+      chartType: 'bar',
       dataPropertyIndex: defaultDataProperty,
+      secondaryDataProperty: defaultSecondaryDataProperty,
+      datePartIndex: 0,
       min: 0,
       max: 50,
       ranges: {
@@ -44,8 +50,6 @@ class App extends React.Component {
           max: false
         }
       },
-      //rangeMin: false,
-      //rangeMax: false,
       numberZoom: data.length > 10 ?
                     10 :
                     (
@@ -53,7 +57,6 @@ class App extends React.Component {
                       maxNumberZoom :
                       data.length
                     ),
-      datePartIndex: 0,
       chartData: []
     }
   }
@@ -163,6 +166,12 @@ class App extends React.Component {
     })
   }
 
+  onChartTypeChanged(newChartType) {
+    this.setState({
+        chartType: newChartType
+      }, this.processDataForChart)
+  }
+
   onDataPropertyChanged(event) {
     const newDataPropertyIndex = event.currentTarget.value
     this.setState((state, props) => {
@@ -177,11 +186,7 @@ class App extends React.Component {
       const newState = {
         dataPropertyIndex: newDataPropertyIndex,
         ranges: newRanges
-        //rangeMin: false,
-        //rangeMax: false
       }
-
-      console.log("NEW STATE:", newState)
 
       return newState
     }, this.processDataForChart)
@@ -235,12 +240,32 @@ class App extends React.Component {
 
   render() {
 
+    var chart = <div><h3>Error: No Chart</h3></div>
+
+    if (this.state.chartType === 'bar') {
+      chart = (
+        <BarChart
+          data={this.state.chartData}
+          number={this.isNumber}
+        />
+      )
+    }
+
+
+
     return (
       <div id="app">
         <h1>{this.state.title}</h1>
 
+        <p>Chart Type: {this.state.chartType}</p>
+
         <p>Dataset Min: {this.state.ranges[this.state.dataPropertyIndex].min}</p>
         <p>Dataset Max: {this.state.ranges[this.state.dataPropertyIndex].max}</p>
+
+        <ChartTypeControls
+          chartType={this.state.chartType}
+          onChartTypeChanged={this.onChartTypeChanged}
+        />
 
         <SelectDataProperty
           onDataPropertyChanged={this.onDataPropertyChanged}
@@ -268,10 +293,7 @@ class App extends React.Component {
 
         <h3>Data:</h3>
 
-        <BarChart
-          data={this.state.chartData}
-          number={this.isNumber}
-        />
+        {chart}
 
       </div>
     )
