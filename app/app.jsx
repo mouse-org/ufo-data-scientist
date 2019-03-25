@@ -10,7 +10,6 @@ const extractDataForSelectedProperty = require('./helpers/extractDataForSelected
 const vectorsFromSetAndValues = require('./helpers/vectorsFromSetAndValues')
 const groupData = require('./helpers/groupData')
 
-
 const settings = require('./helpers/settings')
 const maxNumberZoom = settings.maxNumberZoom
 const defaultDataProperty = settings.defaultDataProperty
@@ -20,7 +19,8 @@ const defaultSecondaryDataProperty = settings.defaultSecondaryDataProperty
 const ChartTypeControls = require('./components/ChartTypeControls')
 const SelectDataProperty = require('./components/SelectDataProperty')
 const DataPropertyControls = require('./components/DataPropertyControls')
-const BarChart = require('./components/BarChart')
+const BarChart = require('./components/charts/BarChart')
+const LineChart = require('./components/charts/LineChart')
 
 const datePartOptions = require('./helpers/datePartOptions')
 const dataStructures = require('./helpers/dataStructures')
@@ -148,8 +148,6 @@ class App extends React.Component {
     var newState = {
       min: absMin,
       max: absMax,
-      //rangeMin: rangeMin,
-      //rangeMax: rangeMax,
       chartData: chartData
     }
 
@@ -249,9 +247,14 @@ class App extends React.Component {
           number={this.isNumber}
         />
       )
+    } else if (this.state.chartType === 'line') {
+      chart = (
+        <LineChart
+          data={this.state.chartData}
+          number={this.isNumber}
+        />
+      )
     }
-
-
 
     return (
       <div id="app">
