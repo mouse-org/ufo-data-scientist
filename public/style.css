@@ -213,3 +213,9 @@ ul.shape-data-point-list > li {
   display: inline-block;
   vertical-align: top;
 }
+
+#viz .line {
+  fill: none;
+  stroke: #ffab00;
+  stroke-width: 3;
+}

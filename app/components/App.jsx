@@ -244,14 +244,12 @@ class App extends React.Component {
       chart = (
         <BarChart
           data={this.state.chartData}
-          number={this.isNumber}
         />
       )
     } else if (this.state.chartType === 'line') {
       chart = (
         <LineChart
           data={this.state.chartData}
-          number={this.isNumber}
         />
       )
     }

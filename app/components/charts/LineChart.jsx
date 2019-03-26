@@ -12,15 +12,13 @@ class LineChart extends React.Component {
   }
 
   componentDidUpdate(prevProps) {
+    console.log("DID UPDATE")
+    d3.selectAll("svg").remove();
     this.viz()
   }
 
   viz() {
-    if (this.props.number) {
-      this.drawChart(this.props.data.map((d,i) => { return {name: i, value: d}}), this.state.vizMultiplier)
-    } else {
-      this.drawChart(this.props.data, this.state.vizMultiplier)
-    }
+   this.drawChart(this.props.data)
   }
 
   componentWillReceiveProps() {
@@ -31,34 +29,62 @@ class LineChart extends React.Component {
     this.viz()
   }
 
-  drawChart(data, vizMultiplier) {
-    //console.log("DRAW CHARAT DATA:", data)
-    //console.log("VM:", vizMultiplier)
+  drawChart(data) {
+    console.log("DRAW Line CHART DATA:", data)
     var width = 960,
     height = 500;
 
     var margin = ({top: 20, right: 0, bottom: 30, left: 40})
     function updateChart() {
-      /*
-      var sel = d3.select("#viz")
-      .selectAll("div")
-      .data(data)
-      .style("width", d => d.value * vizMultiplier + 'px')
-      .text(d => d.name + ': ' + d.value)
+      console.log("UPDATE CHART")
+      //var ds = [{y: 5}, {y: 3}, {y: 5}, {y: 6}, {y: 7}]
+      var ds = data.map(d => ({y: d.value}))
+      // TEMPORARY
+      var ds2 = data.map(d => ({y: d.value / 2}))
+      console.log("DS:", ds)
+      var max = 0;
+      ds.map(i => max = i.y > max ? i.y : max);
 
-      sel.enter()
-      .append("div")
-      .style("width", d => d.value * vizMultiplier + 'px') //this.state.vizMultiplier
-      .text(d => d.name + ': ' + d.value)
+      var xScale = d3
+      .scaleLinear()
+      .domain([0, ds.length]) // input
+      .range([0, width]); // output
 
-      sel.exit().remove()
-      */
+      // 6. Y scale will use the randomly generate number 
+      var yScale = d3
+      .scaleLinear()
+      .domain([0, max]) // input 
+      .range([height, 0]); // output 
+
+      // 7. d3's line generator
+      var line = d3
+      .line()
+      .x(function(d, i) { return xScale(i); }) // set the x values for the line generator
+      .y(function(d) { return yScale(d.y); }) // set the y values for the line generator 
+      .curve(d3.curveMonotoneX) // apply smoothing to the line
+
+      var svg = d3.select("#viz")
+      .append("svg")
+      .attr("width", width)
+      .attr("height", height)
+      .append("g")
+
+      svg.append("path")
+      .datum(ds) // 10. Binds data to the line 
+      .attr("class", "line") // Assign a class for styling 
+      .attr("d", line); // 11. Calls the line generator
+      
+      svg.append("path")
+      .datum(ds2) // 10. Binds data to the line 
+      .attr("class", "line") // Assign a class for styling 
+      .attr("d", line); // 11. Calls the line generator
+
+      //svg.exit().remove()
     }
     updateChart()
   }
 
   render() {
-    //console.log("DATA:", this.props.data)
     /*
     const showData = this.props.data.map(d => 
       <li key={d.name}>{d.name}: {d.value}</li>
@@ -79,7 +105,6 @@ class LineChart extends React.Component {
       </div>
     )
   }
-
 }
 
 module.exports = LineChart;

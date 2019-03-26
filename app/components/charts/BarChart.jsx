@@ -23,12 +23,7 @@ class BarChart extends React.Component {
   }
 
   viz() {
-    if (this.props.number) {
-      const mappedData = this.props.data.map((d,i) => ({name: i, value: d}))
-      this.drawChart(mappedData, this.state.vizMultiplier)
-    } else {
-      this.drawChart(this.props.data, this.state.vizMultiplier)
-    }
+    this.drawChart(this.props.data, this.state.vizMultiplier)
   }
 
   componentWillReceiveProps() {
