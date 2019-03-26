@@ -24,7 +24,8 @@ class BarChart extends React.Component {
 
   viz() {
     if (this.props.number) {
-      this.drawChart(this.props.data.map((d,i) => { return {name: i, value: d}}), this.state.vizMultiplier)
+      const mappedData = this.props.data.map((d,i) => ({name: i, value: d}))
+      this.drawChart(mappedData, this.state.vizMultiplier)
     } else {
       this.drawChart(this.props.data, this.state.vizMultiplier)
     }
@@ -60,7 +61,6 @@ class BarChart extends React.Component {
       sel.exit().remove()
     }
     updateChart()
-
   }
 
   render() {

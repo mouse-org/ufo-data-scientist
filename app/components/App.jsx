@@ -1,29 +1,29 @@
 const React = require('react')
-const ReactDOM = require('react-dom')
+//const ReactDOM = require('react-dom')
 //const uuidv4 = require('uuid/v4')
 
-const data = require('./newData')
+const data = require('../newData')
 const dataLength = data.length
 
 /* Helpers */
-const extractDataForSelectedProperty = require('./helpers/extractDataForSelectedProperty')
-const vectorsFromSetAndValues = require('./helpers/vectorsFromSetAndValues')
-const groupData = require('./helpers/groupData')
+const extractDataForSelectedProperty = require('../helpers/extractDataForSelectedProperty')
+const vectorsFromSetAndValues = require('../helpers/vectorsFromSetAndValues')
+const groupData = require('../helpers/groupData')
 
-const settings = require('./helpers/settings')
+const settings = require('../helpers/settings')
 const maxNumberZoom = settings.maxNumberZoom
 const defaultDataProperty = settings.defaultDataProperty
 const defaultSecondaryDataProperty = settings.defaultSecondaryDataProperty
 
 /* Components */
-const ChartTypeControls = require('./components/ChartTypeControls')
-const SelectDataProperty = require('./components/SelectDataProperty')
-const DataPropertyControls = require('./components/DataPropertyControls')
-const BarChart = require('./components/charts/BarChart')
-const LineChart = require('./components/charts/LineChart')
+const ChartTypeControls = require('./ChartTypeControls')
+const SelectDataProperty = require('./SelectDataProperty')
+const DataPropertyControls = require('./DataPropertyControls')
+const BarChart = require('./charts/BarChart')
+const LineChart = require('./charts/LineChart')
 
-const datePartOptions = require('./helpers/datePartOptions')
-const dataStructures = require('./helpers/dataStructures')
+const datePartOptions = require('../helpers/datePartOptions')
+const dataStructures = require('../helpers/dataStructures')
 
 class App extends React.Component {
   constructor(props) {
@@ -304,5 +304,4 @@ class App extends React.Component {
 
 }
 
-
-ReactDOM.render(<App/>, document.getElementById('main'));
+module.exports = App
