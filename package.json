@@ -5,13 +5,15 @@
   "main": "server.js",
   "scripts": {
     "build": "webpack",
-    "start": "npm run build && node server.js"
+    "start": "npm run build && node server.js",
+    "test": "jest"
   },
   "dependencies": {
     "chart.js": "^2.7.2",
     "d3": "^5.7.0",
     "distinct-colors": "^1.0.4",
     "express": "^4.16.3",
+    "jest": "^24.5.0",
     "jsx-loader": "^0.13.2",
     "react": "^16.8.4",
     "react-chartjs-2": "^2.7.2",
@@ -24,6 +26,15 @@
   },
   "engines": {
     "node": "8.x"
+  },
+  "jest": {
+    "setupFilesAfterEnv": [],
+    "verbose": true,
+    "moduleFileExtensions": [
+      "js",
+      "json",
+      "jsx"
+    ]
   },
   "repository": {
     "url": "https://github.com/mouse-org/ufo-data-scientist"
