@@ -31,6 +31,7 @@ class App extends React.Component {
     this.processDataForChart = this.processDataForChart.bind(this)
     this.onChartTypeChanged = this.onChartTypeChanged.bind(this)
     this.onDataPropertyChanged = this.onDataPropertyChanged.bind(this)
+    this.onSecondaryDataPropertyChanged = this.onSecondaryDataPropertyChanged.bind(this)
     this.onRangeMaxChanged = this.onRangeMaxChanged.bind(this)
     this.onRangeMinChanged = this.onRangeMinChanged.bind(this)
     this.onNumberZoomChanged = this.onNumberZoomChanged.bind(this)
@@ -40,7 +41,7 @@ class App extends React.Component {
       title: "UFO Data Scientist",
       chartType: 'bar',
       dataPropertyIndex: defaultDataProperty,
-      secondaryDataProperty: defaultSecondaryDataProperty,
+      secondaryDataPropertyIndex: defaultSecondaryDataProperty,
       datePartIndex: 0,
       min: 0,
       max: 50,
@@ -81,28 +82,26 @@ class App extends React.Component {
     const datePartIndex = this.state.datePartIndex
     const datePart = this.datePart(datePartIndex)
     const numberZoom = this.state.numberZoom
-    //var rangeMin = this.state.rangeMin
-    //var rangeMax = this.state.rangeMax
     var rangeMin = this.state.ranges[dataPropertyIndex].min
     var rangeMax = this.state.ranges[dataPropertyIndex].max
 
     const selectedData = extractDataForSelectedProperty(data, dataPropertyIndex, dataType, datePart)
 
     // Unique values from selectedData
-    console.log("DP")
-    console.log(dataStructures[dataPropertyIndex])
+    //console.log("DP")
+    //console.log(dataStructures[dataPropertyIndex])
     const excludedValue = dataStructures[dataPropertyIndex].exclude
-    console.log("APP: EV: ", excludedValue, typeof excludedValue)
+    //console.log("APP: EV: ", excludedValue, typeof excludedValue)
     var selectedSet = [...new Set(selectedData)]
 
-    console.log("SS:", selectedSet)
+    //console.log("SS:", selectedSet)
 
     // Turn array of values into vectors with values and frequency
     const vectors = vectorsFromSetAndValues(
       selectedData, selectedSet, excludedValue, dataType, datePart.name
     )
 
-    console.log("V:", vectors)
+    //console.log("V:", vectors)
 
     // If excludedValue is included in vectors then remove it:
     var groupableVectors = vectors
@@ -135,7 +134,7 @@ class App extends React.Component {
       chartData = groupableVectors
     }
 
-    console.log("Abs MINMAX:", absMin, absMax)   
+    //console.log("Abs MINMAX:", absMin, absMax)   
 
     // Need to extract value above and add in 'Unknown'
     // here because of different excluded values in data
@@ -143,7 +142,7 @@ class App extends React.Component {
       chartData.push({name: 'Unknown', value: excluded})
     }
 
-    console.log("CHART DATA:", chartData)
+    //console.log("CHART DATA:", chartData)
 
     var newState = {
       min: absMin,
@@ -188,6 +187,11 @@ class App extends React.Component {
 
       return newState
     }, this.processDataForChart)
+  }
+
+  onSecondaryDataPropertyChanged(event) {
+    const newDataPropertyIndex = event.currentTarget.value
+    alert(newDataPropertyIndex)
   }
 
   onRangeMaxChanged(e) {
@@ -269,12 +273,16 @@ class App extends React.Component {
         />
 
         <SelectDataProperty
-          onDataPropertyChanged={this.onDataPropertyChanged}
           dataPropertyIndex={this.state.dataPropertyIndex}
+          secondaryDataPropertyIndex={this.state.secondaryDataPropertyIndex}
+          chartType={this.state.chartType}
+          onDataPropertyChanged={this.onDataPropertyChanged}
+          onSecondaryDataPropertyChanged={this.onSecondaryDataPropertyChanged}
         />
 
         <DataPropertyControls
-          dataPropertyIndex = {this.state.dataPropertyIndex}
+          dataPropertyIndex={this.state.dataPropertyIndex}
+          secondaryDataPropertyIndex={this.state.secondaryDataPropertyIndex}
 
           // Number
           rangeMin={this.state.ranges[this.state.dataPropertyIndex].min}
