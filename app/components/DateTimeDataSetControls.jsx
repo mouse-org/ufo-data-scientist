@@ -25,7 +25,7 @@ function DateTimeDataSetControls(props) {
   return (
     <div className="control" style={controlStyle} >
       
-      <h2>Date Time Data Set: { props.label }</h2>
+      <h3>Date Time Data Set: { props.label }</h3>
       <p>Date Part: {props.datePart}</p>
       <div id="datetime-function-select">
         {options}

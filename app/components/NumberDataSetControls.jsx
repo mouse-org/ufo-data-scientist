@@ -10,7 +10,12 @@ function NumberDataSetControls(props) {
 
   return (
     <div className="control" style={controlStyle} >
-      <h2>Number Data Set: { props.label }</h2>
+      <h3>Number Data Set: { props.label }</h3>
+
+      <h4>Min/Max:</h4>
+      <p>Dataset Min: {props.rangeMin}</p>
+      <p>Dataset Max: {props.rangeMax}</p>
+
       <p>Number Zoom: {props.numberZoom}</p>
       <label>Number Zoom:</label>
       <div id="number-zoom-slider">

@@ -1,11 +1,6 @@
 const React = require('react');
 const dataStructures = require('../helpers/dataStructures')
 
-const containerStyle = {
-  border: '2px solid blue',
-  padding: '5px'
-}
-
 module.exports = function SelectDataProperty(props) {
 
     function inputFromDataStructure(currentIndex, onChanged, name, ds, index) {
@@ -36,6 +31,7 @@ module.exports = function SelectDataProperty(props) {
 
     const selectDataProperty = <div><ul>{dataPropertyList}</ul></div>
 
+    /*
     var dataStructuresAndSightings = dataStructures.slice(0, dataStructures.length)
     dataStructuresAndSightings.push({name: "sightings"})
 
@@ -48,14 +44,18 @@ module.exports = function SelectDataProperty(props) {
     const secondaryDataPropertyList = dataStructuresAndSightings.map(dS2Map)
 
     const selectSecondaryDataProperty = <div><ul>{secondaryDataPropertyList}</ul></div>
-    
+    */
+
     return (
-      <div style={containerStyle}>
+      <div>
+        <h3>Data Property {props.index}</h3>
         {selectDataProperty}
-        <h3>Dataset: {props.dataPropertyIndex}</h3>
+        <h3>Dataset Index: {props.dataPropertyIndex}</h3>
+        {/*
         <hr/>
         {selectSecondaryDataProperty}
         <h3>Secondary Dataset: {props.secondaryDataPropertyIndex}</h3>
+        */}
       </div>
     );
   }

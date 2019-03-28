@@ -18,8 +18,6 @@ const defaultSecondaryDataProperty = settings.defaultSecondaryDataProperty
 /* Components */
 const DatasetControls = require('./DatasetControls')
 const ChartTypeControls = require('./ChartTypeControls')
-const SelectDataProperty = require('./SelectDataProperty')
-const DataPropertyControls = require('./DataPropertyControls')
 const BarChart = require('./charts/BarChart')
 const LineChart = require('./charts/LineChart')
 
@@ -272,35 +270,21 @@ class App extends React.Component {
 
         <p>Chart Type: {this.state.chartType}</p>
 
-        <DatasetControls
-
-        />
-
-        <p>Dataset Min: {this.state.ranges[this.state.dataPropertyIndex].min}</p>
-        <p>Dataset Max: {this.state.ranges[this.state.dataPropertyIndex].max}</p>
-
         <ChartTypeControls
           chartType={this.state.chartType}
           onChartTypeChanged={this.onChartTypeChanged}
         />
 
-        <SelectDataProperty
+        <DatasetControls
+          index={0}
           dataPropertyIndex={this.state.dataPropertyIndex}
-          secondaryDataPropertyIndex={this.state.secondaryDataPropertyIndex}
-          chartType={this.state.chartType}
+          ranges={this.state.ranges}
+          dataType={this.dataType(this.state.dataPropertyIndex)}
           onDataPropertyChanged={this.onDataPropertyChanged}
-          onSecondaryDataPropertyChanged={this.onSecondaryDataPropertyChanged}
-        />
-
-        <DataPropertyControls
-          dataPropertyIndex={this.state.dataPropertyIndex}
-          secondaryDataPropertyIndex={this.state.secondaryDataPropertyIndex}
 
           // Number
-          rangeMin={this.state.ranges[this.state.dataPropertyIndex].min}
-          rangeMax={this.state.ranges[this.state.dataPropertyIndex].max}
-          min={this.state.min}
-          max={this.state.max}
+          min={this.state.min /* 🚸 This is global, needs to be per ds */}
+          max={this.state.max /* 🚸 This is global, needs to be per ds */}
           onRangeMaxChanged={this.onRangeMaxChanged}
           onRangeMinChanged={this.onRangeMinChanged}
           dataLength={dataLength}
