@@ -16,6 +16,7 @@ const defaultDataProperty = settings.defaultDataProperty
 const defaultSecondaryDataProperty = settings.defaultSecondaryDataProperty
 
 /* Components */
+const DatasetControls = require('./DatasetControls')
 const ChartTypeControls = require('./ChartTypeControls')
 const SelectDataProperty = require('./SelectDataProperty')
 const DataPropertyControls = require('./DataPropertyControls')
@@ -270,6 +271,10 @@ class App extends React.Component {
         <h1>{this.state.title}</h1>
 
         <p>Chart Type: {this.state.chartType}</p>
+
+        <DatasetControls
+
+        />
 
         <p>Dataset Min: {this.state.ranges[this.state.dataPropertyIndex].min}</p>
         <p>Dataset Max: {this.state.ranges[this.state.dataPropertyIndex].max}</p>
