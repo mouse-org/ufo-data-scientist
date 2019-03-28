@@ -191,7 +191,14 @@ class App extends React.Component {
 
   onSecondaryDataPropertyChanged(event) {
     const newDataPropertyIndex = event.currentTarget.value
-    alert(newDataPropertyIndex)
+    this.setState((state, props) => {
+
+      const newState = {
+        secondaryDataPropertyIndex: newDataPropertyIndex
+      }
+
+      return newState
+    }, this.processDataForChart)
   }
 
   onRangeMaxChanged(e) {
@@ -302,7 +309,9 @@ class App extends React.Component {
 
         <h3>Data:</h3>
 
-        {chart}
+        <div id="chart-container">
+          {chart}
+        </div>
 
       </div>
     )

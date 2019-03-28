@@ -5,6 +5,7 @@
 body {
   font-family: arial, sans-serif;
   margin: 2em;
+  margin-bottom: 400px;
 }
 
 ul, li {
@@ -218,4 +219,18 @@ ul.shape-data-point-list > li {
   fill: none;
   stroke: #ffab00;
   stroke-width: 3;
+}
+
+#chart-container {
+  position: fixed;
+  width: Calc(100% - 50px);
+  height: 300px;
+  overflow: scroll;
+  bottom: 0;
+  right: 0;
+  background-color: #E8E8E8;
+  border: 2px solid black;
+  padding: 5px;
+  margin: 10px 25px;
+  border-radius: 5px;
 }

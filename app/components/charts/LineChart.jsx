@@ -7,7 +7,6 @@ class LineChart extends React.Component {
     this.drawChart = this.drawChart.bind(this)
     this.viz = this.viz.bind(this)
     this.state = {
-      vizMultiplier: .5
     }
   }
 
