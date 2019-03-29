@@ -119,7 +119,7 @@ class App extends React.Component {
       excluded = vectors.slice(0, 1)[0].value
     }
 
-    console.log("GV:", groupableVectors)
+    //console.log("GV:", groupableVectors)
 
     var chartData
     var absMin = groupableVectors[0].name
@@ -158,15 +158,15 @@ class App extends React.Component {
 
     this.setState((state, props) => {
       
-      var newRanges = state.datasetSettings
-      newRanges[dataPropertyIndex] = {
+      var newDatasetSettings = state.datasetSettings
+      newDatasetSettings[dataPropertyIndex] = {
         min: rangeMin,
         max: rangeMax,
         absMin: absMin,
         absMax: absMax,
         numberZoom: numberZoom
       }
-      newState.datasetSettings = newRanges
+      newState.datasetSettings = newDatasetSettings
 
       return newState
     })
@@ -212,7 +212,6 @@ class App extends React.Component {
 
   onRangeMaxChanged(e) {
     const updatedMax = parseFloat(e.target.value)
-    
     this.setState((state, props) => {
       var newRanges = state.datasetSettings
       if (updatedMax <= newRanges[state.dataPropertyIndex].min) {
@@ -227,12 +226,18 @@ class App extends React.Component {
   }
 
   onRangeMinChanged(e) {
+    console.log("ETARGETVAL:", e.target.value)
     const updatedMin = parseFloat(e.target.value)
     this.setState((state, props) => {
       var newRanges = state.datasetSettings
+      console.log("CURRENT MAX:", newRanges[state.dataPropertyIndex].max)
+      console.log("MIN:", updatedMin)
+
       if (updatedMin >= newRanges[state.dataPropertyIndex].max) {
+        console.log("INVALID UPDATED MIN")
         return {}
       } else {
+        console.log("UPDATED MIN:", updatedMin)
         newRanges[state.dataPropertyIndex].min = updatedMin
         return {
           datasetSettings: newRanges
@@ -241,6 +246,7 @@ class App extends React.Component {
       
     }, this.processDataForChart)
   }
+
   onNumberZoomChanged(e) {
     var zoom = e.target.value;
     zoom = zoom > maxNumberZoom ? maxNumberZoom : zoom;

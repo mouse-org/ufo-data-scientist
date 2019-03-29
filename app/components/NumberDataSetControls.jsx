@@ -13,8 +13,8 @@ function NumberDataSetControls(props) {
       <h3>Number Data Set: { props.label }</h3>
 
       <h4>Min/Max:</h4>
-      <p>Dataset Min: {props.rangeMin}</p>
-      <p>Dataset Max: {props.rangeMax}</p>
+      <p>Dataset Min: {props.absMin}</p>
+      <p>Dataset Max: {props.absMax}</p>
 
       <label>Number Zoom: ({props.numberZoom})</label>
       <div id="number-zoom-slider">
@@ -28,8 +28,8 @@ function NumberDataSetControls(props) {
           id="number-zoom"
         />
       </div>
-      <p>Range Min: {props.rangeMin}</p>
-      <p>Range Max: {props.rangeMax}</p>
+      <p>Range Min: ({props.rangeMin}) [{props.absMin}]</p>
+      <p>Range Max: ({props.rangeMax}) [{props.absMax}]</p>
       <div id="min-max-sliders">
         <label>Range Max:</label>
         <input
@@ -44,8 +44,8 @@ function NumberDataSetControls(props) {
         <label>Range Min:</label>
         <input
           type="range"
-          min={props.min}
-          max={props.max}
+          min={props.absMin}
+          max={props.absMax}
           value={props.rangeMin}
           onChange={props.onRangeMinChanged}
           className="slider"

@@ -30,8 +30,8 @@ module.exports = function groupData(
       groupedData.push({name: name, value: 0})
     }
 
-    console.log("*SD:", sortedData)
-    console.log("*GD:", groupedData)
+    //console.log("*SD:", sortedData)
+    //console.log("*GD:", groupedData)
 
 
     for (var i = 0, j = 0; i < sortedData.length; i++) {
