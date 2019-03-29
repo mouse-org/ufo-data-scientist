@@ -32,7 +32,7 @@ function DatasetControls(props) {
         onRangeMaxChanged={props.onRangeMaxChanged}
         onRangeMinChanged={props.onRangeMinChanged}
         dataLength={props.dataLength}
-        numberZoom={props.numberZoom}
+        numberZoom={datasetSettings.numberZoom}
         maxNumberZoom={settings.maxNumberZoom}
         onNumberZoomChanged={props.onNumberZoomChanged}
       />

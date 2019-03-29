@@ -47,16 +47,24 @@ class App extends React.Component {
           min: false,
           max: false,
           absMin: 0,
-          absMax: 50
-        }
-      },
-      numberZoom: data.length > 10 ?
+          absMax: 50,
+          numberZoom: data.length > 10 ?
                     10 :
                     (
                       data.length > maxNumberZoom ?
                       maxNumberZoom :
                       data.length
                     ),
+        }
+      },
+      /*numberZoom: data.length > 10 ?
+                    10 :
+                    (
+                      data.length > maxNumberZoom ?
+                      maxNumberZoom :
+                      data.length
+                    ),
+                    */
       chartData: []
     }
   }
@@ -80,9 +88,10 @@ class App extends React.Component {
     const dataType = this.dataType(dataPropertyIndex)
     const datePartIndex = this.state.datePartIndex
     const datePart = this.datePart(datePartIndex)
-    const numberZoom = this.state.numberZoom
-    var rangeMin = this.state.datasetSettings[dataPropertyIndex].min
-    var rangeMax = this.state.datasetSettings[dataPropertyIndex].max
+    const datasetSettings = this.state.datasetSettings[dataPropertyIndex]
+    const numberZoom = datasetSettings.numberZoom
+    var rangeMin = datasetSettings.min
+    var rangeMax = datasetSettings.max
 
     const selectedData = extractDataForSelectedProperty(data, dataPropertyIndex, dataType, datePart)
 
@@ -154,7 +163,8 @@ class App extends React.Component {
         min: rangeMin,
         max: rangeMax,
         absMin: absMin,
-        absMax: absMax
+        absMax: absMax,
+        numberZoom: numberZoom
       }
       newState.datasetSettings = newRanges
 
@@ -234,8 +244,14 @@ class App extends React.Component {
   onNumberZoomChanged(e) {
     var zoom = e.target.value;
     zoom = zoom > maxNumberZoom ? maxNumberZoom : zoom;
-    this.setState({
-      numberZoom: zoom
+    this.setState((state, props) => {
+
+      var newDatasetSettings = state.datasetSettings
+      newDatasetSettings[state.dataPropertyIndex].numberZoom = zoom
+
+      return {
+        datasetSettings: newDatasetSettings
+      }
     }, this.processDataForChart)
   }
 
@@ -286,7 +302,7 @@ class App extends React.Component {
           onRangeMaxChanged={this.onRangeMaxChanged}
           onRangeMinChanged={this.onRangeMinChanged}
           dataLength={dataLength}
-          numberZoom={this.state.numberZoom}
+          //numberZoom={this.state.numberZoom}
           onNumberZoomChanged={this.onNumberZoomChanged}
 
           // DateTime

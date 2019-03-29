@@ -16,8 +16,7 @@ function NumberDataSetControls(props) {
       <p>Dataset Min: {props.rangeMin}</p>
       <p>Dataset Max: {props.rangeMax}</p>
 
-      <p>Number Zoom: {props.numberZoom}</p>
-      <label>Number Zoom:</label>
+      <label>Number Zoom: ({props.numberZoom})</label>
       <div id="number-zoom-slider">
         <input
           type="range"

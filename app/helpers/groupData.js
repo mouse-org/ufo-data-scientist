@@ -3,6 +3,8 @@
 module.exports = function groupData(
   sortedData, groups, rangeMin, rangeMax
 ) {
+
+    console.log("GROUPS:", groups)
     var groupedData = [];
     // Number Data Sets:
     //   duration_minutes,
