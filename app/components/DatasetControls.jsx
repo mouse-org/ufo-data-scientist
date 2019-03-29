@@ -20,15 +20,15 @@ function DatasetControls(props) {
 
   var numberControls
   if (dataType === 'number') {
-    const range = props.ranges[props.dataPropertyIndex]
+    const datasetSettings = props.datasetSettings[props.dataPropertyIndex]
     numberControls = (
       <NumberDataSetControls
         label={dataName}
         key={dataName}
-        rangeMin={range.min}
-        rangeMax={range.max}
-        absMin={range.absMin}
-        absMax={range.absMax}
+        rangeMin={datasetSettings.min}
+        rangeMax={datasetSettings.max}
+        absMin={datasetSettings.absMin}
+        absMax={datasetSettings.absMax}
         onRangeMaxChanged={props.onRangeMaxChanged}
         onRangeMinChanged={props.onRangeMinChanged}
         dataLength={props.dataLength}
