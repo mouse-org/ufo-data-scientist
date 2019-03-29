@@ -2,32 +2,49 @@ const months = require('./dateOrders').months
 const daysOfTheWeek = require('./dateOrders').daysOfTheWeek
 
 module.exports = function(p, excludedValue, dataType, datePart, a, b) {
-
+  /*
+  if (datePart === 'month') {
+    console.log("-- Comparing --")
+    console.log('p:', p)
+    console.log('excludedValue:', excludedValue)
+    console.log('dataType:', dataType)
+    console.log('datePart:', datePart)
+    console.log('a:', a)
+    console.log('b:', b)
+  }
+  */
+  
   if (p) {
     // Array of objects sort by property
 
       if (a[p] === excludedValue) {
+        if (b[p] === excludedValue) {
+          return 0
+        }
         return -1
       }
       if (b[p] === excludedValue) {
         return 1
       }
         
-      if (dataType === 'date_time' && datePart) {
-
+      if (dataType === 'datetime' && datePart) {
         // datePart === year works with regular sort
             
         if (datePart === 'month') {
+
           if (months.indexOf(a[p]) < months.indexOf(b[p])) {
+            console.log(a.name + " is less than " + b.name)
             return -1
           }
           if (months.indexOf(a[p]) > months.indexOf(b[p])) {
+            console.log(a.name + " is greater than " + b.name)
             return  1
           }
             return 0
         }
 
         if (datePart === 'monthAndYear') {
+          console.log("AP:", a[p])
           aL = a[p].length
           const aYear = parseInt(a[p].substring(aL - 4, aL))
           const aMonth = a[p].substring(0, aL - 5)
@@ -146,9 +163,11 @@ module.exports = function(p, excludedValue, dataType, datePart, a, b) {
     }
 
     if (a < b) {
+      
       return -1
     }
     if (a > b) {
+      
       return 1
     }
       return 0

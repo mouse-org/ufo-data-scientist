@@ -242,7 +242,7 @@ class App extends React.Component {
   onDatePartChanged(e) {
     const index = e.currentTarget.value
     this.setState({
-      datePart: datePartOptions[index]
+      datePartIndex: index
     }, this.processDataForChart)
   }
 

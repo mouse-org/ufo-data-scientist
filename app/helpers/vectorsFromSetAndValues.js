@@ -37,5 +37,9 @@ module.exports = function vectorsFromSetAndValues(values, valuesSet, excludedVal
     vectors.push({name: name, value: value})    
   }
   
-  return vectors.sort(compareObjects.bind(this, 'name', excludedValue, dataType, datePartName))
+  const sortedVectors = vectors.sort(compareObjects.bind(this, 'name', excludedValue, dataType, datePartName))
+
+  console.log("SORTED VECTORS:", sortedVectors)
+
+  return sortedVectors
 }

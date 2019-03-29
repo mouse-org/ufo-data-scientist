@@ -2,6 +2,7 @@
   also applies an optional transformationon to the data. */
   
   module.exports = function extractDataForSelectedProperty(data, dataPropertyIndex, dataType, datePart) {
+
     // Default identity transformation
     var transformation = i => i
     // Datetime only transformation
@@ -11,7 +12,10 @@
         const itemDate = new Date(i)
         if (datePart.method) {
           var itemDatePart = itemDate[datePart.method]()
+        } else {
+          itemDatePart = itemDate
         }
+
         return subtransform(itemDatePart).toString()
       }
     }
