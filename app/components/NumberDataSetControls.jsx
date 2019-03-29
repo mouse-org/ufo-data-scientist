@@ -35,8 +35,8 @@ function NumberDataSetControls(props) {
         <label>Range Max:</label>
         <input
           type="range"
-          min={props.min}
-          max={props.max}
+          min={props.absMin}
+          max={props.absMax}
           value={props.rangeMax}
           onChange={props.onRangeMaxChanged}
           className="slider"

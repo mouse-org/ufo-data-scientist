@@ -42,12 +42,12 @@ class App extends React.Component {
       dataPropertyIndex: defaultDataProperty,
       secondaryDataPropertyIndex: defaultSecondaryDataProperty,
       datePartIndex: 0,
-      min: 0,
-      max: 50,
       ranges: {
         [defaultDataProperty]: {
           min: false,
-          max: false
+          max: false,
+          absMin: 0,
+          absMax: 50
         }
       },
       numberZoom: data.length > 10 ?
@@ -144,8 +144,6 @@ class App extends React.Component {
     //console.log("CHART DATA:", chartData)
 
     var newState = {
-      min: absMin,
-      max: absMax,
       chartData: chartData
     }
 
@@ -154,7 +152,9 @@ class App extends React.Component {
       var newRanges = state.ranges
       newRanges[dataPropertyIndex] = {
         min: rangeMin,
-        max: rangeMax
+        max: rangeMax,
+        absMin: absMin,
+        absMax: absMax
       }
       newState.ranges = newRanges
 
@@ -278,13 +278,11 @@ class App extends React.Component {
         <DatasetControls
           index={0}
           dataPropertyIndex={this.state.dataPropertyIndex}
-          ranges={this.state.ranges}
           dataType={this.dataType(this.state.dataPropertyIndex)}
           onDataPropertyChanged={this.onDataPropertyChanged}
 
           // Number
-          min={this.state.min /* 🚸 This is global, needs to be per ds */}
-          max={this.state.max /* 🚸 This is global, needs to be per ds */}
+          ranges={this.state.ranges}
           onRangeMaxChanged={this.onRangeMaxChanged}
           onRangeMinChanged={this.onRangeMinChanged}
           dataLength={dataLength}
