@@ -14,6 +14,7 @@ const settings = require('../helpers/settings')
 const maxNumberZoom = settings.maxNumberZoom
 const defaultDataProperty = settings.defaultDataProperty
 const defaultSecondaryDataProperty = settings.defaultSecondaryDataProperty
+const defaultNumberZoom = require('../helpers/defaultNumberZoom')
 
 /* Components */
 const DatasetControls = require('./DatasetControls')
@@ -48,13 +49,7 @@ class App extends React.Component {
           max: false,
           absMin: 0,
           absMax: 50,
-          numberZoom: data.length > 10 ?
-                    10 :
-                    (
-                      data.length > maxNumberZoom ?
-                      maxNumberZoom :
-                      data.length
-                    ),
+          numberZoom: defaultNumberZoom(dataLength, maxNumberZoom),
         }
       },
       /*numberZoom: data.length > 10 ?
@@ -90,6 +85,7 @@ class App extends React.Component {
     const datePart = this.datePart(datePartIndex)
     const datasetSettings = this.state.datasetSettings[dataPropertyIndex]
     const numberZoom = datasetSettings.numberZoom
+    console.log("NUMBER ZOOM:", numberZoom)
     var rangeMin = datasetSettings.min
     var rangeMax = datasetSettings.max
 
@@ -185,7 +181,8 @@ class App extends React.Component {
       if (!newRanges[newDataPropertyIndex]) {
         newRanges[newDataPropertyIndex] = {
           min: false,
-          max: false
+          max: false,
+          numberZoom: defaultNumberZoom(dataLength, maxNumberZoom)
         }
       }
 
@@ -218,30 +215,20 @@ class App extends React.Component {
         return {}
       } else {
         newRanges[state.dataPropertyIndex].max = updatedMax
-        return {
-          datasetSettings: newRanges
-        }
+        return { datasetSettings: newRanges }
       }
     }, this.processDataForChart)
   }
 
   onRangeMinChanged(e) {
-    console.log("ETARGETVAL:", e.target.value)
     const updatedMin = parseFloat(e.target.value)
     this.setState((state, props) => {
       var newRanges = state.datasetSettings
-      console.log("CURRENT MAX:", newRanges[state.dataPropertyIndex].max)
-      console.log("MIN:", updatedMin)
-
       if (updatedMin >= newRanges[state.dataPropertyIndex].max) {
-        console.log("INVALID UPDATED MIN")
         return {}
       } else {
-        console.log("UPDATED MIN:", updatedMin)
         newRanges[state.dataPropertyIndex].min = updatedMin
-        return {
-          datasetSettings: newRanges
-        }
+        return { datasetSettings: newRanges }
       }
       
     }, this.processDataForChart)
