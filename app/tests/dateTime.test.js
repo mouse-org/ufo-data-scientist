@@ -1,4 +1,4 @@
-const { rounding, monthNameFromNumber } = require('./dateTime')
+const { rounding, monthNameFromNumber } = require('../helpers/dateTime')
 
 test('1-1-2019 in YYYY mode is 2019', () => {
     const dateString = new Date('1-1-2019').toISOString()

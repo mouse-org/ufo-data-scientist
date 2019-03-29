@@ -33,25 +33,21 @@ module.exports = function(p, excludedValue, dataType, datePart, a, b) {
         if (datePart === 'month') {
 
           if (months.indexOf(a[p]) < months.indexOf(b[p])) {
-            console.log(a.name + " is less than " + b.name)
             return -1
           }
           if (months.indexOf(a[p]) > months.indexOf(b[p])) {
-            console.log(a.name + " is greater than " + b.name)
             return  1
           }
             return 0
         }
 
         if (datePart === 'monthAndYear') {
-          console.log("AP:", a[p])
           aL = a[p].length
           const aYear = parseInt(a[p].substring(aL - 4, aL))
           const aMonth = a[p].substring(0, aL - 5)
           bL = b[p].length
           const bYear = parseInt(b[p].substring(bL - 4, bL))
           const bMonth = b[p].substring(0, bL - 5)
-          console.log(aYear, bYear, aMonth, bMonth)
           
           if (aYear < bYear) {
             return -1
