@@ -1,5 +1,7 @@
 const React = require('react')
-var d3 = require("d3")
+const d3 = require("d3")
+
+const findMaxInArrays = require('../../helpers/findMaxInArrays')
 
 class LineChart extends React.Component {
   constructor(props) {
@@ -30,26 +32,27 @@ class LineChart extends React.Component {
 
   drawChart(data) {
     console.log("DRAW Line CHART DATA:", data)
-    var width = 960,
-    height = 500;
-
+ 
     var margin = ({top: 20, right: 0, bottom: 30, left: 40})
     function updateChart() {
-      console.log("UPDATE CHART")
+      const height = 500
+      const max = findMaxInArrays([data], 'value')
+      const minDS = data.map(d => -d.value)
+      const min = findMaxInArrays([minDS], false) * -1
+      const width = document.getElementById("viz").offsetWidth * .9
+
+      console.log("UPDATE CHART", max, width)
       //var ds = [{y: 5}, {y: 3}, {y: 5}, {y: 6}, {y: 7}]
       var ds = data.map(d => ({y: d.value}))
       // TEMPORARY
       var ds2 = data.map(d => ({y: d.value / 2}))
-      console.log("DS:", ds)
-      var max = 0;
-      ds.map(i => max = i.y > max ? i.y : max);
 
       var xScale = d3
       .scaleLinear()
       .domain([0, ds.length]) // input
       .range([0, width]); // output
 
-      // 6. Y scale will use the randomly generate number 
+      // 6. 
       var yScale = d3
       .scaleLinear()
       .domain([0, max]) // input 
@@ -84,12 +87,12 @@ class LineChart extends React.Component {
   }
 
   render() {
-    /*
+
     const showData = this.props.data.map(d => 
       <li key={d.name}>{d.name}: {d.value}</li>
     )
-    */
-   const showData = <h1>Data</h1>
+
+    //const showData = <h1>Data</h1>
 
     return (
       <div id="container">

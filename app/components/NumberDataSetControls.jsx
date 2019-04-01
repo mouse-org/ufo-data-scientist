@@ -28,8 +28,8 @@ function NumberDataSetControls(props) {
           id="number-zoom"
         />
       </div>
-      <p>Range Min: ({props.rangeMin}) [{props.absMin}]</p>
-      <p>Range Max: ({props.rangeMax}) [{props.absMax}]</p>
+      <p>Range Min: {props.rangeMin}</p>
+      <p>Range Max: {props.rangeMax}</p>
       <div id="min-max-sliders">
         <label>Range Max:</label>
         <input

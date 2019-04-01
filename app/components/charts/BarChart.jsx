@@ -1,6 +1,7 @@
 const React = require('react')
-//var BarChart = require("react-chartjs-2").Bar;
-var d3 = require("d3")
+const d3 = require("d3")
+
+const findMaxInArrays = require('../../helpers/findMaxInArrays')
 
 class BarChart extends React.Component {
   constructor(props) {
@@ -8,7 +9,6 @@ class BarChart extends React.Component {
     this.drawChart = this.drawChart.bind(this)
     this.viz = this.viz.bind(this)
     this.state = {
-      vizMultiplier: .5
     }
   }
 
@@ -42,15 +42,34 @@ class BarChart extends React.Component {
 
     var margin = ({top: 20, right: 0, bottom: 30, left: 40})
     function updateChart() {
+      
+      const max = findMaxInArrays([data], 'value')
+      const width = document.getElementById("viz").offsetWidth * .9
+
+      var xScale = d3
+      .scaleLinear()
+      .domain([0, max]) // input
+      .range([0, width]); // output
+
+      // 6.
+      /*
+      var yScale = d3
+      .scaleLinear()
+      .domain([0, max]) // input 
+      .range([height, 0]); // output
+      */
+
       var sel = d3.select("#viz")
       .selectAll("div")
       .data(data)
-      .style("width", d => d.value * vizMultiplier + 'px')
+      // These are when bars are redrawn
+      .style("width", d => xScale(d.value)  + 'px')
       .text(d => d.name + ': ' + d.value)
 
       sel.enter()
       .append("div")
-      .style("width", d => d.value * vizMultiplier + 'px') //this.state.vizMultiplier
+      // These are when bars are initially drawn
+      .style("width", d => xScale(d.value) + 'px') //this.state.vizMultiplier
       .text(d => d.name + ': ' + d.value)
 
       sel.exit().remove()
