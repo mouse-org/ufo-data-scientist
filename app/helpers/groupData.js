@@ -1,4 +1,4 @@
-  
+const lessPreciseIfPossible = require('./lessPreciseIfPossible')
   
 module.exports = function groupData(
   sortedData, groups, rangeMin, rangeMax
@@ -51,37 +51,7 @@ module.exports = function groupData(
       }
     }
 
-    var sameTo1 = false
-    var prev = false
-    for (var i in groupedData) {
-      if (parseInt(groupedData[i].name).toFixed(1) === parseInt(prev).toFixed(1)) {
-        sameTo1 = true;
-        break;
-      }
-      prev = groupedData[i].name
-    }
-
-    if (!sameTo1) {
-      groupedData.map(i => i.name = parseInt(i.name).toFixed(1))
-      var sameTo0 = false
-      prev = false
-      for (var i in groupedData) {
-        if (Math.round(parseInt(groupedData[i].name)) === Math.round(parseInt(prev))) {
-          sameTo0 = true;
-          break;
-        }
-
-        prev = groupedData[i].name
-      }
-
-      if (!sameTo0) {
-        groupedData.map(i => i.name = Math.round(parseInt(i.name)))
-      }
-    }
-
-
-
-
+    groupedData = lessPreciseIfPossible(groupedData)
 
     return groupedData
   }
