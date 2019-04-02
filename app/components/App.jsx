@@ -52,14 +52,6 @@ class App extends React.Component {
           numberZoom: defaultNumberZoom(dataLength, maxNumberZoom),
         }
       },
-      /*numberZoom: data.length > 10 ?
-                    10 :
-                    (
-                      data.length > maxNumberZoom ?
-                      maxNumberZoom :
-                      data.length
-                    ),
-                    */
       chartData: []
     }
   }

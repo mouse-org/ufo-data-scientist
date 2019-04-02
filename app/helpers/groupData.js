@@ -41,11 +41,6 @@ module.exports = function groupData(
 
       // Remove datapoints that are out of range
       if (s.name < roundMax && s.name > roundMin) {
-        //console.log("*i:", i)
-        //console.log("*j:", j)
-        //console.log("SD:", sortedData[i])
-        //console.log("GDL:", groupedData.length)
-        //console.log("GD:", groupedData[j])
 
         if (s.name > g.name) {
           j++
@@ -55,5 +50,41 @@ module.exports = function groupData(
         g.value += s.value
       }
     }
+
+    var sameTo1 = false
+    var prev = false
+    for (var i in groupedData) {
+      if (parseInt(groupedData[i].name).toFixed(1) === parseInt(prev).toFixed(1)) {
+        sameTo1 = true;
+        break;
+      }
+      prev = groupedData[i].name
+    }
+
+    if (!sameTo1) {
+      console.log("** Rounding to 1 place")
+      groupedData.map(i => i.name = parseInt(i.name).toFixed(1))
+      var sameTo0 = false
+      prev = false
+      for (var i in groupedData) {
+        if (Math.round(parseInt(groupedData[i].name)) === Math.round(parseInt(prev))) {
+          sameTo0 = true;
+          break;
+        }
+
+        prev = groupedData[i].name
+      }
+
+      if (!sameTo0) {
+        console.log("**%% Rounding to 0 places")
+        groupedData.map(i => i.name = Math.round(parseInt(i.name)))
+        console.log("GGDD:", groupedData)
+      }
+    }
+
+
+
+
+
     return groupedData
   }
