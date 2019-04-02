@@ -20,7 +20,6 @@ module.exports = function findMaxInArrays(datasetsArray, property) {
             if (ds[j][property] > max) {
               max = ds[j][property]
             }
-            console.log(i, j, "MAX:", max, ds[j][property])
           } else {
             if (typeof ds[j] != 'number') {
               return undefined

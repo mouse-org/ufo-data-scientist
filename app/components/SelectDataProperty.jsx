@@ -11,7 +11,7 @@ module.exports = function SelectDataProperty(props) {
             type="radio"
             name={name}
             value={index}
-            onChange={onChanged}
+            onChange={(e) => onChanged('primary', e)}
             checked={parseInt(currentIndex) === index}
             />
             {ds.name}

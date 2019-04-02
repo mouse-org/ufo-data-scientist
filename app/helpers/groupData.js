@@ -62,7 +62,6 @@ module.exports = function groupData(
     }
 
     if (!sameTo1) {
-      console.log("** Rounding to 1 place")
       groupedData.map(i => i.name = parseInt(i.name).toFixed(1))
       var sameTo0 = false
       prev = false
@@ -76,9 +75,7 @@ module.exports = function groupData(
       }
 
       if (!sameTo0) {
-        console.log("**%% Rounding to 0 places")
         groupedData.map(i => i.name = Math.round(parseInt(i.name)))
-        console.log("GGDD:", groupedData)
       }
     }
 

@@ -51,11 +51,23 @@ function DatasetControls(props) {
     )
   }
 
+  var secondDataProperty
+  if (props.chartType === 'line') {
+    secondDataProperty = (
+      <SelectDataProperty
+        none={true}
+        dataPropertyIndex={props.secondDataPropertyIndex}
+        onDataPropertyChanged={props.onSecondDataPropertyChanged}
+      />
+    )
+  }
+
   return (
     <div className="dataset-control" style={controlStyle} >
       <h2>Dataset Controls:</h2>    
 
       <SelectDataProperty
+        none={false}
         dataPropertyIndex={props.dataPropertyIndex}
         onDataPropertyChanged={props.onDataPropertyChanged}
       />
@@ -63,6 +75,8 @@ function DatasetControls(props) {
       {numberControls}
 
       {dateTimeControls}
+
+      {secondDataProperty}
       
 
     </div>

@@ -35,7 +35,7 @@ class LineChart extends React.Component {
  
     var margin = ({top: 20, right: 0, bottom: 30, left: 40})
     function updateChart() {
-      const height = 500
+      const height = 330
       const max = findMaxInArrays([data], 'value')
       const minDS = data.map(d => -d.value)
       const min = findMaxInArrays([minDS], false) * -1
@@ -45,7 +45,7 @@ class LineChart extends React.Component {
       //var ds = [{y: 5}, {y: 3}, {y: 5}, {y: 6}, {y: 7}]
       var ds = data.map(d => ({y: d.value}))
       // TEMPORARY
-      var ds2 = data.map(d => ({y: d.value / 2}))
+      //var ds2 = data.map(d => ({y: d.value / 2}))
 
       var xScale = d3
       .scaleLinear()
@@ -76,12 +76,14 @@ class LineChart extends React.Component {
       .attr("class", "line") // Assign a class for styling 
       .attr("d", line); // 11. Calls the line generator
       
+      /*
       svg.append("path")
       .datum(ds2) // 10. Binds data to the line 
       .attr("class", "line") // Assign a class for styling 
       .attr("d", line); // 11. Calls the line generator
-
-      //svg.exit().remove()
+      */
+      
+      svg.exit().remove()
     }
     updateChart()
   }

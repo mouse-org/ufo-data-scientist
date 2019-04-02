@@ -13,7 +13,7 @@ const groupData = require('../helpers/groupData')
 const settings = require('../helpers/settings')
 const maxNumberZoom = settings.maxNumberZoom
 const defaultDataProperty = settings.defaultDataProperty
-const defaultSecondaryDataProperty = settings.defaultSecondaryDataProperty
+const defaultSecondDataProperty = settings.defaultSecondDataProperty
 const defaultNumberZoom = require('../helpers/defaultNumberZoom')
 
 /* Components */
@@ -31,25 +31,35 @@ class App extends React.Component {
     this.processDataForChart = this.processDataForChart.bind(this)
     this.onChartTypeChanged = this.onChartTypeChanged.bind(this)
     this.onDataPropertyChanged = this.onDataPropertyChanged.bind(this)
-    this.onSecondaryDataPropertyChanged = this.onSecondaryDataPropertyChanged.bind(this)
+    this.onSecondDataPropertyChanged = this.onSecondDataPropertyChanged.bind(this)
     this.onRangeMaxChanged = this.onRangeMaxChanged.bind(this)
     this.onRangeMinChanged = this.onRangeMinChanged.bind(this)
     this.onNumberZoomChanged = this.onNumberZoomChanged.bind(this)
     this.onDatePartChanged = this.onDatePartChanged.bind(this)
-    console.log("DATA PROPERTY INDEX:", defaultDataProperty)
     this.state = {
       title: "UFO Data Scientist",
       chartType: 'bar',
       dataPropertyIndex: defaultDataProperty,
-      secondaryDataPropertyIndex: defaultSecondaryDataProperty,
+      secondDataPropertyIndex: defaultSecondDataProperty,
       datePartIndex: 0,
       datasetSettings: {
-        [defaultDataProperty]: {
-          min: false,
-          max: false,
-          absMin: 0,
-          absMax: 50,
-          numberZoom: defaultNumberZoom(dataLength, maxNumberZoom),
+        primary: {
+          [defaultDataProperty]: {
+            min: false,
+            max: false,
+            absMin: 0,
+            absMax: 50,
+            numberZoom: defaultNumberZoom(dataLength, maxNumberZoom),
+          }
+        },
+        secondary: {
+          [defaultSecondDataProperty]: {
+            min: false,
+            max: false,
+            absMin: 0,
+            absMax: 50,
+            numberZoom: defaultNumberZoom(dataLength, maxNumberZoom),
+          }
         }
       },
       chartData: []
@@ -75,7 +85,7 @@ class App extends React.Component {
     const dataType = this.dataType(dataPropertyIndex)
     const datePartIndex = this.state.datePartIndex
     const datePart = this.datePart(datePartIndex)
-    const datasetSettings = this.state.datasetSettings[dataPropertyIndex]
+    const datasetSettings = this.state.datasetSettings.primary[dataPropertyIndex]
     const numberZoom = datasetSettings.numberZoom
     console.log("NUMBER ZOOM:", numberZoom)
     var rangeMin = datasetSettings.min
@@ -146,7 +156,7 @@ class App extends React.Component {
 
     this.setState((state, props) => {
       
-      var newDatasetSettings = state.datasetSettings
+      var newDatasetSettings = state.datasetSettings.primary
       newDatasetSettings[dataPropertyIndex] = {
         min: rangeMin,
         max: rangeMax,
@@ -154,7 +164,8 @@ class App extends React.Component {
         absMax: absMax,
         numberZoom: numberZoom
       }
-      newState.datasetSettings = newDatasetSettings
+      newState.datasetSettings = {}
+      newState.datasetSettings.primary = newDatasetSettings
 
       return newState
     })
@@ -166,10 +177,11 @@ class App extends React.Component {
       }, this.processDataForChart)
   }
 
-  onDataPropertyChanged(event) {
+  onDataPropertyChanged(dataset, event) {
     const newDataPropertyIndex = event.currentTarget.value
     this.setState((state, props) => {
-      var newRanges = state.datasetSettings
+      var dsSettings = state.datasetSettings
+      var newRanges = dsSettings[dataset]
       if (!newRanges[newDataPropertyIndex]) {
         newRanges[newDataPropertyIndex] = {
           min: false,
@@ -178,61 +190,67 @@ class App extends React.Component {
         }
       }
 
+      dsSettings[dataset] = newRanges
+
       const newState = {
         dataPropertyIndex: newDataPropertyIndex,
-        datasetSettings: newRanges
+        datasetSettings: dsSettings
       }
 
       return newState
     }, this.processDataForChart)
   }
 
-  onSecondaryDataPropertyChanged(event) {
+  onSecondDataPropertyChanged(event) {
     const newDataPropertyIndex = event.currentTarget.value
     this.setState((state, props) => {
 
       const newState = {
-        secondaryDataPropertyIndex: newDataPropertyIndex
+        secondDataPropertyIndex: newDataPropertyIndex
       }
 
       return newState
     }, this.processDataForChart)
   }
 
-  onRangeMaxChanged(e) {
+  onRangeMaxChanged(dataset, e) {
     const updatedMax = parseFloat(e.target.value)
     this.setState((state, props) => {
-      var newRanges = state.datasetSettings
+      var dsSettings = state.datasetSettings
+      var newRanges = dsSettings[dataset]
       if (updatedMax <= newRanges[state.dataPropertyIndex].min) {
         return {}
       } else {
         newRanges[state.dataPropertyIndex].max = updatedMax
-        return { datasetSettings: newRanges }
+        dsSettings[dataset] = newRanges
+        return { datasetSettings: dsSettings }
       }
     }, this.processDataForChart)
   }
 
-  onRangeMinChanged(e) {
+  onRangeMinChanged(dataset, e) {
     const updatedMin = parseFloat(e.target.value)
     this.setState((state, props) => {
-      var newRanges = state.datasetSettings
+      var dsSettings = state.datasetSettings
+      var newRanges = dsSettings[dataset]
       if (updatedMin >= newRanges[state.dataPropertyIndex].max) {
         return {}
       } else {
         newRanges[state.dataPropertyIndex].min = updatedMin
-        return { datasetSettings: newRanges }
+        dsSettings[dataset] = newRanges
+        return { datasetSettings: dsSettings }
       }
       
     }, this.processDataForChart)
   }
 
-  onNumberZoomChanged(e) {
+  onNumberZoomChanged(dataset, e) {
     var zoom = e.target.value;
     zoom = zoom > maxNumberZoom ? maxNumberZoom : zoom;
     this.setState((state, props) => {
 
       var newDatasetSettings = state.datasetSettings
-      newDatasetSettings[state.dataPropertyIndex].numberZoom = zoom
+      newDatasetSettings[dataset][state.dataPropertyIndex].numberZoom = zoom
 
       return {
         datasetSettings: newDatasetSettings
@@ -278,12 +296,13 @@ class App extends React.Component {
 
         <DatasetControls
           index={0}
+          chartType={this.state.chartType}
           dataPropertyIndex={this.state.dataPropertyIndex /* 🦄 */}
           dataType={this.dataType(this.state.dataPropertyIndex) /* 🦄 */}
           onDataPropertyChanged={this.onDataPropertyChanged /* 🦄 */}
 
           // Number
-          datasetSettings={this.state.datasetSettings}
+          datasetSettings={this.state.datasetSettings.primary}
           onRangeMaxChanged={this.onRangeMaxChanged}
           onRangeMinChanged={this.onRangeMinChanged}
           dataLength={dataLength}

@@ -228,7 +228,7 @@ ul.shape-data-point-list > li {
 #chart-container {
   position: fixed;
   width: Calc(100% - 50px);
-  height: 300px;
+  height: 350px;
   overflow: scroll;
   bottom: 0;
   right: 0;
