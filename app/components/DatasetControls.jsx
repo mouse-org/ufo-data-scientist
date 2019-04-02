@@ -9,6 +9,8 @@ const DateTimeDataSetControls = require('./DateTimeDataSetControls')
 
 function DatasetControls(props) {
 
+  console.log("!! DSF:", props.datasetSettings)
+
   const dataType = dataStructures[props.dataPropertyIndex].type
   const dataName = dataStructures[props.dataPropertyIndex].name
 
@@ -20,7 +22,7 @@ function DatasetControls(props) {
 
   var numberControls
   if (dataType === 'number') {
-    const datasetSettings = props.datasetSettings[props.dataPropertyIndex]
+    const datasetSettings = props.datasetSettings
     numberControls = (
       <NumberDataSetControls
         label={dataName}
@@ -45,7 +47,7 @@ function DatasetControls(props) {
       <DateTimeDataSetControls
         label={dataName}
         key={dataName}
-        datePart={props.datePart}
+        datePartIndex={props.datasetSettings.datePartIndex}
         onDatePartChanged={props.onDatePartChanged}
       />
     )

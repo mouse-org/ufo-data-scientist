@@ -15,8 +15,8 @@ function DateTimeDataSetControls(props) {
         type="radio"
         
         value={i}
-        checked={props.datePart === o.name}
-        onChange={props.onDatePartChanged}
+        checked={datePartOptions[props.datePartIndex].name === o.name}
+        onChange={(e) => props.onDatePartChanged('primary', e)}
       />
       <label>{o.name}</label>
     </div>
@@ -26,7 +26,7 @@ function DateTimeDataSetControls(props) {
     <div className="control" style={controlStyle} >
       
       <h3>Date Time Data Set: { props.label }</h3>
-      <p>Date Part: {props.datePart}</p>
+      <p>Date Part: {datePartOptions[props.datePartIndex].name}</p>
       <div id="datetime-function-select">
         {options}
       </div>

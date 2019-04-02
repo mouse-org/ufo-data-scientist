@@ -23,7 +23,7 @@ function NumberDataSetControls(props) {
           min="2"
           max={props.dataLength > props.maxNumberZoom ? props.maxNumberZoom : props.dataLength}
           value={props.numberZoom}
-          onChange={props.onNumberZoomChanged}
+          onChange={(e) => props.onNumberZoomChanged('primary', e)}
           className="slider"
           id="number-zoom"
         />
@@ -37,7 +37,7 @@ function NumberDataSetControls(props) {
           min={props.absMin}
           max={props.absMax}
           value={props.rangeMax}
-          onChange={props.onRangeMaxChanged}
+          onChange={(e) => props.onRangeMaxChanged('primary', e)}
           className="slider"
           id="min-max"
         />
@@ -47,7 +47,7 @@ function NumberDataSetControls(props) {
           min={props.absMin}
           max={props.absMax}
           value={props.rangeMin}
-          onChange={props.onRangeMinChanged}
+          onChange={(e) => props.onRangeMinChanged('primary', e)}
           className="slider"
           id="min-max"
         />

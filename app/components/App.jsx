@@ -41,10 +41,10 @@ class App extends React.Component {
       chartType: 'bar',
       dataPropertyIndex: defaultDataProperty,
       secondDataPropertyIndex: defaultSecondDataProperty,
-      datePartIndex: 0,
       datasetSettings: {
         primary: {
           [defaultDataProperty]: {
+            datePartIndex: 0,
             min: false,
             max: false,
             absMin: 0,
@@ -54,6 +54,7 @@ class App extends React.Component {
         },
         secondary: {
           [defaultSecondDataProperty]: {
+            datePartIndex: 0,
             min: false,
             max: false,
             absMin: 0,
@@ -67,7 +68,6 @@ class App extends React.Component {
   }
 
   componentDidMount() {
-    
     this.processDataForChart()
   }
 
@@ -75,39 +75,31 @@ class App extends React.Component {
     return dataStructures[dataPropertyIndex].type
   }
 
-  datePart(datePartIndex) {
-    return datePartOptions[datePartIndex]
-  }
-
-
   processDataForChart() {
     const dataPropertyIndex = this.state.dataPropertyIndex
     const dataType = this.dataType(dataPropertyIndex)
-    const datePartIndex = this.state.datePartIndex
-    const datePart = this.datePart(datePartIndex)
+    // This is all happening on primary right now
     const datasetSettings = this.state.datasetSettings.primary[dataPropertyIndex]
+
+    const datePartIndex = datasetSettings.datePartIndex
+    const datePart = datePartOptions[datePartIndex]
     const numberZoom = datasetSettings.numberZoom
-    console.log("NUMBER ZOOM:", numberZoom)
     var rangeMin = datasetSettings.min
     var rangeMax = datasetSettings.max
 
-    const selectedData = extractDataForSelectedProperty(data, dataPropertyIndex, dataType, datePart)
+    // Take values for selected property out of full data
+    const selectedData = extractDataForSelectedProperty(
+      data, dataPropertyIndex, dataType, datePart
+    )
 
     // Unique values from selectedData
-    //console.log("DP")
-    //console.log(dataStructures[dataPropertyIndex])
     const excludedValue = dataStructures[dataPropertyIndex].exclude
-    //console.log("APP: EV: ", excludedValue, typeof excludedValue)
     var selectedSet = [...new Set(selectedData)]
-
-    //console.log("SS:", selectedSet)
 
     // Turn array of values into vectors with values and frequency
     const vectors = vectorsFromSetAndValues(
       selectedData, selectedSet, excludedValue, dataType, datePart.name
     )
-
-    //console.log("V:", vectors)
 
     // If excludedValue is included in vectors then remove it:
     var groupableVectors = vectors
@@ -116,8 +108,6 @@ class App extends React.Component {
       groupableVectors = vectors.slice(1, vectors.length)
       excluded = vectors.slice(0, 1)[0].value
     }
-
-    //console.log("GV:", groupableVectors)
 
     var chartData
     var absMin = groupableVectors[0].name
@@ -140,8 +130,6 @@ class App extends React.Component {
       chartData = groupableVectors
     }
 
-    //console.log("Abs MINMAX:", absMin, absMax)   
-
     // Need to extract value above and add in 'Unknown'
     // here because of different excluded values in data
     if (excluded) {
@@ -150,23 +138,26 @@ class App extends React.Component {
 
     //console.log("CHART DATA:", chartData)
 
-    var newState = {
-      chartData: chartData
-    }
-
     this.setState((state, props) => {
-      
-      var newDatasetSettings = state.datasetSettings.primary
-      newDatasetSettings[dataPropertyIndex] = {
+      var fullDatasetSettings = state.datasetSettings
+      const currentDatasetSettings = fullDatasetSettings.primary[dataPropertyIndex]
+      const updatedDatasetSettings = {
         min: rangeMin,
         max: rangeMax,
         absMin: absMin,
         absMax: absMax,
         numberZoom: numberZoom
       }
-      newState.datasetSettings = {}
-      newState.datasetSettings.primary = newDatasetSettings
 
+      fullDatasetSettings.primary[dataPropertyIndex] = Object.assign(
+        {}, currentDatasetSettings, updatedDatasetSettings
+      )
+
+      var newState = {
+        datasetSettings: fullDatasetSettings,
+        chartData: chartData
+      }
+      console.log("## NS:", newState)
       return newState
     })
   }
@@ -180,21 +171,26 @@ class App extends React.Component {
   onDataPropertyChanged(dataset, event) {
     const newDataPropertyIndex = event.currentTarget.value
     this.setState((state, props) => {
-      var dsSettings = state.datasetSettings
-      var newRanges = dsSettings[dataset]
-      if (!newRanges[newDataPropertyIndex]) {
-        newRanges[newDataPropertyIndex] = {
+      var dsSettings = state.datasetSettings[dataset]
+      var newSettings = {}
+      if (!dsSettings[newDataPropertyIndex]) {
+        newSettings[newDataPropertyIndex] = {
+          datePartIndex: 0,
           min: false,
           max: false,
           numberZoom: defaultNumberZoom(dataLength, maxNumberZoom)
         }
       }
 
-      dsSettings[dataset] = newRanges
+      const updatedSettings = Object.assign(
+        {}, dsSettings, newSettings
+      )
+      var updatedDatasetSettings = state.datasetSettings
+      updatedDatasetSettings[dataset] = updatedSettings
 
       const newState = {
         dataPropertyIndex: newDataPropertyIndex,
-        datasetSettings: dsSettings
+        datasetSettings: updatedDatasetSettings
       }
 
       return newState
@@ -258,10 +254,16 @@ class App extends React.Component {
     }, this.processDataForChart)
   }
 
-  onDatePartChanged(e) {
+  onDatePartChanged(dataset, e) {
     const index = e.currentTarget.value
-    this.setState({
-      datePartIndex: index
+    this.setState((state, props) => {
+      var datasetSettings = state.datasetSettings
+      // 🚸 Defaulting to primary
+      const dataPropertyIndex = state.dataPropertyIndex
+      datasetSettings[dataset][dataPropertyIndex].datePartIndex = index
+      return {
+        datasetSettings: datasetSettings
+      }
     }, this.processDataForChart)
   }
 
@@ -283,6 +285,10 @@ class App extends React.Component {
       )
     }
 
+    console.log("%%% SETTINGS:", this.state.datasetSettings.primary[this.state.dataPropertyIndex])
+    console.log("@@@ S:", this.state.datasetSettings.primary)
+    console.log("DPI:", this.state.dataPropertyIndex)
+
     return (
       <div id="app">
         <h1>{this.state.title}</h1>
@@ -302,7 +308,7 @@ class App extends React.Component {
           onDataPropertyChanged={this.onDataPropertyChanged /* 🦄 */}
 
           // Number
-          datasetSettings={this.state.datasetSettings.primary}
+          datasetSettings={this.state.datasetSettings.primary[this.state.dataPropertyIndex]}
           onRangeMaxChanged={this.onRangeMaxChanged}
           onRangeMinChanged={this.onRangeMinChanged}
           dataLength={dataLength}
@@ -310,7 +316,6 @@ class App extends React.Component {
           onNumberZoomChanged={this.onNumberZoomChanged}
 
           // DateTime
-          datePart = {this.datePart(this.state.datePartIndex).name}
           onDatePartChanged={this.onDatePartChanged}
         />
 
