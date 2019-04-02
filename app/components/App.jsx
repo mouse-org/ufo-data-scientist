@@ -75,6 +75,16 @@ class App extends React.Component {
     return dataStructures[dataPropertyIndex].type
   }
 
+  propertyIndexFromDataset(dataset) {
+    if (dataset === 'primary') {
+      return 'dataPropertyIndex'
+    } else if (dataset === 'secondary') {
+      return 'secondDataPropertyIndex'
+    } else {
+      return 'Error Unknown dataset'
+    }
+  }
+
   processDataForChart() {
     const dataPropertyIndex = this.state.dataPropertyIndex
     const dataType = this.dataType(dataPropertyIndex)
@@ -212,14 +222,13 @@ class App extends React.Component {
   onRangeMaxChanged(dataset, e) {
     const updatedMax = parseFloat(e.target.value)
     this.setState((state, props) => {
-      var dsSettings = state.datasetSettings
-      var newRanges = dsSettings[dataset]
-      if (updatedMax <= newRanges[state.dataPropertyIndex].min) {
+      var dataPropertyIndex = state[this.propertyIndexFromDataset(dataset)]
+      var newDatasetSettings = state.datasetSettings
+      if (updatedMax <= newDatasetSettings[dataset][dataPropertyIndex].min) {
         return {}
       } else {
-        newRanges[state.dataPropertyIndex].max = updatedMax
-        dsSettings[dataset] = newRanges
-        return { datasetSettings: dsSettings }
+        newDatasetSettings[dataset][dataPropertyIndex].max = updatedMax
+        return { datasetSettings: newDatasetSettings }
       }
     }, this.processDataForChart)
   }
@@ -227,14 +236,13 @@ class App extends React.Component {
   onRangeMinChanged(dataset, e) {
     const updatedMin = parseFloat(e.target.value)
     this.setState((state, props) => {
-      var dsSettings = state.datasetSettings
-      var newRanges = dsSettings[dataset]
-      if (updatedMin >= newRanges[state.dataPropertyIndex].max) {
+      var dataPropertyIndex = state[this.propertyIndexFromDataset(dataset)]
+      var newDatasetSettings = state.datasetSettings
+      if (updatedMin >= newDatasetSettings[dataset][dataPropertyIndex].max) {
         return {}
       } else {
-        newRanges[state.dataPropertyIndex].min = updatedMin
-        dsSettings[dataset] = newRanges
-        return { datasetSettings: dsSettings }
+        newDatasetSettings[dataset][dataPropertyIndex].min = updatedMin
+        return { datasetSettings: newDatasetSettings }
       }
       
     }, this.processDataForChart)
@@ -244,10 +252,9 @@ class App extends React.Component {
     var zoom = e.target.value;
     zoom = zoom > maxNumberZoom ? maxNumberZoom : zoom;
     this.setState((state, props) => {
-
+      var dataPropertyIndex = state[this.propertyIndexFromDataset(dataset)]
       var newDatasetSettings = state.datasetSettings
-      newDatasetSettings[dataset][state.dataPropertyIndex].numberZoom = zoom
-
+      newDatasetSettings[dataset][dataPropertyIndex].numberZoom = zoom
       return {
         datasetSettings: newDatasetSettings
       }
@@ -258,8 +265,7 @@ class App extends React.Component {
     const index = e.currentTarget.value
     this.setState((state, props) => {
       var datasetSettings = state.datasetSettings
-      // 🚸 Defaulting to primary
-      const dataPropertyIndex = state.dataPropertyIndex
+      var dataPropertyIndex = state[this.propertyIndexFromDataset(dataset)]
       datasetSettings[dataset][dataPropertyIndex].datePartIndex = index
       return {
         datasetSettings: datasetSettings
@@ -284,10 +290,6 @@ class App extends React.Component {
         />
       )
     }
-
-    console.log("%%% SETTINGS:", this.state.datasetSettings.primary[this.state.dataPropertyIndex])
-    console.log("@@@ S:", this.state.datasetSettings.primary)
-    console.log("DPI:", this.state.dataPropertyIndex)
 
     return (
       <div id="app">
