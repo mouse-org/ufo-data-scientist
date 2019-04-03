@@ -283,7 +283,8 @@ class App extends React.Component {
   }
 
   onEnableSecondDataset(e) {
-    const value = e.currentTarget.value
+    const target = e.target;
+    const value = target.type === 'checkbox' ? target.checked : target.value;
     this.setState({
       secondaryDataProperty: value
     })

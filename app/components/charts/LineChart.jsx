@@ -74,12 +74,6 @@ class LineChart extends React.Component {
       .attr("class", "line") // Assign a class for styling 
       .attr("d", line); // 11. Calls the line generator
       
-      
-      svg.append("path")
-      .datum(ds2) // 10. Binds data to the line 
-      .attr("class", "line") // Assign a class for styling 
-      .attr("d", line); // 11. Calls the line generator
-      
       svg.exit().remove()
     }
     updateChart()
@@ -90,7 +84,7 @@ class LineChart extends React.Component {
     const showData = this.props.data.primary.map(d => 
       <li key={d.name}>{d.name}: {d.value}</li>
     )
-    
+
     return (
       <div id="container">
 
