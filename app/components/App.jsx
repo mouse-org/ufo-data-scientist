@@ -6,9 +6,7 @@ const data = require('../newData')
 const dataLength = data.length
 
 /* Helpers */
-const extractDataForSelectedProperty = require('../helpers/extractDataForSelectedProperty')
-const vectorsFromSetAndValues = require('../helpers/vectorsFromSetAndValues')
-const groupData = require('../helpers/groupData')
+const processDataForChart = require('../helpers/processDataForChart')
 
 const settings = require('../helpers/settings')
 const maxNumberZoom = settings.maxNumberZoom
@@ -22,14 +20,13 @@ const ChartTypeControls = require('./ChartTypeControls')
 const BarChart = require('./charts/BarChart')
 const LineChart = require('./charts/LineChart')
 
-const datePartOptions = require('../helpers/datePartOptions')
 const dataStructures = require('../helpers/dataStructures')
 
 class App extends React.Component {
   constructor(props) {
     super(props);
     this.whichChartData = this.whichChartData.bind(this)
-    this.processDataForChart = this.processDataForChart.bind(this)
+    this.processDataForChart = processDataForChart.bind(this, data)
     this.onChartTypeChanged = this.onChartTypeChanged.bind(this)
     this.onDataPropertyChanged = this.onDataPropertyChanged.bind(this)
     this.onRangeMaxChanged = this.onRangeMaxChanged.bind(this)
@@ -97,98 +94,7 @@ class App extends React.Component {
   }
 
   whichChartData() {
-    this.processDataForChart('primary')
-    this.processDataForChart('secondary')
-  }
-
-  processDataForChart(dataset) {
-    const dataPropertyIndex = this.state.dataPropertyIndex[dataset]
-    const dataType = this.dataType(dataPropertyIndex)
-    const datasetSettings = this.state.datasetSettings[dataset][dataPropertyIndex]
-
-    const datePartIndex = datasetSettings.datePartIndex
-    const datePart = datePartOptions[datePartIndex]
-    const numberZoom = datasetSettings.numberZoom
-    var rangeMin = datasetSettings.min
-    var rangeMax = datasetSettings.max
-    const chartType = this.state.chartType
-
-    // Take values for selected property out of full data
-    const selectedData = extractDataForSelectedProperty(
-      data, dataPropertyIndex, dataType, datePart
-    )
-
-    // Unique values from selectedData
-    const excludedValue = dataStructures[dataPropertyIndex].exclude
-    var selectedSet = [...new Set(selectedData)]
-
-    // Turn array of values into vectors with values and frequency
-    const vectors = vectorsFromSetAndValues(
-      selectedData, selectedSet, excludedValue, dataType, datePart.name
-    )
-
-    // If excludedValue is included in vectors then remove it:
-    var groupableVectors = vectors
-    var excluded = null
-    if (vectors[0] && vectors[0].name === excludedValue) {
-      groupableVectors = vectors.slice(1, vectors.length)
-      excluded = vectors.slice(0, 1)[0].value
-    }
-
-    var chartData
-    var absMin = groupableVectors[0].name
-    var absMax = groupableVectors[groupableVectors.length - 1].name
-    if (dataType === 'number') {
-      absMin = Math.floor(absMin)
-      absMax = Math.ceil(absMax)
-
-      if (!rangeMin) { rangeMin = absMin }
-      if (!rangeMax) { rangeMax = absMax }
-
-      chartData = groupData(
-        groupableVectors, numberZoom, rangeMin, rangeMax
-      );
-    //} else if (dataType === 'datetime') {
-      // 🚸 Maybe in the future will group date data
-      // Date/Time Data Sets: date_time)
-     //return this.groupData(sortedData, 'string', groups)
-    } else {
-      chartData = groupableVectors
-    }
-
-    // Need to extract value above and add in 'Unknown'
-    // here because of different excluded values in data
-    if (excluded && (chartType === 'bar')) {
-      chartData.push({name: 'Unknown', value: excluded})
-    }
-
-    //console.log("CHART DATA:", chartData)
-
-    this.setState((state, props) => {
-      var fullDatasetSettings = state.datasetSettings
-      const currentDatasetSettings = fullDatasetSettings[dataset][dataPropertyIndex]
-      const updatedDatasetSettings = {
-        min: rangeMin,
-        max: rangeMax,
-        absMin: absMin,
-        absMax: absMax,
-        numberZoom: numberZoom
-      }
-
-      fullDatasetSettings[dataset][dataPropertyIndex] = Object.assign(
-        {}, currentDatasetSettings, updatedDatasetSettings
-      )
-
-      var updatedChartData = state.chartData
-      updatedChartData[dataset] = chartData
-
-      var newState = {
-        datasetSettings: fullDatasetSettings,
-        chartData: updatedChartData
-      }
-      //console.log("## NS:", newState)
-      return newState
-    })
+    this.processDataForChart()
   }
 
   onChartTypeChanged(newChartType) {
@@ -225,7 +131,7 @@ class App extends React.Component {
       }
 
       return newState
-    }, this.processDataForChart.bind(this, dataset))
+    }, this.processDataForChart)
   }
 
   onRangeMaxChanged(dataset, e) {
@@ -239,7 +145,7 @@ class App extends React.Component {
         newDatasetSettings[dataset][dataPropertyIndex].max = updatedMax
         return { datasetSettings: newDatasetSettings }
       }
-    }, this.processDataForChart.bind(this, dataset))
+    }, this.processDataForChart)
   }
 
   onRangeMinChanged(dataset, e) {
@@ -254,7 +160,7 @@ class App extends React.Component {
         return { datasetSettings: newDatasetSettings }
       }
       
-    }, this.processDataForChart.bind(this, dataset))
+    }, this.processDataForChart)
   }
 
   onNumberZoomChanged(dataset, e) {
@@ -267,7 +173,7 @@ class App extends React.Component {
       return {
         datasetSettings: newDatasetSettings
       }
-    }, this.processDataForChart.bind(this, dataset))
+    }, this.processDataForChart)
   }
 
   onDatePartChanged(dataset, e) {
@@ -279,7 +185,7 @@ class App extends React.Component {
       return {
         datasetSettings: datasetSettings
       }
-    }, this.processDataForChart.bind(this, dataset))
+    }, this.processDataForChart)
   }
 
   onEnableSecondDataset(e) {
