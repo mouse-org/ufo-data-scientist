@@ -291,8 +291,6 @@ class App extends React.Component {
 
   render() {
 
-    console.log("CD:", this.state.chartData)
-
     var chart = <div><h3>Error: No Chart</h3></div>
 
     if (this.state.chartType === 'bar') {
@@ -305,6 +303,7 @@ class App extends React.Component {
       chart = (
         <LineChart
           data={this.state.chartData}
+          secondDataset={this.state.secondaryDataProperty}
         />
       )
     }
@@ -392,7 +391,6 @@ class App extends React.Component {
       </div>
     )
   }
-
 }
 
 module.exports = App

@@ -18,7 +18,7 @@ class LineChart extends React.Component {
   }
 
   viz() {
-   this.drawChart(this.props.data.primary)
+   this.drawChart(this.props.data)
   }
 
   componentWillReceiveProps() {
@@ -32,17 +32,18 @@ class LineChart extends React.Component {
   drawChart(data) {
  
     var margin = ({top: 20, right: 0, bottom: 30, left: 40})
-    function updateChart() {
+    var updateChart = () => {
       const height = 330
-      const max = findMaxInArrays([data], 'value')
-      const minDS = data.map(d => -d.value)
+      const max = findMaxInArrays([data.primary], 'value')
+      const minDS = data.primary.map(d => -d.value)
       const min = findMaxInArrays([minDS], false) * -1
       const width = document.getElementById("viz").offsetWidth * .9
 
-      //var ds = [{y: 5}, {y: 3}, {y: 5}, {y: 6}, {y: 7}]
-      var ds = data.map(d => ({y: d.value}))
-      // TEMPORARY
-      //var ds2 = data.map(d => ({y: d.value / 2}))
+      var ds = data.primary.map(d => ({y: d.value}))
+      var ds2 = false
+      if (this.props.secondDataset) {
+        ds2 = data.secondary.map(d => ({y: d.value}))
+      }
 
       var xScale = d3
       .scaleLinear()
@@ -73,12 +74,11 @@ class LineChart extends React.Component {
       .attr("class", "line") // Assign a class for styling 
       .attr("d", line); // 11. Calls the line generator
       
-      /*
+      
       svg.append("path")
       .datum(ds2) // 10. Binds data to the line 
       .attr("class", "line") // Assign a class for styling 
       .attr("d", line); // 11. Calls the line generator
-      */
       
       svg.exit().remove()
     }
@@ -90,9 +90,7 @@ class LineChart extends React.Component {
     const showData = this.props.data.primary.map(d => 
       <li key={d.name}>{d.name}: {d.value}</li>
     )
-
-    //const showData = <h1>Data</h1>
-
+    
     return (
       <div id="container">
 
