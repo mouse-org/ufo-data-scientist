@@ -311,7 +311,7 @@ class App extends React.Component {
 
 
     var secondDatasetOptions
-    if (this.showSecondDatasetControls ) {
+    if (this.showSecondDatasetControls(this.state.chartType)) {
       var secondDatasetControls
       if (this.state.secondaryDataProperty) {
         secondDatasetControls = (
@@ -381,7 +381,6 @@ class App extends React.Component {
           onDatePartChanged={this.onDatePartChanged}
         />
 
-        
         {secondDatasetOptions /* Second Dataset (line chart)*/}
 
         <h3>Data:</h3>
