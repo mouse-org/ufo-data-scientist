@@ -9,7 +9,7 @@ const DateTimeDataSetControls = require('./DateTimeDataSetControls')
 
 function DatasetControls(props) {
 
-  console.log("!! DSF:", props.datasetSettings)
+  console.log(props.type, "!! DSF:", props.datasetSettings)
 
   // 🚸 This logic is duplicated
   const dataType = dataStructures[props.dataPropertyIndex].type

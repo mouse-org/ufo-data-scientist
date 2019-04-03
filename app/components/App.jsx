@@ -166,7 +166,7 @@ class App extends React.Component {
 
     this.setState((state, props) => {
       var fullDatasetSettings = state.datasetSettings
-      const currentDatasetSettings = fullDatasetSettings.primary[dataPropertyIndex]
+      const currentDatasetSettings = fullDatasetSettings[dataset][dataPropertyIndex]
       const updatedDatasetSettings = {
         min: rangeMin,
         max: rangeMax,
@@ -175,14 +175,12 @@ class App extends React.Component {
         numberZoom: numberZoom
       }
 
-      fullDatasetSettings.primary[dataPropertyIndex] = Object.assign(
+      fullDatasetSettings[dataset][dataPropertyIndex] = Object.assign(
         {}, currentDatasetSettings, updatedDatasetSettings
       )
 
       var updatedChartData = state.chartData
       updatedChartData[dataset] = chartData
-
-      console.log("UPDATED CHART DATA:", updatedChartData)
 
       var newState = {
         datasetSettings: fullDatasetSettings,
