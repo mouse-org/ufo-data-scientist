@@ -18,7 +18,7 @@ class LineChart extends React.Component {
   }
 
   viz() {
-   this.drawChart(this.props.data)
+   this.drawChart(this.props.data.primary)
   }
 
   componentWillReceiveProps() {
@@ -87,7 +87,7 @@ class LineChart extends React.Component {
 
   render() {
 
-    const showData = this.props.data.map(d => 
+    const showData = this.props.data.primary.map(d => 
       <li key={d.name}>{d.name}: {d.value}</li>
     )
 

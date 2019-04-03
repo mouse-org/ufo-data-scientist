@@ -29,6 +29,7 @@ function DatasetControls(props) {
       <NumberDataSetControls
         label={dataName}
         key={dataName}
+        type={props.type}
         rangeMin={datasetSettings.min}
         rangeMax={datasetSettings.max}
         absMin={datasetSettings.absMin}
@@ -49,6 +50,7 @@ function DatasetControls(props) {
       <DateTimeDataSetControls
         label={dataName}
         key={dataName}
+        type={props.type}
         datePartIndex={props.datasetSettings.datePartIndex}
         onDatePartChanged={props.onDatePartChanged}
       />

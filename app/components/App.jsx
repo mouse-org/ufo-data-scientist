@@ -28,6 +28,7 @@ const dataStructures = require('../helpers/dataStructures')
 class App extends React.Component {
   constructor(props) {
     super(props);
+    this.whichChartData = this.whichChartData.bind(this)
     this.processDataForChart = this.processDataForChart.bind(this)
     this.onChartTypeChanged = this.onChartTypeChanged.bind(this)
     this.onDataPropertyChanged = this.onDataPropertyChanged.bind(this)
@@ -66,12 +67,15 @@ class App extends React.Component {
           }
         }
       },
-      chartData: []
+      chartData: {
+        primary: [],
+        secondary: []
+      }
     }
   }
 
   componentDidMount() {
-    this.processDataForChart()
+    this.whichChartData()
   }
 
   dataType(dataPropertyIndex) {
@@ -92,12 +96,15 @@ class App extends React.Component {
     }
   }
 
-  processDataForChart() {
-    const dataset = 'primary'
+  whichChartData() {
+    this.processDataForChart('primary')
+    this.processDataForChart('secondary')
+  }
+
+  processDataForChart(dataset) {
     const dataPropertyIndex = this.state.dataPropertyIndex[dataset]
     const dataType = this.dataType(dataPropertyIndex)
-    // This is all happening on primary right now
-    const datasetSettings = this.state.datasetSettings.primary[dataPropertyIndex]
+    const datasetSettings = this.state.datasetSettings[dataset][dataPropertyIndex]
 
     const datePartIndex = datasetSettings.datePartIndex
     const datePart = datePartOptions[datePartIndex]
@@ -172,9 +179,14 @@ class App extends React.Component {
         {}, currentDatasetSettings, updatedDatasetSettings
       )
 
+      var updatedChartData = state.chartData
+      updatedChartData[dataset] = chartData
+
+      console.log("UPDATED CHART DATA:", updatedChartData)
+
       var newState = {
         datasetSettings: fullDatasetSettings,
-        chartData: chartData
+        chartData: updatedChartData
       }
       //console.log("## NS:", newState)
       return newState
@@ -183,8 +195,8 @@ class App extends React.Component {
 
   onChartTypeChanged(newChartType) {
     this.setState({
-        chartType: newChartType
-      }, this.processDataForChart)
+      chartType: newChartType
+    }, this.whichChartData)
   }
 
   onDataPropertyChanged(dataset, event) {
@@ -215,7 +227,7 @@ class App extends React.Component {
       }
 
       return newState
-    }, this.processDataForChart)
+    }, this.processDataForChart.bind(this, dataset))
   }
 
   onRangeMaxChanged(dataset, e) {
@@ -229,7 +241,7 @@ class App extends React.Component {
         newDatasetSettings[dataset][dataPropertyIndex].max = updatedMax
         return { datasetSettings: newDatasetSettings }
       }
-    }, this.processDataForChart)
+    }, this.processDataForChart.bind(this, dataset))
   }
 
   onRangeMinChanged(dataset, e) {
@@ -244,7 +256,7 @@ class App extends React.Component {
         return { datasetSettings: newDatasetSettings }
       }
       
-    }, this.processDataForChart)
+    }, this.processDataForChart.bind(this, dataset))
   }
 
   onNumberZoomChanged(dataset, e) {
@@ -257,7 +269,7 @@ class App extends React.Component {
       return {
         datasetSettings: newDatasetSettings
       }
-    }, this.processDataForChart)
+    }, this.processDataForChart.bind(this, dataset))
   }
 
   onDatePartChanged(dataset, e) {
@@ -269,7 +281,7 @@ class App extends React.Component {
       return {
         datasetSettings: datasetSettings
       }
-    }, this.processDataForChart)
+    }, this.processDataForChart.bind(this, dataset))
   }
 
   onEnableSecondDataset(e) {
@@ -281,12 +293,14 @@ class App extends React.Component {
 
   render() {
 
+    console.log("CD:", this.state.chartData)
+
     var chart = <div><h3>Error: No Chart</h3></div>
 
     if (this.state.chartType === 'bar') {
       chart = (
         <BarChart
-          data={this.state.chartData}
+          data={this.state.chartData.primary}
         />
       )
     } else if (this.state.chartType === 'line') {

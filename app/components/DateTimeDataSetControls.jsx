@@ -16,7 +16,7 @@ function DateTimeDataSetControls(props) {
         
         value={i}
         checked={datePartOptions[props.datePartIndex].name === o.name}
-        onChange={(e) => props.onDatePartChanged('primary', e)}
+        onChange={(e) => props.onDatePartChanged(props.type, e)}
       />
       <label>{o.name}</label>
     </div>
