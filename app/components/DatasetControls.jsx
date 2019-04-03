@@ -11,11 +11,13 @@ function DatasetControls(props) {
 
   console.log("!! DSF:", props.datasetSettings)
 
+  // 🚸 This logic is duplicated
   const dataType = dataStructures[props.dataPropertyIndex].type
   const dataName = dataStructures[props.dataPropertyIndex].name
 
+  const typeColor = props.type === 'primary' ? 'purple' : 'red'
   const controlStyle = {
-    border: '1px dashed purple',
+    border: '2px dashed ' + typeColor,
     padding: '10px',
     margin: '10px'
   }
@@ -53,23 +55,13 @@ function DatasetControls(props) {
     )
   }
 
-  var secondDataProperty
-  if (props.chartType === 'line') {
-    secondDataProperty = (
-      <SelectDataProperty
-        none={true}
-        dataPropertyIndex={props.secondDataPropertyIndex}
-        onDataPropertyChanged={props.onSecondDataPropertyChanged}
-      />
-    )
-  }
-
   return (
     <div className="dataset-control" style={controlStyle} >
       <h2>Dataset Controls:</h2>    
 
       <SelectDataProperty
         none={false}
+        type={props.type}
         dataPropertyIndex={props.dataPropertyIndex}
         onDataPropertyChanged={props.onDataPropertyChanged}
       />
@@ -77,9 +69,6 @@ function DatasetControls(props) {
       {numberControls}
 
       {dateTimeControls}
-
-      {secondDataProperty}
-      
 
     </div>
   );

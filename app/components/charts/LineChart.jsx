@@ -13,7 +13,6 @@ class LineChart extends React.Component {
   }
 
   componentDidUpdate(prevProps) {
-    console.log("DID UPDATE")
     d3.selectAll("svg").remove();
     this.viz()
   }
@@ -31,7 +30,6 @@ class LineChart extends React.Component {
   }
 
   drawChart(data) {
-    console.log("DRAW Line CHART DATA:", data)
  
     var margin = ({top: 20, right: 0, bottom: 30, left: 40})
     function updateChart() {
@@ -41,7 +39,6 @@ class LineChart extends React.Component {
       const min = findMaxInArrays([minDS], false) * -1
       const width = document.getElementById("viz").offsetWidth * .9
 
-      console.log("UPDATE CHART", max, width)
       //var ds = [{y: 5}, {y: 3}, {y: 5}, {y: 6}, {y: 7}]
       var ds = data.map(d => ({y: d.value}))
       // TEMPORARY

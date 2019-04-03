@@ -2,16 +2,15 @@ const React = require('react');
 const dataStructures = require('../helpers/dataStructures')
 
 module.exports = function SelectDataProperty(props) {
-
     function inputFromDataStructure(currentIndex, onChanged, name, ds, index) {
       return (
-        <li key={ds.name}>
+        <li key={props.type + '-' + ds.name}>
           <span>
             <input
             type="radio"
-            name={name}
+            name={props.type + '-' + name}
             value={index}
-            onChange={(e) => onChanged('primary', e)}
+            onChange={(e) => onChanged(props.type, e)}
             checked={parseInt(currentIndex) === index}
             />
             {ds.name}
@@ -48,14 +47,9 @@ module.exports = function SelectDataProperty(props) {
 
     return (
       <div>
-        <h3>Data Property {props.index}</h3>
+        <h3>{props.type} Data Property</h3>
+        <h6>Dataset Index: {props.dataPropertyIndex}</h6>
         {selectDataProperty}
-        <h3>Dataset Index: {props.dataPropertyIndex}</h3>
-        {/*
-        <hr/>
-        {selectSecondaryDataProperty}
-        <h3>Secondary Dataset: {props.secondaryDataPropertyIndex}</h3>
-        */}
       </div>
     );
   }

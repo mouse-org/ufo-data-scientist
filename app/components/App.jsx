@@ -31,16 +31,19 @@ class App extends React.Component {
     this.processDataForChart = this.processDataForChart.bind(this)
     this.onChartTypeChanged = this.onChartTypeChanged.bind(this)
     this.onDataPropertyChanged = this.onDataPropertyChanged.bind(this)
-    this.onSecondDataPropertyChanged = this.onSecondDataPropertyChanged.bind(this)
     this.onRangeMaxChanged = this.onRangeMaxChanged.bind(this)
     this.onRangeMinChanged = this.onRangeMinChanged.bind(this)
     this.onNumberZoomChanged = this.onNumberZoomChanged.bind(this)
     this.onDatePartChanged = this.onDatePartChanged.bind(this)
+    this.onEnableSecondDataset = this.onEnableSecondDataset.bind(this)
     this.state = {
       title: "UFO Data Scientist",
       chartType: 'bar',
-      dataPropertyIndex: defaultDataProperty,
-      secondDataPropertyIndex: defaultSecondDataProperty,
+      dataPropertyIndex: {
+        primary: defaultDataProperty,
+        secondary: defaultSecondDataProperty
+      },
+      secondaryDataProperty: false,
       datasetSettings: {
         primary: {
           [defaultDataProperty]: {
@@ -72,21 +75,26 @@ class App extends React.Component {
   }
 
   dataType(dataPropertyIndex) {
-    return dataStructures[dataPropertyIndex].type
+    if (dataStructures[dataPropertyIndex]) {
+      return dataStructures[dataPropertyIndex].type
+    } else {
+      return null
+    }
   }
 
-  propertyIndexFromDataset(dataset) {
-    if (dataset === 'primary') {
-      return 'dataPropertyIndex'
-    } else if (dataset === 'secondary') {
-      return 'secondDataPropertyIndex'
-    } else {
-      return 'Error Unknown dataset'
+  showSecondDatasetControls(chartType) {
+    switch(chartType) {
+      case 'line':
+        return true
+        break
+      default:
+        return false
     }
   }
 
   processDataForChart() {
-    const dataPropertyIndex = this.state.dataPropertyIndex
+    const dataset = 'primary'
+    const dataPropertyIndex = this.state.dataPropertyIndex[dataset]
     const dataType = this.dataType(dataPropertyIndex)
     // This is all happening on primary right now
     const datasetSettings = this.state.datasetSettings.primary[dataPropertyIndex]
@@ -96,6 +104,7 @@ class App extends React.Component {
     const numberZoom = datasetSettings.numberZoom
     var rangeMin = datasetSettings.min
     var rangeMax = datasetSettings.max
+    const chartType = this.state.chartType
 
     // Take values for selected property out of full data
     const selectedData = extractDataForSelectedProperty(
@@ -142,7 +151,7 @@ class App extends React.Component {
 
     // Need to extract value above and add in 'Unknown'
     // here because of different excluded values in data
-    if (excluded) {
+    if (excluded && (chartType === 'bar')) {
       chartData.push({name: 'Unknown', value: excluded})
     }
 
@@ -167,7 +176,7 @@ class App extends React.Component {
         datasetSettings: fullDatasetSettings,
         chartData: chartData
       }
-      console.log("## NS:", newState)
+      //console.log("## NS:", newState)
       return newState
     })
   }
@@ -197,22 +206,12 @@ class App extends React.Component {
       )
       var updatedDatasetSettings = state.datasetSettings
       updatedDatasetSettings[dataset] = updatedSettings
+      var updatedDataPropertyIndex = state.dataPropertyIndex
+      updatedDataPropertyIndex[dataset] = newDataPropertyIndex
 
       const newState = {
-        dataPropertyIndex: newDataPropertyIndex,
+        dataPropertyIndex: updatedDataPropertyIndex,
         datasetSettings: updatedDatasetSettings
-      }
-
-      return newState
-    }, this.processDataForChart)
-  }
-
-  onSecondDataPropertyChanged(event) {
-    const newDataPropertyIndex = event.currentTarget.value
-    this.setState((state, props) => {
-
-      const newState = {
-        secondDataPropertyIndex: newDataPropertyIndex
       }
 
       return newState
@@ -222,7 +221,7 @@ class App extends React.Component {
   onRangeMaxChanged(dataset, e) {
     const updatedMax = parseFloat(e.target.value)
     this.setState((state, props) => {
-      var dataPropertyIndex = state[this.propertyIndexFromDataset(dataset)]
+      var dataPropertyIndex = state.dataPropertyIndex[dataset]
       var newDatasetSettings = state.datasetSettings
       if (updatedMax <= newDatasetSettings[dataset][dataPropertyIndex].min) {
         return {}
@@ -236,7 +235,7 @@ class App extends React.Component {
   onRangeMinChanged(dataset, e) {
     const updatedMin = parseFloat(e.target.value)
     this.setState((state, props) => {
-      var dataPropertyIndex = state[this.propertyIndexFromDataset(dataset)]
+      var dataPropertyIndex = state.dataPropertyIndex[dataset]
       var newDatasetSettings = state.datasetSettings
       if (updatedMin >= newDatasetSettings[dataset][dataPropertyIndex].max) {
         return {}
@@ -252,7 +251,7 @@ class App extends React.Component {
     var zoom = e.target.value;
     zoom = zoom > maxNumberZoom ? maxNumberZoom : zoom;
     this.setState((state, props) => {
-      var dataPropertyIndex = state[this.propertyIndexFromDataset(dataset)]
+      var dataPropertyIndex = state.dataPropertyIndex[dataset]
       var newDatasetSettings = state.datasetSettings
       newDatasetSettings[dataset][dataPropertyIndex].numberZoom = zoom
       return {
@@ -265,12 +264,19 @@ class App extends React.Component {
     const index = e.currentTarget.value
     this.setState((state, props) => {
       var datasetSettings = state.datasetSettings
-      var dataPropertyIndex = state[this.propertyIndexFromDataset(dataset)]
+      var dataPropertyIndex = state.dataPropertyIndex[dataset]
       datasetSettings[dataset][dataPropertyIndex].datePartIndex = index
       return {
         datasetSettings: datasetSettings
       }
     }, this.processDataForChart)
+  }
+
+  onEnableSecondDataset(e) {
+    const value = e.currentTarget.value
+    this.setState({
+      secondaryDataProperty: value
+    })
   }
 
   render() {
@@ -291,6 +297,46 @@ class App extends React.Component {
       )
     }
 
+
+    var secondDatasetOptions
+    if (this.showSecondDatasetControls ) {
+      var secondDatasetControls
+      if (this.state.secondaryDataProperty) {
+        secondDatasetControls = (
+          <DatasetControls
+            //index={0}
+            type={'secondary'}
+            chartType={this.state.chartType}
+            dataPropertyIndex={this.state.dataPropertyIndex['secondary']}
+            dataType={this.dataType(this.state.dataPropertyIndex.secondary)}
+            onDataPropertyChanged={this.onDataPropertyChanged}
+    
+            // Number
+            datasetSettings={this.state.datasetSettings.secondary[this.state.dataPropertyIndex.secondary]}
+            onRangeMaxChanged={this.onRangeMaxChanged}
+            onRangeMinChanged={this.onRangeMinChanged}
+            dataLength={dataLength}
+            onNumberZoomChanged={this.onNumberZoomChanged}
+    
+            // DateTime
+            onDatePartChanged={this.onDatePartChanged}
+          />
+        )
+      } 
+      
+      secondDatasetOptions = (
+        <React.Fragment>
+          <label>Second Dataset?</label>
+          <input
+            type="checkbox"
+            checked={this.state.secondaryDataProperty}
+            onChange={this.onEnableSecondDataset}
+          />
+          {secondDatasetControls}
+        </React.Fragment>
+      )
+    }
+
     return (
       <div id="app">
         <h1>{this.state.title}</h1>
@@ -302,24 +348,29 @@ class App extends React.Component {
           onChartTypeChanged={this.onChartTypeChanged}
         />
 
+        
         <DatasetControls
-          index={0}
+          // First dataset (all charts)
+          //index={0}
+          type={'primary'}
           chartType={this.state.chartType}
-          dataPropertyIndex={this.state.dataPropertyIndex /* 🦄 */}
-          dataType={this.dataType(this.state.dataPropertyIndex) /* 🦄 */}
+          dataPropertyIndex={this.state.dataPropertyIndex.primary}
+          dataType={this.dataType(this.state.dataPropertyIndex.primary)}
           onDataPropertyChanged={this.onDataPropertyChanged /* 🦄 */}
 
           // Number
-          datasetSettings={this.state.datasetSettings.primary[this.state.dataPropertyIndex]}
+          datasetSettings={this.state.datasetSettings.primary[this.state.dataPropertyIndex.primary]}
           onRangeMaxChanged={this.onRangeMaxChanged}
           onRangeMinChanged={this.onRangeMinChanged}
           dataLength={dataLength}
-          //numberZoom={this.state.numberZoom}
           onNumberZoomChanged={this.onNumberZoomChanged}
 
           // DateTime
           onDatePartChanged={this.onDatePartChanged}
         />
+
+        
+        {secondDatasetOptions /* Second Dataset (line chart)*/}
 
         <h3>Data:</h3>
 
