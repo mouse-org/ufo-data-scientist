@@ -31,8 +31,8 @@ class BarChart extends React.Component {
   }
 
   drawChart(data, vizMultiplier) {
-    console.log("DRAW CHART DATA:", data)
-    
+    //console.log("DRAW CHART DATA:", data)
+
     function updateChart() {
       
       const max = findMaxInArrays([data], 'value')

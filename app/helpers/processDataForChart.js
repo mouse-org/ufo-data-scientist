@@ -115,7 +115,7 @@ module.exports = function processDataForChart(rawData) {
       datasetSettings: fullDatasetSettings,
       chartData: chartData
     }
-    //console.log("## NS:", newState)
+    console.log("## NS:", newState)
     return newState
   })
 }
