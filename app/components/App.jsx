@@ -147,7 +147,9 @@ class App extends React.Component {
 
   onRangeMinChanged(dataset, e) {
     const updatedMin = parseFloat(e.target.value)
+    console.log("UPDATEDMIN:", updatedMin)
     this.setState((state, props) => {
+      console.log("SET STATE RANGE MIN")
       var dataPropertyIndex = state.dataPropertyIndex[dataset]
       var newDatasetSettings = state.datasetSettings
       if (updatedMin >= newDatasetSettings[dataset][dataPropertyIndex].max) {
