@@ -34,12 +34,12 @@ class LineChart extends React.Component {
     var margin = ({top: 20, right: 0, bottom: 30, left: 40})
     var updateChart = () => {
       const height = 330
-      const max = findMaxInArrays([data.primary], 'value')
-      const minDS = data.primary.map(d => -d.value)
+      const max = findMaxInArrays([data[0]], 'value')
+      const minDS = data[0].map(d => -d.value)
       const min = findMaxInArrays([minDS], false) * -1
       const width = document.getElementById("viz").offsetWidth * .9
 
-      var ds = data.primary.map(d => ({y: d.value}))
+      var ds = data[0].map(d => ({y: d.value}))
       var ds2 = false
       if (this.props.secondDataset) {
         ds2 = data.secondary.map(d => ({y: d.value}))
@@ -81,7 +81,7 @@ class LineChart extends React.Component {
 
   render() {
 
-    const showData = this.props.data.primary.map(d => 
+    const showData = this.props.data[0].map(d => 
       <li key={d.name}>{d.name}: {d.value}</li>
     )
 

@@ -20,7 +20,6 @@ function vectorObjtoVectorArray(vectors, vectorObj, primary) {
     }  
     vectors.push({name: name, value: value})    
   }
-  console.log(vectors.length)
   return vectors
 }
 

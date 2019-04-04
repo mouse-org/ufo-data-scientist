@@ -12,11 +12,7 @@ class BarChart extends React.Component {
     }
   }
 
-  /*
-  shouldComponentUpdate() {
-    return true
-  }
-  */
+  /*shouldComponentUpdate() { return true }*/
 
   componentDidUpdate(prevProps) {
     this.viz()
@@ -35,12 +31,8 @@ class BarChart extends React.Component {
   }
 
   drawChart(data, vizMultiplier) {
-    //console.log("DRAW CHARAT DATA:", data)
-    //console.log("VM:", vizMultiplier)
-    var width = 960,
-    height = 500;
-
-    var margin = ({top: 20, right: 0, bottom: 30, left: 40})
+    console.log("DRAW CHART DATA:", data)
+    
     function updateChart() {
       
       const max = findMaxInArrays([data], 'value')

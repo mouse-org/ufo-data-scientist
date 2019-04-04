@@ -41,7 +41,7 @@ class App extends React.Component {
         primary: defaultDataProperty,
         secondary: defaultSecondDataProperty
       },
-      secondaryDataProperty: true,
+      secondaryDataProperty: false,
       datasetSettings: {
         primary: {
           [defaultDataProperty]: {
@@ -64,10 +64,7 @@ class App extends React.Component {
           }
         }
       },
-      chartData: {
-        primary: [],
-        secondary: []
-      }
+      chartData: [[]]
     }
   }
 
@@ -203,7 +200,7 @@ class App extends React.Component {
     if (this.state.chartType === 'bar') {
       chart = (
         <BarChart
-          data={this.state.chartData.primary}
+          data={this.state.chartData[0]}
         />
       )
     } else if (this.state.chartType === 'line') {
