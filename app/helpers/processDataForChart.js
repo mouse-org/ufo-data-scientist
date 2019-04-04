@@ -82,7 +82,7 @@ module.exports = function processDataForChart(rawData) {
         // Date/Time Data Sets: date_time)
         //return this.groupData(sortedData, 'string', groups)
     } else {
-      chartData = groupableVectors
+      chartData = groupableVectorsArray
     }
 
     // Need to extract value above and add in 'Unknown'
