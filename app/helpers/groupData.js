@@ -26,12 +26,14 @@ module.exports = function groupData(
       }
       //console.log("i:", i, typeof i)
       // 🚸 not sure if there is anything still NaN
-      var name = isNaN(i) ? 0 : parseFloat(i).toFixed(2)
-      groupedData.push({name: name, value: 0})
+      var min = isNaN(i) ? 0 : parseFloat(i)
+      var max = parseFloat(i) + spacing
+      var name = ((min + max) / 2).toFixed(2)
+      groupedData.push({name: name, value: 0, min: min, max: max})
     }
 
-    //console.log("*SD:", sortedData)
-    //console.log("*GD:", groupedData)
+    console.log("*SD:", sortedData)
+    console.log("*GD:", groupedData)
 
 
     for (var i = 0, j = 0; i < sortedData.length; i++) {
@@ -42,7 +44,7 @@ module.exports = function groupData(
       // Remove datapoints that are out of range
       if (s.name < roundMax && s.name > roundMin) {
 
-        if (s.name > g.name) {
+        if (s.name > g.max) {
           j++
           i--
           continue

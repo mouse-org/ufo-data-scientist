@@ -2,9 +2,10 @@
 
 const compareObjects = require('./compareObjects')
 
-function vectorObjtoVectorArray(vectors, vectorObj, primary) {
+function vectorObjtoVectorArray(vectors, vectorObj, primary, sec) {
   for (var d in vectorObj) {
     var value = vectorObj[d]
+    console.log(sec != false, "$$ VALUE:", value)
     // If label (name) is a number parse it
     var name;
 
@@ -24,26 +25,40 @@ function vectorObjtoVectorArray(vectors, vectorObj, primary) {
 }
 
 module.exports = function vectorsFromSetAndValues(primary, secondary) {
+  console.log("VFSAV:")
+  console.log("PRIMARY:", primary)
+  console.log("SECONDARY:", secondary)
+
   var vectorsArray = []
 
   if (secondary) {
     // Create empty objects for value vectors and labels
-    for (var i in secondary.set) {
-      const secondaryItem = secondary.set[i]
+    var sets = secondary.groups ? secondary.groups : secondary.set
+    for (var i in sets) {
       var vectorObj = {}
+      var set = sets[i]
       primary.set.map(d => vectorObj[d] = 0)
 
       // For every data point increment value of corresponding
       // property in vector object
       for (var i = 0; i < primary.data.length; i++) {
-        if (secondary.data[i] === secondaryItem) {
-          const index = primary.data[i]
-          vectorObj[index] += 1
+        var sd = secondary.data[i]
+        const index = primary.data[i]
+        // Is a number
+        if (secondary.datatype === 'number') {
+          if (sd <= set.max && sd >= set.min) {
+            vectorObj[index] += 1
+          }
+        } else {
+          if (sd === set) {
+            vectorObj[index] += 1
+          }
         }
+        
       }
 
       // Transofrm vectorObj to an array
-      var vectors = vectorObjtoVectorArray([], vectorObj, primary)
+      var vectors = vectorObjtoVectorArray([], vectorObj, primary, secondary)
 
       vectorsArray.push(vectors)
     }
@@ -80,7 +95,7 @@ module.exports = function vectorsFromSetAndValues(primary, secondary) {
     sortedVectors.push(vectors)
   }
 
-  //console.log("SORTED VECTORS:", sortedVectors)
+  console.log("SORTED VECTORS:", sortedVectors)
 
   return sortedVectors
 }

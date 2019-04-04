@@ -2,7 +2,8 @@ const datePartOptions = require('./datePartOptions')
 const extractDataForSelectedProperty = require('./extractDataForSelectedProperty')
 const dataStructures = require('./dataStructures')
 const vectorsFromSetAndValues = require('./vectorsFromSetAndValues')
-const groupData = require('../helpers/groupData')
+const groupDataPrepare = require('./groupDataPrepare')
+const removeExcluded = require('./removeExcluded')
 
 module.exports = function processDataForChart(rawData) {
   this.setState((state, props) => {
@@ -34,56 +35,44 @@ module.exports = function processDataForChart(rawData) {
     for (i in datasets) {
       configs[datasets[i]] = collectConfig(datasets[i])
     }
+    var processSecondary = (configs.secondary && configs.secondary.dataType === 'number')
+    
+    if (processSecondary) {
+      const secondaryVectorsArray = vectorsFromSetAndValues(configs.secondary, false)
+      // If excludedValue is included in vectors then remove it:
+      const secondaryRemoved = removeExcluded(secondaryVectorsArray, configs.secondary)
+      var secondaryGroupableVectorsArray = secondaryRemoved.groupable
+      var secondaryExcludedArray = secondaryRemoved.excluded     
+
+      const prepared = groupDataPrepare(secondaryGroupableVectorsArray, configs, 'secondary')
+      
+      configs.secondary.groups = prepared.chartData[0]
+      configs.secondary.settings.min = prepared.rangeMin
+      configs.secondary.settings.max = prepared.rangeMax
+      configs.secondary.settings.absMin = prepared.absMin
+      configs.secondary.settings.absMax = prepared.absMax
+    
+    }
+
+    console.log("SECONDARY CONFIGS:")
+    console.log(configs.secondary)
 
     // Turn array of values into vectors with values and frequency
     const vectorsArray = vectorsFromSetAndValues(configs.primary, configs.secondary)
 
     
-    // If excludedValue is included in vectors then remove it:
-    var groupableVectorsArray = []
-    var excludedArray = []
-    for (i in vectorsArray) {
-      const vectors = vectorsArray[i]
-      if (vectors[0] && vectors[0].name === configs.primary.exclude) {
-        groupableVectorsArray.push(vectors.slice(1, vectors.length))
-        excludedArray.push(vectors.slice(0, 1)[0].value)
-      }
-    }
+    const removed = removeExcluded(vectorsArray, configs.primary)
+    var groupableVectorsArray = removed.groupable
+    var excludedArray = removed.excluded
 
-    // Create variable to store output
-    var chartData = []
+    var primaryGroupedData = groupDataPrepare(groupableVectorsArray, configs, 'primary')
+    var chartData = primaryGroupedData.chartData
+    var rangeMin = primaryGroupedData.rangeMin
+    var rangeMax = primaryGroupedData.rangeMax
+    var absMin = primaryGroupedData.absMin
+    var absMax = primaryGroupedData.absMax
 
-    // Find min/max in primary dataset
-    // All of the vectors have the same names
-    // so we can look at the first
-    const first = groupableVectorsArray[0]
-    var absMin = first[0].name
-    var absMax = first[first.length - 1].name
-    var rangeMin = configs.primary.settings.min
-    var rangeMax = configs.primary.settings.max
-    const numberZoom = configs.primary.settings.numberZoom
-
-    if (configs.primary.dataType === 'number') {
-      absMin = Math.floor(absMin)
-      absMax = Math.ceil(absMax)
-
-      if (!rangeMin) { rangeMin = absMin }
-      if (!rangeMax) { rangeMax = absMax }
-
-      for (var i in groupableVectorsArray) {
-        var datasetChartData = groupData(
-          groupableVectorsArray[i], numberZoom, rangeMin, rangeMax
-        );
-        chartData.push(datasetChartData)
-      }
-    
-    //} else if (dataType === 'datetime') {
-        // 🚸 Maybe in the future will group date data
-        // Date/Time Data Sets: date_time)
-        //return this.groupData(sortedData, 'string', groups)
-    } else {
-      chartData = groupableVectorsArray
-    }
+     
 
     // Need to extract value above and add in 'Unknown'
     // here because of different excluded values in data
@@ -94,18 +83,34 @@ module.exports = function processDataForChart(rawData) {
       }
     }
 
-    const dataPropertyIndex = state.dataPropertyIndex.primary
+    const dPI = state.dataPropertyIndex.primary
     var fullDatasetSettings = state.datasetSettings
-    const currentPrimaryDatasetSettings = fullDatasetSettings.primary[dataPropertyIndex]
+    const currentPrimaryDatasetSettings = fullDatasetSettings.primary[dPI]
     const updatedPrimaryDatasetSettings = {
       min: rangeMin,
       max: rangeMax,
       absMin: absMin,
       absMax: absMax,
-      numberZoom: numberZoom
     }
 
-    fullDatasetSettings.primary[dataPropertyIndex] = Object.assign(
+    if (processSecondary) {
+      const sDPI = state.dataPropertyIndex.secondary
+      const currentSecondaryDatasetSettings = fullDatasetSettings.secondary[sDPI]
+      const updatedSecondaryDatasetSettings = {
+        min: configs.secondary.settings.min,
+        max: configs.secondary.settings.max,
+        absMin: configs.secondary.settings.absMin,
+        absMax: configs.secondary.settings.absMax
+      }
+
+      fullDatasetSettings.secondary[sDPI] = Object.assign(
+        {},
+        currentSecondaryDatasetSettings,
+        updatedSecondaryDatasetSettings
+      )
+    }
+
+    fullDatasetSettings.primary[dPI] = Object.assign(
       {},
       currentPrimaryDatasetSettings,
       updatedPrimaryDatasetSettings
