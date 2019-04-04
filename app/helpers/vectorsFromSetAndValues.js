@@ -20,6 +20,7 @@ function vectorObjtoVectorArray(vectors, vectorObj, primary) {
     }  
     vectors.push({name: name, value: value})    
   }
+  console.log(vectors.length)
   return vectors
 }
 
@@ -30,15 +31,15 @@ module.exports = function vectorsFromSetAndValues(primary, secondary) {
     // Create empty objects for value vectors and labels
     for (var i in secondary.set) {
       const secondaryItem = secondary.set[i]
-      var vectorObj
+      var vectorObj = {}
       primary.set.map(d => vectorObj[d] = 0)
-      
 
       // For every data point increment value of corresponding
       // property in vector object
       for (var i = 0; i < primary.data.length; i++) {
         if (secondary.data[i] === secondaryItem) {
-          vectorObj[d] += 1
+          const index = primary.data[i]
+          vectorObj[index] += 1
         }
       }
 

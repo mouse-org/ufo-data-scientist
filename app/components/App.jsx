@@ -41,7 +41,7 @@ class App extends React.Component {
         primary: defaultDataProperty,
         secondary: defaultSecondDataProperty
       },
-      secondaryDataProperty: false,
+      secondaryDataProperty: true,
       datasetSettings: {
         primary: {
           [defaultDataProperty]: {
