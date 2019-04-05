@@ -37,12 +37,12 @@ class App extends React.Component {
     this.onEnableSecondDataset = this.onEnableSecondDataset.bind(this)
     this.state = {
       title: "UFO Data Scientist",
-      chartType: 'bar',
+      chartType: 'line',
       dataPropertyIndex: {
         primary: defaultDataProperty,
         secondary: defaultSecondDataProperty
       },
-      secondaryDataProperty: false,
+      secondaryDataProperty: true,
       datasetSettings: {
         primary: {
           [defaultDataProperty]: {
