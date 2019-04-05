@@ -10,6 +10,24 @@ module.exports = [
     exclude: "" // None in data
   },
   {
+    name: "duration_minutes",
+    type: "number",
+    exclude: "Unknown"
+  }
+]
+
+/*[
+  {
+    name: "state",
+    type: "string",
+    exclude: "Unknown"
+  },
+  {
+    name: "date_time",
+    type: "datetime",
+    exclude: "" // None in data
+  },
+  {
     name: "shape",
     type: "string",
     exclude: "unknown" // SIC (lowercase)
@@ -30,3 +48,5 @@ module.exports = [
     exclude: ""
   }
 ]
+
+*/

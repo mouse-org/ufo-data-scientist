@@ -1,14 +1,16 @@
 const React = require('react')
 //const ReactDOM = require('react-dom')
 //const uuidv4 = require('uuid/v4')
+const settings = require('../helpers/settings')
 
-const data = require('../newData')
+const data = require('../data').map(d => [d.state, d.date_time, d.duration_minutes])
+const dataStructures = require('../helpers/dataStructures')
 const dataLength = data.length
 
 /* Helpers */
 const processDataForChart = require('../helpers/processDataForChart')
 
-const settings = require('../helpers/settings')
+
 const maxNumberZoom = settings.maxNumberZoom
 const defaultDataProperty = settings.defaultDataProperty
 const defaultSecondDataProperty = settings.defaultSecondDataProperty
@@ -20,12 +22,11 @@ const ChartTypeControls = require('./ChartTypeControls')
 const BarChart = require('./charts/BarChart')
 const LineChart = require('./charts/LineChart')
 
-const dataStructures = require('../helpers/dataStructures')
+
 
 class App extends React.Component {
   constructor(props) {
     super(props);
-    this.whichChartData = this.whichChartData.bind(this)
     this.processDataForChart = processDataForChart.bind(this, data)
     this.onChartTypeChanged = this.onChartTypeChanged.bind(this)
     this.onDataPropertyChanged = this.onDataPropertyChanged.bind(this)
@@ -69,7 +70,7 @@ class App extends React.Component {
   }
 
   componentDidMount() {
-    this.whichChartData()
+    this.processDataForChart()
   }
 
   dataType(dataPropertyIndex) {
@@ -88,10 +89,6 @@ class App extends React.Component {
       default:
         return false
     }
-  }
-
-  whichChartData() {
-    this.processDataForChart()
   }
 
   onChartTypeChanged(newChartType) {

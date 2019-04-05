@@ -1,13 +1,38 @@
-const datePartOptions = require('./datePartOptions')
-const extractDataForSelectedProperty = require('./extractDataForSelectedProperty')
+//const datePartOptions = require('./datePartOptions')
+const datePartFromDate = require('./datePartFromDateString')
 const dataStructures = require('./dataStructures')
-const vectorsFromSetAndValues = require('./vectorsFromSetAndValues')
 const groupDataPrepare = require('./groupDataPrepare')
 const removeExcluded = require('./removeExcluded')
+const vectorGroupsFromExtracted = require('./vectorGroupsFromExtracted')
 
 module.exports = function processDataForChart(rawData) {
   this.setState((state, props) => {
 
+    var sec = state.secondaryDataProperty
+
+    var ds = sec ? 'secondary' : 'primary'
+    var index = state.dataPropertyIndex[ds]
+    const dsSettings = state.datasetSettings[ds][index]
+    var dateIndex = dsSettings.datePartIndex
+
+    // just selected datapoint
+    var extracted = rawData.map(d => d[index])
+    
+    const dataType = dataStructures[index].type
+
+    if (dataType === 'datetime') {
+      extracted = extracted.map((i) => {
+        return datePartFromDate(i, dateIndex)
+      })
+    }
+
+    const numberOfGroups = dsSettings.numberZoom
+    const vectorGroups = vectorGroupsFromExtracted(extracted, dataType, numberOfGroups)
+
+    
+
+
+    /*
     const collectConfig = (ds) => {
       if (ds === 'secondary' && !state.secondaryDataProperty) {
         return false
@@ -115,12 +140,13 @@ module.exports = function processDataForChart(rawData) {
       currentPrimaryDatasetSettings,
       updatedPrimaryDatasetSettings
     )
+    */
 
     var newState = {
-      datasetSettings: fullDatasetSettings,
-      chartData: chartData
+      //datasetSettings: fullDatasetSettings,
+      //chartData: chartData
     }
-    console.log("## NS:", newState)
+    //console.log("## NS:", newState)
     return newState
   })
 }

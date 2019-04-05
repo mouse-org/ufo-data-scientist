@@ -1,5 +1,5 @@
 module.exports = {
     maxNumberZoom: 50,
-    defaultDataProperty: 5,
+    defaultDataProperty: 1,
     defaultSecondDataProperty: 0
 }
