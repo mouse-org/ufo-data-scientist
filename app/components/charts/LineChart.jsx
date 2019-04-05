@@ -30,7 +30,7 @@ class LineChart extends React.Component {
   }
 
   drawChart(data) {
-    console.log("DRAW CHART DATA:", data)
+    //console.log("DRAW CHART DATA:", data)
     var margin = ({top: 20, right: 0, bottom: 30, left: 40})
     var updateChart = () => {
       const height = 330

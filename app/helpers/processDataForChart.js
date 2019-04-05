@@ -10,47 +10,101 @@ module.exports = function processDataForChart(rawData) {
   this.setState((state, props) => {
 
     var sec = state.secondaryDataProperty
-
-    var ds = sec ? 'secondary' : 'primary'
-    var index = state.dataPropertyIndex[ds]
     var datasetSettings = state.datasetSettings
-    const dsSettings = datasetSettings[ds][index]
-    var dateIndex = dsSettings.datePartIndex
+    var priIndex = state.dataPropertyIndex.primary
+    var secIndex = state.dataPropertyIndex.secondary
 
-    // just selected datapoint
-    var extracted = rawData.map(d => d[index])
-    
-    const options = {
-      dataType: dataStructures[index].type,
-      exclude: dataStructures[index].exclude,
-      datePartName: datePartOptions[dateIndex].name,
-      min: dsSettings.min,
-      max: dsSettings.max
+    var options
+
+    function singleDsToChartData(ds, conditionFunction) {
+      // just selected datapoint
+
+      var index = state.dataPropertyIndex[ds]
+      const dsSettings = datasetSettings[ds][index]
+      var dateIndex = dsSettings.datePartIndex
+
+      var extracted = []
+      if (conditionFunction) {
+        rawData.map(d => {
+          if (conditionFunction(d)) {
+            extracted.push(d[index])
+          }
+        })
+      } else {
+        extracted = rawData.map(d => d[index])
+      }     
+      
+      options = {
+        dataType: dataStructures[index].type,
+        exclude: dataStructures[index].exclude,
+        datePartName: datePartOptions[dateIndex].name,
+        min: dsSettings.min,
+        max: dsSettings.max
+      }
+
+      if (options.dataType === 'datetime') {
+        extracted = extracted.map((i) => {
+          return datePartFromDate(i, dateIndex)
+        })
+      }
+
+      const numberOfGroups = dsSettings.numberZoom
+      const groupsData = vectorGroupsFromExtracted(extracted, numberOfGroups, options)
+
+      return groupsData
     }
 
-    if (options.dataType === 'datetime') {
-      extracted = extracted.map((i) => {
-        return datePartFromDate(i, dateIndex)
-      })
-    }
-
-    const numberOfGroups = dsSettings.numberZoom
-    const groupsData = vectorGroupsFromExtracted(extracted, numberOfGroups, options)
+    const primaryGroupsData = singleDsToChartData('primary', false)
 
     var updatedDS = datasetSettings
-    if (!sec) {
-      var chartData = [groupsData.groupedVectors]
+    var combinedGroupsData = []
+    var chartData = []
+    if (sec) {
+      const secondaryGroupsData = singleDsToChartData('secondary', false)
 
-      updatedDS[ds][index].absMin = groupsData.absMin
-      updatedDS[ds][index].absMax = groupsData.absMax
-      if (options.min === false) {
-        updatedDS[ds][index].min = groupsData.absMin
+      for (var i in secondaryGroupsData.groupedVectors) {
+        const name = secondaryGroupsData.groupedVectors[i].name
+
+        // This function determines whether data from the
+        // primary set is in this secondary set
+        var condFunc = function(secVal, secIndex, dataItem) {
+          if (dataItem[secIndex] === secVal) {
+            return true
+          }
+          return false
+        }.bind(this, name, secIndex)
+
+        combinedGroupsData.push(
+          singleDsToChartData('primary', condFunc).groupedVectors
+        )
       }
-      if (options.max === false) {
-        updatedDS[ds][index].max = groupsData.absMax
+
+      //console.log("COMBINED:", combinedGroupsData)
+
+      chartData = combinedGroupsData
+
+      updatedDS.secondary[secIndex].absMin = secondaryGroupsData.absMin
+      updatedDS.secondary[secIndex].absMax = secondaryGroupsData.absMax
+      const priDS = updatedDS.secondary[secIndex]
+      if (priDS.min === false) {
+        updatedDS.secondary[secIndex].min = secondaryGroupsData.absMin
       }
+      if (priDS.max === false) {
+        updatedDS.secondary[secIndex].max = secondaryGroupsData.absMax
+      }
+
     } else {
-      
+      chartData.push(primaryGroupsData.groupedVectors)
+    }
+
+    updatedDS.primary[priIndex].absMin = primaryGroupsData.absMin
+    updatedDS.primary[priIndex].absMax = primaryGroupsData.absMax
+    const priDS = updatedDS.primary[priIndex]
+    if (priDS.min === false) {
+      updatedDS.primary[priIndex].min = primaryGroupsData.absMin
+    }
+    if (priDS.max === false) {
+      updatedDS.primary[priIndex].max = primaryGroupsData.absMax
     }
 
     var newState = {

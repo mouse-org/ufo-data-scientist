@@ -51,8 +51,10 @@ module.exports = function vectorGroupsFromExtracted(extracted, numberOfGroups, o
     var groupedVectors = vectors
   } else {
 
-    absMin = Math.floor(vectors[0].name)
-    absMax = Math.ceil(vectors[vectors.length - 1].name)
+    if (vectors[0]) {
+      absMin = Math.floor(vectors[0].name)
+      absMax = Math.ceil(vectors[vectors.length - 1].name)
+    }
     var min = options.min === false ? absMin : options.min
     var max =  options.max === false ? absMax : options.max
 

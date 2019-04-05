@@ -194,7 +194,7 @@ class App extends React.Component {
 
     var chart = <div><h3>Error: No Chart</h3></div>
 
-    console.log("CHART DATA:", this.state.chartData)
+    //console.log("CHART DATA:", this.state.chartData)
 
     if (this.state.chartType === 'bar') {
       chart = (
