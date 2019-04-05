@@ -22,7 +22,12 @@ function DatasetControls(props) {
 
   var numberControls
   const ds = props.datasetSettings
-  if (dataType === 'number' && (ds.absMin && ds.absMax)) {
+  if (
+      dataType === 'number' &&
+      (
+        !(ds.absMin === false) && !(ds.absMax === false)
+      )
+    ) {
     numberControls = (
       <NumberDataSetControls
         label={dataName}
