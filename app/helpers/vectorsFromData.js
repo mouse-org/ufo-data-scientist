@@ -1,17 +1,20 @@
 // Takes 2 sets of data with 1 property each (created using getDataForSelectedProperty())
 
-function vectorObjtoVectorArray(vectorObj) {
+function vectorObjtoVectorArray(vectorObj, dataType) {
   var vectors = []
   for (var d in vectorObj) {
     const value = vectorObj[d]
-    const name = d
+    var name = d
+    if (dataType === 'number' && !isNaN(name)) {
+      name = parseFloat(name)
+    }
     vectors.push({name: name, value: value})    
   }
 
   return vectors
 }
 
-module.exports = function vectorsFromData(data) {
+module.exports = function vectorsFromData(data, dataType) {
   
   // unique values only
   const set = [...new Set(data)]
@@ -27,5 +30,5 @@ module.exports = function vectorsFromData(data) {
   data.map(d => vectorObj[d] += 1)
 
   // Transofrm vectorObj to an array
-  return vectorObjtoVectorArray(vectorObj)
+  return vectorObjtoVectorArray(vectorObj, dataType)
 }

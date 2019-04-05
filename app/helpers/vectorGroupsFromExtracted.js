@@ -27,7 +27,7 @@ module.exports = function vectorGroupsFromExtracted(extracted, numberOfGroups, o
 
 
   // Get vector array of names, values
-  var vectors = vectorsFromData(extracted)
+  var vectors = vectorsFromData(extracted, options.dataType)
 
   // Sort vectors
   vectors.sort(compareObjects.bind(

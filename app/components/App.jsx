@@ -7,8 +7,6 @@ const data = require('../newData')
 const dataStructures = require('../helpers/dataStructures')
 const dataLength = data.length
 
-console.log("DL:", dataLength)
-
 /* Helpers */
 const processDataForChart = require('../helpers/processDataForChart')
 

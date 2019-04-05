@@ -5,7 +5,7 @@
   "main": "server.js",
   "scripts": {
     "build": "webpack",
-    "start": "npm run build && node server.js",
+    "start": "PORT=3000 && npm run build && node server.js",
     "test": "jest"
   },
   "dependencies": {
