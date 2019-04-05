@@ -2,10 +2,12 @@ const React = require('react')
 //const ReactDOM = require('react-dom')
 //const uuidv4 = require('uuid/v4')
 const settings = require('../helpers/settings')
-
-const data = require('../data').map(d => [d.state, d.date_time, d.duration_minutes])
+const data = require('../newData')
+//const data = require('../data').map(d => [d.state, d.date_time, d.duration_minutes])
 const dataStructures = require('../helpers/dataStructures')
 const dataLength = data.length
+
+console.log("DL:", dataLength)
 
 /* Helpers */
 const processDataForChart = require('../helpers/processDataForChart')
@@ -49,8 +51,8 @@ class App extends React.Component {
             datePartIndex: 0,
             min: false,
             max: false,
-            absMin: 0,
-            absMax: 50,
+            absMin: false,
+            absMax: false,
             numberZoom: defaultNumberZoom(dataLength, maxNumberZoom),
           }
         },
@@ -59,8 +61,8 @@ class App extends React.Component {
             datePartIndex: 0,
             min: false,
             max: false,
-            absMin: 0,
-            absMax: 50,
+            absMin: false,
+            absMax: false,
             numberZoom: defaultNumberZoom(dataLength, maxNumberZoom),
           }
         }
@@ -193,6 +195,8 @@ class App extends React.Component {
   render() {
 
     var chart = <div><h3>Error: No Chart</h3></div>
+
+    console.log("CHART DATA:", this.state.chartData)
 
     if (this.state.chartType === 'bar') {
       chart = (

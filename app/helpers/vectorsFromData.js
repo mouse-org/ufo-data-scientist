@@ -1,7 +1,5 @@
 // Takes 2 sets of data with 1 property each (created using getDataForSelectedProperty())
 
-const compareObjects = require('./compareObjects')
-
 function vectorObjtoVectorArray(vectorObj) {
   var vectors = []
   for (var d in vectorObj) {
@@ -9,6 +7,7 @@ function vectorObjtoVectorArray(vectorObj) {
     const name = d
     vectors.push({name: name, value: value})    
   }
+
   return vectors
 }
 

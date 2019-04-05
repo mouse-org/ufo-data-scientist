@@ -28,8 +28,8 @@ var ufoShapes = [
     "date_time": "2015-09-24T22:00:00",
     "shape": "light",
     "duration_minutes": 0.01,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MA",
@@ -44,8 +44,8 @@ var ufoShapes = [
     "date_time": "2016-11-19T01:40:00",
     "shape": "unknown",
     "duration_minutes": 0.01,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "OR",
@@ -108,16 +108,16 @@ var ufoShapes = [
     "date_time": "2016-11-30T23:30:00",
     "shape": "unknown",
     "duration_minutes": 0.02,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "OR",
     "date_time": "2016-11-16T19:00:00",
     "shape": "light",
     "duration_minutes": 0.02,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "OR",
@@ -236,8 +236,8 @@ var ufoShapes = [
     "date_time": "2016-08-22T22:23:00",
     "shape": "triangle",
     "duration_minutes": 0.02,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "AR",
@@ -292,16 +292,16 @@ var ufoShapes = [
     "date_time": "2016-07-10T21:11:00",
     "shape": "unknown",
     "duration_minutes": 0.02,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "FL",
     "date_time": "2016-07-08T22:10:00",
     "shape": "flash",
     "duration_minutes": 0.02,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "IN",
@@ -412,8 +412,8 @@ var ufoShapes = [
     "date_time": "2016-03-23T12:00:00",
     "shape": "other",
     "duration_minutes": 0.02,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MA",
@@ -436,8 +436,8 @@ var ufoShapes = [
     "date_time": "2016-02-26T13:11:00",
     "shape": "disk",
     "duration_minutes": 0.02,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "WA",
@@ -452,8 +452,8 @@ var ufoShapes = [
     "date_time": "2016-02-14T04:30:00",
     "shape": "flash",
     "duration_minutes": 0.02,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "AL",
@@ -484,8 +484,8 @@ var ufoShapes = [
     "date_time": "2016-01-27T06:00:00",
     "shape": "chevron",
     "duration_minutes": 0.02,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "TN",
@@ -500,8 +500,8 @@ var ufoShapes = [
     "date_time": "2016-01-05T00:00:00",
     "shape": "unknown",
     "duration_minutes": 0.02,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "ND",
@@ -564,16 +564,16 @@ var ufoShapes = [
     "date_time": "2015-11-14T19:45:00",
     "shape": "cigar",
     "duration_minutes": 0.02,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "Unknown",
     "date_time": "2015-11-11T01:27:00",
     "shape": "unknown",
     "duration_minutes": 0.02,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NM",
@@ -636,8 +636,8 @@ var ufoShapes = [
     "date_time": "2015-09-30T21:00:00",
     "shape": "other",
     "duration_minutes": 0.02,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CA",
@@ -652,8 +652,8 @@ var ufoShapes = [
     "date_time": "2015-09-25T02:00:00",
     "shape": "unknown",
     "duration_minutes": 0.02,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "IL",
@@ -700,8 +700,8 @@ var ufoShapes = [
     "date_time": "2015-08-22T01:05:00",
     "shape": "flash",
     "duration_minutes": 0.02,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "FL",
@@ -732,8 +732,8 @@ var ufoShapes = [
     "date_time": "2015-07-23T02:23:00",
     "shape": "cylinder",
     "duration_minutes": 0.02,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "IA",
@@ -772,8 +772,8 @@ var ufoShapes = [
     "date_time": "2015-06-29T20:20:00",
     "shape": "formation",
     "duration_minutes": 0.02,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "WA",
@@ -796,24 +796,24 @@ var ufoShapes = [
     "date_time": "2015-05-24T14:02:00",
     "shape": "sphere",
     "duration_minutes": 0.02,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "FL",
     "date_time": "2015-05-18T16:45:00",
     "shape": "sphere",
     "duration_minutes": 0.02,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "FL",
     "date_time": "2015-05-16T12:55:00",
     "shape": "sphere",
     "duration_minutes": 0.02,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "VA",
@@ -860,16 +860,16 @@ var ufoShapes = [
     "date_time": "2015-04-15T17:00:00",
     "shape": "sphere",
     "duration_minutes": 0.02,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "FL",
     "date_time": "2015-04-11T16:45:00",
     "shape": "sphere",
     "duration_minutes": 0.02,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "AZ",
@@ -892,8 +892,8 @@ var ufoShapes = [
     "date_time": "2015-03-09T21:00:00",
     "shape": "triangle",
     "duration_minutes": 0.02,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "FL",
@@ -1084,8 +1084,8 @@ var ufoShapes = [
     "date_time": "2016-05-29T20:50:00",
     "shape": "diamond",
     "duration_minutes": 0.02,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "WI",
@@ -1164,8 +1164,8 @@ var ufoShapes = [
     "date_time": "2015-10-29T20:57:00",
     "shape": "circle",
     "duration_minutes": 0.02,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "UT",
@@ -1204,8 +1204,8 @@ var ufoShapes = [
     "date_time": "2015-08-11T20:30:00",
     "shape": "sphere",
     "duration_minutes": 0.02,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MN",
@@ -1292,8 +1292,8 @@ var ufoShapes = [
     "date_time": "2016-12-22T21:30:00",
     "shape": "light",
     "duration_minutes": 0.03,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NH",
@@ -1308,8 +1308,8 @@ var ufoShapes = [
     "date_time": "2016-12-21T21:00:00",
     "shape": "triangle",
     "duration_minutes": 0.03,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "UT",
@@ -1324,8 +1324,8 @@ var ufoShapes = [
     "date_time": "2016-12-17T19:53:00",
     "shape": "circle",
     "duration_minutes": 0.03,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "FL",
@@ -1380,8 +1380,8 @@ var ufoShapes = [
     "date_time": "2016-11-25T01:11:00",
     "shape": "flash",
     "duration_minutes": 0.03,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "TN",
@@ -1404,8 +1404,8 @@ var ufoShapes = [
     "date_time": "2016-11-11T21:50:00",
     "shape": "flash",
     "duration_minutes": 0.03,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NH",
@@ -1420,8 +1420,8 @@ var ufoShapes = [
     "date_time": "2016-11-09T18:15:00",
     "shape": "light",
     "duration_minutes": 0.03,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "ND",
@@ -1452,8 +1452,8 @@ var ufoShapes = [
     "date_time": "2016-11-02T20:00:00",
     "shape": "sphere",
     "duration_minutes": 0.03,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "TX",
@@ -1468,8 +1468,8 @@ var ufoShapes = [
     "date_time": "2016-10-30T17:34:00",
     "shape": "disk",
     "duration_minutes": 0.03,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NJ",
@@ -1540,8 +1540,8 @@ var ufoShapes = [
     "date_time": "2016-09-15T14:30:00",
     "shape": "disk",
     "duration_minutes": 0.03,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MT",
@@ -1708,8 +1708,8 @@ var ufoShapes = [
     "date_time": "2016-07-09T01:30:00",
     "shape": "sphere",
     "duration_minutes": 0.03,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CA",
@@ -1748,8 +1748,8 @@ var ufoShapes = [
     "date_time": "2016-06-27T03:46:00",
     "shape": "light",
     "duration_minutes": 0.03,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "WA",
@@ -1812,8 +1812,8 @@ var ufoShapes = [
     "date_time": "2016-05-21T14:00:00",
     "shape": "sphere",
     "duration_minutes": 0.03,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MA",
@@ -1836,32 +1836,32 @@ var ufoShapes = [
     "date_time": "2016-05-16T21:47:00",
     "shape": "formation",
     "duration_minutes": 0.03,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "FL",
     "date_time": "2016-05-09T21:32:00",
     "shape": "sphere",
     "duration_minutes": 0.03,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MD",
     "date_time": "2016-05-07T21:00:00",
     "shape": "light",
     "duration_minutes": 0.03,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "SC",
     "date_time": "2016-04-27T22:00:00",
     "shape": "circle",
     "duration_minutes": 0.03,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "IN",
@@ -1884,8 +1884,8 @@ var ufoShapes = [
     "date_time": "2016-04-20T00:55:00",
     "shape": "unknown",
     "duration_minutes": 0.03,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "AZ",
@@ -1956,8 +1956,8 @@ var ufoShapes = [
     "date_time": "2016-03-11T20:00:00",
     "shape": "egg",
     "duration_minutes": 0.03,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "AL",
@@ -2004,8 +2004,8 @@ var ufoShapes = [
     "date_time": "2016-03-01T23:30:00",
     "shape": "unknown",
     "duration_minutes": 0.03,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NV",
@@ -2068,8 +2068,8 @@ var ufoShapes = [
     "date_time": "2016-02-13T05:47:00",
     "shape": "light",
     "duration_minutes": 0.03,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CA",
@@ -2404,8 +2404,8 @@ var ufoShapes = [
     "date_time": "2015-11-05T19:45:00",
     "shape": "other",
     "duration_minutes": 0.03,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "FL",
@@ -2476,8 +2476,8 @@ var ufoShapes = [
     "date_time": "2015-10-13T00:55:00",
     "shape": "unknown",
     "duration_minutes": 0.03,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "LA",
@@ -2580,8 +2580,8 @@ var ufoShapes = [
     "date_time": "2015-09-14T18:30:00",
     "shape": "chevron",
     "duration_minutes": 0.03,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NY",
@@ -2612,16 +2612,16 @@ var ufoShapes = [
     "date_time": "2015-09-03T20:00:00",
     "shape": "light",
     "duration_minutes": 0.03,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "VA",
     "date_time": "2015-08-31T23:00:00",
     "shape": "flash",
     "duration_minutes": 0.03,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NH",
@@ -2636,16 +2636,16 @@ var ufoShapes = [
     "date_time": "2015-08-21T17:00:00",
     "shape": "sphere",
     "duration_minutes": 0.03,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MN",
     "date_time": "2015-08-20T12:50:00",
     "shape": "chevron",
     "duration_minutes": 0.03,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "GA",
@@ -2748,8 +2748,8 @@ var ufoShapes = [
     "date_time": "2015-07-19T02:00:00",
     "shape": "flash",
     "duration_minutes": 0.03,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CA",
@@ -2780,8 +2780,8 @@ var ufoShapes = [
     "date_time": "2015-07-10T21:15:00",
     "shape": "flash",
     "duration_minutes": 0.03,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NC",
@@ -2860,16 +2860,16 @@ var ufoShapes = [
     "date_time": "2015-06-05T22:50:00",
     "shape": "light",
     "duration_minutes": 0.03,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "Unknown",
     "date_time": "2015-06-02T19:01:00",
     "shape": "teardrop",
     "duration_minutes": 0.03,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "KY",
@@ -2900,8 +2900,8 @@ var ufoShapes = [
     "date_time": "2015-05-18T16:45:00",
     "shape": "sphere",
     "duration_minutes": 0.03,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MA",
@@ -2924,8 +2924,8 @@ var ufoShapes = [
     "date_time": "2015-05-02T09:25:00",
     "shape": "unknown",
     "duration_minutes": 0.03,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "VT",
@@ -2956,8 +2956,8 @@ var ufoShapes = [
     "date_time": "2015-04-23T06:27:00",
     "shape": "light",
     "duration_minutes": 0.03,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "ID",
@@ -3092,8 +3092,8 @@ var ufoShapes = [
     "date_time": "2015-01-16T20:45:00",
     "shape": "light",
     "duration_minutes": 0.03,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "AZ",
@@ -3108,8 +3108,8 @@ var ufoShapes = [
     "date_time": "2015-01-09T21:00:00",
     "shape": "light",
     "duration_minutes": 0.03,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "AZ",
@@ -3196,8 +3196,8 @@ var ufoShapes = [
     "date_time": "2016-11-28T18:00:00",
     "shape": "circle",
     "duration_minutes": 0.05,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "FL",
@@ -3228,8 +3228,8 @@ var ufoShapes = [
     "date_time": "2016-11-16T18:00:00",
     "shape": "other",
     "duration_minutes": 0.05,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CA",
@@ -3316,16 +3316,16 @@ var ufoShapes = [
     "date_time": "2016-10-04T22:46:00",
     "shape": "fireball",
     "duration_minutes": 0.05,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "OH",
     "date_time": "2016-10-02T22:45:00",
     "shape": "unknown",
     "duration_minutes": 0.05,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CA",
@@ -3412,8 +3412,8 @@ var ufoShapes = [
     "date_time": "2016-09-07T22:00:00",
     "shape": "light",
     "duration_minutes": 0.05,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "OR",
@@ -3436,8 +3436,8 @@ var ufoShapes = [
     "date_time": "2016-09-02T00:00:00",
     "shape": "sphere",
     "duration_minutes": 0.05,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "IA",
@@ -3492,8 +3492,8 @@ var ufoShapes = [
     "date_time": "2016-08-16T21:00:00",
     "shape": "flash",
     "duration_minutes": 0.05,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NC",
@@ -3516,8 +3516,8 @@ var ufoShapes = [
     "date_time": "2016-08-12T23:30:00",
     "shape": "unknown",
     "duration_minutes": 0.05,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "OR",
@@ -3572,8 +3572,8 @@ var ufoShapes = [
     "date_time": "2016-07-24T23:30:00",
     "shape": "fireball",
     "duration_minutes": 0.05,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "TX",
@@ -3660,8 +3660,8 @@ var ufoShapes = [
     "date_time": "2016-06-05T20:30:00",
     "shape": "other",
     "duration_minutes": 0.05,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "AZ",
@@ -3676,8 +3676,8 @@ var ufoShapes = [
     "date_time": "2016-06-02T03:55:00",
     "shape": "flash",
     "duration_minutes": 0.05,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NY",
@@ -3692,8 +3692,8 @@ var ufoShapes = [
     "date_time": "2016-05-12T23:20:00",
     "shape": "triangle",
     "duration_minutes": 0.05,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NC",
@@ -3732,8 +3732,8 @@ var ufoShapes = [
     "date_time": "2016-04-07T21:30:00",
     "shape": "fireball",
     "duration_minutes": 0.05,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MD",
@@ -3820,8 +3820,8 @@ var ufoShapes = [
     "date_time": "2016-03-11T23:59:00",
     "shape": "triangle",
     "duration_minutes": 0.05,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MD",
@@ -3852,8 +3852,8 @@ var ufoShapes = [
     "date_time": "2016-02-19T21:00:00",
     "shape": "egg",
     "duration_minutes": 0.05,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "VA",
@@ -3956,8 +3956,8 @@ var ufoShapes = [
     "date_time": "2016-01-05T00:00:00",
     "shape": "light",
     "duration_minutes": 0.05,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MT",
@@ -3972,8 +3972,8 @@ var ufoShapes = [
     "date_time": "2016-01-01T00:11:00",
     "shape": "disk",
     "duration_minutes": 0.05,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CA",
@@ -3988,24 +3988,24 @@ var ufoShapes = [
     "date_time": "2015-12-26T17:15:00",
     "shape": "cylinder",
     "duration_minutes": 0.05,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CA",
     "date_time": "2015-12-15T06:30:00",
     "shape": "oval",
     "duration_minutes": 0.05,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NJ",
     "date_time": "2015-12-15T05:32:00",
     "shape": "fireball",
     "duration_minutes": 0.05,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "WI",
@@ -4076,8 +4076,8 @@ var ufoShapes = [
     "date_time": "2015-11-25T19:11:00",
     "shape": "fireball",
     "duration_minutes": 0.05,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "PA",
@@ -4092,16 +4092,16 @@ var ufoShapes = [
     "date_time": "2015-11-20T20:50:00",
     "shape": "fireball",
     "duration_minutes": 0.05,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "TX",
     "date_time": "2015-11-20T20:30:00",
     "shape": "fireball",
     "duration_minutes": 0.05,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "WA",
@@ -4140,8 +4140,8 @@ var ufoShapes = [
     "date_time": "2015-11-17T02:23:00",
     "shape": "fireball",
     "duration_minutes": 0.05,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NY",
@@ -4436,8 +4436,8 @@ var ufoShapes = [
     "date_time": "2015-09-12T22:19:00",
     "shape": "diamond",
     "duration_minutes": 0.05,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "TN",
@@ -4516,8 +4516,8 @@ var ufoShapes = [
     "date_time": "2015-08-26T22:00:00",
     "shape": "cigar",
     "duration_minutes": 0.05,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CA",
@@ -4556,8 +4556,8 @@ var ufoShapes = [
     "date_time": "2015-08-11T00:20:00",
     "shape": "circle",
     "duration_minutes": 0.05,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "TN",
@@ -4604,8 +4604,8 @@ var ufoShapes = [
     "date_time": "2015-07-20T00:00:00",
     "shape": "unknown",
     "duration_minutes": 0.05,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "WI",
@@ -4644,16 +4644,16 @@ var ufoShapes = [
     "date_time": "2015-07-01T21:15:00",
     "shape": "light",
     "duration_minutes": 0.05,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "WA",
     "date_time": "2015-06-19T22:10:00",
     "shape": "light",
     "duration_minutes": 0.05,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CA",
@@ -4692,16 +4692,16 @@ var ufoShapes = [
     "date_time": "2015-05-07T00:00:00",
     "shape": "oval",
     "duration_minutes": 0.05,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "WV",
     "date_time": "2015-05-06T22:30:00",
     "shape": "other",
     "duration_minutes": 0.05,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "AR",
@@ -4828,8 +4828,8 @@ var ufoShapes = [
     "date_time": "2015-03-11T06:00:00",
     "shape": "light",
     "duration_minutes": 0.05,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NC",
@@ -4844,16 +4844,16 @@ var ufoShapes = [
     "date_time": "2015-03-06T02:20:00",
     "shape": "circle",
     "duration_minutes": 0.05,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "Unknown",
     "date_time": "2015-02-20T08:27:00",
     "shape": "circle",
     "duration_minutes": 0.05,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "UT",
@@ -4900,8 +4900,8 @@ var ufoShapes = [
     "date_time": "2015-01-24T22:00:00",
     "shape": "light",
     "duration_minutes": 0.05,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CO",
@@ -4940,8 +4940,8 @@ var ufoShapes = [
     "date_time": "2015-01-16T06:15:00",
     "shape": "fireball",
     "duration_minutes": 0.05,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "IN",
@@ -5036,8 +5036,8 @@ var ufoShapes = [
     "date_time": "2015-07-16T03:00:00",
     "shape": "circle",
     "duration_minutes": 0.07,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CA",
@@ -5052,8 +5052,8 @@ var ufoShapes = [
     "date_time": "2016-12-17T20:00:00",
     "shape": "fireball",
     "duration_minutes": 0.07,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MA",
@@ -5244,16 +5244,16 @@ var ufoShapes = [
     "date_time": "2016-08-22T22:06:00",
     "shape": "disk",
     "duration_minutes": 0.07,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "Unknown",
     "date_time": "2016-08-12T19:40:00",
     "shape": "fireball",
     "duration_minutes": 0.07,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "AZ",
@@ -5356,8 +5356,8 @@ var ufoShapes = [
     "date_time": "2016-05-17T00:51:00",
     "shape": "light",
     "duration_minutes": 0.07,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "AZ",
@@ -5372,8 +5372,8 @@ var ufoShapes = [
     "date_time": "2016-05-04T02:16:00",
     "shape": "circle",
     "duration_minutes": 0.07,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CA",
@@ -5508,8 +5508,8 @@ var ufoShapes = [
     "date_time": "2016-01-16T18:30:00",
     "shape": "circle",
     "duration_minutes": 0.07,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "PA",
@@ -5572,8 +5572,8 @@ var ufoShapes = [
     "date_time": "2015-12-03T23:14:00",
     "shape": "fireball",
     "duration_minutes": 0.07,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "RI",
@@ -5596,8 +5596,8 @@ var ufoShapes = [
     "date_time": "2015-11-22T02:10:00",
     "shape": "cigar",
     "duration_minutes": 0.07,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "IA",
@@ -5652,8 +5652,8 @@ var ufoShapes = [
     "date_time": "2015-11-07T19:35:00",
     "shape": "oval",
     "duration_minutes": 0.07,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CA",
@@ -5772,8 +5772,8 @@ var ufoShapes = [
     "date_time": "2015-08-20T12:13:00",
     "shape": "circle",
     "duration_minutes": 0.07,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "TN",
@@ -5796,8 +5796,8 @@ var ufoShapes = [
     "date_time": "2015-08-13T00:40:00",
     "shape": "circle",
     "duration_minutes": 0.07,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "AB",
@@ -5892,8 +5892,8 @@ var ufoShapes = [
     "date_time": "2015-06-12T02:30:00",
     "shape": "fireball",
     "duration_minutes": 0.07,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "WA",
@@ -5932,8 +5932,8 @@ var ufoShapes = [
     "date_time": "2015-03-21T21:17:00",
     "shape": "disk",
     "duration_minutes": 0.07,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "VA",
@@ -6068,8 +6068,8 @@ var ufoShapes = [
     "date_time": "2015-03-05T19:30:00",
     "shape": "circle",
     "duration_minutes": 0.08,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "IL",
@@ -6164,16 +6164,16 @@ var ufoShapes = [
     "date_time": "2016-07-26T12:45:00",
     "shape": "other",
     "duration_minutes": 0.08,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "RI",
     "date_time": "2016-07-24T12:20:00",
     "shape": "light",
     "duration_minutes": 0.08,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "WA",
@@ -6260,8 +6260,8 @@ var ufoShapes = [
     "date_time": "2016-06-15T21:50:00",
     "shape": "circle",
     "duration_minutes": 0.08,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "OH",
@@ -6340,16 +6340,16 @@ var ufoShapes = [
     "date_time": "2016-01-25T01:11:00",
     "shape": "formation",
     "duration_minutes": 0.08,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "AZ",
     "date_time": "2016-01-14T13:00:00",
     "shape": "other",
     "duration_minutes": 0.08,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MA",
@@ -6452,8 +6452,8 @@ var ufoShapes = [
     "date_time": "2015-05-10T21:10:00",
     "shape": "light",
     "duration_minutes": 0.08,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "WV",
@@ -6492,16 +6492,16 @@ var ufoShapes = [
     "date_time": "2015-01-27T14:00:00",
     "shape": "other",
     "duration_minutes": 0.08,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "FL",
     "date_time": "2015-01-19T06:30:00",
     "shape": "sphere",
     "duration_minutes": 0.08,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "FL",
@@ -6516,8 +6516,8 @@ var ufoShapes = [
     "date_time": "2015-10-19T20:40:00",
     "shape": "light",
     "duration_minutes": 0.08,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "LA",
@@ -6548,8 +6548,8 @@ var ufoShapes = [
     "date_time": "2016-12-31T18:55:00",
     "shape": "flash",
     "duration_minutes": 0.08,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "AZ",
@@ -6612,8 +6612,8 @@ var ufoShapes = [
     "date_time": "2016-12-13T17:00:00",
     "shape": "other",
     "duration_minutes": 0.08,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MD",
@@ -6700,8 +6700,8 @@ var ufoShapes = [
     "date_time": "2016-11-22T11:00:00",
     "shape": "chevron",
     "duration_minutes": 0.08,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "ND",
@@ -6988,8 +6988,8 @@ var ufoShapes = [
     "date_time": "2016-10-02T00:00:00",
     "shape": "unknown",
     "duration_minutes": 0.08,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CA",
@@ -7108,8 +7108,8 @@ var ufoShapes = [
     "date_time": "2016-09-19T20:00:00",
     "shape": "fireball",
     "duration_minutes": 0.08,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MA",
@@ -7236,8 +7236,8 @@ var ufoShapes = [
     "date_time": "2016-08-17T15:00:00",
     "shape": "oval",
     "duration_minutes": 0.08,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "PA",
@@ -7292,8 +7292,8 @@ var ufoShapes = [
     "date_time": "2016-08-07T19:45:00",
     "shape": "flash",
     "duration_minutes": 0.08,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NC",
@@ -7452,8 +7452,8 @@ var ufoShapes = [
     "date_time": "2016-07-03T05:30:00",
     "shape": "unknown",
     "duration_minutes": 0.08,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CA",
@@ -7532,8 +7532,8 @@ var ufoShapes = [
     "date_time": "2016-06-12T01:30:00",
     "shape": "light",
     "duration_minutes": 0.08,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NC",
@@ -7580,8 +7580,8 @@ var ufoShapes = [
     "date_time": "2016-06-01T22:15:00",
     "shape": "cross",
     "duration_minutes": 0.08,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "ME",
@@ -7620,8 +7620,8 @@ var ufoShapes = [
     "date_time": "2016-05-17T21:30:00",
     "shape": "light",
     "duration_minutes": 0.08,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NY",
@@ -7636,8 +7636,8 @@ var ufoShapes = [
     "date_time": "2016-05-11T15:00:00",
     "shape": "cigar",
     "duration_minutes": 0.08,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "AZ",
@@ -7796,8 +7796,8 @@ var ufoShapes = [
     "date_time": "2016-04-02T23:55:00",
     "shape": "triangle",
     "duration_minutes": 0.08,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CA",
@@ -7868,8 +7868,8 @@ var ufoShapes = [
     "date_time": "2016-03-15T21:45:00",
     "shape": "triangle",
     "duration_minutes": 0.08,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CT",
@@ -7884,8 +7884,8 @@ var ufoShapes = [
     "date_time": "2016-03-12T03:00:00",
     "shape": "light",
     "duration_minutes": 0.08,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NE",
@@ -7948,16 +7948,16 @@ var ufoShapes = [
     "date_time": "2016-02-25T04:15:00",
     "shape": "circle",
     "duration_minutes": 0.08,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "IL",
     "date_time": "2016-02-19T21:15:00",
     "shape": "teardrop",
     "duration_minutes": 0.08,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "IN",
@@ -8060,8 +8060,8 @@ var ufoShapes = [
     "date_time": "2016-02-01T06:38:00",
     "shape": "disk",
     "duration_minutes": 0.08,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "WI",
@@ -8084,8 +8084,8 @@ var ufoShapes = [
     "date_time": "2016-01-26T12:40:00",
     "shape": "flash",
     "duration_minutes": 0.08,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NM",
@@ -8116,8 +8116,8 @@ var ufoShapes = [
     "date_time": "2016-01-09T18:15:00",
     "shape": "teardrop",
     "duration_minutes": 0.08,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CA",
@@ -8148,8 +8148,8 @@ var ufoShapes = [
     "date_time": "2015-12-26T02:15:00",
     "shape": "unknown",
     "duration_minutes": 0.08,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "FL",
@@ -8164,8 +8164,8 @@ var ufoShapes = [
     "date_time": "2015-12-23T23:40:00",
     "shape": "unknown",
     "duration_minutes": 0.08,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MA",
@@ -8204,8 +8204,8 @@ var ufoShapes = [
     "date_time": "2015-12-16T19:15:00",
     "shape": "diamond",
     "duration_minutes": 0.08,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CA",
@@ -8244,24 +8244,24 @@ var ufoShapes = [
     "date_time": "2015-12-10T17:00:00",
     "shape": "flash",
     "duration_minutes": 0.08,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "WI",
     "date_time": "2015-12-05T10:56:00",
     "shape": "sphere",
     "duration_minutes": 0.08,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "ON",
     "date_time": "2015-12-04T22:20:00",
     "shape": "flash",
     "duration_minutes": 0.08,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "IA",
@@ -8348,8 +8348,8 @@ var ufoShapes = [
     "date_time": "2015-11-20T10:55:00",
     "shape": "fireball",
     "duration_minutes": 0.08,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "TN",
@@ -8412,8 +8412,8 @@ var ufoShapes = [
     "date_time": "2015-11-14T22:30:00",
     "shape": "disk",
     "duration_minutes": 0.08,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "OR",
@@ -8428,8 +8428,8 @@ var ufoShapes = [
     "date_time": "2015-11-12T20:05:00",
     "shape": "circle",
     "duration_minutes": 0.08,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CA",
@@ -8460,16 +8460,16 @@ var ufoShapes = [
     "date_time": "2015-11-08T21:08:00",
     "shape": "circle",
     "duration_minutes": 0.08,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "WV",
     "date_time": "2015-11-08T20:30:00",
     "shape": "fireball",
     "duration_minutes": 0.08,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NJ",
@@ -8524,8 +8524,8 @@ var ufoShapes = [
     "date_time": "2015-11-02T23:30:00",
     "shape": "light",
     "duration_minutes": 0.08,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NJ",
@@ -8588,8 +8588,8 @@ var ufoShapes = [
     "date_time": "2015-10-24T21:35:00",
     "shape": "fireball",
     "duration_minutes": 0.08,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "GA",
@@ -8644,8 +8644,8 @@ var ufoShapes = [
     "date_time": "2015-10-20T18:00:00",
     "shape": "circle",
     "duration_minutes": 0.08,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MI",
@@ -8684,8 +8684,8 @@ var ufoShapes = [
     "date_time": "2015-10-13T21:46:00",
     "shape": "sphere",
     "duration_minutes": 0.08,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "GA",
@@ -8716,8 +8716,8 @@ var ufoShapes = [
     "date_time": "2015-10-11T03:16:00",
     "shape": "oval",
     "duration_minutes": 0.08,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "FL",
@@ -8740,8 +8740,8 @@ var ufoShapes = [
     "date_time": "2015-10-02T22:50:00",
     "shape": "oval",
     "duration_minutes": 0.08,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "WA",
@@ -8788,8 +8788,8 @@ var ufoShapes = [
     "date_time": "2015-09-27T08:30:00",
     "shape": "flash",
     "duration_minutes": 0.08,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "OR",
@@ -8804,8 +8804,8 @@ var ufoShapes = [
     "date_time": "2015-09-26T02:00:00",
     "shape": "circle",
     "duration_minutes": 0.08,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "TX",
@@ -8908,8 +8908,8 @@ var ufoShapes = [
     "date_time": "2015-08-20T13:00:00",
     "shape": "fireball",
     "duration_minutes": 0.08,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "WA",
@@ -9012,8 +9012,8 @@ var ufoShapes = [
     "date_time": "2015-07-28T23:00:00",
     "shape": "light",
     "duration_minutes": 0.08,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NC",
@@ -9036,16 +9036,16 @@ var ufoShapes = [
     "date_time": "2015-07-23T14:00:00",
     "shape": "disk",
     "duration_minutes": 0.08,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NE",
     "date_time": "2015-07-19T22:30:00",
     "shape": "cylinder",
     "duration_minutes": 0.08,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "LA",
@@ -9180,8 +9180,8 @@ var ufoShapes = [
     "date_time": "2015-06-11T18:05:00",
     "shape": "light",
     "duration_minutes": 0.08,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MO",
@@ -9276,8 +9276,8 @@ var ufoShapes = [
     "date_time": "2015-05-19T00:00:00",
     "shape": "chevron",
     "duration_minutes": 0.08,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "IN",
@@ -9452,8 +9452,8 @@ var ufoShapes = [
     "date_time": "2015-04-15T10:20:00",
     "shape": "unknown",
     "duration_minutes": 0.08,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MN",
@@ -9532,8 +9532,8 @@ var ufoShapes = [
     "date_time": "2015-04-01T07:10:00",
     "shape": "diamond",
     "duration_minutes": 0.08,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "UT",
@@ -9652,8 +9652,8 @@ var ufoShapes = [
     "date_time": "2015-02-18T22:19:00",
     "shape": "other",
     "duration_minutes": 0.08,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "TX",
@@ -9692,16 +9692,16 @@ var ufoShapes = [
     "date_time": "2015-02-02T23:35:00",
     "shape": "circle",
     "duration_minutes": 0.08,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NY",
     "date_time": "2015-01-31T17:30:00",
     "shape": "light",
     "duration_minutes": 0.08,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "IL",
@@ -9724,8 +9724,8 @@ var ufoShapes = [
     "date_time": "2015-01-28T08:00:00",
     "shape": "cylinder",
     "duration_minutes": 0.08,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NC",
@@ -9756,8 +9756,8 @@ var ufoShapes = [
     "date_time": "2015-01-17T21:42:00",
     "shape": "fireball",
     "duration_minutes": 0.08,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "FL",
@@ -9812,8 +9812,8 @@ var ufoShapes = [
     "date_time": "2016-12-10T20:00:00",
     "shape": "disk",
     "duration_minutes": 0.08,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NY",
@@ -9876,16 +9876,16 @@ var ufoShapes = [
     "date_time": "2016-08-24T18:20:00",
     "shape": "light",
     "duration_minutes": 0.08,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CA",
     "date_time": "2016-08-20T07:56:00",
     "shape": "oval",
     "duration_minutes": 0.08,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "FL",
@@ -10076,16 +10076,16 @@ var ufoShapes = [
     "date_time": "2015-07-19T11:15:00",
     "shape": "disk",
     "duration_minutes": 0.08,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "Unknown",
     "date_time": "2015-07-12T18:00:00",
     "shape": "disk",
     "duration_minutes": 0.08,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "QC",
@@ -10108,8 +10108,8 @@ var ufoShapes = [
     "date_time": "2015-05-27T13:42:00",
     "shape": "sphere",
     "duration_minutes": 0.08,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NM",
@@ -10148,16 +10148,16 @@ var ufoShapes = [
     "date_time": "2016-11-13T18:28:00",
     "shape": "other",
     "duration_minutes": 0.08,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "AZ",
     "date_time": "2016-10-08T00:00:00",
     "shape": "flash",
     "duration_minutes": 0.08,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "ID",
@@ -10204,8 +10204,8 @@ var ufoShapes = [
     "date_time": "2016-04-20T20:28:00",
     "shape": "rectangle",
     "duration_minutes": 0.08,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NC",
@@ -10236,8 +10236,8 @@ var ufoShapes = [
     "date_time": "2016-03-18T17:00:00",
     "shape": "disk",
     "duration_minutes": 0.08,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MA",
@@ -10252,16 +10252,16 @@ var ufoShapes = [
     "date_time": "2015-12-02T03:00:00",
     "shape": "triangle",
     "duration_minutes": 0.08,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MS",
     "date_time": "2015-11-12T21:37:00",
     "shape": "oval",
     "duration_minutes": 0.08,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "IL",
@@ -10308,8 +10308,8 @@ var ufoShapes = [
     "date_time": "2015-02-12T14:30:00",
     "shape": "fireball",
     "duration_minutes": 0.08,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "AZ",
@@ -10324,16 +10324,16 @@ var ufoShapes = [
     "date_time": "2015-01-27T16:05:00",
     "shape": "circle",
     "duration_minutes": 0.08,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "Unknown",
     "date_time": "2015-01-01T11:55:00",
     "shape": "disk",
     "duration_minutes": 0.08,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "AZ",
@@ -10348,16 +10348,16 @@ var ufoShapes = [
     "date_time": "2016-11-11T11:00:00",
     "shape": "unknown",
     "duration_minutes": 0.1,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "Unknown",
     "date_time": "2016-11-08T22:08:00",
     "shape": "light",
     "duration_minutes": 0.1,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "AZ",
@@ -10380,8 +10380,8 @@ var ufoShapes = [
     "date_time": "2016-10-10T19:00:00",
     "shape": "disk",
     "duration_minutes": 0.1,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "WA",
@@ -10452,16 +10452,16 @@ var ufoShapes = [
     "date_time": "2016-08-16T07:12:00",
     "shape": "circle",
     "duration_minutes": 0.1,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "WA",
     "date_time": "2016-08-14T19:45:00",
     "shape": "other",
     "duration_minutes": 0.1,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MA",
@@ -10524,8 +10524,8 @@ var ufoShapes = [
     "date_time": "2016-02-14T07:30:00",
     "shape": "fireball",
     "duration_minutes": 0.1,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "GA",
@@ -10580,8 +10580,8 @@ var ufoShapes = [
     "date_time": "2015-10-23T19:00:00",
     "shape": "light",
     "duration_minutes": 0.1,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MA",
@@ -10620,8 +10620,8 @@ var ufoShapes = [
     "date_time": "2015-09-17T02:15:00",
     "shape": "light",
     "duration_minutes": 0.1,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CO",
@@ -10636,16 +10636,16 @@ var ufoShapes = [
     "date_time": "2015-09-12T23:43:00",
     "shape": "unknown",
     "duration_minutes": 0.1,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "ID",
     "date_time": "2015-08-12T22:30:00",
     "shape": "sphere",
     "duration_minutes": 0.1,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "WA",
@@ -10692,8 +10692,8 @@ var ufoShapes = [
     "date_time": "2015-04-22T21:50:00",
     "shape": "diamond",
     "duration_minutes": 0.1,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CA",
@@ -10788,8 +10788,8 @@ var ufoShapes = [
     "date_time": "2016-09-25T20:19:00",
     "shape": "triangle",
     "duration_minutes": 0.12,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "OH",
@@ -10844,8 +10844,8 @@ var ufoShapes = [
     "date_time": "2016-07-07T07:37:00",
     "shape": "other",
     "duration_minutes": 0.12,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "WI",
@@ -10860,8 +10860,8 @@ var ufoShapes = [
     "date_time": "2016-06-12T21:30:00",
     "shape": "changing",
     "duration_minutes": 0.12,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CA",
@@ -10940,8 +10940,8 @@ var ufoShapes = [
     "date_time": "2015-10-21T01:00:00",
     "shape": "light",
     "duration_minutes": 0.12,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CO",
@@ -10956,8 +10956,8 @@ var ufoShapes = [
     "date_time": "2015-09-18T17:15:00",
     "shape": "oval",
     "duration_minutes": 0.12,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NC",
@@ -10996,8 +10996,8 @@ var ufoShapes = [
     "date_time": "2015-04-26T04:30:00",
     "shape": "light",
     "duration_minutes": 0.12,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "ON",
@@ -11124,8 +11124,8 @@ var ufoShapes = [
     "date_time": "2016-08-12T19:00:00",
     "shape": "circle",
     "duration_minutes": 0.13,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CA",
@@ -11156,8 +11156,8 @@ var ufoShapes = [
     "date_time": "2016-05-21T06:20:00",
     "shape": "disk",
     "duration_minutes": 0.13,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "SC",
@@ -11172,8 +11172,8 @@ var ufoShapes = [
     "date_time": "2016-03-30T00:00:00",
     "shape": "disk",
     "duration_minutes": 0.13,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MO",
@@ -11268,8 +11268,8 @@ var ufoShapes = [
     "date_time": "2015-10-31T20:07:00",
     "shape": "sphere",
     "duration_minutes": 0.13,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NY",
@@ -11340,16 +11340,16 @@ var ufoShapes = [
     "date_time": "2015-08-22T23:05:00",
     "shape": "other",
     "duration_minutes": 0.13,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CA",
     "date_time": "2015-08-20T21:25:00",
     "shape": "other",
     "duration_minutes": 0.13,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MN",
@@ -11404,8 +11404,8 @@ var ufoShapes = [
     "date_time": "2015-03-02T20:30:00",
     "shape": "other",
     "duration_minutes": 0.13,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "FL",
@@ -11444,16 +11444,16 @@ var ufoShapes = [
     "date_time": "2015-07-31T08:45:00",
     "shape": "circle",
     "duration_minutes": 0.15,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "HI",
     "date_time": "2016-12-07T22:50:00",
     "shape": "fireball",
     "duration_minutes": 0.17,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "KS",
@@ -11500,8 +11500,8 @@ var ufoShapes = [
     "date_time": "2015-11-07T19:05:00",
     "shape": "egg",
     "duration_minutes": 0.17,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "AZ",
@@ -11548,8 +11548,8 @@ var ufoShapes = [
     "date_time": "2016-12-31T23:00:00",
     "shape": "fireball",
     "duration_minutes": 0.17,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MI",
@@ -11620,8 +11620,8 @@ var ufoShapes = [
     "date_time": "2016-12-11T18:41:00",
     "shape": "circle",
     "duration_minutes": 0.17,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "OR",
@@ -11636,8 +11636,8 @@ var ufoShapes = [
     "date_time": "2016-12-06T19:15:00",
     "shape": "fireball",
     "duration_minutes": 0.17,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CA",
@@ -11732,8 +11732,8 @@ var ufoShapes = [
     "date_time": "2016-11-14T16:30:00",
     "shape": "other",
     "duration_minutes": 0.17,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CA",
@@ -11756,8 +11756,8 @@ var ufoShapes = [
     "date_time": "2016-11-07T20:20:00",
     "shape": "triangle",
     "duration_minutes": 0.17,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CA",
@@ -11788,8 +11788,8 @@ var ufoShapes = [
     "date_time": "2016-11-04T19:38:00",
     "shape": "fireball",
     "duration_minutes": 0.17,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "ID",
@@ -11916,8 +11916,8 @@ var ufoShapes = [
     "date_time": "2016-10-16T05:40:00",
     "shape": "light",
     "duration_minutes": 0.17,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CA",
@@ -11980,16 +11980,16 @@ var ufoShapes = [
     "date_time": "2016-10-07T00:00:00",
     "shape": "unknown",
     "duration_minutes": 0.17,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NJ",
     "date_time": "2016-10-05T22:30:00",
     "shape": "cigar",
     "duration_minutes": 0.17,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "FL",
@@ -12068,8 +12068,8 @@ var ufoShapes = [
     "date_time": "2016-09-24T03:13:00",
     "shape": "egg",
     "duration_minutes": 0.17,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "BC",
@@ -12092,8 +12092,8 @@ var ufoShapes = [
     "date_time": "2016-09-18T21:00:00",
     "shape": "triangle",
     "duration_minutes": 0.17,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "UT",
@@ -12140,8 +12140,8 @@ var ufoShapes = [
     "date_time": "2016-09-14T21:30:00",
     "shape": "light",
     "duration_minutes": 0.17,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "TX",
@@ -12196,8 +12196,8 @@ var ufoShapes = [
     "date_time": "2016-09-05T20:30:00",
     "shape": "sphere",
     "duration_minutes": 0.17,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MI",
@@ -12212,8 +12212,8 @@ var ufoShapes = [
     "date_time": "2016-09-03T22:28:00",
     "shape": "unknown",
     "duration_minutes": 0.17,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "AL",
@@ -12356,8 +12356,8 @@ var ufoShapes = [
     "date_time": "2016-08-15T23:00:00",
     "shape": "formation",
     "duration_minutes": 0.17,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "WA",
@@ -12676,16 +12676,16 @@ var ufoShapes = [
     "date_time": "2016-06-24T02:00:00",
     "shape": "rectangle",
     "duration_minutes": 0.17,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "DE",
     "date_time": "2016-06-19T15:30:00",
     "shape": "unknown",
     "duration_minutes": 0.17,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "AZ",
@@ -12740,8 +12740,8 @@ var ufoShapes = [
     "date_time": "2016-06-03T23:05:00",
     "shape": "flash",
     "duration_minutes": 0.17,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "AZ",
@@ -12756,8 +12756,8 @@ var ufoShapes = [
     "date_time": "2016-05-29T19:30:00",
     "shape": "oval",
     "duration_minutes": 0.17,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MO",
@@ -12788,8 +12788,8 @@ var ufoShapes = [
     "date_time": "2016-05-17T00:13:00",
     "shape": "circle",
     "duration_minutes": 0.17,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CA",
@@ -12812,8 +12812,8 @@ var ufoShapes = [
     "date_time": "2016-05-13T04:40:00",
     "shape": "triangle",
     "duration_minutes": 0.17,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "IN",
@@ -12844,8 +12844,8 @@ var ufoShapes = [
     "date_time": "2016-05-07T18:00:00",
     "shape": "sphere",
     "duration_minutes": 0.17,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "IL",
@@ -12876,8 +12876,8 @@ var ufoShapes = [
     "date_time": "2016-04-23T23:50:00",
     "shape": "formation",
     "duration_minutes": 0.17,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "AZ",
@@ -12932,8 +12932,8 @@ var ufoShapes = [
     "date_time": "2016-04-07T09:00:00",
     "shape": "other",
     "duration_minutes": 0.17,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "FL",
@@ -12980,8 +12980,8 @@ var ufoShapes = [
     "date_time": "2016-03-27T21:29:00",
     "shape": "formation",
     "duration_minutes": 0.17,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CA",
@@ -13004,8 +13004,8 @@ var ufoShapes = [
     "date_time": "2016-03-18T23:05:00",
     "shape": "circle",
     "duration_minutes": 0.17,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MO",
@@ -13044,8 +13044,8 @@ var ufoShapes = [
     "date_time": "2016-03-12T23:55:00",
     "shape": "circle",
     "duration_minutes": 0.17,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CT",
@@ -13060,8 +13060,8 @@ var ufoShapes = [
     "date_time": "2016-03-04T19:30:00",
     "shape": "triangle",
     "duration_minutes": 0.17,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "RI",
@@ -13148,16 +13148,16 @@ var ufoShapes = [
     "date_time": "2016-02-19T22:05:00",
     "shape": "light",
     "duration_minutes": 0.17,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "AK",
     "date_time": "2016-02-16T06:45:00",
     "shape": "light",
     "duration_minutes": 0.17,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "IA",
@@ -13212,8 +13212,8 @@ var ufoShapes = [
     "date_time": "2016-02-06T18:45:00",
     "shape": "light",
     "duration_minutes": 0.17,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "PA",
@@ -13284,8 +13284,8 @@ var ufoShapes = [
     "date_time": "2016-01-27T13:38:00",
     "shape": "unknown",
     "duration_minutes": 0.17,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NY",
@@ -13316,16 +13316,16 @@ var ufoShapes = [
     "date_time": "2016-01-20T20:00:00",
     "shape": "circle",
     "duration_minutes": 0.17,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "Unknown",
     "date_time": "2016-01-19T17:59:00",
     "shape": "light",
     "duration_minutes": 0.17,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "OR",
@@ -13340,8 +13340,8 @@ var ufoShapes = [
     "date_time": "2016-01-14T18:45:00",
     "shape": "triangle",
     "duration_minutes": 0.17,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CA",
@@ -13380,16 +13380,16 @@ var ufoShapes = [
     "date_time": "2016-01-06T00:00:00",
     "shape": "unknown",
     "duration_minutes": 0.17,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MN",
     "date_time": "2016-01-03T23:00:00",
     "shape": "triangle",
     "duration_minutes": 0.17,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "KY",
@@ -13436,8 +13436,8 @@ var ufoShapes = [
     "date_time": "2015-12-23T16:30:00",
     "shape": "rectangle",
     "duration_minutes": 0.17,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CA",
@@ -13548,8 +13548,8 @@ var ufoShapes = [
     "date_time": "2015-11-22T18:22:00",
     "shape": "circle",
     "duration_minutes": 0.17,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "PA",
@@ -13596,8 +13596,8 @@ var ufoShapes = [
     "date_time": "2015-11-14T18:00:00",
     "shape": "light",
     "duration_minutes": 0.17,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "IA",
@@ -13628,8 +13628,8 @@ var ufoShapes = [
     "date_time": "2015-11-10T00:00:00",
     "shape": "light",
     "duration_minutes": 0.17,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "FL",
@@ -13724,8 +13724,8 @@ var ufoShapes = [
     "date_time": "2015-11-02T21:30:00",
     "shape": "unknown",
     "duration_minutes": 0.17,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MI",
@@ -13932,8 +13932,8 @@ var ufoShapes = [
     "date_time": "2015-10-09T17:30:00",
     "shape": "oval",
     "duration_minutes": 0.17,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CO",
@@ -13964,16 +13964,16 @@ var ufoShapes = [
     "date_time": "2015-09-28T00:00:00",
     "shape": "other",
     "duration_minutes": 0.17,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "Unknown",
     "date_time": "2015-09-27T22:55:00",
     "shape": "oval",
     "duration_minutes": 0.17,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CA",
@@ -14020,8 +14020,8 @@ var ufoShapes = [
     "date_time": "2015-09-20T21:10:00",
     "shape": "light",
     "duration_minutes": 0.17,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CA",
@@ -14060,24 +14060,24 @@ var ufoShapes = [
     "date_time": "2015-09-17T22:30:00",
     "shape": "flash",
     "duration_minutes": 0.17,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "KS",
     "date_time": "2015-09-17T22:30:00",
     "shape": "disk",
     "duration_minutes": 0.17,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NJ",
     "date_time": "2015-09-17T20:00:00",
     "shape": "light",
     "duration_minutes": 0.17,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "ON",
@@ -14092,8 +14092,8 @@ var ufoShapes = [
     "date_time": "2015-09-16T20:20:00",
     "shape": "light",
     "duration_minutes": 0.17,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "OK",
@@ -14124,16 +14124,16 @@ var ufoShapes = [
     "date_time": "2015-09-06T22:40:00",
     "shape": "circle",
     "duration_minutes": 0.17,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "WV",
     "date_time": "2015-09-06T22:10:00",
     "shape": "sphere",
     "duration_minutes": 0.17,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MA",
@@ -14172,8 +14172,8 @@ var ufoShapes = [
     "date_time": "2015-08-30T23:00:00",
     "shape": "fireball",
     "duration_minutes": 0.17,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "FL",
@@ -14212,16 +14212,16 @@ var ufoShapes = [
     "date_time": "2015-08-16T23:19:00",
     "shape": "fireball",
     "duration_minutes": 0.17,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NE",
     "date_time": "2015-08-14T22:34:00",
     "shape": "circle",
     "duration_minutes": 0.17,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "QC",
@@ -14284,8 +14284,8 @@ var ufoShapes = [
     "date_time": "2015-08-03T04:00:00",
     "shape": "fireball",
     "duration_minutes": 0.17,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "RI",
@@ -14308,8 +14308,8 @@ var ufoShapes = [
     "date_time": "2015-07-21T22:30:00",
     "shape": "light",
     "duration_minutes": 0.17,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "AZ",
@@ -14364,8 +14364,8 @@ var ufoShapes = [
     "date_time": "2015-07-02T22:40:00",
     "shape": "sphere",
     "duration_minutes": 0.17,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CO",
@@ -14396,8 +14396,8 @@ var ufoShapes = [
     "date_time": "2015-06-23T22:35:00",
     "shape": "unknown",
     "duration_minutes": 0.17,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NM",
@@ -14468,8 +14468,8 @@ var ufoShapes = [
     "date_time": "2015-06-12T21:20:00",
     "shape": "flash",
     "duration_minutes": 0.17,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "TN",
@@ -14492,8 +14492,8 @@ var ufoShapes = [
     "date_time": "2015-06-10T03:57:00",
     "shape": "light",
     "duration_minutes": 0.17,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MO",
@@ -14556,8 +14556,8 @@ var ufoShapes = [
     "date_time": "2015-05-27T11:35:00",
     "shape": "sphere",
     "duration_minutes": 0.17,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "OH",
@@ -14628,8 +14628,8 @@ var ufoShapes = [
     "date_time": "2015-05-12T23:00:00",
     "shape": "triangle",
     "duration_minutes": 0.17,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "AZ",
@@ -14652,8 +14652,8 @@ var ufoShapes = [
     "date_time": "2015-05-10T17:00:00",
     "shape": "unknown",
     "duration_minutes": 0.17,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "ID",
@@ -14668,16 +14668,16 @@ var ufoShapes = [
     "date_time": "2015-05-05T01:30:00",
     "shape": "sphere",
     "duration_minutes": 0.17,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "YT",
     "date_time": "2015-05-03T18:30:00",
     "shape": "other",
     "duration_minutes": 0.17,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "AK",
@@ -14780,8 +14780,8 @@ var ufoShapes = [
     "date_time": "2015-04-13T17:00:00",
     "shape": "triangle",
     "duration_minutes": 0.17,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "WI",
@@ -14812,8 +14812,8 @@ var ufoShapes = [
     "date_time": "2015-04-07T04:43:00",
     "shape": "light",
     "duration_minutes": 0.17,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "IN",
@@ -14932,8 +14932,8 @@ var ufoShapes = [
     "date_time": "2015-03-13T23:00:00",
     "shape": "triangle",
     "duration_minutes": 0.17,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "AZ",
@@ -15028,8 +15028,8 @@ var ufoShapes = [
     "date_time": "2015-02-27T18:00:00",
     "shape": "circle",
     "duration_minutes": 0.17,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "VA",
@@ -15044,24 +15044,24 @@ var ufoShapes = [
     "date_time": "2015-02-18T22:20:00",
     "shape": "triangle",
     "duration_minutes": 0.17,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "WV",
     "date_time": "2015-02-16T02:45:00",
     "shape": "egg",
     "duration_minutes": 0.17,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CA",
     "date_time": "2015-02-15T00:00:00",
     "shape": "other",
     "duration_minutes": 0.17,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MO",
@@ -15084,16 +15084,16 @@ var ufoShapes = [
     "date_time": "2015-02-04T17:30:00",
     "shape": "circle",
     "duration_minutes": 0.17,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "AZ",
     "date_time": "2015-02-03T20:15:00",
     "shape": "circle",
     "duration_minutes": 0.17,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CA",
@@ -15108,8 +15108,8 @@ var ufoShapes = [
     "date_time": "2015-01-31T02:00:00",
     "shape": "cigar",
     "duration_minutes": 0.17,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "SC",
@@ -15220,8 +15220,8 @@ var ufoShapes = [
     "date_time": "2015-01-01T00:02:00",
     "shape": "fireball",
     "duration_minutes": 0.17,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "ON",
@@ -15244,8 +15244,8 @@ var ufoShapes = [
     "date_time": "2016-08-01T17:00:00",
     "shape": "triangle",
     "duration_minutes": 0.18,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "WI",
@@ -15308,8 +15308,8 @@ var ufoShapes = [
     "date_time": "2015-11-09T19:00:00",
     "shape": "light",
     "duration_minutes": 0.2,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CO",
@@ -15340,8 +15340,8 @@ var ufoShapes = [
     "date_time": "2015-05-28T15:00:00",
     "shape": "oval",
     "duration_minutes": 0.2,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NY",
@@ -15380,16 +15380,16 @@ var ufoShapes = [
     "date_time": "2015-02-19T11:55:00",
     "shape": "disk",
     "duration_minutes": 0.2,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "Unknown",
     "date_time": "2015-01-02T11:34:00",
     "shape": "light",
     "duration_minutes": 0.2,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "FL",
@@ -15492,8 +15492,8 @@ var ufoShapes = [
     "date_time": "2016-12-09T07:15:00",
     "shape": "cigar",
     "duration_minutes": 0.25,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "SC",
@@ -15556,8 +15556,8 @@ var ufoShapes = [
     "date_time": "2016-10-26T07:00:00",
     "shape": "disk",
     "duration_minutes": 0.25,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "TX",
@@ -15612,8 +15612,8 @@ var ufoShapes = [
     "date_time": "2016-10-01T16:20:00",
     "shape": "triangle",
     "duration_minutes": 0.25,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "FL",
@@ -15668,8 +15668,8 @@ var ufoShapes = [
     "date_time": "2016-09-24T20:45:00",
     "shape": "other",
     "duration_minutes": 0.25,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NH",
@@ -15756,8 +15756,8 @@ var ufoShapes = [
     "date_time": "2016-08-28T09:30:00",
     "shape": "oval",
     "duration_minutes": 0.25,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "FL",
@@ -15836,16 +15836,16 @@ var ufoShapes = [
     "date_time": "2016-08-03T22:00:00",
     "shape": "unknown",
     "duration_minutes": 0.25,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "Unknown",
     "date_time": "2016-08-01T22:00:00",
     "shape": "light",
     "duration_minutes": 0.25,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CA",
@@ -15916,16 +15916,16 @@ var ufoShapes = [
     "date_time": "2016-07-10T23:30:00",
     "shape": "circle",
     "duration_minutes": 0.25,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MN",
     "date_time": "2016-07-08T05:00:00",
     "shape": "circle",
     "duration_minutes": 0.25,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CO",
@@ -15940,8 +15940,8 @@ var ufoShapes = [
     "date_time": "2016-07-03T22:35:00",
     "shape": "fireball",
     "duration_minutes": 0.25,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CA",
@@ -16060,8 +16060,8 @@ var ufoShapes = [
     "date_time": "2016-05-12T21:20:00",
     "shape": "triangle",
     "duration_minutes": 0.25,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "KS",
@@ -16140,8 +16140,8 @@ var ufoShapes = [
     "date_time": "2016-04-15T23:17:00",
     "shape": "fireball",
     "duration_minutes": 0.25,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "AR",
@@ -16172,8 +16172,8 @@ var ufoShapes = [
     "date_time": "2016-03-28T20:45:00",
     "shape": "light",
     "duration_minutes": 0.25,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "PA",
@@ -16188,16 +16188,16 @@ var ufoShapes = [
     "date_time": "2016-03-24T21:30:00",
     "shape": "light",
     "duration_minutes": 0.25,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NY",
     "date_time": "2016-03-20T04:00:00",
     "shape": "unknown",
     "duration_minutes": 0.25,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "AZ",
@@ -16260,8 +16260,8 @@ var ufoShapes = [
     "date_time": "2016-02-26T05:50:00",
     "shape": "triangle",
     "duration_minutes": 0.25,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "TX",
@@ -16300,8 +16300,8 @@ var ufoShapes = [
     "date_time": "2016-02-05T20:10:00",
     "shape": "rectangle",
     "duration_minutes": 0.25,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "FL",
@@ -16324,8 +16324,8 @@ var ufoShapes = [
     "date_time": "2016-02-03T19:00:00",
     "shape": "flash",
     "duration_minutes": 0.25,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NY",
@@ -16484,8 +16484,8 @@ var ufoShapes = [
     "date_time": "2015-11-09T22:00:00",
     "shape": "circle",
     "duration_minutes": 0.25,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "FL",
@@ -16556,8 +16556,8 @@ var ufoShapes = [
     "date_time": "2015-11-01T19:50:00",
     "shape": "triangle",
     "duration_minutes": 0.25,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MA",
@@ -16588,8 +16588,8 @@ var ufoShapes = [
     "date_time": "2015-10-23T22:55:00",
     "shape": "sphere",
     "duration_minutes": 0.25,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "OH",
@@ -16612,8 +16612,8 @@ var ufoShapes = [
     "date_time": "2015-10-21T20:00:00",
     "shape": "light",
     "duration_minutes": 0.25,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "ME",
@@ -16644,8 +16644,8 @@ var ufoShapes = [
     "date_time": "2015-10-17T01:00:00",
     "shape": "light",
     "duration_minutes": 0.25,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "FL",
@@ -16716,24 +16716,24 @@ var ufoShapes = [
     "date_time": "2015-09-29T21:00:00",
     "shape": "fireball",
     "duration_minutes": 0.25,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "AZ",
     "date_time": "2015-09-28T21:10:00",
     "shape": "triangle",
     "duration_minutes": 0.25,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "VA",
     "date_time": "2015-09-27T23:30:00",
     "shape": "chevron",
     "duration_minutes": 0.25,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MA",
@@ -16780,8 +16780,8 @@ var ufoShapes = [
     "date_time": "2015-09-19T21:00:00",
     "shape": "light",
     "duration_minutes": 0.25,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CO",
@@ -16836,8 +16836,8 @@ var ufoShapes = [
     "date_time": "2015-09-06T20:30:00",
     "shape": "sphere",
     "duration_minutes": 0.25,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "FL",
@@ -16876,8 +16876,8 @@ var ufoShapes = [
     "date_time": "2015-08-22T22:50:00",
     "shape": "light",
     "duration_minutes": 0.25,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MA",
@@ -16956,8 +16956,8 @@ var ufoShapes = [
     "date_time": "2015-07-18T00:00:00",
     "shape": "other",
     "duration_minutes": 0.25,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "IL",
@@ -17028,8 +17028,8 @@ var ufoShapes = [
     "date_time": "2015-07-04T21:45:00",
     "shape": "sphere",
     "duration_minutes": 0.25,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MO",
@@ -17052,8 +17052,8 @@ var ufoShapes = [
     "date_time": "2015-06-23T19:40:00",
     "shape": "circle",
     "duration_minutes": 0.25,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "LA",
@@ -17108,8 +17108,8 @@ var ufoShapes = [
     "date_time": "2015-05-30T23:45:00",
     "shape": "light",
     "duration_minutes": 0.25,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "TX",
@@ -17124,8 +17124,8 @@ var ufoShapes = [
     "date_time": "2015-05-16T15:29:00",
     "shape": "other",
     "duration_minutes": 0.25,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "GA",
@@ -17316,8 +17316,8 @@ var ufoShapes = [
     "date_time": "2015-01-15T03:00:00",
     "shape": "triangle",
     "duration_minutes": 0.25,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NS",
@@ -17412,24 +17412,24 @@ var ufoShapes = [
     "date_time": "2015-11-03T21:00:00",
     "shape": "light",
     "duration_minutes": 0.33,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NJ",
     "date_time": "2016-04-04T21:00:00",
     "shape": "light",
     "duration_minutes": 0.33,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CA",
     "date_time": "2016-01-15T10:00:00",
     "shape": "sphere",
     "duration_minutes": 0.33,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "PA",
@@ -17460,8 +17460,8 @@ var ufoShapes = [
     "date_time": "2015-06-13T23:46:00",
     "shape": "circle",
     "duration_minutes": 0.33,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NV",
@@ -17492,8 +17492,8 @@ var ufoShapes = [
     "date_time": "2016-12-24T20:04:00",
     "shape": "light",
     "duration_minutes": 0.33,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "AL",
@@ -17508,16 +17508,16 @@ var ufoShapes = [
     "date_time": "2016-12-14T19:54:00",
     "shape": "formation",
     "duration_minutes": 0.33,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "OH",
     "date_time": "2016-12-13T00:28:00",
     "shape": "chevron",
     "duration_minutes": 0.33,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "KS",
@@ -17588,8 +17588,8 @@ var ufoShapes = [
     "date_time": "2016-10-22T18:15:00",
     "shape": "triangle",
     "duration_minutes": 0.33,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NJ",
@@ -17652,8 +17652,8 @@ var ufoShapes = [
     "date_time": "2016-09-24T23:30:00",
     "shape": "formation",
     "duration_minutes": 0.33,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "GA",
@@ -17724,8 +17724,8 @@ var ufoShapes = [
     "date_time": "2016-09-04T18:40:00",
     "shape": "cylinder",
     "duration_minutes": 0.33,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CT",
@@ -17756,8 +17756,8 @@ var ufoShapes = [
     "date_time": "2016-08-11T22:00:00",
     "shape": "chevron",
     "duration_minutes": 0.33,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "TN",
@@ -17780,16 +17780,16 @@ var ufoShapes = [
     "date_time": "2016-08-09T21:40:00",
     "shape": "disk",
     "duration_minutes": 0.33,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "Unknown",
     "date_time": "2016-08-09T12:30:00",
     "shape": "circle",
     "duration_minutes": 0.33,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MO",
@@ -17876,16 +17876,16 @@ var ufoShapes = [
     "date_time": "2016-07-02T21:00:00",
     "shape": "light",
     "duration_minutes": 0.33,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NY",
     "date_time": "2016-06-22T02:20:00",
     "shape": "sphere",
     "duration_minutes": 0.33,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "FL",
@@ -17900,8 +17900,8 @@ var ufoShapes = [
     "date_time": "2016-06-21T09:00:00",
     "shape": "disk",
     "duration_minutes": 0.33,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "AZ",
@@ -17948,8 +17948,8 @@ var ufoShapes = [
     "date_time": "2016-06-03T18:00:00",
     "shape": "light",
     "duration_minutes": 0.33,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "AZ",
@@ -17972,8 +17972,8 @@ var ufoShapes = [
     "date_time": "2016-05-28T22:15:00",
     "shape": "light",
     "duration_minutes": 0.33,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "WI",
@@ -18012,8 +18012,8 @@ var ufoShapes = [
     "date_time": "2016-05-15T12:46:00",
     "shape": "cigar",
     "duration_minutes": 0.33,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NM",
@@ -18044,8 +18044,8 @@ var ufoShapes = [
     "date_time": "2016-04-21T23:40:00",
     "shape": "circle",
     "duration_minutes": 0.33,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "KY",
@@ -18124,16 +18124,16 @@ var ufoShapes = [
     "date_time": "2016-03-23T12:30:00",
     "shape": "cone",
     "duration_minutes": 0.33,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NB",
     "date_time": "2016-03-21T05:00:00",
     "shape": "other",
     "duration_minutes": 0.33,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "AZ",
@@ -18316,8 +18316,8 @@ var ufoShapes = [
     "date_time": "2015-12-02T23:00:00",
     "shape": "circle",
     "duration_minutes": 0.33,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "ON",
@@ -18348,8 +18348,8 @@ var ufoShapes = [
     "date_time": "2015-11-22T19:20:00",
     "shape": "other",
     "duration_minutes": 0.33,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "OR",
@@ -18364,8 +18364,8 @@ var ufoShapes = [
     "date_time": "2015-11-20T17:00:00",
     "shape": "circle",
     "duration_minutes": 0.33,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "UT",
@@ -18404,8 +18404,8 @@ var ufoShapes = [
     "date_time": "2015-11-11T21:00:00",
     "shape": "fireball",
     "duration_minutes": 0.33,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "AL",
@@ -18436,8 +18436,8 @@ var ufoShapes = [
     "date_time": "2015-11-07T22:48:00",
     "shape": "light",
     "duration_minutes": 0.33,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CA",
@@ -18468,8 +18468,8 @@ var ufoShapes = [
     "date_time": "2015-11-02T05:45:00",
     "shape": "formation",
     "duration_minutes": 0.33,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NH",
@@ -18612,8 +18612,8 @@ var ufoShapes = [
     "date_time": "2015-10-04T19:00:00",
     "shape": "triangle",
     "duration_minutes": 0.33,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CA",
@@ -18708,8 +18708,8 @@ var ufoShapes = [
     "date_time": "2015-08-30T22:30:00",
     "shape": "light",
     "duration_minutes": 0.33,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "AR",
@@ -18788,16 +18788,16 @@ var ufoShapes = [
     "date_time": "2015-07-26T21:00:00",
     "shape": "circle",
     "duration_minutes": 0.33,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NJ",
     "date_time": "2015-07-24T23:00:00",
     "shape": "light",
     "duration_minutes": 0.33,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MI",
@@ -18924,8 +18924,8 @@ var ufoShapes = [
     "date_time": "2015-06-15T18:00:00",
     "shape": "flash",
     "duration_minutes": 0.33,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NY",
@@ -18980,8 +18980,8 @@ var ufoShapes = [
     "date_time": "2015-06-03T23:50:00",
     "shape": "circle",
     "duration_minutes": 0.33,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "WI",
@@ -19004,8 +19004,8 @@ var ufoShapes = [
     "date_time": "2015-05-10T21:00:00",
     "shape": "circle",
     "duration_minutes": 0.33,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "SC",
@@ -19020,16 +19020,16 @@ var ufoShapes = [
     "date_time": "2015-04-30T19:10:00",
     "shape": "teardrop",
     "duration_minutes": 0.33,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "Unknown",
     "date_time": "2015-04-22T14:30:00",
     "shape": "oval",
     "duration_minutes": 0.33,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "VA",
@@ -19068,8 +19068,8 @@ var ufoShapes = [
     "date_time": "2015-04-15T18:15:00",
     "shape": "fireball",
     "duration_minutes": 0.33,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "IL",
@@ -19196,24 +19196,24 @@ var ufoShapes = [
     "date_time": "2015-03-12T05:49:00",
     "shape": "triangle",
     "duration_minutes": 0.33,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "Unknown",
     "date_time": "2015-03-08T21:20:00",
     "shape": "diamond",
     "duration_minutes": 0.33,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CT",
     "date_time": "2015-03-08T16:15:00",
     "shape": "triangle",
     "duration_minutes": 0.33,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "GA",
@@ -19332,8 +19332,8 @@ var ufoShapes = [
     "date_time": "2015-03-22T20:15:00",
     "shape": "rectangle",
     "duration_minutes": 0.38,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "HI",
@@ -19348,8 +19348,8 @@ var ufoShapes = [
     "date_time": "2016-07-16T00:18:00",
     "shape": "triangle",
     "duration_minutes": 0.4,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CO",
@@ -19564,8 +19564,8 @@ var ufoShapes = [
     "date_time": "2015-02-23T22:10:00",
     "shape": "changing",
     "duration_minutes": 0.42,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NV",
@@ -19684,8 +19684,8 @@ var ufoShapes = [
     "date_time": "2015-05-23T13:00:00",
     "shape": "egg",
     "duration_minutes": 0.5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "AZ",
@@ -19780,8 +19780,8 @@ var ufoShapes = [
     "date_time": "2016-12-12T19:06:00",
     "shape": "changing",
     "duration_minutes": 0.5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CA",
@@ -19972,8 +19972,8 @@ var ufoShapes = [
     "date_time": "2016-11-04T18:00:00",
     "shape": "circle",
     "duration_minutes": 0.5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "WI",
@@ -20020,8 +20020,8 @@ var ufoShapes = [
     "date_time": "2016-10-25T16:00:00",
     "shape": "other",
     "duration_minutes": 0.5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MN",
@@ -20044,8 +20044,8 @@ var ufoShapes = [
     "date_time": "2016-10-20T21:00:00",
     "shape": "light",
     "duration_minutes": 0.5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CA",
@@ -20100,8 +20100,8 @@ var ufoShapes = [
     "date_time": "2016-10-09T21:00:00",
     "shape": "other",
     "duration_minutes": 0.5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "IL",
@@ -20124,8 +20124,8 @@ var ufoShapes = [
     "date_time": "2016-10-05T22:35:00",
     "shape": "circle",
     "duration_minutes": 0.5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "TN",
@@ -20260,8 +20260,8 @@ var ufoShapes = [
     "date_time": "2016-09-10T01:00:00",
     "shape": "disk",
     "duration_minutes": 0.5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "OH",
@@ -20316,8 +20316,8 @@ var ufoShapes = [
     "date_time": "2016-08-29T20:26:00",
     "shape": "circle",
     "duration_minutes": 0.5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CA",
@@ -20540,8 +20540,8 @@ var ufoShapes = [
     "date_time": "2016-07-27T21:36:00",
     "shape": "sphere",
     "duration_minutes": 0.5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CA",
@@ -20604,8 +20604,8 @@ var ufoShapes = [
     "date_time": "2016-07-18T21:30:00",
     "shape": "disk",
     "duration_minutes": 0.5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CA",
@@ -20652,8 +20652,8 @@ var ufoShapes = [
     "date_time": "2016-07-04T23:00:00",
     "shape": "sphere",
     "duration_minutes": 0.5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MS",
@@ -20716,8 +20716,8 @@ var ufoShapes = [
     "date_time": "2016-06-30T19:00:00",
     "shape": "cylinder",
     "duration_minutes": 0.5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "AZ",
@@ -20764,8 +20764,8 @@ var ufoShapes = [
     "date_time": "2016-06-14T21:30:00",
     "shape": "light",
     "duration_minutes": 0.5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CA",
@@ -20812,8 +20812,8 @@ var ufoShapes = [
     "date_time": "2016-05-30T21:15:00",
     "shape": "light",
     "duration_minutes": 0.5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CT",
@@ -20892,8 +20892,8 @@ var ufoShapes = [
     "date_time": "2016-05-21T00:00:00",
     "shape": "changing",
     "duration_minutes": 0.5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "IL",
@@ -20972,8 +20972,8 @@ var ufoShapes = [
     "date_time": "2016-04-28T20:35:00",
     "shape": "formation",
     "duration_minutes": 0.5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NY",
@@ -21124,16 +21124,16 @@ var ufoShapes = [
     "date_time": "2016-03-28T04:25:00",
     "shape": "fireball",
     "duration_minutes": 0.5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NJ",
     "date_time": "2016-03-23T00:15:00",
     "shape": "diamond",
     "duration_minutes": 0.5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MA",
@@ -21172,8 +21172,8 @@ var ufoShapes = [
     "date_time": "2016-03-10T06:30:00",
     "shape": "disk",
     "duration_minutes": 0.5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "FL",
@@ -21204,8 +21204,8 @@ var ufoShapes = [
     "date_time": "2016-03-07T19:25:00",
     "shape": "light",
     "duration_minutes": 0.5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NC",
@@ -21260,24 +21260,24 @@ var ufoShapes = [
     "date_time": "2016-02-29T18:20:00",
     "shape": "chevron",
     "duration_minutes": 0.5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "AZ",
     "date_time": "2016-02-26T19:30:00",
     "shape": "disk",
     "duration_minutes": 0.5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "Unknown",
     "date_time": "2016-02-26T01:15:00",
     "shape": "triangle",
     "duration_minutes": 0.5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "FL",
@@ -21292,8 +21292,8 @@ var ufoShapes = [
     "date_time": "2016-02-22T21:40:00",
     "shape": "disk",
     "duration_minutes": 0.5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "IN",
@@ -21308,8 +21308,8 @@ var ufoShapes = [
     "date_time": "2016-02-16T17:00:00",
     "shape": "fireball",
     "duration_minutes": 0.5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "OR",
@@ -21380,8 +21380,8 @@ var ufoShapes = [
     "date_time": "2016-01-08T05:18:00",
     "shape": "chevron",
     "duration_minutes": 0.5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "WI",
@@ -21420,8 +21420,8 @@ var ufoShapes = [
     "date_time": "2016-01-01T12:10:00",
     "shape": "circle",
     "duration_minutes": 0.5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "VT",
@@ -21476,8 +21476,8 @@ var ufoShapes = [
     "date_time": "2015-12-24T11:35:00",
     "shape": "triangle",
     "duration_minutes": 0.5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "AZ",
@@ -21532,8 +21532,8 @@ var ufoShapes = [
     "date_time": "2015-12-10T08:20:00",
     "shape": "triangle",
     "duration_minutes": 0.5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "WV",
@@ -21940,8 +21940,8 @@ var ufoShapes = [
     "date_time": "2015-10-08T18:10:00",
     "shape": "circle",
     "duration_minutes": 0.5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "AR",
@@ -21972,8 +21972,8 @@ var ufoShapes = [
     "date_time": "2015-09-28T20:00:00",
     "shape": "light",
     "duration_minutes": 0.5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "RI",
@@ -22052,8 +22052,8 @@ var ufoShapes = [
     "date_time": "2015-09-15T00:00:00",
     "shape": "other",
     "duration_minutes": 0.5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CA",
@@ -22092,8 +22092,8 @@ var ufoShapes = [
     "date_time": "2015-09-11T19:30:00",
     "shape": "triangle",
     "duration_minutes": 0.5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "WA",
@@ -22196,8 +22196,8 @@ var ufoShapes = [
     "date_time": "2015-08-22T17:00:00",
     "shape": "unknown",
     "duration_minutes": 0.5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "WI",
@@ -22388,8 +22388,8 @@ var ufoShapes = [
     "date_time": "2015-07-25T01:15:00",
     "shape": "other",
     "duration_minutes": 0.5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "WI",
@@ -22420,8 +22420,8 @@ var ufoShapes = [
     "date_time": "2015-07-23T22:40:00",
     "shape": "light",
     "duration_minutes": 0.5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "OH",
@@ -22676,16 +22676,16 @@ var ufoShapes = [
     "date_time": "2015-06-14T21:45:00",
     "shape": "fireball",
     "duration_minutes": 0.5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CA",
     "date_time": "2015-06-14T12:30:00",
     "shape": "formation",
     "duration_minutes": 0.5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NY",
@@ -22732,8 +22732,8 @@ var ufoShapes = [
     "date_time": "2015-05-31T01:00:00",
     "shape": "sphere",
     "duration_minutes": 0.5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "SC",
@@ -22796,8 +22796,8 @@ var ufoShapes = [
     "date_time": "2015-05-21T21:00:00",
     "shape": "circle",
     "duration_minutes": 0.5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "AB",
@@ -22828,8 +22828,8 @@ var ufoShapes = [
     "date_time": "2015-05-11T22:00:00",
     "shape": "light",
     "duration_minutes": 0.5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NM",
@@ -22860,8 +22860,8 @@ var ufoShapes = [
     "date_time": "2015-05-09T12:00:00",
     "shape": "fireball",
     "duration_minutes": 0.5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NY",
@@ -23020,8 +23020,8 @@ var ufoShapes = [
     "date_time": "2015-04-16T21:00:00",
     "shape": "fireball",
     "duration_minutes": 0.5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "OK",
@@ -23044,8 +23044,8 @@ var ufoShapes = [
     "date_time": "2015-04-14T21:00:00",
     "shape": "unknown",
     "duration_minutes": 0.5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "BC",
@@ -23196,8 +23196,8 @@ var ufoShapes = [
     "date_time": "2015-03-06T20:14:00",
     "shape": "light",
     "duration_minutes": 0.5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "TX",
@@ -23236,8 +23236,8 @@ var ufoShapes = [
     "date_time": "2015-02-27T03:50:00",
     "shape": "other",
     "duration_minutes": 0.5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "OH",
@@ -23268,8 +23268,8 @@ var ufoShapes = [
     "date_time": "2015-02-19T23:30:00",
     "shape": "cigar",
     "duration_minutes": 0.5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "IN",
@@ -23284,8 +23284,8 @@ var ufoShapes = [
     "date_time": "2015-02-15T21:00:00",
     "shape": "sphere",
     "duration_minutes": 0.5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NY",
@@ -23372,16 +23372,16 @@ var ufoShapes = [
     "date_time": "2015-01-26T19:10:00",
     "shape": "cigar",
     "duration_minutes": 0.5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "VA",
     "date_time": "2015-01-25T17:45:00",
     "shape": "circle",
     "duration_minutes": 0.5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "FL",
@@ -23396,8 +23396,8 @@ var ufoShapes = [
     "date_time": "2015-01-20T00:00:00",
     "shape": "unknown",
     "duration_minutes": 0.5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "GA",
@@ -23412,8 +23412,8 @@ var ufoShapes = [
     "date_time": "2015-01-10T20:00:00",
     "shape": "other",
     "duration_minutes": 0.5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "VT",
@@ -23460,8 +23460,8 @@ var ufoShapes = [
     "date_time": "2015-01-01T22:15:00",
     "shape": "other",
     "duration_minutes": 0.5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "BC",
@@ -23476,8 +23476,8 @@ var ufoShapes = [
     "date_time": "2015-05-17T05:26:00",
     "shape": "sphere",
     "duration_minutes": 0.53,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "TX",
@@ -23588,8 +23588,8 @@ var ufoShapes = [
     "date_time": "2015-05-29T23:00:00",
     "shape": "light",
     "duration_minutes": 0.58,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "VA",
@@ -23620,8 +23620,8 @@ var ufoShapes = [
     "date_time": "2016-09-27T20:15:00",
     "shape": "circle",
     "duration_minutes": 0.67,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "UT",
@@ -23660,16 +23660,16 @@ var ufoShapes = [
     "date_time": "2016-07-21T22:18:00",
     "shape": "light",
     "duration_minutes": 0.67,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "WI",
     "date_time": "2016-07-03T23:21:00",
     "shape": "oval",
     "duration_minutes": 0.67,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "PA",
@@ -23772,24 +23772,24 @@ var ufoShapes = [
     "date_time": "2015-10-08T22:00:00",
     "shape": "cylinder",
     "duration_minutes": 0.67,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "WA",
     "date_time": "2015-09-21T16:30:00",
     "shape": "sphere",
     "duration_minutes": 0.67,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "Unknown",
     "date_time": "2015-09-19T04:15:00",
     "shape": "triangle",
     "duration_minutes": 0.67,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "TX",
@@ -23820,8 +23820,8 @@ var ufoShapes = [
     "date_time": "2015-08-06T20:40:00",
     "shape": "fireball",
     "duration_minutes": 0.67,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "LA",
@@ -23884,8 +23884,8 @@ var ufoShapes = [
     "date_time": "2015-03-11T21:30:00",
     "shape": "circle",
     "duration_minutes": 0.67,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CT",
@@ -23924,8 +23924,8 @@ var ufoShapes = [
     "date_time": "2016-03-05T17:45:00",
     "shape": "oval",
     "duration_minutes": 0.75,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "TX",
@@ -23948,8 +23948,8 @@ var ufoShapes = [
     "date_time": "2016-12-23T18:10:00",
     "shape": "fireball",
     "duration_minutes": 0.75,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "FL",
@@ -24004,8 +24004,8 @@ var ufoShapes = [
     "date_time": "2016-09-29T22:00:00",
     "shape": "light",
     "duration_minutes": 0.75,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "FL",
@@ -24068,8 +24068,8 @@ var ufoShapes = [
     "date_time": "2016-07-27T22:30:00",
     "shape": "light",
     "duration_minutes": 0.75,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NC",
@@ -24148,8 +24148,8 @@ var ufoShapes = [
     "date_time": "2016-06-15T21:55:00",
     "shape": "sphere",
     "duration_minutes": 0.75,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CT",
@@ -24268,8 +24268,8 @@ var ufoShapes = [
     "date_time": "2016-04-06T17:05:00",
     "shape": "triangle",
     "duration_minutes": 0.75,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "WA",
@@ -24292,16 +24292,16 @@ var ufoShapes = [
     "date_time": "2016-03-31T22:05:00",
     "shape": "fireball",
     "duration_minutes": 0.75,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "FL",
     "date_time": "2016-03-18T21:00:00",
     "shape": "fireball",
     "duration_minutes": 0.75,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "RI",
@@ -24348,8 +24348,8 @@ var ufoShapes = [
     "date_time": "2016-02-26T23:30:00",
     "shape": "sphere",
     "duration_minutes": 0.75,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "KS",
@@ -24508,8 +24508,8 @@ var ufoShapes = [
     "date_time": "2015-09-10T23:00:00",
     "shape": "light",
     "duration_minutes": 0.75,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "OR",
@@ -24564,8 +24564,8 @@ var ufoShapes = [
     "date_time": "2015-08-17T00:23:00",
     "shape": "rectangle",
     "duration_minutes": 0.75,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MD",
@@ -24644,8 +24644,8 @@ var ufoShapes = [
     "date_time": "2015-07-03T22:00:00",
     "shape": "circle",
     "duration_minutes": 0.75,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "PA",
@@ -24660,8 +24660,8 @@ var ufoShapes = [
     "date_time": "2015-06-22T23:00:00",
     "shape": "triangle",
     "duration_minutes": 0.75,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "VA",
@@ -24748,8 +24748,8 @@ var ufoShapes = [
     "date_time": "2015-04-07T20:45:00",
     "shape": "light",
     "duration_minutes": 0.75,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NJ",
@@ -24780,8 +24780,8 @@ var ufoShapes = [
     "date_time": "2015-03-04T19:00:00",
     "shape": "rectangle",
     "duration_minutes": 0.75,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CA",
@@ -25028,8 +25028,8 @@ var ufoShapes = [
     "date_time": "2015-03-26T19:15:00",
     "shape": "cylinder",
     "duration_minutes": 0.83,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NC",
@@ -25060,8 +25060,8 @@ var ufoShapes = [
     "date_time": "2016-05-27T22:16:00",
     "shape": "light",
     "duration_minutes": 0.92,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "SC",
@@ -25076,8 +25076,8 @@ var ufoShapes = [
     "date_time": "2016-10-22T21:00:00",
     "shape": "oval",
     "duration_minutes": 0.98,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CA",
@@ -25132,8 +25132,8 @@ var ufoShapes = [
     "date_time": "2016-12-25T06:15:00",
     "shape": "sphere",
     "duration_minutes": 1,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "GA",
@@ -25172,8 +25172,8 @@ var ufoShapes = [
     "date_time": "2016-12-15T19:00:00",
     "shape": "triangle",
     "duration_minutes": 1,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "AZ",
@@ -25188,8 +25188,8 @@ var ufoShapes = [
     "date_time": "2016-12-13T18:30:00",
     "shape": "chevron",
     "duration_minutes": 1,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "PA",
@@ -25212,8 +25212,8 @@ var ufoShapes = [
     "date_time": "2016-12-06T17:30:00",
     "shape": "sphere",
     "duration_minutes": 1,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CA",
@@ -25324,8 +25324,8 @@ var ufoShapes = [
     "date_time": "2016-11-11T21:05:00",
     "shape": "light",
     "duration_minutes": 1,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "FL",
@@ -25380,16 +25380,16 @@ var ufoShapes = [
     "date_time": "2016-10-30T22:15:00",
     "shape": "oval",
     "duration_minutes": 1,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "KS",
     "date_time": "2016-10-27T23:45:00",
     "shape": "circle",
     "duration_minutes": 1,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CA",
@@ -25436,8 +25436,8 @@ var ufoShapes = [
     "date_time": "2016-10-19T19:49:00",
     "shape": "light",
     "duration_minutes": 1,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "VA",
@@ -25492,8 +25492,8 @@ var ufoShapes = [
     "date_time": "2016-10-02T20:45:00",
     "shape": "rectangle",
     "duration_minutes": 1,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MO",
@@ -25516,8 +25516,8 @@ var ufoShapes = [
     "date_time": "2016-09-28T05:45:00",
     "shape": "triangle",
     "duration_minutes": 1,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CA",
@@ -25556,8 +25556,8 @@ var ufoShapes = [
     "date_time": "2016-09-23T19:10:00",
     "shape": "unknown",
     "duration_minutes": 1,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MA",
@@ -25684,8 +25684,8 @@ var ufoShapes = [
     "date_time": "2016-09-01T21:30:00",
     "shape": "formation",
     "duration_minutes": 1,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "AB",
@@ -25708,8 +25708,8 @@ var ufoShapes = [
     "date_time": "2016-08-30T20:30:00",
     "shape": "disk",
     "duration_minutes": 1,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CA",
@@ -25748,8 +25748,8 @@ var ufoShapes = [
     "date_time": "2016-08-26T23:30:00",
     "shape": "fireball",
     "duration_minutes": 1,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "IN",
@@ -25844,8 +25844,8 @@ var ufoShapes = [
     "date_time": "2016-08-13T21:00:00",
     "shape": "triangle",
     "duration_minutes": 1,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MA",
@@ -25892,8 +25892,8 @@ var ufoShapes = [
     "date_time": "2016-08-01T21:45:00",
     "shape": "unknown",
     "duration_minutes": 1,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "AZ",
@@ -26052,8 +26052,8 @@ var ufoShapes = [
     "date_time": "2016-07-24T22:50:00",
     "shape": "triangle",
     "duration_minutes": 1,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MN",
@@ -26092,8 +26092,8 @@ var ufoShapes = [
     "date_time": "2016-07-16T21:00:00",
     "shape": "fireball",
     "duration_minutes": 1,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NJ",
@@ -26188,16 +26188,16 @@ var ufoShapes = [
     "date_time": "2016-07-09T18:45:00",
     "shape": "cigar",
     "duration_minutes": 1,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "WA",
     "date_time": "2016-07-09T03:24:00",
     "shape": "other",
     "duration_minutes": 1,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "ID",
@@ -26300,16 +26300,16 @@ var ufoShapes = [
     "date_time": "2016-07-03T04:15:00",
     "shape": "triangle",
     "duration_minutes": 1,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MO",
     "date_time": "2016-07-01T22:00:00",
     "shape": "sphere",
     "duration_minutes": 1,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "WI",
@@ -26340,8 +26340,8 @@ var ufoShapes = [
     "date_time": "2016-06-26T22:01:00",
     "shape": "fireball",
     "duration_minutes": 1,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "PA",
@@ -26364,8 +26364,8 @@ var ufoShapes = [
     "date_time": "2016-06-22T22:00:00",
     "shape": "circle",
     "duration_minutes": 1,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "GA",
@@ -26540,8 +26540,8 @@ var ufoShapes = [
     "date_time": "2016-05-13T22:30:00",
     "shape": "light",
     "duration_minutes": 1,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NY",
@@ -26716,8 +26716,8 @@ var ufoShapes = [
     "date_time": "2016-04-15T22:00:00",
     "shape": "rectangle",
     "duration_minutes": 1,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "OH",
@@ -26732,8 +26732,8 @@ var ufoShapes = [
     "date_time": "2016-04-15T16:45:00",
     "shape": "circle",
     "duration_minutes": 1,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MI",
@@ -26820,16 +26820,16 @@ var ufoShapes = [
     "date_time": "2016-03-17T22:00:00",
     "shape": "unknown",
     "duration_minutes": 1,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "Unknown",
     "date_time": "2016-03-10T05:30:00",
     "shape": "flash",
     "duration_minutes": 1,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "UT",
@@ -26852,8 +26852,8 @@ var ufoShapes = [
     "date_time": "2016-03-04T18:25:00",
     "shape": "light",
     "duration_minutes": 1,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NY",
@@ -26884,8 +26884,8 @@ var ufoShapes = [
     "date_time": "2016-03-02T19:39:00",
     "shape": "formation",
     "duration_minutes": 1,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MI",
@@ -26908,8 +26908,8 @@ var ufoShapes = [
     "date_time": "2016-02-28T19:30:00",
     "shape": "cigar",
     "duration_minutes": 1,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MO",
@@ -26988,8 +26988,8 @@ var ufoShapes = [
     "date_time": "2016-02-14T00:30:00",
     "shape": "triangle",
     "duration_minutes": 1,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NY",
@@ -27076,8 +27076,8 @@ var ufoShapes = [
     "date_time": "2016-01-27T21:30:00",
     "shape": "light",
     "duration_minutes": 1,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CT",
@@ -27172,8 +27172,8 @@ var ufoShapes = [
     "date_time": "2016-01-01T17:00:00",
     "shape": "light",
     "duration_minutes": 1,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CA",
@@ -27188,8 +27188,8 @@ var ufoShapes = [
     "date_time": "2015-12-31T17:00:00",
     "shape": "unknown",
     "duration_minutes": 1,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "FL",
@@ -27348,8 +27348,8 @@ var ufoShapes = [
     "date_time": "2015-12-05T23:15:00",
     "shape": "triangle",
     "duration_minutes": 1,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "VA",
@@ -27468,8 +27468,8 @@ var ufoShapes = [
     "date_time": "2015-11-17T18:00:00",
     "shape": "unknown",
     "duration_minutes": 1,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MA",
@@ -27660,8 +27660,8 @@ var ufoShapes = [
     "date_time": "2015-11-04T03:00:00",
     "shape": "light",
     "duration_minutes": 1,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "OH",
@@ -27732,8 +27732,8 @@ var ufoShapes = [
     "date_time": "2015-10-27T07:13:00",
     "shape": "circle",
     "duration_minutes": 1,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "ON",
@@ -27772,16 +27772,16 @@ var ufoShapes = [
     "date_time": "2015-10-23T20:20:00",
     "shape": "triangle",
     "duration_minutes": 1,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "OH",
     "date_time": "2015-10-23T10:30:00",
     "shape": "circle",
     "duration_minutes": 1,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MD",
@@ -27820,8 +27820,8 @@ var ufoShapes = [
     "date_time": "2015-10-20T21:15:00",
     "shape": "light",
     "duration_minutes": 1,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "AZ",
@@ -27852,8 +27852,8 @@ var ufoShapes = [
     "date_time": "2015-10-19T14:40:00",
     "shape": "oval",
     "duration_minutes": 1,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "AZ",
@@ -27876,8 +27876,8 @@ var ufoShapes = [
     "date_time": "2015-10-17T02:00:00",
     "shape": "light",
     "duration_minutes": 1,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CO",
@@ -27916,8 +27916,8 @@ var ufoShapes = [
     "date_time": "2015-10-13T19:50:00",
     "shape": "other",
     "duration_minutes": 1,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MA",
@@ -27972,16 +27972,16 @@ var ufoShapes = [
     "date_time": "2015-10-08T23:55:00",
     "shape": "rectangle",
     "duration_minutes": 1,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CA",
     "date_time": "2015-10-08T05:00:00",
     "shape": "circle",
     "duration_minutes": 1,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NY",
@@ -28028,16 +28028,16 @@ var ufoShapes = [
     "date_time": "2015-09-28T20:29:00",
     "shape": "other",
     "duration_minutes": 1,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "Unknown",
     "date_time": "2015-09-28T04:52:00",
     "shape": "chevron",
     "duration_minutes": 1,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "WA",
@@ -28132,8 +28132,8 @@ var ufoShapes = [
     "date_time": "2015-09-22T00:00:00",
     "shape": "light",
     "duration_minutes": 1,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "IL",
@@ -28156,8 +28156,8 @@ var ufoShapes = [
     "date_time": "2015-09-18T21:00:00",
     "shape": "fireball",
     "duration_minutes": 1,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CA",
@@ -28172,8 +28172,8 @@ var ufoShapes = [
     "date_time": "2015-09-14T19:30:00",
     "shape": "light",
     "duration_minutes": 1,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "GA",
@@ -28220,8 +28220,8 @@ var ufoShapes = [
     "date_time": "2015-09-08T21:00:00",
     "shape": "cone",
     "duration_minutes": 1,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "GA",
@@ -28268,8 +28268,8 @@ var ufoShapes = [
     "date_time": "2015-09-06T02:50:00",
     "shape": "light",
     "duration_minutes": 1,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "PA",
@@ -28284,8 +28284,8 @@ var ufoShapes = [
     "date_time": "2015-09-05T22:40:00",
     "shape": "sphere",
     "duration_minutes": 1,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CO",
@@ -28364,16 +28364,16 @@ var ufoShapes = [
     "date_time": "2015-08-23T03:00:00",
     "shape": "fireball",
     "duration_minutes": 1,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "IL",
     "date_time": "2015-08-22T23:45:00",
     "shape": "fireball",
     "duration_minutes": 1,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NH",
@@ -28468,8 +28468,8 @@ var ufoShapes = [
     "date_time": "2015-08-12T21:25:00",
     "shape": "oval",
     "duration_minutes": 1,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "DE",
@@ -28516,8 +28516,8 @@ var ufoShapes = [
     "date_time": "2015-08-05T22:00:00",
     "shape": "triangle",
     "duration_minutes": 1,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "GA",
@@ -28548,8 +28548,8 @@ var ufoShapes = [
     "date_time": "2015-07-31T22:40:00",
     "shape": "fireball",
     "duration_minutes": 1,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "OR",
@@ -28564,8 +28564,8 @@ var ufoShapes = [
     "date_time": "2015-07-31T21:00:00",
     "shape": "oval",
     "duration_minutes": 1,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MT",
@@ -28596,24 +28596,24 @@ var ufoShapes = [
     "date_time": "2015-07-27T22:00:00",
     "shape": "circle",
     "duration_minutes": 1,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "Unknown",
     "date_time": "2015-07-23T00:00:00",
     "shape": "triangle",
     "duration_minutes": 1,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "FL",
     "date_time": "2015-07-19T09:30:00",
     "shape": "circle",
     "duration_minutes": 1,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "FL",
@@ -28740,8 +28740,8 @@ var ufoShapes = [
     "date_time": "2015-07-04T23:00:00",
     "shape": "triangle",
     "duration_minutes": 1,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "FL",
@@ -28908,8 +28908,8 @@ var ufoShapes = [
     "date_time": "2015-06-19T22:00:00",
     "shape": "oval",
     "duration_minutes": 1,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NY",
@@ -28932,8 +28932,8 @@ var ufoShapes = [
     "date_time": "2015-06-17T01:27:00",
     "shape": "circle",
     "duration_minutes": 1,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "OR",
@@ -28948,8 +28948,8 @@ var ufoShapes = [
     "date_time": "2015-06-15T12:00:00",
     "shape": "disk",
     "duration_minutes": 1,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NC",
@@ -28972,8 +28972,8 @@ var ufoShapes = [
     "date_time": "2015-06-11T22:45:00",
     "shape": "light",
     "duration_minutes": 1,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "AL",
@@ -29004,16 +29004,16 @@ var ufoShapes = [
     "date_time": "2015-06-05T20:30:00",
     "shape": "sphere",
     "duration_minutes": 1,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "ME",
     "date_time": "2015-06-04T22:30:00",
     "shape": "circle",
     "duration_minutes": 1,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "TX",
@@ -29028,8 +29028,8 @@ var ufoShapes = [
     "date_time": "2015-05-28T02:45:00",
     "shape": "fireball",
     "duration_minutes": 1,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "WA",
@@ -29068,16 +29068,16 @@ var ufoShapes = [
     "date_time": "2015-05-22T23:30:00",
     "shape": "unknown",
     "duration_minutes": 1,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MT",
     "date_time": "2015-05-22T23:30:00",
     "shape": "unknown",
     "duration_minutes": 1,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NY",
@@ -29116,8 +29116,8 @@ var ufoShapes = [
     "date_time": "2015-05-21T19:00:00",
     "shape": "sphere",
     "duration_minutes": 1,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CA",
@@ -29164,16 +29164,16 @@ var ufoShapes = [
     "date_time": "2015-05-08T22:00:00",
     "shape": "fireball",
     "duration_minutes": 1,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MA",
     "date_time": "2015-05-08T00:05:00",
     "shape": "circle",
     "duration_minutes": 1,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MI",
@@ -29188,8 +29188,8 @@ var ufoShapes = [
     "date_time": "2015-05-02T21:10:00",
     "shape": "light",
     "duration_minutes": 1,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CA",
@@ -29204,8 +29204,8 @@ var ufoShapes = [
     "date_time": "2015-05-01T13:00:00",
     "shape": "triangle",
     "duration_minutes": 1,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "ID",
@@ -29276,8 +29276,8 @@ var ufoShapes = [
     "date_time": "2015-04-19T20:40:00",
     "shape": "other",
     "duration_minutes": 1,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MO",
@@ -29308,16 +29308,16 @@ var ufoShapes = [
     "date_time": "2015-04-11T15:00:00",
     "shape": "changing",
     "duration_minutes": 1,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "Unknown",
     "date_time": "2015-04-07T06:45:00",
     "shape": "circle",
     "duration_minutes": 1,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "FL",
@@ -29372,8 +29372,8 @@ var ufoShapes = [
     "date_time": "2015-03-31T04:50:00",
     "shape": "sphere",
     "duration_minutes": 1,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "IA",
@@ -29396,8 +29396,8 @@ var ufoShapes = [
     "date_time": "2015-03-28T15:00:00",
     "shape": "circle",
     "duration_minutes": 1,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "GA",
@@ -29428,8 +29428,8 @@ var ufoShapes = [
     "date_time": "2015-03-19T22:30:00",
     "shape": "circle",
     "duration_minutes": 1,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CT",
@@ -29500,8 +29500,8 @@ var ufoShapes = [
     "date_time": "2015-03-10T12:00:00",
     "shape": "cigar",
     "duration_minutes": 1,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CA",
@@ -29588,8 +29588,8 @@ var ufoShapes = [
     "date_time": "2015-02-19T09:40:00",
     "shape": "cigar",
     "duration_minutes": 1,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NM",
@@ -29604,16 +29604,16 @@ var ufoShapes = [
     "date_time": "2015-02-17T06:00:00",
     "shape": "unknown",
     "duration_minutes": 1,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CA",
     "date_time": "2015-02-16T22:30:00",
     "shape": "unknown",
     "duration_minutes": 1,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "FL",
@@ -29644,8 +29644,8 @@ var ufoShapes = [
     "date_time": "2015-02-11T18:00:00",
     "shape": "light",
     "duration_minutes": 1,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "IL",
@@ -29700,8 +29700,8 @@ var ufoShapes = [
     "date_time": "2015-02-03T21:00:00",
     "shape": "rectangle",
     "duration_minutes": 1,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "OR",
@@ -29724,8 +29724,8 @@ var ufoShapes = [
     "date_time": "2015-01-24T23:03:00",
     "shape": "fireball",
     "duration_minutes": 1,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "AR",
@@ -29740,8 +29740,8 @@ var ufoShapes = [
     "date_time": "2015-01-23T23:23:00",
     "shape": "disk",
     "duration_minutes": 1,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CO",
@@ -29756,8 +29756,8 @@ var ufoShapes = [
     "date_time": "2015-01-21T18:30:00",
     "shape": "sphere",
     "duration_minutes": 1,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "FL",
@@ -29772,8 +29772,8 @@ var ufoShapes = [
     "date_time": "2015-01-20T20:30:00",
     "shape": "fireball",
     "duration_minutes": 1,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "FL",
@@ -29820,8 +29820,8 @@ var ufoShapes = [
     "date_time": "2015-01-11T00:23:00",
     "shape": "light",
     "duration_minutes": 1,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "IL",
@@ -29836,8 +29836,8 @@ var ufoShapes = [
     "date_time": "2015-01-10T13:00:00",
     "shape": "disk",
     "duration_minutes": 1,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MN",
@@ -29852,16 +29852,16 @@ var ufoShapes = [
     "date_time": "2015-01-09T23:00:00",
     "shape": "light",
     "duration_minutes": 1,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "Unknown",
     "date_time": "2015-01-09T05:30:00",
     "shape": "fireball",
     "duration_minutes": 1,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "FL",
@@ -29980,8 +29980,8 @@ var ufoShapes = [
     "date_time": "2015-09-06T07:42:00",
     "shape": "oval",
     "duration_minutes": 1,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "WA",
@@ -30004,8 +30004,8 @@ var ufoShapes = [
     "date_time": "2015-07-16T18:00:00",
     "shape": "light",
     "duration_minutes": 1,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "BC",
@@ -30020,8 +30020,8 @@ var ufoShapes = [
     "date_time": "2015-02-11T18:05:00",
     "shape": "other",
     "duration_minutes": 1,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "UT",
@@ -30068,8 +30068,8 @@ var ufoShapes = [
     "date_time": "2016-04-05T13:00:00",
     "shape": "cigar",
     "duration_minutes": 1,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "TX",
@@ -30196,16 +30196,16 @@ var ufoShapes = [
     "date_time": "2015-07-16T21:00:00",
     "shape": "light",
     "duration_minutes": 1,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "AR",
     "date_time": "2016-03-27T21:32:00",
     "shape": "light",
     "duration_minutes": 1,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "HI",
@@ -30228,8 +30228,8 @@ var ufoShapes = [
     "date_time": "2016-03-26T23:30:00",
     "shape": "sphere",
     "duration_minutes": 1,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CA",
@@ -30244,8 +30244,8 @@ var ufoShapes = [
     "date_time": "2015-10-11T00:00:00",
     "shape": "triangle",
     "duration_minutes": 1,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CA",
@@ -30268,8 +30268,8 @@ var ufoShapes = [
     "date_time": "2016-10-01T22:15:00",
     "shape": "fireball",
     "duration_minutes": 1,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NY",
@@ -30284,8 +30284,8 @@ var ufoShapes = [
     "date_time": "2016-11-11T21:05:00",
     "shape": "light",
     "duration_minutes": 1,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NH",
@@ -30316,8 +30316,8 @@ var ufoShapes = [
     "date_time": "2016-03-22T20:30:00",
     "shape": "formation",
     "duration_minutes": 1,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MN",
@@ -30356,8 +30356,8 @@ var ufoShapes = [
     "date_time": "2015-07-17T22:50:00",
     "shape": "triangle",
     "duration_minutes": 1,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "FL",
@@ -30380,8 +30380,8 @@ var ufoShapes = [
     "date_time": "2015-04-26T21:00:00",
     "shape": "changing",
     "duration_minutes": 1,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NM",
@@ -30396,8 +30396,8 @@ var ufoShapes = [
     "date_time": "2015-01-04T02:05:00",
     "shape": "triangle",
     "duration_minutes": 1,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NC",
@@ -30444,16 +30444,16 @@ var ufoShapes = [
     "date_time": "2015-12-22T18:10:00",
     "shape": "cigar",
     "duration_minutes": 1,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "PA",
     "date_time": "2016-12-25T20:30:00",
     "shape": "other",
     "duration_minutes": 1,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "TX",
@@ -30524,8 +30524,8 @@ var ufoShapes = [
     "date_time": "2016-09-08T16:00:00",
     "shape": "unknown",
     "duration_minutes": 1,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CA",
@@ -30556,8 +30556,8 @@ var ufoShapes = [
     "date_time": "2016-08-12T21:00:00",
     "shape": "light",
     "duration_minutes": 1,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "TX",
@@ -30628,8 +30628,8 @@ var ufoShapes = [
     "date_time": "2015-12-09T06:00:00",
     "shape": "unknown",
     "duration_minutes": 1,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MA",
@@ -30724,8 +30724,8 @@ var ufoShapes = [
     "date_time": "2015-09-27T22:17:00",
     "shape": "fireball",
     "duration_minutes": 1,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "ID",
@@ -30924,8 +30924,8 @@ var ufoShapes = [
     "date_time": "2016-12-12T18:50:00",
     "shape": "sphere",
     "duration_minutes": 1,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "WA",
@@ -31060,24 +31060,24 @@ var ufoShapes = [
     "date_time": "2015-09-28T23:17:00",
     "shape": "triangle",
     "duration_minutes": 1,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "KS",
     "date_time": "2015-09-15T21:30:00",
     "shape": "circle",
     "duration_minutes": 1,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "GA",
     "date_time": "2015-09-12T21:30:00",
     "shape": "formation",
     "duration_minutes": 1,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "KY",
@@ -31156,8 +31156,8 @@ var ufoShapes = [
     "date_time": "2015-03-27T18:38:00",
     "shape": "other",
     "duration_minutes": 1,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MA",
@@ -31180,8 +31180,8 @@ var ufoShapes = [
     "date_time": "2015-03-14T20:15:00",
     "shape": "circle",
     "duration_minutes": 1,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "OR",
@@ -31220,8 +31220,8 @@ var ufoShapes = [
     "date_time": "2016-12-31T00:00:00",
     "shape": "unknown",
     "duration_minutes": 1,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "FL",
@@ -31244,8 +31244,8 @@ var ufoShapes = [
     "date_time": "2016-12-19T21:53:00",
     "shape": "circle",
     "duration_minutes": 1,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "VA",
@@ -31404,8 +31404,8 @@ var ufoShapes = [
     "date_time": "2016-10-15T13:30:00",
     "shape": "disk",
     "duration_minutes": 1,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CT",
@@ -31420,8 +31420,8 @@ var ufoShapes = [
     "date_time": "2016-10-12T06:00:00",
     "shape": "oval",
     "duration_minutes": 1,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CA",
@@ -31436,8 +31436,8 @@ var ufoShapes = [
     "date_time": "2016-10-08T02:20:00",
     "shape": "other",
     "duration_minutes": 1,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MB",
@@ -31508,8 +31508,8 @@ var ufoShapes = [
     "date_time": "2016-09-11T21:00:00",
     "shape": "light",
     "duration_minutes": 1,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "WY",
@@ -31548,8 +31548,8 @@ var ufoShapes = [
     "date_time": "2016-09-03T23:00:00",
     "shape": "fireball",
     "duration_minutes": 1,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "GA",
@@ -31572,8 +31572,8 @@ var ufoShapes = [
     "date_time": "2016-08-18T22:10:00",
     "shape": "light",
     "duration_minutes": 1,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "AZ",
@@ -31596,8 +31596,8 @@ var ufoShapes = [
     "date_time": "2016-08-11T21:45:00",
     "shape": "formation",
     "duration_minutes": 1,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "OR",
@@ -31684,8 +31684,8 @@ var ufoShapes = [
     "date_time": "2016-07-09T10:32:00",
     "shape": "teardrop",
     "duration_minutes": 1,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "IN",
@@ -31708,8 +31708,8 @@ var ufoShapes = [
     "date_time": "2016-07-03T22:10:00",
     "shape": "triangle",
     "duration_minutes": 1,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CA",
@@ -31748,16 +31748,16 @@ var ufoShapes = [
     "date_time": "2016-06-08T23:16:00",
     "shape": "light",
     "duration_minutes": 1,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NY",
     "date_time": "2016-06-08T23:16:00",
     "shape": "light",
     "duration_minutes": 1,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "KS",
@@ -31812,8 +31812,8 @@ var ufoShapes = [
     "date_time": "2016-05-05T14:00:00",
     "shape": "rectangle",
     "duration_minutes": 1,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "KY",
@@ -31836,8 +31836,8 @@ var ufoShapes = [
     "date_time": "2016-04-15T23:00:00",
     "shape": "teardrop",
     "duration_minutes": 1,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "OR",
@@ -31852,8 +31852,8 @@ var ufoShapes = [
     "date_time": "2016-04-08T17:00:00",
     "shape": "cigar",
     "duration_minutes": 1,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NM",
@@ -31956,8 +31956,8 @@ var ufoShapes = [
     "date_time": "2016-03-02T21:35:00",
     "shape": "formation",
     "duration_minutes": 1,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "AZ",
@@ -31988,8 +31988,8 @@ var ufoShapes = [
     "date_time": "2016-02-10T00:30:00",
     "shape": "disk",
     "duration_minutes": 1,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "AZ",
@@ -32036,24 +32036,24 @@ var ufoShapes = [
     "date_time": "2016-01-17T11:47:00",
     "shape": "other",
     "duration_minutes": 1,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MD",
     "date_time": "2016-01-15T22:30:00",
     "shape": "light",
     "duration_minutes": 1,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "TX",
     "date_time": "2016-01-15T11:45:00",
     "shape": "diamond",
     "duration_minutes": 1,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "IN",
@@ -32124,8 +32124,8 @@ var ufoShapes = [
     "date_time": "2016-01-03T18:10:00",
     "shape": "circle",
     "duration_minutes": 1,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "AZ",
@@ -32220,8 +32220,8 @@ var ufoShapes = [
     "date_time": "2015-12-10T17:30:00",
     "shape": "light",
     "duration_minutes": 1,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "SC",
@@ -32340,8 +32340,8 @@ var ufoShapes = [
     "date_time": "2015-10-10T22:10:00",
     "shape": "sphere",
     "duration_minutes": 1,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "AZ",
@@ -32476,8 +32476,8 @@ var ufoShapes = [
     "date_time": "2015-09-05T21:00:00",
     "shape": "formation",
     "duration_minutes": 1,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NH",
@@ -32516,8 +32516,8 @@ var ufoShapes = [
     "date_time": "2015-08-12T00:35:00",
     "shape": "rectangle",
     "duration_minutes": 1,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MB",
@@ -32540,8 +32540,8 @@ var ufoShapes = [
     "date_time": "2015-08-05T21:15:00",
     "shape": "circle",
     "duration_minutes": 1,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "IA",
@@ -32564,8 +32564,8 @@ var ufoShapes = [
     "date_time": "2015-08-03T21:00:00",
     "shape": "light",
     "duration_minutes": 1,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CA",
@@ -32644,8 +32644,8 @@ var ufoShapes = [
     "date_time": "2015-07-24T23:00:00",
     "shape": "light",
     "duration_minutes": 1,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NV",
@@ -32676,8 +32676,8 @@ var ufoShapes = [
     "date_time": "2015-07-18T23:00:00",
     "shape": "fireball",
     "duration_minutes": 1,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CA",
@@ -32860,8 +32860,8 @@ var ufoShapes = [
     "date_time": "2015-05-24T21:30:00",
     "shape": "other",
     "duration_minutes": 1,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "WA",
@@ -32908,16 +32908,16 @@ var ufoShapes = [
     "date_time": "2015-05-02T22:50:00",
     "shape": "sphere",
     "duration_minutes": 1,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "Unknown",
     "date_time": "2015-05-01T00:00:00",
     "shape": "triangle",
     "duration_minutes": 1,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "AZ",
@@ -32980,8 +32980,8 @@ var ufoShapes = [
     "date_time": "2015-04-02T22:10:00",
     "shape": "unknown",
     "duration_minutes": 1,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CO",
@@ -33004,8 +33004,8 @@ var ufoShapes = [
     "date_time": "2015-03-28T09:00:00",
     "shape": "light",
     "duration_minutes": 1,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "WI",
@@ -33164,8 +33164,8 @@ var ufoShapes = [
     "date_time": "2015-01-19T18:00:00",
     "shape": "rectangle",
     "duration_minutes": 1,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "OH",
@@ -33204,8 +33204,8 @@ var ufoShapes = [
     "date_time": "2015-01-12T20:15:00",
     "shape": "light",
     "duration_minutes": 1,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "PA",
@@ -33228,8 +33228,8 @@ var ufoShapes = [
     "date_time": "2015-01-08T17:55:00",
     "shape": "unknown",
     "duration_minutes": 1,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "FL",
@@ -33308,8 +33308,8 @@ var ufoShapes = [
     "date_time": "2016-12-14T19:21:00",
     "shape": "triangle",
     "duration_minutes": 1.33,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NY",
@@ -33396,8 +33396,8 @@ var ufoShapes = [
     "date_time": "2016-09-05T05:20:00",
     "shape": "light",
     "duration_minutes": 1.5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NY",
@@ -33484,8 +33484,8 @@ var ufoShapes = [
     "date_time": "2016-06-11T22:53:00",
     "shape": "light",
     "duration_minutes": 1.5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CA",
@@ -33532,8 +33532,8 @@ var ufoShapes = [
     "date_time": "2016-04-10T20:10:00",
     "shape": "other",
     "duration_minutes": 1.5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "IN",
@@ -33548,8 +33548,8 @@ var ufoShapes = [
     "date_time": "2016-03-15T00:05:00",
     "shape": "formation",
     "duration_minutes": 1.5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CO",
@@ -33572,8 +33572,8 @@ var ufoShapes = [
     "date_time": "2016-02-05T20:35:00",
     "shape": "cross",
     "duration_minutes": 1.5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "ID",
@@ -33628,8 +33628,8 @@ var ufoShapes = [
     "date_time": "2015-12-15T08:30:00",
     "shape": "sphere",
     "duration_minutes": 1.5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "FL",
@@ -33652,8 +33652,8 @@ var ufoShapes = [
     "date_time": "2015-11-17T03:30:00",
     "shape": "cylinder",
     "duration_minutes": 1.5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CA",
@@ -33860,16 +33860,16 @@ var ufoShapes = [
     "date_time": "2015-04-10T18:00:00",
     "shape": "unknown",
     "duration_minutes": 1.5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NV",
     "date_time": "2015-04-10T00:00:00",
     "shape": "light",
     "duration_minutes": 1.5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "IA",
@@ -33884,16 +33884,16 @@ var ufoShapes = [
     "date_time": "2015-03-21T15:45:00",
     "shape": "cylinder",
     "duration_minutes": 1.5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "WA",
     "date_time": "2015-02-23T22:00:00",
     "shape": "cigar",
     "duration_minutes": 1.5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "FL",
@@ -33908,8 +33908,8 @@ var ufoShapes = [
     "date_time": "2015-03-28T08:45:00",
     "shape": "circle",
     "duration_minutes": 1.58,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "VT",
@@ -33924,8 +33924,8 @@ var ufoShapes = [
     "date_time": "2015-04-03T22:01:00",
     "shape": "light",
     "duration_minutes": 1.75,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CA",
@@ -33940,8 +33940,8 @@ var ufoShapes = [
     "date_time": "2015-09-12T15:00:00",
     "shape": "egg",
     "duration_minutes": 2,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "OR",
@@ -34020,8 +34020,8 @@ var ufoShapes = [
     "date_time": "2015-03-12T23:30:00",
     "shape": "disk",
     "duration_minutes": 2,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NV",
@@ -34060,8 +34060,8 @@ var ufoShapes = [
     "date_time": "2016-08-19T22:00:00",
     "shape": "fireball",
     "duration_minutes": 2,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MT",
@@ -34148,8 +34148,8 @@ var ufoShapes = [
     "date_time": "2015-04-23T21:30:00",
     "shape": "sphere",
     "duration_minutes": 2,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "FL",
@@ -34172,8 +34172,8 @@ var ufoShapes = [
     "date_time": "2016-02-07T21:00:00",
     "shape": "chevron",
     "duration_minutes": 2,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "AZ",
@@ -34188,8 +34188,8 @@ var ufoShapes = [
     "date_time": "2015-11-19T19:50:00",
     "shape": "triangle",
     "duration_minutes": 2,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CA",
@@ -34268,8 +34268,8 @@ var ufoShapes = [
     "date_time": "2015-01-19T22:45:00",
     "shape": "rectangle",
     "duration_minutes": 2,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "OH",
@@ -34372,8 +34372,8 @@ var ufoShapes = [
     "date_time": "2016-12-23T12:00:00",
     "shape": "teardrop",
     "duration_minutes": 2,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "OH",
@@ -34444,8 +34444,8 @@ var ufoShapes = [
     "date_time": "2016-12-12T07:30:00",
     "shape": "light",
     "duration_minutes": 2,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MT",
@@ -34532,24 +34532,24 @@ var ufoShapes = [
     "date_time": "2016-11-29T02:15:00",
     "shape": "triangle",
     "duration_minutes": 2,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "Unknown",
     "date_time": "2016-11-28T20:09:00",
     "shape": "diamond",
     "duration_minutes": 2,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "HI",
     "date_time": "2016-11-27T11:30:00",
     "shape": "unknown",
     "duration_minutes": 2,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NY",
@@ -34572,8 +34572,8 @@ var ufoShapes = [
     "date_time": "2016-11-26T16:56:00",
     "shape": "fireball",
     "duration_minutes": 2,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MD",
@@ -34620,8 +34620,8 @@ var ufoShapes = [
     "date_time": "2016-11-18T14:00:00",
     "shape": "other",
     "duration_minutes": 2,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CO",
@@ -34668,16 +34668,16 @@ var ufoShapes = [
     "date_time": "2016-11-13T21:25:00",
     "shape": "oval",
     "duration_minutes": 2,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MD",
     "date_time": "2016-11-13T16:50:00",
     "shape": "fireball",
     "duration_minutes": 2,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "TN",
@@ -34708,8 +34708,8 @@ var ufoShapes = [
     "date_time": "2016-11-10T21:00:00",
     "shape": "light",
     "duration_minutes": 2,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CA",
@@ -34764,8 +34764,8 @@ var ufoShapes = [
     "date_time": "2016-11-06T19:30:00",
     "shape": "light",
     "duration_minutes": 2,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MD",
@@ -34788,8 +34788,8 @@ var ufoShapes = [
     "date_time": "2016-10-29T22:00:00",
     "shape": "triangle",
     "duration_minutes": 2,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CA",
@@ -34884,8 +34884,8 @@ var ufoShapes = [
     "date_time": "2016-10-18T14:20:00",
     "shape": "disk",
     "duration_minutes": 2,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NJ",
@@ -34908,16 +34908,16 @@ var ufoShapes = [
     "date_time": "2016-10-17T07:45:00",
     "shape": "oval",
     "duration_minutes": 2,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "KS",
     "date_time": "2016-10-16T13:30:00",
     "shape": "triangle",
     "duration_minutes": 2,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "PA",
@@ -35020,8 +35020,8 @@ var ufoShapes = [
     "date_time": "2016-10-07T21:30:00",
     "shape": "fireball",
     "duration_minutes": 2,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "ON",
@@ -35068,8 +35068,8 @@ var ufoShapes = [
     "date_time": "2016-10-01T08:33:00",
     "shape": "fireball",
     "duration_minutes": 2,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "GA",
@@ -35180,8 +35180,8 @@ var ufoShapes = [
     "date_time": "2016-09-20T21:00:00",
     "shape": "light",
     "duration_minutes": 2,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "PA",
@@ -35260,8 +35260,8 @@ var ufoShapes = [
     "date_time": "2016-09-14T01:00:00",
     "shape": "triangle",
     "duration_minutes": 2,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "OR",
@@ -35292,8 +35292,8 @@ var ufoShapes = [
     "date_time": "2016-09-10T01:00:00",
     "shape": "circle",
     "duration_minutes": 2,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "OH",
@@ -35340,8 +35340,8 @@ var ufoShapes = [
     "date_time": "2016-09-04T19:55:00",
     "shape": "other",
     "duration_minutes": 2,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "VA",
@@ -35412,8 +35412,8 @@ var ufoShapes = [
     "date_time": "2016-08-26T03:00:00",
     "shape": "disk",
     "duration_minutes": 2,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "GA",
@@ -35428,8 +35428,8 @@ var ufoShapes = [
     "date_time": "2016-08-24T23:30:00",
     "shape": "changing",
     "duration_minutes": 2,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "RI",
@@ -35524,8 +35524,8 @@ var ufoShapes = [
     "date_time": "2016-08-18T06:00:00",
     "shape": "oval",
     "duration_minutes": 2,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "TX",
@@ -35596,8 +35596,8 @@ var ufoShapes = [
     "date_time": "2016-08-12T01:45:00",
     "shape": "light",
     "duration_minutes": 2,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MI",
@@ -35724,8 +35724,8 @@ var ufoShapes = [
     "date_time": "2016-08-02T00:45:00",
     "shape": "light",
     "duration_minutes": 2,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CA",
@@ -35764,8 +35764,8 @@ var ufoShapes = [
     "date_time": "2016-07-31T21:30:00",
     "shape": "light",
     "duration_minutes": 2,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NC",
@@ -35820,8 +35820,8 @@ var ufoShapes = [
     "date_time": "2016-07-27T22:39:00",
     "shape": "circle",
     "duration_minutes": 2,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "ID",
@@ -35900,8 +35900,8 @@ var ufoShapes = [
     "date_time": "2016-07-27T21:00:00",
     "shape": "circle",
     "duration_minutes": 2,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NH",
@@ -35956,8 +35956,8 @@ var ufoShapes = [
     "date_time": "2016-07-24T11:00:00",
     "shape": "rectangle",
     "duration_minutes": 2,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "PA",
@@ -36044,8 +36044,8 @@ var ufoShapes = [
     "date_time": "2016-07-10T09:30:00",
     "shape": "disk",
     "duration_minutes": 2,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NY",
@@ -36084,8 +36084,8 @@ var ufoShapes = [
     "date_time": "2016-07-04T22:00:00",
     "shape": "light",
     "duration_minutes": 2,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "ME",
@@ -36172,24 +36172,24 @@ var ufoShapes = [
     "date_time": "2016-07-02T21:30:00",
     "shape": "fireball",
     "duration_minutes": 2,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MN",
     "date_time": "2016-07-01T22:00:00",
     "shape": "oval",
     "duration_minutes": 2,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "WA",
     "date_time": "2016-07-01T00:00:00",
     "shape": "unknown",
     "duration_minutes": 2,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "WA",
@@ -36236,8 +36236,8 @@ var ufoShapes = [
     "date_time": "2016-06-26T03:20:00",
     "shape": "light",
     "duration_minutes": 2,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "TX",
@@ -36252,8 +36252,8 @@ var ufoShapes = [
     "date_time": "2016-06-25T22:20:00",
     "shape": "sphere",
     "duration_minutes": 2,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MN",
@@ -36268,8 +36268,8 @@ var ufoShapes = [
     "date_time": "2016-06-22T22:00:00",
     "shape": "unknown",
     "duration_minutes": 2,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CT",
@@ -36308,24 +36308,24 @@ var ufoShapes = [
     "date_time": "2016-06-19T21:15:00",
     "shape": "unknown",
     "duration_minutes": 2,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MN",
     "date_time": "2016-06-18T23:13:00",
     "shape": "fireball",
     "duration_minutes": 2,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "AZ",
     "date_time": "2016-06-17T20:05:00",
     "shape": "sphere",
     "duration_minutes": 2,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "SD",
@@ -36340,8 +36340,8 @@ var ufoShapes = [
     "date_time": "2016-06-16T00:50:00",
     "shape": "light",
     "duration_minutes": 2,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "KY",
@@ -36428,8 +36428,8 @@ var ufoShapes = [
     "date_time": "2016-06-04T01:00:00",
     "shape": "light",
     "duration_minutes": 2,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "PA",
@@ -36516,8 +36516,8 @@ var ufoShapes = [
     "date_time": "2016-05-29T21:00:00",
     "shape": "circle",
     "duration_minutes": 2,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "WI",
@@ -36620,8 +36620,8 @@ var ufoShapes = [
     "date_time": "2016-05-19T20:30:00",
     "shape": "light",
     "duration_minutes": 2,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "SC",
@@ -36636,16 +36636,16 @@ var ufoShapes = [
     "date_time": "2016-05-15T21:15:00",
     "shape": "sphere",
     "duration_minutes": 2,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NY",
     "date_time": "2016-05-15T21:00:00",
     "shape": "unknown",
     "duration_minutes": 2,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "UT",
@@ -36732,8 +36732,8 @@ var ufoShapes = [
     "date_time": "2016-05-06T01:30:00",
     "shape": "circle",
     "duration_minutes": 2,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "FL",
@@ -36780,8 +36780,8 @@ var ufoShapes = [
     "date_time": "2016-04-29T21:54:00",
     "shape": "teardrop",
     "duration_minutes": 2,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "SC",
@@ -36804,24 +36804,24 @@ var ufoShapes = [
     "date_time": "2016-04-27T14:45:00",
     "shape": "unknown",
     "duration_minutes": 2,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "SC",
     "date_time": "2016-04-25T22:53:00",
     "shape": "triangle",
     "duration_minutes": 2,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "DE",
     "date_time": "2016-04-21T17:00:00",
     "shape": "disk",
     "duration_minutes": 2,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "FL",
@@ -36884,8 +36884,8 @@ var ufoShapes = [
     "date_time": "2016-04-15T22:00:00",
     "shape": "fireball",
     "duration_minutes": 2,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MA",
@@ -37100,8 +37100,8 @@ var ufoShapes = [
     "date_time": "2016-03-18T21:00:00",
     "shape": "fireball",
     "duration_minutes": 2,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "VA",
@@ -37244,8 +37244,8 @@ var ufoShapes = [
     "date_time": "2016-03-04T05:58:00",
     "shape": "rectangle",
     "duration_minutes": 2,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "OH",
@@ -37260,8 +37260,8 @@ var ufoShapes = [
     "date_time": "2016-03-02T22:50:00",
     "shape": "triangle",
     "duration_minutes": 2,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MD",
@@ -37308,8 +37308,8 @@ var ufoShapes = [
     "date_time": "2016-02-29T00:00:00",
     "shape": "fireball",
     "duration_minutes": 2,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NY",
@@ -37348,8 +37348,8 @@ var ufoShapes = [
     "date_time": "2016-02-25T21:00:00",
     "shape": "light",
     "duration_minutes": 2,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "WI",
@@ -37420,8 +37420,8 @@ var ufoShapes = [
     "date_time": "2016-02-20T05:07:00",
     "shape": "cylinder",
     "duration_minutes": 2,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "AL",
@@ -37476,16 +37476,16 @@ var ufoShapes = [
     "date_time": "2016-02-13T21:30:00",
     "shape": "fireball",
     "duration_minutes": 2,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CA",
     "date_time": "2016-02-13T21:00:00",
     "shape": "sphere",
     "duration_minutes": 2,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "ID",
@@ -37500,8 +37500,8 @@ var ufoShapes = [
     "date_time": "2016-02-13T06:07:00",
     "shape": "light",
     "duration_minutes": 2,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CA",
@@ -37548,8 +37548,8 @@ var ufoShapes = [
     "date_time": "2016-02-09T05:00:00",
     "shape": "rectangle",
     "duration_minutes": 2,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "FL",
@@ -37588,8 +37588,8 @@ var ufoShapes = [
     "date_time": "2016-02-05T20:00:00",
     "shape": "circle",
     "duration_minutes": 2,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "OR",
@@ -37668,8 +37668,8 @@ var ufoShapes = [
     "date_time": "2016-01-24T21:30:00",
     "shape": "fireball",
     "duration_minutes": 2,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NV",
@@ -37748,8 +37748,8 @@ var ufoShapes = [
     "date_time": "2016-01-13T18:05:00",
     "shape": "teardrop",
     "duration_minutes": 2,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "KS",
@@ -37780,8 +37780,8 @@ var ufoShapes = [
     "date_time": "2016-01-10T22:30:00",
     "shape": "diamond",
     "duration_minutes": 2,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CO",
@@ -37812,8 +37812,8 @@ var ufoShapes = [
     "date_time": "2016-01-03T03:25:00",
     "shape": "disk",
     "duration_minutes": 2,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "TN",
@@ -37900,8 +37900,8 @@ var ufoShapes = [
     "date_time": "2015-12-22T20:28:00",
     "shape": "sphere",
     "duration_minutes": 2,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "WA",
@@ -37956,8 +37956,8 @@ var ufoShapes = [
     "date_time": "2015-12-20T13:30:00",
     "shape": "sphere",
     "duration_minutes": 2,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "BC",
@@ -38020,8 +38020,8 @@ var ufoShapes = [
     "date_time": "2015-12-09T21:10:00",
     "shape": "triangle",
     "duration_minutes": 2,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "AL",
@@ -38044,24 +38044,24 @@ var ufoShapes = [
     "date_time": "2015-12-08T15:00:00",
     "shape": "other",
     "duration_minutes": 2,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "OH",
     "date_time": "2015-12-07T22:00:00",
     "shape": "fireball",
     "duration_minutes": 2,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "Unknown",
     "date_time": "2015-12-07T05:00:00",
     "shape": "flash",
     "duration_minutes": 2,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "ON",
@@ -38092,8 +38092,8 @@ var ufoShapes = [
     "date_time": "2015-12-04T22:00:00",
     "shape": "rectangle",
     "duration_minutes": 2,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CA",
@@ -38172,8 +38172,8 @@ var ufoShapes = [
     "date_time": "2015-11-23T19:00:00",
     "shape": "fireball",
     "duration_minutes": 2,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CA",
@@ -38196,8 +38196,8 @@ var ufoShapes = [
     "date_time": "2015-11-21T01:30:00",
     "shape": "egg",
     "duration_minutes": 2,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NC",
@@ -38292,8 +38292,8 @@ var ufoShapes = [
     "date_time": "2015-11-08T19:40:00",
     "shape": "light",
     "duration_minutes": 2,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CA",
@@ -38308,8 +38308,8 @@ var ufoShapes = [
     "date_time": "2015-11-07T23:50:00",
     "shape": "other",
     "duration_minutes": 2,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "KS",
@@ -38396,8 +38396,8 @@ var ufoShapes = [
     "date_time": "2015-11-07T18:05:00",
     "shape": "light",
     "duration_minutes": 2,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NV",
@@ -38420,8 +38420,8 @@ var ufoShapes = [
     "date_time": "2015-11-07T18:02:00",
     "shape": "light",
     "duration_minutes": 2,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CA",
@@ -38524,8 +38524,8 @@ var ufoShapes = [
     "date_time": "2015-11-06T19:30:00",
     "shape": "light",
     "duration_minutes": 2,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CA",
@@ -38548,8 +38548,8 @@ var ufoShapes = [
     "date_time": "2015-11-05T21:00:00",
     "shape": "unknown",
     "duration_minutes": 2,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "PA",
@@ -38564,16 +38564,16 @@ var ufoShapes = [
     "date_time": "2015-11-05T19:00:00",
     "shape": "triangle",
     "duration_minutes": 2,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CA",
     "date_time": "2015-11-05T18:00:00",
     "shape": "light",
     "duration_minutes": 2,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "WI",
@@ -38588,16 +38588,16 @@ var ufoShapes = [
     "date_time": "2015-11-02T16:00:00",
     "shape": "light",
     "duration_minutes": 2,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MO",
     "date_time": "2015-11-01T21:00:00",
     "shape": "triangle",
     "duration_minutes": 2,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "WI",
@@ -38620,8 +38620,8 @@ var ufoShapes = [
     "date_time": "2015-10-31T19:00:00",
     "shape": "diamond",
     "duration_minutes": 2,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NY",
@@ -38636,8 +38636,8 @@ var ufoShapes = [
     "date_time": "2015-10-29T19:15:00",
     "shape": "light",
     "duration_minutes": 2,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CA",
@@ -38684,8 +38684,8 @@ var ufoShapes = [
     "date_time": "2015-10-24T20:45:00",
     "shape": "light",
     "duration_minutes": 2,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NY",
@@ -38716,16 +38716,16 @@ var ufoShapes = [
     "date_time": "2015-10-19T19:45:00",
     "shape": "light",
     "duration_minutes": 2,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NY",
     "date_time": "2015-10-18T21:00:00",
     "shape": "rectangle",
     "duration_minutes": 2,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NV",
@@ -38836,8 +38836,8 @@ var ufoShapes = [
     "date_time": "2015-10-10T22:10:00",
     "shape": "sphere",
     "duration_minutes": 2,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "GA",
@@ -38948,8 +38948,8 @@ var ufoShapes = [
     "date_time": "2015-10-04T21:30:00",
     "shape": "circle",
     "duration_minutes": 2,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "KY",
@@ -39052,8 +39052,8 @@ var ufoShapes = [
     "date_time": "2015-09-27T18:34:00",
     "shape": "sphere",
     "duration_minutes": 2,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CA",
@@ -39100,8 +39100,8 @@ var ufoShapes = [
     "date_time": "2015-09-25T04:00:00",
     "shape": "unknown",
     "duration_minutes": 2,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "ON",
@@ -39276,16 +39276,16 @@ var ufoShapes = [
     "date_time": "2015-09-15T19:00:00",
     "shape": "light",
     "duration_minutes": 2,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NC",
     "date_time": "2015-09-14T22:30:00",
     "shape": "fireball",
     "duration_minutes": 2,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NY",
@@ -39372,8 +39372,8 @@ var ufoShapes = [
     "date_time": "2015-09-08T09:15:00",
     "shape": "rectangle",
     "duration_minutes": 2,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NY",
@@ -39428,8 +39428,8 @@ var ufoShapes = [
     "date_time": "2015-09-04T20:17:00",
     "shape": "sphere",
     "duration_minutes": 2,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NV",
@@ -39444,8 +39444,8 @@ var ufoShapes = [
     "date_time": "2015-09-02T21:57:00",
     "shape": "oval",
     "duration_minutes": 2,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NC",
@@ -39556,8 +39556,8 @@ var ufoShapes = [
     "date_time": "2015-08-26T21:00:00",
     "shape": "fireball",
     "duration_minutes": 2,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "PA",
@@ -39628,8 +39628,8 @@ var ufoShapes = [
     "date_time": "2015-08-23T21:08:00",
     "shape": "diamond",
     "duration_minutes": 2,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "FL",
@@ -39708,8 +39708,8 @@ var ufoShapes = [
     "date_time": "2015-08-17T05:25:00",
     "shape": "other",
     "duration_minutes": 2,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NY",
@@ -39724,8 +39724,8 @@ var ufoShapes = [
     "date_time": "2015-08-15T23:40:00",
     "shape": "circle",
     "duration_minutes": 2,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "OR",
@@ -39796,24 +39796,24 @@ var ufoShapes = [
     "date_time": "2015-08-13T21:00:00",
     "shape": "sphere",
     "duration_minutes": 2,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "PA",
     "date_time": "2015-08-13T20:00:00",
     "shape": "oval",
     "duration_minutes": 2,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "Unknown",
     "date_time": "2015-08-12T22:30:00",
     "shape": "light",
     "duration_minutes": 2,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MB",
@@ -39916,8 +39916,8 @@ var ufoShapes = [
     "date_time": "2015-08-04T21:56:00",
     "shape": "triangle",
     "duration_minutes": 2,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CO",
@@ -39956,8 +39956,8 @@ var ufoShapes = [
     "date_time": "2015-08-01T22:15:00",
     "shape": "light",
     "duration_minutes": 2,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "PA",
@@ -40116,8 +40116,8 @@ var ufoShapes = [
     "date_time": "2015-07-24T22:44:00",
     "shape": "light",
     "duration_minutes": 2,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NC",
@@ -40148,8 +40148,8 @@ var ufoShapes = [
     "date_time": "2015-07-24T01:00:00",
     "shape": "fireball",
     "duration_minutes": 2,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CA",
@@ -40164,8 +40164,8 @@ var ufoShapes = [
     "date_time": "2015-07-23T20:20:00",
     "shape": "flash",
     "duration_minutes": 2,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "KS",
@@ -40244,8 +40244,8 @@ var ufoShapes = [
     "date_time": "2015-07-17T11:15:00",
     "shape": "light",
     "duration_minutes": 2,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MD",
@@ -40364,8 +40364,8 @@ var ufoShapes = [
     "date_time": "2015-07-05T21:45:00",
     "shape": "disk",
     "duration_minutes": 2,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NY",
@@ -40412,8 +40412,8 @@ var ufoShapes = [
     "date_time": "2015-07-04T23:00:00",
     "shape": "oval",
     "duration_minutes": 2,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "KY",
@@ -40532,8 +40532,8 @@ var ufoShapes = [
     "date_time": "2015-07-04T00:00:00",
     "shape": "sphere",
     "duration_minutes": 2,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CO",
@@ -40588,8 +40588,8 @@ var ufoShapes = [
     "date_time": "2015-07-01T13:38:00",
     "shape": "oval",
     "duration_minutes": 2,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "TX",
@@ -40700,8 +40700,8 @@ var ufoShapes = [
     "date_time": "2015-06-22T10:00:00",
     "shape": "other",
     "duration_minutes": 2,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "ON",
@@ -40740,8 +40740,8 @@ var ufoShapes = [
     "date_time": "2015-06-17T20:23:00",
     "shape": "circle",
     "duration_minutes": 2,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "PA",
@@ -40788,8 +40788,8 @@ var ufoShapes = [
     "date_time": "2015-06-11T11:30:00",
     "shape": "sphere",
     "duration_minutes": 2,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "AB",
@@ -40820,8 +40820,8 @@ var ufoShapes = [
     "date_time": "2015-06-07T00:30:00",
     "shape": "flash",
     "duration_minutes": 2,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "IL",
@@ -41004,8 +41004,8 @@ var ufoShapes = [
     "date_time": "2015-05-18T02:15:00",
     "shape": "disk",
     "duration_minutes": 2,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "VA",
@@ -41132,8 +41132,8 @@ var ufoShapes = [
     "date_time": "2015-05-01T21:55:00",
     "shape": "light",
     "duration_minutes": 2,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NM",
@@ -41156,8 +41156,8 @@ var ufoShapes = [
     "date_time": "2015-04-27T20:11:00",
     "shape": "unknown",
     "duration_minutes": 2,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "PA",
@@ -41324,16 +41324,16 @@ var ufoShapes = [
     "date_time": "2015-04-08T05:00:00",
     "shape": "rectangle",
     "duration_minutes": 2,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "PA",
     "date_time": "2015-04-07T20:22:00",
     "shape": "sphere",
     "duration_minutes": 2,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "VT",
@@ -41500,8 +41500,8 @@ var ufoShapes = [
     "date_time": "2015-03-20T00:52:00",
     "shape": "flash",
     "duration_minutes": 2,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CA",
@@ -41516,8 +41516,8 @@ var ufoShapes = [
     "date_time": "2015-03-18T20:56:00",
     "shape": "other",
     "duration_minutes": 2,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CA",
@@ -41580,40 +41580,40 @@ var ufoShapes = [
     "date_time": "2015-03-14T17:00:00",
     "shape": "cigar",
     "duration_minutes": 2,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "FL",
     "date_time": "2015-03-12T23:30:00",
     "shape": "disk",
     "duration_minutes": 2,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "FL",
     "date_time": "2015-03-12T23:30:00",
     "shape": "disk",
     "duration_minutes": 2,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "FL",
     "date_time": "2015-03-12T23:30:00",
     "shape": "disk",
     "duration_minutes": 2,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "FL",
     "date_time": "2015-03-12T22:45:00",
     "shape": "fireball",
     "duration_minutes": 2,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CA",
@@ -41708,8 +41708,8 @@ var ufoShapes = [
     "date_time": "2015-03-05T21:00:00",
     "shape": "chevron",
     "duration_minutes": 2,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "LA",
@@ -41740,8 +41740,8 @@ var ufoShapes = [
     "date_time": "2015-03-01T22:00:00",
     "shape": "unknown",
     "duration_minutes": 2,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "OH",
@@ -41948,8 +41948,8 @@ var ufoShapes = [
     "date_time": "2015-01-31T20:14:00",
     "shape": "rectangle",
     "duration_minutes": 2,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NJ",
@@ -41980,8 +41980,8 @@ var ufoShapes = [
     "date_time": "2015-01-26T21:00:00",
     "shape": "cone",
     "duration_minutes": 2,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NS",
@@ -42068,8 +42068,8 @@ var ufoShapes = [
     "date_time": "2015-01-21T21:30:00",
     "shape": "sphere",
     "duration_minutes": 2,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "OR",
@@ -42084,8 +42084,8 @@ var ufoShapes = [
     "date_time": "2015-01-20T21:00:00",
     "shape": "light",
     "duration_minutes": 2,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NC",
@@ -42132,8 +42132,8 @@ var ufoShapes = [
     "date_time": "2015-01-16T07:15:00",
     "shape": "light",
     "duration_minutes": 2,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NV",
@@ -42156,16 +42156,16 @@ var ufoShapes = [
     "date_time": "2015-01-14T21:30:00",
     "shape": "disk",
     "duration_minutes": 2,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "Unknown",
     "date_time": "2015-01-14T17:30:00",
     "shape": "light",
     "duration_minutes": 2,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "AZ",
@@ -42332,8 +42332,8 @@ var ufoShapes = [
     "date_time": "2015-01-01T05:45:00",
     "shape": "disk",
     "duration_minutes": 2,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CA",
@@ -42404,8 +42404,8 @@ var ufoShapes = [
     "date_time": "2015-02-21T19:30:00",
     "shape": "sphere",
     "duration_minutes": 3,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CA",
@@ -42468,8 +42468,8 @@ var ufoShapes = [
     "date_time": "2016-01-21T22:00:00",
     "shape": "triangle",
     "duration_minutes": 3,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "SC",
@@ -42660,8 +42660,8 @@ var ufoShapes = [
     "date_time": "2015-10-11T05:22:00",
     "shape": "unknown",
     "duration_minutes": 3,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MN",
@@ -42676,8 +42676,8 @@ var ufoShapes = [
     "date_time": "2015-06-15T21:40:00",
     "shape": "fireball",
     "duration_minutes": 3,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "PA",
@@ -42716,8 +42716,8 @@ var ufoShapes = [
     "date_time": "2016-12-31T22:00:00",
     "shape": "circle",
     "duration_minutes": 3,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MA",
@@ -42772,8 +42772,8 @@ var ufoShapes = [
     "date_time": "2016-12-25T00:15:00",
     "shape": "sphere",
     "duration_minutes": 3,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CA",
@@ -42868,8 +42868,8 @@ var ufoShapes = [
     "date_time": "2016-11-17T19:24:00",
     "shape": "triangle",
     "duration_minutes": 3,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "KY",
@@ -42916,8 +42916,8 @@ var ufoShapes = [
     "date_time": "2016-11-13T19:30:00",
     "shape": "circle",
     "duration_minutes": 3,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NC",
@@ -42980,8 +42980,8 @@ var ufoShapes = [
     "date_time": "2016-11-05T06:45:00",
     "shape": "other",
     "duration_minutes": 3,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NH",
@@ -43012,16 +43012,16 @@ var ufoShapes = [
     "date_time": "2016-10-26T19:10:00",
     "shape": "other",
     "duration_minutes": 3,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "AZ",
     "date_time": "2016-10-25T18:35:00",
     "shape": "formation",
     "duration_minutes": 3,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "GA",
@@ -43148,8 +43148,8 @@ var ufoShapes = [
     "date_time": "2016-10-08T20:48:00",
     "shape": "formation",
     "duration_minutes": 3,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "TN",
@@ -43188,8 +43188,8 @@ var ufoShapes = [
     "date_time": "2016-10-01T22:20:00",
     "shape": "chevron",
     "duration_minutes": 3,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "LA",
@@ -43228,8 +43228,8 @@ var ufoShapes = [
     "date_time": "2016-09-30T19:10:00",
     "shape": "light",
     "duration_minutes": 3,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "GA",
@@ -43252,8 +43252,8 @@ var ufoShapes = [
     "date_time": "2016-09-26T00:00:00",
     "shape": "light",
     "duration_minutes": 3,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CA",
@@ -43372,8 +43372,8 @@ var ufoShapes = [
     "date_time": "2016-09-11T20:00:00",
     "shape": "other",
     "duration_minutes": 3,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "PA",
@@ -43492,8 +43492,8 @@ var ufoShapes = [
     "date_time": "2016-08-29T22:00:00",
     "shape": "rectangle",
     "duration_minutes": 3,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MO",
@@ -43508,8 +43508,8 @@ var ufoShapes = [
     "date_time": "2016-08-28T20:00:00",
     "shape": "sphere",
     "duration_minutes": 3,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "ON",
@@ -43556,16 +43556,16 @@ var ufoShapes = [
     "date_time": "2016-08-24T20:00:00",
     "shape": "oval",
     "duration_minutes": 3,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MD",
     "date_time": "2016-08-24T01:10:00",
     "shape": "fireball",
     "duration_minutes": 3,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CO",
@@ -43596,8 +43596,8 @@ var ufoShapes = [
     "date_time": "2016-08-19T21:45:00",
     "shape": "circle",
     "duration_minutes": 3,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "FL",
@@ -43700,8 +43700,8 @@ var ufoShapes = [
     "date_time": "2016-08-01T22:30:00",
     "shape": "light",
     "duration_minutes": 3,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NE",
@@ -43724,8 +43724,8 @@ var ufoShapes = [
     "date_time": "2016-07-27T22:40:00",
     "shape": "changing",
     "duration_minutes": 3,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "UT",
@@ -43804,8 +43804,8 @@ var ufoShapes = [
     "date_time": "2016-07-23T22:10:00",
     "shape": "formation",
     "duration_minutes": 3,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "RI",
@@ -43908,8 +43908,8 @@ var ufoShapes = [
     "date_time": "2016-07-17T21:00:00",
     "shape": "circle",
     "duration_minutes": 3,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "VA",
@@ -43924,24 +43924,24 @@ var ufoShapes = [
     "date_time": "2016-07-16T19:50:00",
     "shape": "disk",
     "duration_minutes": 3,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NC",
     "date_time": "2016-07-15T23:00:00",
     "shape": "sphere",
     "duration_minutes": 3,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "OR",
     "date_time": "2016-07-15T22:30:00",
     "shape": "triangle",
     "duration_minutes": 3,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "VA",
@@ -43996,16 +43996,16 @@ var ufoShapes = [
     "date_time": "2016-07-04T20:30:00",
     "shape": "sphere",
     "duration_minutes": 3,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "FL",
     "date_time": "2016-07-04T20:30:00",
     "shape": "sphere",
     "duration_minutes": 3,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "GA",
@@ -44060,24 +44060,24 @@ var ufoShapes = [
     "date_time": "2016-07-01T20:00:00",
     "shape": "rectangle",
     "duration_minutes": 3,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "Unknown",
     "date_time": "2016-07-01T12:36:00",
     "shape": "flash",
     "duration_minutes": 3,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NC",
     "date_time": "2016-07-01T02:55:00",
     "shape": "light",
     "duration_minutes": 3,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NJ",
@@ -44132,8 +44132,8 @@ var ufoShapes = [
     "date_time": "2016-06-22T01:35:00",
     "shape": "triangle",
     "duration_minutes": 3,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "PA",
@@ -44188,8 +44188,8 @@ var ufoShapes = [
     "date_time": "2016-06-17T21:10:00",
     "shape": "light",
     "duration_minutes": 3,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NJ",
@@ -44244,8 +44244,8 @@ var ufoShapes = [
     "date_time": "2016-06-10T22:30:00",
     "shape": "light",
     "duration_minutes": 3,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "WV",
@@ -44300,8 +44300,8 @@ var ufoShapes = [
     "date_time": "2016-06-04T21:20:00",
     "shape": "fireball",
     "duration_minutes": 3,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "ME",
@@ -44332,8 +44332,8 @@ var ufoShapes = [
     "date_time": "2016-05-28T22:00:00",
     "shape": "circle",
     "duration_minutes": 3,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "FL",
@@ -44364,8 +44364,8 @@ var ufoShapes = [
     "date_time": "2016-05-24T23:30:00",
     "shape": "light",
     "duration_minutes": 3,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "WI",
@@ -44420,8 +44420,8 @@ var ufoShapes = [
     "date_time": "2016-05-13T21:20:00",
     "shape": "circle",
     "duration_minutes": 3,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "VA",
@@ -44468,8 +44468,8 @@ var ufoShapes = [
     "date_time": "2016-05-02T08:20:00",
     "shape": "disk",
     "duration_minutes": 3,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "PA",
@@ -44492,8 +44492,8 @@ var ufoShapes = [
     "date_time": "2016-04-28T21:15:00",
     "shape": "formation",
     "duration_minutes": 3,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NC",
@@ -44524,16 +44524,16 @@ var ufoShapes = [
     "date_time": "2016-04-24T15:00:00",
     "shape": "cone",
     "duration_minutes": 3,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "TX",
     "date_time": "2016-04-24T01:00:00",
     "shape": "triangle",
     "duration_minutes": 3,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "GA",
@@ -44660,8 +44660,8 @@ var ufoShapes = [
     "date_time": "2016-04-10T23:00:00",
     "shape": "light",
     "duration_minutes": 3,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "FL",
@@ -44700,16 +44700,16 @@ var ufoShapes = [
     "date_time": "2016-04-03T12:20:00",
     "shape": "formation",
     "duration_minutes": 3,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "OK",
     "date_time": "2016-04-01T23:30:00",
     "shape": "disk",
     "duration_minutes": 3,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MO",
@@ -44764,8 +44764,8 @@ var ufoShapes = [
     "date_time": "2016-03-28T21:05:00",
     "shape": "flash",
     "duration_minutes": 3,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CO",
@@ -44964,8 +44964,8 @@ var ufoShapes = [
     "date_time": "2016-02-18T19:00:00",
     "shape": "other",
     "duration_minutes": 3,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "VA",
@@ -45004,8 +45004,8 @@ var ufoShapes = [
     "date_time": "2016-02-10T06:15:00",
     "shape": "fireball",
     "duration_minutes": 3,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "WA",
@@ -45044,8 +45044,8 @@ var ufoShapes = [
     "date_time": "2016-02-08T19:00:00",
     "shape": "other",
     "duration_minutes": 3,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "VA",
@@ -45124,8 +45124,8 @@ var ufoShapes = [
     "date_time": "2016-01-29T21:00:00",
     "shape": "light",
     "duration_minutes": 3,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NM",
@@ -45148,8 +45148,8 @@ var ufoShapes = [
     "date_time": "2016-01-27T19:30:00",
     "shape": "circle",
     "duration_minutes": 3,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NY",
@@ -45188,8 +45188,8 @@ var ufoShapes = [
     "date_time": "2016-01-18T20:30:00",
     "shape": "formation",
     "duration_minutes": 3,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "PA",
@@ -45244,8 +45244,8 @@ var ufoShapes = [
     "date_time": "2016-01-11T22:00:00",
     "shape": "rectangle",
     "duration_minutes": 3,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "ID",
@@ -45260,8 +45260,8 @@ var ufoShapes = [
     "date_time": "2016-01-07T20:00:00",
     "shape": "fireball",
     "duration_minutes": 3,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "WA",
@@ -45276,8 +45276,8 @@ var ufoShapes = [
     "date_time": "2016-01-01T19:45:00",
     "shape": "other",
     "duration_minutes": 3,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MO",
@@ -45300,8 +45300,8 @@ var ufoShapes = [
     "date_time": "2016-01-01T00:00:00",
     "shape": "sphere",
     "duration_minutes": 3,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "AB",
@@ -45468,8 +45468,8 @@ var ufoShapes = [
     "date_time": "2015-12-10T19:00:00",
     "shape": "sphere",
     "duration_minutes": 3,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "WA",
@@ -45500,8 +45500,8 @@ var ufoShapes = [
     "date_time": "2015-11-28T21:50:00",
     "shape": "light",
     "duration_minutes": 3,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "AL",
@@ -45548,8 +45548,8 @@ var ufoShapes = [
     "date_time": "2015-11-25T21:00:00",
     "shape": "triangle",
     "duration_minutes": 3,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CT",
@@ -45748,16 +45748,16 @@ var ufoShapes = [
     "date_time": "2015-11-07T19:00:00",
     "shape": "circle",
     "duration_minutes": 3,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "AZ",
     "date_time": "2015-11-07T19:00:00",
     "shape": "light",
     "duration_minutes": 3,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CA",
@@ -45876,8 +45876,8 @@ var ufoShapes = [
     "date_time": "2015-11-07T18:00:00",
     "shape": "oval",
     "duration_minutes": 3,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NV",
@@ -45924,8 +45924,8 @@ var ufoShapes = [
     "date_time": "2015-11-02T18:00:00",
     "shape": "triangle",
     "duration_minutes": 3,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "TX",
@@ -45948,8 +45948,8 @@ var ufoShapes = [
     "date_time": "2015-11-01T18:10:00",
     "shape": "light",
     "duration_minutes": 3,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "AK",
@@ -45980,8 +45980,8 @@ var ufoShapes = [
     "date_time": "2015-10-31T15:00:00",
     "shape": "cigar",
     "duration_minutes": 3,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "AZ",
@@ -46036,8 +46036,8 @@ var ufoShapes = [
     "date_time": "2015-10-24T19:54:00",
     "shape": "circle",
     "duration_minutes": 3,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "KY",
@@ -46164,8 +46164,8 @@ var ufoShapes = [
     "date_time": "2015-10-15T23:00:00",
     "shape": "unknown",
     "duration_minutes": 3,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MS",
@@ -46228,8 +46228,8 @@ var ufoShapes = [
     "date_time": "2015-10-03T20:16:00",
     "shape": "other",
     "duration_minutes": 3,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "AZ",
@@ -46244,8 +46244,8 @@ var ufoShapes = [
     "date_time": "2015-10-02T17:41:00",
     "shape": "disk",
     "duration_minutes": 3,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "IL",
@@ -46372,8 +46372,8 @@ var ufoShapes = [
     "date_time": "2015-09-20T18:00:00",
     "shape": "other",
     "duration_minutes": 3,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MI",
@@ -46412,8 +46412,8 @@ var ufoShapes = [
     "date_time": "2015-09-15T22:00:00",
     "shape": "light",
     "duration_minutes": 3,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MT",
@@ -46428,8 +46428,8 @@ var ufoShapes = [
     "date_time": "2015-09-14T21:00:00",
     "shape": "cigar",
     "duration_minutes": 3,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MI",
@@ -46476,8 +46476,8 @@ var ufoShapes = [
     "date_time": "2015-09-11T21:55:00",
     "shape": "triangle",
     "duration_minutes": 3,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "IL",
@@ -46500,8 +46500,8 @@ var ufoShapes = [
     "date_time": "2015-09-09T07:45:00",
     "shape": "light",
     "duration_minutes": 3,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NY",
@@ -46700,8 +46700,8 @@ var ufoShapes = [
     "date_time": "2015-08-23T00:15:00",
     "shape": "egg",
     "duration_minutes": 3,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "PA",
@@ -46772,8 +46772,8 @@ var ufoShapes = [
     "date_time": "2015-08-17T22:30:00",
     "shape": "light",
     "duration_minutes": 3,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "GA",
@@ -46796,8 +46796,8 @@ var ufoShapes = [
     "date_time": "2015-08-15T21:30:00",
     "shape": "unknown",
     "duration_minutes": 3,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "VA",
@@ -46836,8 +46836,8 @@ var ufoShapes = [
     "date_time": "2015-08-12T22:30:00",
     "shape": "circle",
     "duration_minutes": 3,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NV",
@@ -46932,8 +46932,8 @@ var ufoShapes = [
     "date_time": "2015-08-05T21:00:00",
     "shape": "triangle",
     "duration_minutes": 3,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "WY",
@@ -46948,8 +46948,8 @@ var ufoShapes = [
     "date_time": "2015-08-04T18:00:00",
     "shape": "other",
     "duration_minutes": 3,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NJ",
@@ -46972,8 +46972,8 @@ var ufoShapes = [
     "date_time": "2015-07-31T23:00:00",
     "shape": "light",
     "duration_minutes": 3,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "OR",
@@ -46996,8 +46996,8 @@ var ufoShapes = [
     "date_time": "2015-07-30T22:11:00",
     "shape": "circle",
     "duration_minutes": 3,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NC",
@@ -47028,8 +47028,8 @@ var ufoShapes = [
     "date_time": "2015-07-26T00:05:00",
     "shape": "circle",
     "duration_minutes": 3,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "WI",
@@ -47060,8 +47060,8 @@ var ufoShapes = [
     "date_time": "2015-07-22T23:30:00",
     "shape": "circle",
     "duration_minutes": 3,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "FL",
@@ -47108,8 +47108,8 @@ var ufoShapes = [
     "date_time": "2015-07-18T21:30:00",
     "shape": "triangle",
     "duration_minutes": 3,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "FL",
@@ -47124,8 +47124,8 @@ var ufoShapes = [
     "date_time": "2015-07-13T22:00:00",
     "shape": "oval",
     "duration_minutes": 3,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "IL",
@@ -47212,8 +47212,8 @@ var ufoShapes = [
     "date_time": "2015-07-07T11:20:00",
     "shape": "unknown",
     "duration_minutes": 3,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "ME",
@@ -47308,8 +47308,8 @@ var ufoShapes = [
     "date_time": "2015-07-04T22:00:00",
     "shape": "cross",
     "duration_minutes": 3,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "ON",
@@ -47436,8 +47436,8 @@ var ufoShapes = [
     "date_time": "2015-06-27T21:45:00",
     "shape": "formation",
     "duration_minutes": 3,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "GA",
@@ -47460,8 +47460,8 @@ var ufoShapes = [
     "date_time": "2015-06-24T23:10:00",
     "shape": "fireball",
     "duration_minutes": 3,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "TX",
@@ -47476,16 +47476,16 @@ var ufoShapes = [
     "date_time": "2015-06-22T23:55:00",
     "shape": "unknown",
     "duration_minutes": 3,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MN",
     "date_time": "2015-06-22T23:00:00",
     "shape": "cone",
     "duration_minutes": 3,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "TN",
@@ -47572,8 +47572,8 @@ var ufoShapes = [
     "date_time": "2015-06-15T21:25:00",
     "shape": "fireball",
     "duration_minutes": 3,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "AZ",
@@ -47604,8 +47604,8 @@ var ufoShapes = [
     "date_time": "2015-06-09T23:30:00",
     "shape": "sphere",
     "duration_minutes": 3,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "OH",
@@ -47644,24 +47644,24 @@ var ufoShapes = [
     "date_time": "2015-06-05T21:00:00",
     "shape": "fireball",
     "duration_minutes": 3,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NC",
     "date_time": "2015-06-05T20:20:00",
     "shape": "chevron",
     "duration_minutes": 3,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NY",
     "date_time": "2015-06-03T21:45:00",
     "shape": "light",
     "duration_minutes": 3,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "GA",
@@ -47676,8 +47676,8 @@ var ufoShapes = [
     "date_time": "2015-06-01T22:30:00",
     "shape": "light",
     "duration_minutes": 3,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "BC",
@@ -47788,8 +47788,8 @@ var ufoShapes = [
     "date_time": "2015-05-17T23:00:00",
     "shape": "light",
     "duration_minutes": 3,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "OH",
@@ -47868,8 +47868,8 @@ var ufoShapes = [
     "date_time": "2015-05-03T22:40:00",
     "shape": "light",
     "duration_minutes": 3,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MT",
@@ -47932,8 +47932,8 @@ var ufoShapes = [
     "date_time": "2015-04-25T00:35:00",
     "shape": "triangle",
     "duration_minutes": 3,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "IN",
@@ -47972,8 +47972,8 @@ var ufoShapes = [
     "date_time": "2015-04-18T20:45:00",
     "shape": "fireball",
     "duration_minutes": 3,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "WA",
@@ -48012,8 +48012,8 @@ var ufoShapes = [
     "date_time": "2015-04-14T21:45:00",
     "shape": "disk",
     "duration_minutes": 3,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "AZ",
@@ -48036,16 +48036,16 @@ var ufoShapes = [
     "date_time": "2015-04-12T01:30:00",
     "shape": "triangle",
     "duration_minutes": 3,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "TN",
     "date_time": "2015-04-10T21:00:00",
     "shape": "triangle",
     "duration_minutes": 3,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "AB",
@@ -48124,8 +48124,8 @@ var ufoShapes = [
     "date_time": "2015-03-31T05:45:00",
     "shape": "flash",
     "duration_minutes": 3,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "GA",
@@ -48148,8 +48148,8 @@ var ufoShapes = [
     "date_time": "2015-03-30T09:48:00",
     "shape": "cylinder",
     "duration_minutes": 3,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "OR",
@@ -48380,8 +48380,8 @@ var ufoShapes = [
     "date_time": "2015-03-02T21:00:00",
     "shape": "light",
     "duration_minutes": 3,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "FL",
@@ -48476,16 +48476,16 @@ var ufoShapes = [
     "date_time": "2015-02-18T23:00:00",
     "shape": "egg",
     "duration_minutes": 3,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NJ",
     "date_time": "2015-02-18T21:00:00",
     "shape": "formation",
     "duration_minutes": 3,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "AZ",
@@ -48540,8 +48540,8 @@ var ufoShapes = [
     "date_time": "2015-02-09T06:48:00",
     "shape": "unknown",
     "duration_minutes": 3,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "FL",
@@ -48660,8 +48660,8 @@ var ufoShapes = [
     "date_time": "2015-01-18T22:48:00",
     "shape": "formation",
     "duration_minutes": 3,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "FL",
@@ -48684,16 +48684,16 @@ var ufoShapes = [
     "date_time": "2015-01-18T20:15:00",
     "shape": "fireball",
     "duration_minutes": 3,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "Unknown",
     "date_time": "2015-01-17T22:00:00",
     "shape": "cigar",
     "duration_minutes": 3,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MN",
@@ -48780,16 +48780,16 @@ var ufoShapes = [
     "date_time": "2015-01-10T20:30:00",
     "shape": "sphere",
     "duration_minutes": 3,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "Unknown",
     "date_time": "2015-01-08T23:13:00",
     "shape": "circle",
     "duration_minutes": 3,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MT",
@@ -48804,8 +48804,8 @@ var ufoShapes = [
     "date_time": "2015-01-08T00:30:00",
     "shape": "disk",
     "duration_minutes": 3,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "AK",
@@ -48820,8 +48820,8 @@ var ufoShapes = [
     "date_time": "2015-01-05T23:00:00",
     "shape": "flash",
     "duration_minutes": 3,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "GA",
@@ -49004,8 +49004,8 @@ var ufoShapes = [
     "date_time": "2016-10-30T20:00:00",
     "shape": "chevron",
     "duration_minutes": 3,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "IL",
@@ -49108,8 +49108,8 @@ var ufoShapes = [
     "date_time": "2015-07-02T11:00:00",
     "shape": "changing",
     "duration_minutes": 3,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "ID",
@@ -49124,8 +49124,8 @@ var ufoShapes = [
     "date_time": "2015-01-26T19:00:00",
     "shape": "formation",
     "duration_minutes": 3,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "AZ",
@@ -49148,8 +49148,8 @@ var ufoShapes = [
     "date_time": "2015-08-08T05:15:00",
     "shape": "circle",
     "duration_minutes": 3,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "IN",
@@ -49180,8 +49180,8 @@ var ufoShapes = [
     "date_time": "2016-06-04T20:46:00",
     "shape": "light",
     "duration_minutes": 4,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NE",
@@ -49348,8 +49348,8 @@ var ufoShapes = [
     "date_time": "2016-11-02T20:11:00",
     "shape": "flash",
     "duration_minutes": 4,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CA",
@@ -49428,8 +49428,8 @@ var ufoShapes = [
     "date_time": "2016-10-16T19:35:00",
     "shape": "light",
     "duration_minutes": 4,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "AZ",
@@ -49524,8 +49524,8 @@ var ufoShapes = [
     "date_time": "2016-09-24T20:45:00",
     "shape": "unknown",
     "duration_minutes": 4,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "WA",
@@ -49572,8 +49572,8 @@ var ufoShapes = [
     "date_time": "2016-09-11T11:00:00",
     "shape": "cigar",
     "duration_minutes": 4,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MB",
@@ -49596,8 +49596,8 @@ var ufoShapes = [
     "date_time": "2016-09-06T20:40:00",
     "shape": "light",
     "duration_minutes": 4,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "IL",
@@ -49708,8 +49708,8 @@ var ufoShapes = [
     "date_time": "2016-07-18T00:25:00",
     "shape": "fireball",
     "duration_minutes": 4,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "ME",
@@ -49772,8 +49772,8 @@ var ufoShapes = [
     "date_time": "2016-07-04T22:25:00",
     "shape": "unknown",
     "duration_minutes": 4,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NC",
@@ -49796,8 +49796,8 @@ var ufoShapes = [
     "date_time": "2016-06-30T05:20:00",
     "shape": "other",
     "duration_minutes": 4,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "IL",
@@ -50004,16 +50004,16 @@ var ufoShapes = [
     "date_time": "2016-02-28T05:20:00",
     "shape": "light",
     "duration_minutes": 4,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "OR",
     "date_time": "2016-02-24T20:45:00",
     "shape": "disk",
     "duration_minutes": 4,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MI",
@@ -50044,8 +50044,8 @@ var ufoShapes = [
     "date_time": "2016-02-17T19:44:00",
     "shape": "sphere",
     "duration_minutes": 4,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "WA",
@@ -50068,16 +50068,16 @@ var ufoShapes = [
     "date_time": "2016-02-05T20:00:00",
     "shape": "unknown",
     "duration_minutes": 4,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "TN",
     "date_time": "2016-02-03T05:28:00",
     "shape": "circle",
     "duration_minutes": 4,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "OR",
@@ -50116,8 +50116,8 @@ var ufoShapes = [
     "date_time": "2016-01-21T03:00:00",
     "shape": "fireball",
     "duration_minutes": 4,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NM",
@@ -50132,8 +50132,8 @@ var ufoShapes = [
     "date_time": "2016-01-01T00:15:00",
     "shape": "circle",
     "duration_minutes": 4,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "ON",
@@ -50188,8 +50188,8 @@ var ufoShapes = [
     "date_time": "2015-12-16T23:54:00",
     "shape": "light",
     "duration_minutes": 4,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MI",
@@ -50244,8 +50244,8 @@ var ufoShapes = [
     "date_time": "2015-11-07T22:47:00",
     "shape": "formation",
     "duration_minutes": 4,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "ID",
@@ -50284,8 +50284,8 @@ var ufoShapes = [
     "date_time": "2015-11-07T18:03:00",
     "shape": "fireball",
     "duration_minutes": 4,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CA",
@@ -50340,8 +50340,8 @@ var ufoShapes = [
     "date_time": "2015-10-19T19:25:00",
     "shape": "diamond",
     "duration_minutes": 4,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CO",
@@ -50372,8 +50372,8 @@ var ufoShapes = [
     "date_time": "2015-10-10T22:55:00",
     "shape": "triangle",
     "duration_minutes": 4,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "WV",
@@ -50460,8 +50460,8 @@ var ufoShapes = [
     "date_time": "2015-09-19T20:55:00",
     "shape": "other",
     "duration_minutes": 4,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "LA",
@@ -50476,8 +50476,8 @@ var ufoShapes = [
     "date_time": "2015-09-15T19:04:00",
     "shape": "circle",
     "duration_minutes": 4,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NH",
@@ -50532,8 +50532,8 @@ var ufoShapes = [
     "date_time": "2015-09-02T23:01:00",
     "shape": "light",
     "duration_minutes": 4,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "PA",
@@ -50548,8 +50548,8 @@ var ufoShapes = [
     "date_time": "2015-08-27T22:30:00",
     "shape": "sphere",
     "duration_minutes": 4,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MD",
@@ -50644,8 +50644,8 @@ var ufoShapes = [
     "date_time": "2015-08-03T22:15:00",
     "shape": "light",
     "duration_minutes": 4,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "OH",
@@ -50748,8 +50748,8 @@ var ufoShapes = [
     "date_time": "2015-07-11T23:00:00",
     "shape": "light",
     "duration_minutes": 4,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NY",
@@ -50772,8 +50772,8 @@ var ufoShapes = [
     "date_time": "2015-07-09T02:18:00",
     "shape": "rectangle",
     "duration_minutes": 4,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "IL",
@@ -50852,8 +50852,8 @@ var ufoShapes = [
     "date_time": "2015-06-26T17:00:00",
     "shape": "other",
     "duration_minutes": 4,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "FL",
@@ -50916,8 +50916,8 @@ var ufoShapes = [
     "date_time": "2015-06-15T01:10:00",
     "shape": "triangle",
     "duration_minutes": 4,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MI",
@@ -50932,8 +50932,8 @@ var ufoShapes = [
     "date_time": "2015-06-11T20:49:00",
     "shape": "formation",
     "duration_minutes": 4,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "PA",
@@ -51028,8 +51028,8 @@ var ufoShapes = [
     "date_time": "2015-04-28T19:30:00",
     "shape": "light",
     "duration_minutes": 4,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MT",
@@ -51060,8 +51060,8 @@ var ufoShapes = [
     "date_time": "2015-04-06T20:20:00",
     "shape": "triangle",
     "duration_minutes": 4,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MD",
@@ -51092,8 +51092,8 @@ var ufoShapes = [
     "date_time": "2015-04-04T09:16:00",
     "shape": "other",
     "duration_minutes": 4,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NC",
@@ -51148,8 +51148,8 @@ var ufoShapes = [
     "date_time": "2015-03-09T19:00:00",
     "shape": "fireball",
     "duration_minutes": 4,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "OR",
@@ -51164,8 +51164,8 @@ var ufoShapes = [
     "date_time": "2015-03-06T19:38:00",
     "shape": "unknown",
     "duration_minutes": 4,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "LA",
@@ -51220,24 +51220,24 @@ var ufoShapes = [
     "date_time": "2015-02-01T21:00:00",
     "shape": "triangle",
     "duration_minutes": 4,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "Unknown",
     "date_time": "2015-02-01T10:26:00",
     "shape": "light",
     "duration_minutes": 4,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "FL",
     "date_time": "2015-01-28T06:00:00",
     "shape": "circle",
     "duration_minutes": 4,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "OH",
@@ -51452,8 +51452,8 @@ var ufoShapes = [
     "date_time": "2016-06-16T21:45:00",
     "shape": "formation",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "TX",
@@ -51484,8 +51484,8 @@ var ufoShapes = [
     "date_time": "2016-11-07T20:00:00",
     "shape": "unknown",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "GA",
@@ -51548,8 +51548,8 @@ var ufoShapes = [
     "date_time": "2015-06-10T04:45:00",
     "shape": "cigar",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "PA",
@@ -51620,8 +51620,8 @@ var ufoShapes = [
     "date_time": "2015-10-15T05:23:00",
     "shape": "circle",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CA",
@@ -51636,24 +51636,24 @@ var ufoShapes = [
     "date_time": "2016-11-03T02:00:00",
     "shape": "circle",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "Unknown",
     "date_time": "2016-05-19T01:06:00",
     "shape": "diamond",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "FL",
     "date_time": "2015-09-02T06:23:00",
     "shape": "light",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "AZ",
@@ -51692,16 +51692,16 @@ var ufoShapes = [
     "date_time": "2016-04-29T22:30:00",
     "shape": "formation",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "Unknown",
     "date_time": "2016-04-28T15:40:00",
     "shape": "circle",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "GA",
@@ -51812,8 +51812,8 @@ var ufoShapes = [
     "date_time": "2015-05-30T20:05:00",
     "shape": "cylinder",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MO",
@@ -51916,8 +51916,8 @@ var ufoShapes = [
     "date_time": "2016-12-24T23:45:00",
     "shape": "light",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MT",
@@ -51980,16 +51980,16 @@ var ufoShapes = [
     "date_time": "2016-12-18T17:14:00",
     "shape": "other",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "FL",
     "date_time": "2016-12-17T07:30:00",
     "shape": "circle",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NY",
@@ -52052,16 +52052,16 @@ var ufoShapes = [
     "date_time": "2016-12-07T05:00:00",
     "shape": "flash",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "LA",
     "date_time": "2016-12-06T18:00:00",
     "shape": "formation",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "ON",
@@ -52108,8 +52108,8 @@ var ufoShapes = [
     "date_time": "2016-12-03T18:15:00",
     "shape": "disk",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "SC",
@@ -52156,8 +52156,8 @@ var ufoShapes = [
     "date_time": "2016-11-28T07:55:00",
     "shape": "light",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CT",
@@ -52268,8 +52268,8 @@ var ufoShapes = [
     "date_time": "2016-11-19T05:05:00",
     "shape": "cylinder",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "SD",
@@ -52284,8 +52284,8 @@ var ufoShapes = [
     "date_time": "2016-11-16T20:00:00",
     "shape": "triangle",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "OR",
@@ -52348,8 +52348,8 @@ var ufoShapes = [
     "date_time": "2016-11-12T20:40:00",
     "shape": "formation",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "UT",
@@ -52524,8 +52524,8 @@ var ufoShapes = [
     "date_time": "2016-11-03T07:30:00",
     "shape": "oval",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "VA",
@@ -52588,8 +52588,8 @@ var ufoShapes = [
     "date_time": "2016-10-23T22:00:00",
     "shape": "circle",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "KY",
@@ -52780,8 +52780,8 @@ var ufoShapes = [
     "date_time": "2016-10-09T21:00:00",
     "shape": "light",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "OH",
@@ -52820,8 +52820,8 @@ var ufoShapes = [
     "date_time": "2016-10-06T20:00:00",
     "shape": "triangle",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "DE",
@@ -52892,8 +52892,8 @@ var ufoShapes = [
     "date_time": "2016-09-27T22:20:00",
     "shape": "light",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MT",
@@ -52924,8 +52924,8 @@ var ufoShapes = [
     "date_time": "2016-09-24T21:30:00",
     "shape": "formation",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "ME",
@@ -52948,8 +52948,8 @@ var ufoShapes = [
     "date_time": "2016-09-24T07:30:00",
     "shape": "cigar",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "GA",
@@ -53076,8 +53076,8 @@ var ufoShapes = [
     "date_time": "2016-09-15T19:00:00",
     "shape": "triangle",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CA",
@@ -53108,8 +53108,8 @@ var ufoShapes = [
     "date_time": "2016-09-13T21:30:00",
     "shape": "sphere",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "VA",
@@ -53148,8 +53148,8 @@ var ufoShapes = [
     "date_time": "2016-09-11T19:30:00",
     "shape": "cigar",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CA",
@@ -53228,24 +53228,24 @@ var ufoShapes = [
     "date_time": "2016-09-07T20:45:00",
     "shape": "circle",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CA",
     "date_time": "2016-09-06T14:00:00",
     "shape": "changing",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "GA",
     "date_time": "2016-09-04T22:29:00",
     "shape": "fireball",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "GA",
@@ -53268,8 +53268,8 @@ var ufoShapes = [
     "date_time": "2016-09-03T23:45:00",
     "shape": "circle",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "PA",
@@ -53292,8 +53292,8 @@ var ufoShapes = [
     "date_time": "2016-09-02T00:00:00",
     "shape": "fireball",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "PA",
@@ -53372,8 +53372,8 @@ var ufoShapes = [
     "date_time": "2016-08-27T23:00:00",
     "shape": "egg",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MI",
@@ -53444,16 +53444,16 @@ var ufoShapes = [
     "date_time": "2016-08-19T06:55:00",
     "shape": "oval",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "FL",
     "date_time": "2016-08-19T00:54:00",
     "shape": "light",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "RI",
@@ -53524,8 +53524,8 @@ var ufoShapes = [
     "date_time": "2016-08-11T22:00:00",
     "shape": "light",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "PA",
@@ -53620,8 +53620,8 @@ var ufoShapes = [
     "date_time": "2016-08-02T23:00:00",
     "shape": "sphere",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NM",
@@ -53804,16 +53804,16 @@ var ufoShapes = [
     "date_time": "2016-07-24T01:30:00",
     "shape": "oval",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "PA",
     "date_time": "2016-07-23T03:30:00",
     "shape": "unknown",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "AL",
@@ -53900,16 +53900,16 @@ var ufoShapes = [
     "date_time": "2016-07-15T03:00:00",
     "shape": "rectangle",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "Unknown",
     "date_time": "2016-07-15T02:38:00",
     "shape": "light",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NJ",
@@ -54020,8 +54020,8 @@ var ufoShapes = [
     "date_time": "2016-07-06T16:30:00",
     "shape": "oval",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "IN",
@@ -54084,8 +54084,8 @@ var ufoShapes = [
     "date_time": "2016-07-04T21:00:00",
     "shape": "formation",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MA",
@@ -54188,8 +54188,8 @@ var ufoShapes = [
     "date_time": "2016-07-02T22:30:00",
     "shape": "flash",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "ID",
@@ -54204,8 +54204,8 @@ var ufoShapes = [
     "date_time": "2016-07-01T22:15:00",
     "shape": "rectangle",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NJ",
@@ -54236,8 +54236,8 @@ var ufoShapes = [
     "date_time": "2016-06-28T22:15:00",
     "shape": "diamond",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "VA",
@@ -54292,8 +54292,8 @@ var ufoShapes = [
     "date_time": "2016-06-27T20:25:00",
     "shape": "oval",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "WA",
@@ -54332,8 +54332,8 @@ var ufoShapes = [
     "date_time": "2016-06-23T22:00:00",
     "shape": "circle",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CA",
@@ -54348,8 +54348,8 @@ var ufoShapes = [
     "date_time": "2016-06-19T22:50:00",
     "shape": "rectangle",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NY",
@@ -54436,8 +54436,8 @@ var ufoShapes = [
     "date_time": "2016-06-12T10:00:00",
     "shape": "disk",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MN",
@@ -54452,8 +54452,8 @@ var ufoShapes = [
     "date_time": "2016-06-11T23:15:00",
     "shape": "fireball",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "FL",
@@ -54516,8 +54516,8 @@ var ufoShapes = [
     "date_time": "2016-06-06T10:30:00",
     "shape": "cigar",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CO",
@@ -54532,8 +54532,8 @@ var ufoShapes = [
     "date_time": "2016-06-05T10:00:00",
     "shape": "disk",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MA",
@@ -54580,8 +54580,8 @@ var ufoShapes = [
     "date_time": "2016-06-03T21:40:00",
     "shape": "changing",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "TX",
@@ -54620,32 +54620,32 @@ var ufoShapes = [
     "date_time": "2016-05-28T21:00:00",
     "shape": "sphere",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "Unknown",
     "date_time": "2016-05-26T19:45:00",
     "shape": "light",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NC",
     "date_time": "2016-05-26T13:00:00",
     "shape": "sphere",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "WA",
     "date_time": "2016-05-25T21:40:00",
     "shape": "fireball",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NM",
@@ -54740,8 +54740,8 @@ var ufoShapes = [
     "date_time": "2016-05-17T08:30:00",
     "shape": "disk",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MA",
@@ -54756,8 +54756,8 @@ var ufoShapes = [
     "date_time": "2016-05-16T13:15:00",
     "shape": "cigar",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "IL",
@@ -54788,8 +54788,8 @@ var ufoShapes = [
     "date_time": "2016-05-14T21:55:00",
     "shape": "fireball",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "OK",
@@ -54828,8 +54828,8 @@ var ufoShapes = [
     "date_time": "2016-05-11T22:30:00",
     "shape": "disk",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MI",
@@ -54892,16 +54892,16 @@ var ufoShapes = [
     "date_time": "2016-05-03T22:30:00",
     "shape": "unknown",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "WI",
     "date_time": "2016-04-30T22:30:00",
     "shape": "fireball",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "ME",
@@ -54972,8 +54972,8 @@ var ufoShapes = [
     "date_time": "2016-04-17T00:45:00",
     "shape": "fireball",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NY",
@@ -54996,8 +54996,8 @@ var ufoShapes = [
     "date_time": "2016-04-15T15:35:00",
     "shape": "rectangle",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "FL",
@@ -55076,8 +55076,8 @@ var ufoShapes = [
     "date_time": "2016-04-06T23:00:00",
     "shape": "formation",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "TX",
@@ -55124,8 +55124,8 @@ var ufoShapes = [
     "date_time": "2016-04-02T20:45:00",
     "shape": "circle",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "WA",
@@ -55140,8 +55140,8 @@ var ufoShapes = [
     "date_time": "2016-04-02T19:00:00",
     "shape": "circle",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "AK",
@@ -55188,8 +55188,8 @@ var ufoShapes = [
     "date_time": "2016-03-29T14:30:00",
     "shape": "light",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "VA",
@@ -55228,8 +55228,8 @@ var ufoShapes = [
     "date_time": "2016-03-26T18:45:00",
     "shape": "triangle",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CA",
@@ -55308,8 +55308,8 @@ var ufoShapes = [
     "date_time": "2016-03-18T20:00:00",
     "shape": "fireball",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CA",
@@ -55492,8 +55492,8 @@ var ufoShapes = [
     "date_time": "2016-03-03T20:30:00",
     "shape": "circle",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CA",
@@ -55532,8 +55532,8 @@ var ufoShapes = [
     "date_time": "2016-02-29T23:00:00",
     "shape": "triangle",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MO",
@@ -55572,8 +55572,8 @@ var ufoShapes = [
     "date_time": "2016-02-27T20:00:00",
     "shape": "sphere",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "UT",
@@ -55596,8 +55596,8 @@ var ufoShapes = [
     "date_time": "2016-02-24T19:25:00",
     "shape": "other",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "WA",
@@ -55612,8 +55612,8 @@ var ufoShapes = [
     "date_time": "2016-02-23T16:10:00",
     "shape": "cone",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NM",
@@ -55652,8 +55652,8 @@ var ufoShapes = [
     "date_time": "2016-02-20T02:00:00",
     "shape": "other",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "IL",
@@ -55668,8 +55668,8 @@ var ufoShapes = [
     "date_time": "2016-02-19T18:51:00",
     "shape": "light",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MO",
@@ -55684,8 +55684,8 @@ var ufoShapes = [
     "date_time": "2016-02-18T20:30:00",
     "shape": "circle",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "AZ",
@@ -55708,8 +55708,8 @@ var ufoShapes = [
     "date_time": "2016-02-17T20:40:00",
     "shape": "formation",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MA",
@@ -55764,8 +55764,8 @@ var ufoShapes = [
     "date_time": "2016-02-11T23:35:00",
     "shape": "unknown",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "AZ",
@@ -55812,8 +55812,8 @@ var ufoShapes = [
     "date_time": "2016-02-10T05:00:00",
     "shape": "other",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "SC",
@@ -55836,8 +55836,8 @@ var ufoShapes = [
     "date_time": "2016-02-07T07:00:00",
     "shape": "triangle",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CA",
@@ -55852,8 +55852,8 @@ var ufoShapes = [
     "date_time": "2016-02-05T21:43:00",
     "shape": "light",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NC",
@@ -55900,8 +55900,8 @@ var ufoShapes = [
     "date_time": "2016-02-01T07:24:00",
     "shape": "disk",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MD",
@@ -55932,8 +55932,8 @@ var ufoShapes = [
     "date_time": "2016-01-29T12:30:00",
     "shape": "unknown",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "AZ",
@@ -55964,8 +55964,8 @@ var ufoShapes = [
     "date_time": "2016-01-27T20:06:00",
     "shape": "fireball",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CA",
@@ -55988,8 +55988,8 @@ var ufoShapes = [
     "date_time": "2016-01-24T16:49:00",
     "shape": "changing",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "OH",
@@ -56084,8 +56084,8 @@ var ufoShapes = [
     "date_time": "2016-01-16T23:30:00",
     "shape": "circle",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "OR",
@@ -56148,8 +56148,8 @@ var ufoShapes = [
     "date_time": "2016-01-14T18:30:00",
     "shape": "fireball",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CA",
@@ -56228,8 +56228,8 @@ var ufoShapes = [
     "date_time": "2016-01-04T18:30:00",
     "shape": "sphere",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MD",
@@ -56268,8 +56268,8 @@ var ufoShapes = [
     "date_time": "2016-01-01T00:00:00",
     "shape": "light",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "PA",
@@ -56364,8 +56364,8 @@ var ufoShapes = [
     "date_time": "2015-12-28T22:15:00",
     "shape": "triangle",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "ID",
@@ -56444,8 +56444,8 @@ var ufoShapes = [
     "date_time": "2015-12-24T22:00:00",
     "shape": "fireball",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NY",
@@ -56460,8 +56460,8 @@ var ufoShapes = [
     "date_time": "2015-12-24T20:27:00",
     "shape": "triangle",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NC",
@@ -56564,8 +56564,8 @@ var ufoShapes = [
     "date_time": "2015-12-13T17:20:00",
     "shape": "fireball",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "PA",
@@ -56612,8 +56612,8 @@ var ufoShapes = [
     "date_time": "2015-12-09T22:59:00",
     "shape": "fireball",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "OR",
@@ -56828,8 +56828,8 @@ var ufoShapes = [
     "date_time": "2015-11-22T12:00:00",
     "shape": "other",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "WA",
@@ -56892,8 +56892,8 @@ var ufoShapes = [
     "date_time": "2015-11-20T18:15:00",
     "shape": "circle",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NH",
@@ -56964,8 +56964,8 @@ var ufoShapes = [
     "date_time": "2015-11-16T19:30:00",
     "shape": "light",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MA",
@@ -56980,8 +56980,8 @@ var ufoShapes = [
     "date_time": "2015-11-15T22:30:00",
     "shape": "triangle",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NY",
@@ -57020,8 +57020,8 @@ var ufoShapes = [
     "date_time": "2015-11-13T18:00:00",
     "shape": "sphere",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "IL",
@@ -57036,8 +57036,8 @@ var ufoShapes = [
     "date_time": "2015-11-10T20:30:00",
     "shape": "triangle",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "IN",
@@ -57508,8 +57508,8 @@ var ufoShapes = [
     "date_time": "2015-11-07T18:00:00",
     "shape": "unknown",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CA",
@@ -57644,8 +57644,8 @@ var ufoShapes = [
     "date_time": "2015-11-01T21:00:00",
     "shape": "triangle",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CO",
@@ -57668,8 +57668,8 @@ var ufoShapes = [
     "date_time": "2015-11-01T00:40:00",
     "shape": "circle",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NM",
@@ -57860,8 +57860,8 @@ var ufoShapes = [
     "date_time": "2015-10-18T19:00:00",
     "shape": "circle",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "TX",
@@ -57876,8 +57876,8 @@ var ufoShapes = [
     "date_time": "2015-10-17T21:00:00",
     "shape": "unknown",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "WA",
@@ -57900,8 +57900,8 @@ var ufoShapes = [
     "date_time": "2015-10-16T21:00:00",
     "shape": "fireball",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "KS",
@@ -57940,8 +57940,8 @@ var ufoShapes = [
     "date_time": "2015-10-15T07:15:00",
     "shape": "triangle",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "SC",
@@ -57956,8 +57956,8 @@ var ufoShapes = [
     "date_time": "2015-10-14T08:45:00",
     "shape": "rectangle",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MN",
@@ -58036,8 +58036,8 @@ var ufoShapes = [
     "date_time": "2015-10-10T07:45:00",
     "shape": "sphere",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "TN",
@@ -58068,8 +58068,8 @@ var ufoShapes = [
     "date_time": "2015-10-09T07:07:00",
     "shape": "triangle",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "AR",
@@ -58132,8 +58132,8 @@ var ufoShapes = [
     "date_time": "2015-10-04T18:00:00",
     "shape": "oval",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "IL",
@@ -58212,16 +58212,16 @@ var ufoShapes = [
     "date_time": "2015-09-27T22:18:00",
     "shape": "unknown",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "FL",
     "date_time": "2015-09-27T22:10:00",
     "shape": "unknown",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "ID",
@@ -58276,8 +58276,8 @@ var ufoShapes = [
     "date_time": "2015-09-26T19:36:00",
     "shape": "cigar",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NC",
@@ -58316,16 +58316,16 @@ var ufoShapes = [
     "date_time": "2015-09-24T22:10:00",
     "shape": "circle",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "Unknown",
     "date_time": "2015-09-24T19:30:00",
     "shape": "light",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "FL",
@@ -58356,8 +58356,8 @@ var ufoShapes = [
     "date_time": "2015-09-19T22:30:00",
     "shape": "light",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NJ",
@@ -58420,8 +58420,8 @@ var ufoShapes = [
     "date_time": "2015-09-17T23:51:00",
     "shape": "unknown",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "WV",
@@ -58508,8 +58508,8 @@ var ufoShapes = [
     "date_time": "2015-09-12T22:30:00",
     "shape": "light",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "IL",
@@ -58556,8 +58556,8 @@ var ufoShapes = [
     "date_time": "2015-09-11T21:00:00",
     "shape": "circle",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "WV",
@@ -58644,8 +58644,8 @@ var ufoShapes = [
     "date_time": "2015-09-07T20:00:00",
     "shape": "sphere",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MI",
@@ -58684,8 +58684,8 @@ var ufoShapes = [
     "date_time": "2015-09-06T00:02:00",
     "shape": "light",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "ON",
@@ -58740,8 +58740,8 @@ var ufoShapes = [
     "date_time": "2015-09-05T05:25:00",
     "shape": "circle",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "IL",
@@ -58828,8 +58828,8 @@ var ufoShapes = [
     "date_time": "2015-08-22T22:15:00",
     "shape": "triangle",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "ON",
@@ -58844,8 +58844,8 @@ var ufoShapes = [
     "date_time": "2015-08-22T21:00:00",
     "shape": "light",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "VA",
@@ -58908,8 +58908,8 @@ var ufoShapes = [
     "date_time": "2015-08-17T21:15:00",
     "shape": "formation",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NY",
@@ -58948,8 +58948,8 @@ var ufoShapes = [
     "date_time": "2015-08-15T21:10:00",
     "shape": "sphere",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "WI",
@@ -58964,8 +58964,8 @@ var ufoShapes = [
     "date_time": "2015-08-15T20:00:00",
     "shape": "changing",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "WA",
@@ -58996,8 +58996,8 @@ var ufoShapes = [
     "date_time": "2015-08-12T20:50:00",
     "shape": "triangle",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MA",
@@ -59012,16 +59012,16 @@ var ufoShapes = [
     "date_time": "2015-08-11T23:46:00",
     "shape": "triangle",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "Unknown",
     "date_time": "2015-08-11T22:05:00",
     "shape": "light",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "PA",
@@ -59116,8 +59116,8 @@ var ufoShapes = [
     "date_time": "2015-08-07T21:00:00",
     "shape": "triangle",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CA",
@@ -59220,8 +59220,8 @@ var ufoShapes = [
     "date_time": "2015-08-02T00:00:00",
     "shape": "triangle",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "WY",
@@ -59236,8 +59236,8 @@ var ufoShapes = [
     "date_time": "2015-08-01T21:36:00",
     "shape": "circle",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "PA",
@@ -59252,8 +59252,8 @@ var ufoShapes = [
     "date_time": "2015-07-31T22:16:00",
     "shape": "egg",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "IL",
@@ -59276,8 +59276,8 @@ var ufoShapes = [
     "date_time": "2015-07-31T21:00:00",
     "shape": "light",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CA",
@@ -59308,8 +59308,8 @@ var ufoShapes = [
     "date_time": "2015-07-29T22:00:00",
     "shape": "circle",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "OH",
@@ -59324,8 +59324,8 @@ var ufoShapes = [
     "date_time": "2015-07-29T02:08:00",
     "shape": "circle",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "TX",
@@ -59364,8 +59364,8 @@ var ufoShapes = [
     "date_time": "2015-07-26T21:45:00",
     "shape": "fireball",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CA",
@@ -59420,8 +59420,8 @@ var ufoShapes = [
     "date_time": "2015-07-24T22:35:00",
     "shape": "fireball",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CA",
@@ -59484,24 +59484,24 @@ var ufoShapes = [
     "date_time": "2015-07-23T01:30:00",
     "shape": "unknown",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NJ",
     "date_time": "2015-07-22T23:00:00",
     "shape": "fireball",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NJ",
     "date_time": "2015-07-22T23:00:00",
     "shape": "fireball",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NY",
@@ -59556,8 +59556,8 @@ var ufoShapes = [
     "date_time": "2015-07-21T22:20:00",
     "shape": "triangle",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CA",
@@ -59588,8 +59588,8 @@ var ufoShapes = [
     "date_time": "2015-07-19T19:55:00",
     "shape": "oval",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MO",
@@ -59756,8 +59756,8 @@ var ufoShapes = [
     "date_time": "2015-07-08T00:02:00",
     "shape": "circle",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "OR",
@@ -59804,16 +59804,16 @@ var ufoShapes = [
     "date_time": "2015-07-05T01:00:00",
     "shape": "flash",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "WA",
     "date_time": "2015-07-05T01:00:00",
     "shape": "circle",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NY",
@@ -59908,16 +59908,16 @@ var ufoShapes = [
     "date_time": "2015-07-04T21:58:00",
     "shape": "unknown",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NJ",
     "date_time": "2015-07-04T21:45:00",
     "shape": "other",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "OR",
@@ -60004,16 +60004,16 @@ var ufoShapes = [
     "date_time": "2015-07-03T22:15:00",
     "shape": "sphere",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NY",
     "date_time": "2015-07-03T22:00:00",
     "shape": "light",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "OH",
@@ -60060,8 +60060,8 @@ var ufoShapes = [
     "date_time": "2015-06-26T23:50:00",
     "shape": "sphere",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NY",
@@ -60100,8 +60100,8 @@ var ufoShapes = [
     "date_time": "2015-06-23T00:00:00",
     "shape": "oval",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "KY",
@@ -60116,16 +60116,16 @@ var ufoShapes = [
     "date_time": "2015-06-22T23:00:00",
     "shape": "other",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "IA",
     "date_time": "2015-06-22T22:30:00",
     "shape": "sphere",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NY",
@@ -60244,8 +60244,8 @@ var ufoShapes = [
     "date_time": "2015-06-14T03:00:00",
     "shape": "unknown",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NY",
@@ -60276,8 +60276,8 @@ var ufoShapes = [
     "date_time": "2015-06-13T01:30:00",
     "shape": "light",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "VA",
@@ -60460,8 +60460,8 @@ var ufoShapes = [
     "date_time": "2015-05-30T20:00:00",
     "shape": "light",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NY",
@@ -60524,8 +60524,8 @@ var ufoShapes = [
     "date_time": "2015-05-25T16:30:00",
     "shape": "oval",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MN",
@@ -60580,16 +60580,16 @@ var ufoShapes = [
     "date_time": "2015-05-23T22:45:00",
     "shape": "sphere",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "WI",
     "date_time": "2015-05-23T19:00:00",
     "shape": "disk",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MS",
@@ -60652,8 +60652,8 @@ var ufoShapes = [
     "date_time": "2015-05-19T20:53:00",
     "shape": "changing",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MI",
@@ -60700,8 +60700,8 @@ var ufoShapes = [
     "date_time": "2015-05-15T21:00:00",
     "shape": "light",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "OH",
@@ -60876,8 +60876,8 @@ var ufoShapes = [
     "date_time": "2015-05-03T23:30:00",
     "shape": "oval",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "ID",
@@ -61036,8 +61036,8 @@ var ufoShapes = [
     "date_time": "2015-04-18T22:00:00",
     "shape": "circle",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "OH",
@@ -61092,16 +61092,16 @@ var ufoShapes = [
     "date_time": "2015-04-15T16:00:00",
     "shape": "unknown",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NY",
     "date_time": "2015-04-14T20:35:00",
     "shape": "light",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "AZ",
@@ -61180,8 +61180,8 @@ var ufoShapes = [
     "date_time": "2015-04-10T21:35:00",
     "shape": "fireball",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "VT",
@@ -61204,16 +61204,16 @@ var ufoShapes = [
     "date_time": "2015-04-07T23:50:00",
     "shape": "light",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MA",
     "date_time": "2015-04-05T20:00:00",
     "shape": "light",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NJ",
@@ -61228,16 +61228,16 @@ var ufoShapes = [
     "date_time": "2015-04-05T13:00:00",
     "shape": "light",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "Unknown",
     "date_time": "2015-04-03T20:55:00",
     "shape": "cross",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "VT",
@@ -61260,16 +61260,16 @@ var ufoShapes = [
     "date_time": "2015-04-01T23:00:00",
     "shape": "triangle",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NJ",
     "date_time": "2015-04-01T20:30:00",
     "shape": "cylinder",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MO",
@@ -61404,8 +61404,8 @@ var ufoShapes = [
     "date_time": "2015-03-21T21:00:00",
     "shape": "chevron",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CA",
@@ -61492,8 +61492,8 @@ var ufoShapes = [
     "date_time": "2015-03-17T00:00:00",
     "shape": "unknown",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "TN",
@@ -61516,8 +61516,8 @@ var ufoShapes = [
     "date_time": "2015-03-15T22:00:00",
     "shape": "circle",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MO",
@@ -61572,8 +61572,8 @@ var ufoShapes = [
     "date_time": "2015-03-14T19:40:00",
     "shape": "circle",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "TX",
@@ -61604,8 +61604,8 @@ var ufoShapes = [
     "date_time": "2015-03-12T23:00:00",
     "shape": "fireball",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MO",
@@ -61628,8 +61628,8 @@ var ufoShapes = [
     "date_time": "2015-03-12T08:21:00",
     "shape": "formation",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "AR",
@@ -61684,8 +61684,8 @@ var ufoShapes = [
     "date_time": "2015-03-08T23:00:00",
     "shape": "circle",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "UT",
@@ -61732,8 +61732,8 @@ var ufoShapes = [
     "date_time": "2015-03-05T19:45:00",
     "shape": "unknown",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "IL",
@@ -62028,8 +62028,8 @@ var ufoShapes = [
     "date_time": "2015-02-07T21:30:00",
     "shape": "oval",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "OH",
@@ -62052,8 +62052,8 @@ var ufoShapes = [
     "date_time": "2015-02-06T22:30:00",
     "shape": "sphere",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "IL",
@@ -62068,8 +62068,8 @@ var ufoShapes = [
     "date_time": "2015-02-06T21:00:00",
     "shape": "fireball",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "LA",
@@ -62084,16 +62084,16 @@ var ufoShapes = [
     "date_time": "2015-02-06T19:00:00",
     "shape": "unknown",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "OH",
     "date_time": "2015-02-06T16:00:00",
     "shape": "sphere",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CO",
@@ -62252,16 +62252,16 @@ var ufoShapes = [
     "date_time": "2015-01-29T15:45:00",
     "shape": "light",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MA",
     "date_time": "2015-01-29T15:30:00",
     "shape": "sphere",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MA",
@@ -62332,8 +62332,8 @@ var ufoShapes = [
     "date_time": "2015-01-24T21:30:00",
     "shape": "light",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "UT",
@@ -62372,8 +62372,8 @@ var ufoShapes = [
     "date_time": "2015-01-22T13:00:00",
     "shape": "diamond",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "OK",
@@ -62404,8 +62404,8 @@ var ufoShapes = [
     "date_time": "2015-01-17T23:34:00",
     "shape": "light",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "HI",
@@ -62540,8 +62540,8 @@ var ufoShapes = [
     "date_time": "2015-01-11T21:00:00",
     "shape": "other",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "UT",
@@ -62556,32 +62556,32 @@ var ufoShapes = [
     "date_time": "2015-01-11T18:30:00",
     "shape": "light",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MD",
     "date_time": "2015-01-11T12:00:00",
     "shape": "rectangle",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MD",
     "date_time": "2015-01-11T04:14:00",
     "shape": "diamond",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "Unknown",
     "date_time": "2015-01-11T03:50:00",
     "shape": "unknown",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "WI",
@@ -62596,16 +62596,16 @@ var ufoShapes = [
     "date_time": "2015-01-09T19:00:00",
     "shape": "sphere",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "WV",
     "date_time": "2015-01-08T23:00:00",
     "shape": "circle",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NJ",
@@ -62700,8 +62700,8 @@ var ufoShapes = [
     "date_time": "2015-01-01T22:20:00",
     "shape": "triangle",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CO",
@@ -62732,8 +62732,8 @@ var ufoShapes = [
     "date_time": "2015-01-01T00:05:00",
     "shape": "formation",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CA",
@@ -62748,8 +62748,8 @@ var ufoShapes = [
     "date_time": "2016-09-03T20:35:00",
     "shape": "light",
     "duration_minutes": 5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "WI",
@@ -62908,8 +62908,8 @@ var ufoShapes = [
     "date_time": "2016-07-10T19:00:00",
     "shape": "sphere",
     "duration_minutes": 6,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CO",
@@ -62964,16 +62964,16 @@ var ufoShapes = [
     "date_time": "2016-05-29T21:04:00",
     "shape": "light",
     "duration_minutes": 6,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "FL",
     "date_time": "2016-05-29T21:03:00",
     "shape": "light",
     "duration_minutes": 6,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MI",
@@ -63156,16 +63156,16 @@ var ufoShapes = [
     "date_time": "2015-10-31T18:00:00",
     "shape": "light",
     "duration_minutes": 6,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "Unknown",
     "date_time": "2015-10-15T22:45:00",
     "shape": "sphere",
     "duration_minutes": 6,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "BC",
@@ -63188,8 +63188,8 @@ var ufoShapes = [
     "date_time": "2015-09-22T18:00:00",
     "shape": "cylinder",
     "duration_minutes": 6,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "KS",
@@ -63228,16 +63228,16 @@ var ufoShapes = [
     "date_time": "2015-08-17T21:05:00",
     "shape": "circle",
     "duration_minutes": 6,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "Unknown",
     "date_time": "2015-07-19T15:30:00",
     "shape": "oval",
     "duration_minutes": 6,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "PA",
@@ -63268,16 +63268,16 @@ var ufoShapes = [
     "date_time": "2015-07-04T21:35:00",
     "shape": "changing",
     "duration_minutes": 6,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MI",
     "date_time": "2015-07-03T22:15:00",
     "shape": "formation",
     "duration_minutes": 6,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CA",
@@ -63332,8 +63332,8 @@ var ufoShapes = [
     "date_time": "2015-05-18T12:15:00",
     "shape": "circle",
     "duration_minutes": 6,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NV",
@@ -63412,8 +63412,8 @@ var ufoShapes = [
     "date_time": "2015-01-01T00:04:00",
     "shape": "sphere",
     "duration_minutes": 6,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "LA",
@@ -63492,8 +63492,8 @@ var ufoShapes = [
     "date_time": "2016-10-21T16:00:00",
     "shape": "sphere",
     "duration_minutes": 7,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "KY",
@@ -63508,8 +63508,8 @@ var ufoShapes = [
     "date_time": "2016-10-20T16:05:00",
     "shape": "sphere",
     "duration_minutes": 7,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NY",
@@ -63524,8 +63524,8 @@ var ufoShapes = [
     "date_time": "2016-10-04T19:30:00",
     "shape": "circle",
     "duration_minutes": 7,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "OR",
@@ -63556,8 +63556,8 @@ var ufoShapes = [
     "date_time": "2016-09-10T18:20:00",
     "shape": "other",
     "duration_minutes": 7,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NY",
@@ -63740,8 +63740,8 @@ var ufoShapes = [
     "date_time": "2016-01-14T00:00:00",
     "shape": "disk",
     "duration_minutes": 7,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NM",
@@ -63884,8 +63884,8 @@ var ufoShapes = [
     "date_time": "2015-10-19T01:35:00",
     "shape": "unknown",
     "duration_minutes": 7,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CT",
@@ -63908,8 +63908,8 @@ var ufoShapes = [
     "date_time": "2015-10-14T20:02:00",
     "shape": "circle",
     "duration_minutes": 7,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "FL",
@@ -63996,8 +63996,8 @@ var ufoShapes = [
     "date_time": "2015-08-01T22:00:00",
     "shape": "light",
     "duration_minutes": 7,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "FL",
@@ -64108,8 +64108,8 @@ var ufoShapes = [
     "date_time": "2015-03-30T21:00:00",
     "shape": "circle",
     "duration_minutes": 7,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "SC",
@@ -64148,8 +64148,8 @@ var ufoShapes = [
     "date_time": "2015-02-02T00:40:00",
     "shape": "cylinder",
     "duration_minutes": 7,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MD",
@@ -64220,8 +64220,8 @@ var ufoShapes = [
     "date_time": "2015-02-27T10:25:00",
     "shape": "circle",
     "duration_minutes": 7.5,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CT",
@@ -64284,8 +64284,8 @@ var ufoShapes = [
     "date_time": "2016-10-22T21:45:00",
     "shape": "fireball",
     "duration_minutes": 8,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "AZ",
@@ -64316,8 +64316,8 @@ var ufoShapes = [
     "date_time": "2016-09-10T19:10:00",
     "shape": "sphere",
     "duration_minutes": 8,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "PA",
@@ -64460,16 +64460,16 @@ var ufoShapes = [
     "date_time": "2016-02-14T22:00:00",
     "shape": "light",
     "duration_minutes": 8,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CA",
     "date_time": "2016-02-14T22:00:00",
     "shape": "light",
     "duration_minutes": 8,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "VA",
@@ -64492,8 +64492,8 @@ var ufoShapes = [
     "date_time": "2016-02-08T18:50:00",
     "shape": "triangle",
     "duration_minutes": 8,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CT",
@@ -64508,8 +64508,8 @@ var ufoShapes = [
     "date_time": "2016-01-05T20:10:00",
     "shape": "fireball",
     "duration_minutes": 8,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "PA",
@@ -64588,8 +64588,8 @@ var ufoShapes = [
     "date_time": "2015-11-07T18:20:00",
     "shape": "light",
     "duration_minutes": 8,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CA",
@@ -64612,8 +64612,8 @@ var ufoShapes = [
     "date_time": "2015-10-22T00:00:00",
     "shape": "other",
     "duration_minutes": 8,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "KY",
@@ -64660,8 +64660,8 @@ var ufoShapes = [
     "date_time": "2015-08-21T18:45:00",
     "shape": "cigar",
     "duration_minutes": 8,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "TN",
@@ -64732,8 +64732,8 @@ var ufoShapes = [
     "date_time": "2015-06-08T21:30:00",
     "shape": "formation",
     "duration_minutes": 8,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NJ",
@@ -64788,8 +64788,8 @@ var ufoShapes = [
     "date_time": "2015-03-28T22:20:00",
     "shape": "fireball",
     "duration_minutes": 8,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "TX",
@@ -64844,8 +64844,8 @@ var ufoShapes = [
     "date_time": "2015-01-21T21:00:00",
     "shape": "light",
     "duration_minutes": 8,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "AZ",
@@ -64876,16 +64876,16 @@ var ufoShapes = [
     "date_time": "2015-01-11T22:55:00",
     "shape": "fireball",
     "duration_minutes": 8,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "Unknown",
     "date_time": "2015-01-11T00:00:00",
     "shape": "fireball",
     "duration_minutes": 8,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "TX",
@@ -64900,16 +64900,16 @@ var ufoShapes = [
     "date_time": "2015-01-01T01:00:00",
     "shape": "triangle",
     "duration_minutes": 8,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "Unknown",
     "date_time": "2015-11-11T23:00:00",
     "shape": "unknown",
     "duration_minutes": 9,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "FL",
@@ -64948,8 +64948,8 @@ var ufoShapes = [
     "date_time": "2016-04-13T22:42:00",
     "shape": "unknown",
     "duration_minutes": 9,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CA",
@@ -64980,8 +64980,8 @@ var ufoShapes = [
     "date_time": "2015-09-24T20:45:00",
     "shape": "light",
     "duration_minutes": 9,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CA",
@@ -65044,8 +65044,8 @@ var ufoShapes = [
     "date_time": "2016-12-06T01:40:00",
     "shape": "circle",
     "duration_minutes": 10,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "RI",
@@ -65084,16 +65084,16 @@ var ufoShapes = [
     "date_time": "2015-09-25T20:35:00",
     "shape": "sphere",
     "duration_minutes": 10,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "Unknown",
     "date_time": "2016-04-20T22:40:00",
     "shape": "unknown",
     "duration_minutes": 10,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CT",
@@ -65164,16 +65164,16 @@ var ufoShapes = [
     "date_time": "2016-07-04T22:20:00",
     "shape": "disk",
     "duration_minutes": 10,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "OH",
     "date_time": "2016-06-27T23:10:00",
     "shape": "light",
     "duration_minutes": 10,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "VA",
@@ -65204,8 +65204,8 @@ var ufoShapes = [
     "date_time": "2016-01-13T13:00:00",
     "shape": "light",
     "duration_minutes": 10,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "TN",
@@ -65260,8 +65260,8 @@ var ufoShapes = [
     "date_time": "2015-10-09T00:00:00",
     "shape": "disk",
     "duration_minutes": 10,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "LA",
@@ -65276,8 +65276,8 @@ var ufoShapes = [
     "date_time": "2015-08-19T23:00:00",
     "shape": "triangle",
     "duration_minutes": 10,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MN",
@@ -65308,8 +65308,8 @@ var ufoShapes = [
     "date_time": "2015-07-04T21:30:00",
     "shape": "light",
     "duration_minutes": 10,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CA",
@@ -65372,8 +65372,8 @@ var ufoShapes = [
     "date_time": "2015-07-08T21:30:00",
     "shape": "other",
     "duration_minutes": 10,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MT",
@@ -65452,8 +65452,8 @@ var ufoShapes = [
     "date_time": "2016-12-19T06:50:00",
     "shape": "light",
     "duration_minutes": 10,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "KS",
@@ -65476,8 +65476,8 @@ var ufoShapes = [
     "date_time": "2016-12-16T19:30:00",
     "shape": "light",
     "duration_minutes": 10,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "SC",
@@ -65492,8 +65492,8 @@ var ufoShapes = [
     "date_time": "2016-12-14T05:00:00",
     "shape": "unknown",
     "duration_minutes": 10,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "WA",
@@ -65852,8 +65852,8 @@ var ufoShapes = [
     "date_time": "2016-10-25T18:45:00",
     "shape": "triangle",
     "duration_minutes": 10,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "AZ",
@@ -65980,16 +65980,16 @@ var ufoShapes = [
     "date_time": "2016-10-11T22:00:00",
     "shape": "fireball",
     "duration_minutes": 10,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NY",
     "date_time": "2016-10-11T16:34:00",
     "shape": "circle",
     "duration_minutes": 10,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CT",
@@ -66052,8 +66052,8 @@ var ufoShapes = [
     "date_time": "2016-09-27T17:15:00",
     "shape": "circle",
     "duration_minutes": 10,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CA",
@@ -66116,8 +66116,8 @@ var ufoShapes = [
     "date_time": "2016-09-21T20:30:00",
     "shape": "light",
     "duration_minutes": 10,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "UT",
@@ -66220,8 +66220,8 @@ var ufoShapes = [
     "date_time": "2016-09-13T12:43:00",
     "shape": "circle",
     "duration_minutes": 10,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MI",
@@ -66236,16 +66236,16 @@ var ufoShapes = [
     "date_time": "2016-09-10T18:20:00",
     "shape": "other",
     "duration_minutes": 10,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "SC",
     "date_time": "2016-09-10T00:45:00",
     "shape": "sphere",
     "duration_minutes": 10,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MN",
@@ -66372,8 +66372,8 @@ var ufoShapes = [
     "date_time": "2016-08-31T12:00:00",
     "shape": "chevron",
     "duration_minutes": 10,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "SC",
@@ -66436,8 +66436,8 @@ var ufoShapes = [
     "date_time": "2016-08-20T23:00:00",
     "shape": "light",
     "duration_minutes": 10,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "FL",
@@ -66460,8 +66460,8 @@ var ufoShapes = [
     "date_time": "2016-08-12T04:00:00",
     "shape": "triangle",
     "duration_minutes": 10,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "OK",
@@ -66532,8 +66532,8 @@ var ufoShapes = [
     "date_time": "2016-08-01T22:45:00",
     "shape": "formation",
     "duration_minutes": 10,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "PA",
@@ -66572,24 +66572,24 @@ var ufoShapes = [
     "date_time": "2016-07-30T19:16:00",
     "shape": "light",
     "duration_minutes": 10,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "HI",
     "date_time": "2016-07-30T03:10:00",
     "shape": "circle",
     "duration_minutes": 10,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CO",
     "date_time": "2016-07-28T23:00:00",
     "shape": "triangle",
     "duration_minutes": 10,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "FL",
@@ -66668,16 +66668,16 @@ var ufoShapes = [
     "date_time": "2016-07-21T10:30:00",
     "shape": "unknown",
     "duration_minutes": 10,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NC",
     "date_time": "2016-07-18T21:50:00",
     "shape": "light",
     "duration_minutes": 10,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NY",
@@ -66772,8 +66772,8 @@ var ufoShapes = [
     "date_time": "2016-07-04T21:45:00",
     "shape": "disk",
     "duration_minutes": 10,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "IL",
@@ -66804,8 +66804,8 @@ var ufoShapes = [
     "date_time": "2016-07-04T20:00:00",
     "shape": "circle",
     "duration_minutes": 10,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CO",
@@ -66892,8 +66892,8 @@ var ufoShapes = [
     "date_time": "2016-07-01T22:15:00",
     "shape": "cigar",
     "duration_minutes": 10,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CA",
@@ -66964,8 +66964,8 @@ var ufoShapes = [
     "date_time": "2016-06-19T12:00:00",
     "shape": "unknown",
     "duration_minutes": 10,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NC",
@@ -67060,8 +67060,8 @@ var ufoShapes = [
     "date_time": "2016-06-11T23:00:00",
     "shape": "circle",
     "duration_minutes": 10,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "WI",
@@ -67100,8 +67100,8 @@ var ufoShapes = [
     "date_time": "2016-06-11T11:00:00",
     "shape": "sphere",
     "duration_minutes": 10,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CA",
@@ -67132,8 +67132,8 @@ var ufoShapes = [
     "date_time": "2016-06-08T20:40:00",
     "shape": "disk",
     "duration_minutes": 10,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CA",
@@ -67324,8 +67324,8 @@ var ufoShapes = [
     "date_time": "2016-05-01T02:00:00",
     "shape": "formation",
     "duration_minutes": 10,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MI",
@@ -67340,24 +67340,24 @@ var ufoShapes = [
     "date_time": "2016-04-29T19:30:00",
     "shape": "circle",
     "duration_minutes": 10,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "Unknown",
     "date_time": "2016-04-25T19:00:00",
     "shape": "sphere",
     "duration_minutes": 10,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "ON",
     "date_time": "2016-04-24T22:00:00",
     "shape": "other",
     "duration_minutes": 10,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CA",
@@ -67380,8 +67380,8 @@ var ufoShapes = [
     "date_time": "2016-04-22T22:30:00",
     "shape": "circle",
     "duration_minutes": 10,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "DE",
@@ -67396,8 +67396,8 @@ var ufoShapes = [
     "date_time": "2016-04-21T03:00:00",
     "shape": "circle",
     "duration_minutes": 10,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "OR",
@@ -67468,8 +67468,8 @@ var ufoShapes = [
     "date_time": "2016-04-12T10:30:00",
     "shape": "cylinder",
     "duration_minutes": 10,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "WV",
@@ -67572,8 +67572,8 @@ var ufoShapes = [
     "date_time": "2016-03-28T22:30:00",
     "shape": "sphere",
     "duration_minutes": 10,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "AR",
@@ -67644,8 +67644,8 @@ var ufoShapes = [
     "date_time": "2016-03-18T20:40:00",
     "shape": "light",
     "duration_minutes": 10,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CT",
@@ -67796,8 +67796,8 @@ var ufoShapes = [
     "date_time": "2016-03-03T00:00:00",
     "shape": "light",
     "duration_minutes": 10,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "AZ",
@@ -67948,8 +67948,8 @@ var ufoShapes = [
     "date_time": "2016-02-11T22:00:00",
     "shape": "light",
     "duration_minutes": 10,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NC",
@@ -68092,8 +68092,8 @@ var ufoShapes = [
     "date_time": "2016-01-30T19:15:00",
     "shape": "changing",
     "duration_minutes": 10,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "TN",
@@ -68140,8 +68140,8 @@ var ufoShapes = [
     "date_time": "2016-01-25T14:15:00",
     "shape": "rectangle",
     "duration_minutes": 10,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NC",
@@ -68260,16 +68260,16 @@ var ufoShapes = [
     "date_time": "2016-01-04T03:00:00",
     "shape": "light",
     "duration_minutes": 10,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "SC",
     "date_time": "2016-01-03T20:00:00",
     "shape": "light",
     "duration_minutes": 10,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CT",
@@ -68332,8 +68332,8 @@ var ufoShapes = [
     "date_time": "2016-01-01T00:00:00",
     "shape": "sphere",
     "duration_minutes": 10,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "UT",
@@ -68412,8 +68412,8 @@ var ufoShapes = [
     "date_time": "2015-12-20T22:00:00",
     "shape": "circle",
     "duration_minutes": 10,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "DE",
@@ -68468,8 +68468,8 @@ var ufoShapes = [
     "date_time": "2015-12-10T18:30:00",
     "shape": "triangle",
     "duration_minutes": 10,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "AZ",
@@ -68492,8 +68492,8 @@ var ufoShapes = [
     "date_time": "2015-12-07T02:30:00",
     "shape": "formation",
     "duration_minutes": 10,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "PA",
@@ -68532,8 +68532,8 @@ var ufoShapes = [
     "date_time": "2015-11-29T19:15:00",
     "shape": "light",
     "duration_minutes": 10,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MI",
@@ -68572,8 +68572,8 @@ var ufoShapes = [
     "date_time": "2015-11-24T21:00:00",
     "shape": "light",
     "duration_minutes": 10,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "TN",
@@ -68644,16 +68644,16 @@ var ufoShapes = [
     "date_time": "2015-11-19T18:50:00",
     "shape": "unknown",
     "duration_minutes": 10,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CA",
     "date_time": "2015-11-16T21:00:00",
     "shape": "rectangle",
     "duration_minutes": 10,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NY",
@@ -68668,16 +68668,16 @@ var ufoShapes = [
     "date_time": "2015-11-15T21:45:00",
     "shape": "light",
     "duration_minutes": 10,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NC",
     "date_time": "2015-11-15T06:35:00",
     "shape": "changing",
     "duration_minutes": 10,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CA",
@@ -68700,8 +68700,8 @@ var ufoShapes = [
     "date_time": "2015-11-13T23:15:00",
     "shape": "sphere",
     "duration_minutes": 10,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NY",
@@ -68724,8 +68724,8 @@ var ufoShapes = [
     "date_time": "2015-11-08T17:30:00",
     "shape": "triangle",
     "duration_minutes": 10,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "IN",
@@ -68828,8 +68828,8 @@ var ufoShapes = [
     "date_time": "2015-11-07T18:30:00",
     "shape": "fireball",
     "duration_minutes": 10,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CA",
@@ -68852,8 +68852,8 @@ var ufoShapes = [
     "date_time": "2015-11-07T18:15:00",
     "shape": "other",
     "duration_minutes": 10,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NV",
@@ -68932,8 +68932,8 @@ var ufoShapes = [
     "date_time": "2015-11-07T18:00:00",
     "shape": "unknown",
     "duration_minutes": 10,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CA",
@@ -68948,8 +68948,8 @@ var ufoShapes = [
     "date_time": "2015-11-07T18:00:00",
     "shape": "cone",
     "duration_minutes": 10,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CA",
@@ -68980,8 +68980,8 @@ var ufoShapes = [
     "date_time": "2015-11-07T18:00:00",
     "shape": "light",
     "duration_minutes": 10,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CA",
@@ -69036,8 +69036,8 @@ var ufoShapes = [
     "date_time": "2015-11-07T18:00:00",
     "shape": "unknown",
     "duration_minutes": 10,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CA",
@@ -69140,16 +69140,16 @@ var ufoShapes = [
     "date_time": "2015-10-30T08:00:00",
     "shape": "rectangle",
     "duration_minutes": 10,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "Unknown",
     "date_time": "2015-10-28T08:00:00",
     "shape": "circle",
     "duration_minutes": 10,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "WA",
@@ -69244,8 +69244,8 @@ var ufoShapes = [
     "date_time": "2015-10-20T20:10:00",
     "shape": "rectangle",
     "duration_minutes": 10,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "GA",
@@ -69388,16 +69388,16 @@ var ufoShapes = [
     "date_time": "2015-10-10T20:40:00",
     "shape": "light",
     "duration_minutes": 10,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "IL",
     "date_time": "2015-10-10T20:35:00",
     "shape": "light",
     "duration_minutes": 10,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CA",
@@ -69420,8 +69420,8 @@ var ufoShapes = [
     "date_time": "2015-10-09T23:30:00",
     "shape": "flash",
     "duration_minutes": 10,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CA",
@@ -69540,16 +69540,16 @@ var ufoShapes = [
     "date_time": "2015-10-01T19:00:00",
     "shape": "light",
     "duration_minutes": 10,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "ME",
     "date_time": "2015-09-28T20:35:00",
     "shape": "triangle",
     "duration_minutes": 10,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "FL",
@@ -69572,8 +69572,8 @@ var ufoShapes = [
     "date_time": "2015-09-27T19:30:00",
     "shape": "changing",
     "duration_minutes": 10,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MA",
@@ -69596,8 +69596,8 @@ var ufoShapes = [
     "date_time": "2015-09-26T23:15:00",
     "shape": "other",
     "duration_minutes": 10,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MA",
@@ -69692,8 +69692,8 @@ var ufoShapes = [
     "date_time": "2015-09-17T19:00:00",
     "shape": "sphere",
     "duration_minutes": 10,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NY",
@@ -69740,8 +69740,8 @@ var ufoShapes = [
     "date_time": "2015-09-14T20:00:00",
     "shape": "light",
     "duration_minutes": 10,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CA",
@@ -69780,8 +69780,8 @@ var ufoShapes = [
     "date_time": "2015-09-12T20:25:00",
     "shape": "light",
     "duration_minutes": 10,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "RI",
@@ -69812,8 +69812,8 @@ var ufoShapes = [
     "date_time": "2015-09-09T00:20:00",
     "shape": "fireball",
     "duration_minutes": 10,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CO",
@@ -69852,8 +69852,8 @@ var ufoShapes = [
     "date_time": "2015-09-06T03:00:00",
     "shape": "unknown",
     "duration_minutes": 10,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "ME",
@@ -69900,8 +69900,8 @@ var ufoShapes = [
     "date_time": "2015-09-02T21:45:00",
     "shape": "circle",
     "duration_minutes": 10,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "AB",
@@ -70036,8 +70036,8 @@ var ufoShapes = [
     "date_time": "2015-08-20T21:30:00",
     "shape": "triangle",
     "duration_minutes": 10,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "WA",
@@ -70052,8 +70052,8 @@ var ufoShapes = [
     "date_time": "2015-08-18T21:25:00",
     "shape": "triangle",
     "duration_minutes": 10,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NH",
@@ -70124,8 +70124,8 @@ var ufoShapes = [
     "date_time": "2015-08-10T21:09:00",
     "shape": "formation",
     "duration_minutes": 10,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MN",
@@ -70140,24 +70140,24 @@ var ufoShapes = [
     "date_time": "2015-08-09T04:57:00",
     "shape": "formation",
     "duration_minutes": 10,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "Unknown",
     "date_time": "2015-08-08T23:15:00",
     "shape": "light",
     "duration_minutes": 10,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "OH",
     "date_time": "2015-08-08T22:00:00",
     "shape": "fireball",
     "duration_minutes": 10,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NY",
@@ -70196,8 +70196,8 @@ var ufoShapes = [
     "date_time": "2015-08-07T17:30:00",
     "shape": "other",
     "duration_minutes": 10,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "WA",
@@ -70212,8 +70212,8 @@ var ufoShapes = [
     "date_time": "2015-08-05T23:40:00",
     "shape": "fireball",
     "duration_minutes": 10,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MA",
@@ -70236,8 +70236,8 @@ var ufoShapes = [
     "date_time": "2015-08-04T04:30:00",
     "shape": "circle",
     "duration_minutes": 10,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "FL",
@@ -70252,8 +70252,8 @@ var ufoShapes = [
     "date_time": "2015-08-03T23:11:00",
     "shape": "oval",
     "duration_minutes": 10,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "IL",
@@ -70292,8 +70292,8 @@ var ufoShapes = [
     "date_time": "2015-08-02T02:00:00",
     "shape": "unknown",
     "duration_minutes": 10,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "WI",
@@ -70324,8 +70324,8 @@ var ufoShapes = [
     "date_time": "2015-07-30T21:50:00",
     "shape": "circle",
     "duration_minutes": 10,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "OR",
@@ -70348,8 +70348,8 @@ var ufoShapes = [
     "date_time": "2015-07-27T22:00:00",
     "shape": "triangle",
     "duration_minutes": 10,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NC",
@@ -70388,8 +70388,8 @@ var ufoShapes = [
     "date_time": "2015-07-18T00:00:00",
     "shape": "unknown",
     "duration_minutes": 10,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "AR",
@@ -70420,8 +70420,8 @@ var ufoShapes = [
     "date_time": "2015-07-13T04:30:00",
     "shape": "fireball",
     "duration_minutes": 10,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NY",
@@ -70476,8 +70476,8 @@ var ufoShapes = [
     "date_time": "2015-07-11T21:00:00",
     "shape": "light",
     "duration_minutes": 10,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "AZ",
@@ -70532,8 +70532,8 @@ var ufoShapes = [
     "date_time": "2015-07-04T22:40:00",
     "shape": "fireball",
     "duration_minutes": 10,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NY",
@@ -70572,8 +70572,8 @@ var ufoShapes = [
     "date_time": "2015-07-04T22:13:00",
     "shape": "sphere",
     "duration_minutes": 10,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "WA",
@@ -70684,8 +70684,8 @@ var ufoShapes = [
     "date_time": "2015-07-04T20:00:00",
     "shape": "diamond",
     "duration_minutes": 10,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NC",
@@ -70724,8 +70724,8 @@ var ufoShapes = [
     "date_time": "2015-06-30T21:00:00",
     "shape": "circle",
     "duration_minutes": 10,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NY",
@@ -70836,8 +70836,8 @@ var ufoShapes = [
     "date_time": "2015-06-20T01:00:00",
     "shape": "unknown",
     "duration_minutes": 10,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MI",
@@ -70908,8 +70908,8 @@ var ufoShapes = [
     "date_time": "2015-06-08T21:45:00",
     "shape": "formation",
     "duration_minutes": 10,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "FL",
@@ -71012,8 +71012,8 @@ var ufoShapes = [
     "date_time": "2015-05-28T18:30:00",
     "shape": "cigar",
     "duration_minutes": 10,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NM",
@@ -71068,8 +71068,8 @@ var ufoShapes = [
     "date_time": "2015-05-22T22:30:00",
     "shape": "circle",
     "duration_minutes": 10,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "WA",
@@ -71100,8 +71100,8 @@ var ufoShapes = [
     "date_time": "2015-05-16T20:30:00",
     "shape": "sphere",
     "duration_minutes": 10,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "OR",
@@ -71308,8 +71308,8 @@ var ufoShapes = [
     "date_time": "2015-04-18T01:30:00",
     "shape": "changing",
     "duration_minutes": 10,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "FL",
@@ -71324,16 +71324,16 @@ var ufoShapes = [
     "date_time": "2015-04-14T21:30:00",
     "shape": "fireball",
     "duration_minutes": 10,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NH",
     "date_time": "2015-04-14T21:30:00",
     "shape": "fireball",
     "duration_minutes": 10,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "OH",
@@ -71356,8 +71356,8 @@ var ufoShapes = [
     "date_time": "2015-04-12T21:30:00",
     "shape": "light",
     "duration_minutes": 10,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "SC",
@@ -71380,8 +71380,8 @@ var ufoShapes = [
     "date_time": "2015-04-09T21:45:00",
     "shape": "unknown",
     "duration_minutes": 10,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MA",
@@ -71404,8 +71404,8 @@ var ufoShapes = [
     "date_time": "2015-04-04T18:45:00",
     "shape": "fireball",
     "duration_minutes": 10,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "OH",
@@ -71420,8 +71420,8 @@ var ufoShapes = [
     "date_time": "2015-03-28T21:30:00",
     "shape": "light",
     "duration_minutes": 10,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CT",
@@ -71452,8 +71452,8 @@ var ufoShapes = [
     "date_time": "2015-03-18T22:50:00",
     "shape": "oval",
     "duration_minutes": 10,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "WA",
@@ -71548,8 +71548,8 @@ var ufoShapes = [
     "date_time": "2015-03-10T06:00:00",
     "shape": "rectangle",
     "duration_minutes": 10,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MN",
@@ -71676,16 +71676,16 @@ var ufoShapes = [
     "date_time": "2015-02-23T15:00:00",
     "shape": "other",
     "duration_minutes": 10,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "Unknown",
     "date_time": "2015-02-22T19:05:00",
     "shape": "cylinder",
     "duration_minutes": 10,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MT",
@@ -71732,8 +71732,8 @@ var ufoShapes = [
     "date_time": "2015-02-15T02:30:00",
     "shape": "flash",
     "duration_minutes": 10,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CO",
@@ -71780,8 +71780,8 @@ var ufoShapes = [
     "date_time": "2015-02-06T19:00:00",
     "shape": "unknown",
     "duration_minutes": 10,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CA",
@@ -71916,8 +71916,8 @@ var ufoShapes = [
     "date_time": "2015-01-20T17:25:00",
     "shape": "chevron",
     "duration_minutes": 10,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CA",
@@ -71980,24 +71980,24 @@ var ufoShapes = [
     "date_time": "2015-01-11T15:00:00",
     "shape": "unknown",
     "duration_minutes": 10,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "WA",
     "date_time": "2015-01-10T22:15:00",
     "shape": "circle",
     "duration_minutes": 10,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "Unknown",
     "date_time": "2015-01-08T23:30:00",
     "shape": "formation",
     "duration_minutes": 10,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CA",
@@ -72156,8 +72156,8 @@ var ufoShapes = [
     "date_time": "2015-02-02T12:05:00",
     "shape": "other",
     "duration_minutes": 11,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "AZ",
@@ -72188,8 +72188,8 @@ var ufoShapes = [
     "date_time": "2016-11-15T07:05:00",
     "shape": "formation",
     "duration_minutes": 12,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "AZ",
@@ -72380,8 +72380,8 @@ var ufoShapes = [
     "date_time": "2015-08-12T21:30:00",
     "shape": "unknown",
     "duration_minutes": 12,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "WA",
@@ -72404,8 +72404,8 @@ var ufoShapes = [
     "date_time": "2015-07-02T02:55:00",
     "shape": "changing",
     "duration_minutes": 12,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CA",
@@ -72428,8 +72428,8 @@ var ufoShapes = [
     "date_time": "2015-05-05T21:05:00",
     "shape": "circle",
     "duration_minutes": 12,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "WV",
@@ -72468,8 +72468,8 @@ var ufoShapes = [
     "date_time": "2016-08-22T02:00:00",
     "shape": "light",
     "duration_minutes": 13,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CT",
@@ -72524,8 +72524,8 @@ var ufoShapes = [
     "date_time": "2016-10-23T19:45:00",
     "shape": "fireball",
     "duration_minutes": 14,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "KY",
@@ -72700,8 +72700,8 @@ var ufoShapes = [
     "date_time": "2015-11-13T21:00:00",
     "shape": "fireball",
     "duration_minutes": 15,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "OR",
@@ -72724,8 +72724,8 @@ var ufoShapes = [
     "date_time": "2015-09-15T00:00:00",
     "shape": "triangle",
     "duration_minutes": 15,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NH",
@@ -72748,8 +72748,8 @@ var ufoShapes = [
     "date_time": "2015-07-04T21:30:00",
     "shape": "unknown",
     "duration_minutes": 15,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "WA",
@@ -72788,8 +72788,8 @@ var ufoShapes = [
     "date_time": "2016-12-30T20:00:00",
     "shape": "unknown",
     "duration_minutes": 15,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "AL",
@@ -72892,8 +72892,8 @@ var ufoShapes = [
     "date_time": "2016-12-06T19:00:00",
     "shape": "other",
     "duration_minutes": 15,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CA",
@@ -72948,8 +72948,8 @@ var ufoShapes = [
     "date_time": "2016-11-25T19:00:00",
     "shape": "light",
     "duration_minutes": 15,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "GA",
@@ -72964,8 +72964,8 @@ var ufoShapes = [
     "date_time": "2016-11-24T20:30:00",
     "shape": "light",
     "duration_minutes": 15,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "FL",
@@ -73004,16 +73004,16 @@ var ufoShapes = [
     "date_time": "2016-11-17T20:00:00",
     "shape": "disk",
     "duration_minutes": 15,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "SC",
     "date_time": "2016-11-16T23:00:00",
     "shape": "light",
     "duration_minutes": 15,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "AZ",
@@ -73028,8 +73028,8 @@ var ufoShapes = [
     "date_time": "2016-11-16T18:30:00",
     "shape": "light",
     "duration_minutes": 15,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NY",
@@ -73076,16 +73076,16 @@ var ufoShapes = [
     "date_time": "2016-11-10T17:30:00",
     "shape": "light",
     "duration_minutes": 15,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "WI",
     "date_time": "2016-11-10T16:28:00",
     "shape": "cigar",
     "duration_minutes": 15,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "AZ",
@@ -73140,8 +73140,8 @@ var ufoShapes = [
     "date_time": "2016-11-04T17:00:00",
     "shape": "disk",
     "duration_minutes": 15,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "PA",
@@ -73156,8 +73156,8 @@ var ufoShapes = [
     "date_time": "2016-10-31T11:40:00",
     "shape": "cross",
     "duration_minutes": 15,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "TX",
@@ -73428,8 +73428,8 @@ var ufoShapes = [
     "date_time": "2016-09-20T20:00:00",
     "shape": "light",
     "duration_minutes": 15,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "IL",
@@ -73468,16 +73468,16 @@ var ufoShapes = [
     "date_time": "2016-09-16T00:00:00",
     "shape": "triangle",
     "duration_minutes": 15,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "WA",
     "date_time": "2016-09-15T20:25:00",
     "shape": "light",
     "duration_minutes": 15,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CO",
@@ -73500,16 +73500,16 @@ var ufoShapes = [
     "date_time": "2016-09-10T01:00:00",
     "shape": "sphere",
     "duration_minutes": 15,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "TX",
     "date_time": "2016-09-09T23:30:00",
     "shape": "formation",
     "duration_minutes": 15,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "GA",
@@ -73620,8 +73620,8 @@ var ufoShapes = [
     "date_time": "2016-08-22T00:30:00",
     "shape": "light",
     "duration_minutes": 15,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "VT",
@@ -73636,8 +73636,8 @@ var ufoShapes = [
     "date_time": "2016-08-20T21:15:00",
     "shape": "rectangle",
     "duration_minutes": 15,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NJ",
@@ -73652,24 +73652,24 @@ var ufoShapes = [
     "date_time": "2016-08-19T22:45:00",
     "shape": "unknown",
     "duration_minutes": 15,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "AR",
     "date_time": "2016-08-19T21:00:00",
     "shape": "triangle",
     "duration_minutes": 15,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NH",
     "date_time": "2016-08-17T21:30:00",
     "shape": "formation",
     "duration_minutes": 15,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NY",
@@ -73796,16 +73796,16 @@ var ufoShapes = [
     "date_time": "2016-07-28T08:45:00",
     "shape": "circle",
     "duration_minutes": 15,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "UT",
     "date_time": "2016-07-27T22:35:00",
     "shape": "changing",
     "duration_minutes": 15,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "OR",
@@ -73828,8 +73828,8 @@ var ufoShapes = [
     "date_time": "2016-07-23T21:30:00",
     "shape": "light",
     "duration_minutes": 15,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "WA",
@@ -74044,8 +74044,8 @@ var ufoShapes = [
     "date_time": "2016-06-26T02:00:00",
     "shape": "light",
     "duration_minutes": 15,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MS",
@@ -74084,16 +74084,16 @@ var ufoShapes = [
     "date_time": "2016-06-23T22:25:00",
     "shape": "circle",
     "duration_minutes": 15,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "Unknown",
     "date_time": "2016-06-23T01:30:00",
     "shape": "circle",
     "duration_minutes": 15,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NV",
@@ -74108,8 +74108,8 @@ var ufoShapes = [
     "date_time": "2016-06-18T21:30:00",
     "shape": "chevron",
     "duration_minutes": 15,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "IL",
@@ -74236,8 +74236,8 @@ var ufoShapes = [
     "date_time": "2016-05-10T12:00:00",
     "shape": "triangle",
     "duration_minutes": 15,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CO",
@@ -74332,16 +74332,16 @@ var ufoShapes = [
     "date_time": "2016-04-17T23:00:00",
     "shape": "rectangle",
     "duration_minutes": 15,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "FL",
     "date_time": "2016-04-16T21:50:00",
     "shape": "rectangle",
     "duration_minutes": 15,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "AB",
@@ -74444,8 +74444,8 @@ var ufoShapes = [
     "date_time": "2016-03-29T06:30:00",
     "shape": "cone",
     "duration_minutes": 15,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NC",
@@ -74556,8 +74556,8 @@ var ufoShapes = [
     "date_time": "2016-02-25T12:45:00",
     "shape": "formation",
     "duration_minutes": 15,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "LA",
@@ -74748,8 +74748,8 @@ var ufoShapes = [
     "date_time": "2016-01-01T00:00:00",
     "shape": "sphere",
     "duration_minutes": 15,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "WA",
@@ -74764,24 +74764,24 @@ var ufoShapes = [
     "date_time": "2015-12-30T16:50:00",
     "shape": "cylinder",
     "duration_minutes": 15,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "WV",
     "date_time": "2015-12-29T15:30:00",
     "shape": "rectangle",
     "duration_minutes": 15,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "Unknown",
     "date_time": "2015-12-28T19:45:00",
     "shape": "sphere",
     "duration_minutes": 15,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "FL",
@@ -74812,8 +74812,8 @@ var ufoShapes = [
     "date_time": "2015-12-22T21:30:00",
     "shape": "light",
     "duration_minutes": 15,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "FL",
@@ -74852,16 +74852,16 @@ var ufoShapes = [
     "date_time": "2015-12-15T22:33:00",
     "shape": "rectangle",
     "duration_minutes": 15,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "KY",
     "date_time": "2015-12-15T17:38:00",
     "shape": "light",
     "duration_minutes": 15,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "AZ",
@@ -74876,8 +74876,8 @@ var ufoShapes = [
     "date_time": "2015-12-14T00:00:00",
     "shape": "unknown",
     "duration_minutes": 15,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CA",
@@ -74956,8 +74956,8 @@ var ufoShapes = [
     "date_time": "2015-11-24T19:30:00",
     "shape": "diamond",
     "duration_minutes": 15,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NV",
@@ -74988,16 +74988,16 @@ var ufoShapes = [
     "date_time": "2015-11-20T20:30:00",
     "shape": "unknown",
     "duration_minutes": 15,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NH",
     "date_time": "2015-11-16T00:00:00",
     "shape": "triangle",
     "duration_minutes": 15,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "AK",
@@ -75028,16 +75028,16 @@ var ufoShapes = [
     "date_time": "2015-11-12T20:00:00",
     "shape": "light",
     "duration_minutes": 15,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "Unknown",
     "date_time": "2015-11-09T05:30:00",
     "shape": "light",
     "duration_minutes": 15,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MT",
@@ -75188,8 +75188,8 @@ var ufoShapes = [
     "date_time": "2015-11-07T18:00:00",
     "shape": "circle",
     "duration_minutes": 15,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CA",
@@ -75220,8 +75220,8 @@ var ufoShapes = [
     "date_time": "2015-11-07T18:00:00",
     "shape": "other",
     "duration_minutes": 15,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CA",
@@ -75276,8 +75276,8 @@ var ufoShapes = [
     "date_time": "2015-11-02T16:20:00",
     "shape": "triangle",
     "duration_minutes": 15,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "VT",
@@ -75300,8 +75300,8 @@ var ufoShapes = [
     "date_time": "2015-10-29T05:30:00",
     "shape": "light",
     "duration_minutes": 15,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MA",
@@ -75348,8 +75348,8 @@ var ufoShapes = [
     "date_time": "2015-10-21T21:00:00",
     "shape": "circle",
     "duration_minutes": 15,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "VA",
@@ -75364,8 +75364,8 @@ var ufoShapes = [
     "date_time": "2015-10-14T21:10:00",
     "shape": "disk",
     "duration_minutes": 15,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CA",
@@ -75420,8 +75420,8 @@ var ufoShapes = [
     "date_time": "2015-10-03T03:00:00",
     "shape": "triangle",
     "duration_minutes": 15,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "ON",
@@ -75492,8 +75492,8 @@ var ufoShapes = [
     "date_time": "2015-09-26T13:00:00",
     "shape": "formation",
     "duration_minutes": 15,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "OR",
@@ -75508,8 +75508,8 @@ var ufoShapes = [
     "date_time": "2015-09-24T21:00:00",
     "shape": "light",
     "duration_minutes": 15,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NM",
@@ -75604,8 +75604,8 @@ var ufoShapes = [
     "date_time": "2015-09-13T21:00:00",
     "shape": "fireball",
     "duration_minutes": 15,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CO",
@@ -75636,16 +75636,16 @@ var ufoShapes = [
     "date_time": "2015-09-10T20:30:00",
     "shape": "circle",
     "duration_minutes": 15,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "IL",
     "date_time": "2015-09-08T23:25:00",
     "shape": "diamond",
     "duration_minutes": 15,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "FL",
@@ -75684,8 +75684,8 @@ var ufoShapes = [
     "date_time": "2015-09-03T05:00:00",
     "shape": "formation",
     "duration_minutes": 15,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NY",
@@ -75756,16 +75756,16 @@ var ufoShapes = [
     "date_time": "2015-08-19T23:00:00",
     "shape": "circle",
     "duration_minutes": 15,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CT",
     "date_time": "2015-08-19T00:00:00",
     "shape": "fireball",
     "duration_minutes": 15,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CA",
@@ -75780,32 +75780,32 @@ var ufoShapes = [
     "date_time": "2015-08-18T20:45:00",
     "shape": "disk",
     "duration_minutes": 15,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "YT",
     "date_time": "2015-08-17T23:30:00",
     "shape": "teardrop",
     "duration_minutes": 15,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "Unknown",
     "date_time": "2015-08-17T21:30:00",
     "shape": "light",
     "duration_minutes": 15,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "FL",
     "date_time": "2015-08-17T21:00:00",
     "shape": "changing",
     "duration_minutes": 15,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NY",
@@ -75820,8 +75820,8 @@ var ufoShapes = [
     "date_time": "2015-08-15T01:03:00",
     "shape": "oval",
     "duration_minutes": 15,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NC",
@@ -75948,8 +75948,8 @@ var ufoShapes = [
     "date_time": "2015-07-26T20:35:00",
     "shape": "oval",
     "duration_minutes": 15,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CA",
@@ -75980,8 +75980,8 @@ var ufoShapes = [
     "date_time": "2015-07-24T12:30:00",
     "shape": "circle",
     "duration_minutes": 15,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "AZ",
@@ -76116,8 +76116,8 @@ var ufoShapes = [
     "date_time": "2015-07-04T23:00:00",
     "shape": "circle",
     "duration_minutes": 15,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "WI",
@@ -76204,8 +76204,8 @@ var ufoShapes = [
     "date_time": "2015-07-04T01:00:00",
     "shape": "triangle",
     "duration_minutes": 15,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "ME",
@@ -76236,8 +76236,8 @@ var ufoShapes = [
     "date_time": "2015-07-02T21:00:00",
     "shape": "circle",
     "duration_minutes": 15,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CA",
@@ -76276,8 +76276,8 @@ var ufoShapes = [
     "date_time": "2015-06-22T22:30:00",
     "shape": "cylinder",
     "duration_minutes": 15,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CA",
@@ -76308,16 +76308,16 @@ var ufoShapes = [
     "date_time": "2015-06-13T21:30:00",
     "shape": "circle",
     "duration_minutes": 15,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MN",
     "date_time": "2015-06-13T20:08:00",
     "shape": "unknown",
     "duration_minutes": 15,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "FL",
@@ -76340,8 +76340,8 @@ var ufoShapes = [
     "date_time": "2015-06-08T13:30:00",
     "shape": "cigar",
     "duration_minutes": 15,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CO",
@@ -76404,8 +76404,8 @@ var ufoShapes = [
     "date_time": "2015-05-30T23:30:00",
     "shape": "sphere",
     "duration_minutes": 15,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CO",
@@ -76428,8 +76428,8 @@ var ufoShapes = [
     "date_time": "2015-05-27T00:30:00",
     "shape": "sphere",
     "duration_minutes": 15,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NC",
@@ -76524,8 +76524,8 @@ var ufoShapes = [
     "date_time": "2015-05-02T19:45:00",
     "shape": "disk",
     "duration_minutes": 15,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "AZ",
@@ -76548,8 +76548,8 @@ var ufoShapes = [
     "date_time": "2015-04-27T22:00:00",
     "shape": "unknown",
     "duration_minutes": 15,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "WV",
@@ -77052,16 +77052,16 @@ var ufoShapes = [
     "date_time": "2015-06-27T00:00:00",
     "shape": "changing",
     "duration_minutes": 16,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MN",
     "date_time": "2016-11-19T16:30:00",
     "shape": "rectangle",
     "duration_minutes": 17,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CA",
@@ -77084,8 +77084,8 @@ var ufoShapes = [
     "date_time": "2016-06-03T11:35:00",
     "shape": "oval",
     "duration_minutes": 18,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NH",
@@ -77108,8 +77108,8 @@ var ufoShapes = [
     "date_time": "2015-12-17T21:30:00",
     "shape": "light",
     "duration_minutes": 18,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "ND",
@@ -77172,16 +77172,16 @@ var ufoShapes = [
     "date_time": "2015-07-11T00:00:00",
     "shape": "unknown",
     "duration_minutes": 20,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "WY",
     "date_time": "2016-07-30T20:00:00",
     "shape": "sphere",
     "duration_minutes": 20,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "AL",
@@ -77284,8 +77284,8 @@ var ufoShapes = [
     "date_time": "2015-07-29T21:00:00",
     "shape": "triangle",
     "duration_minutes": 20,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NY",
@@ -77316,8 +77316,8 @@ var ufoShapes = [
     "date_time": "2015-03-12T05:00:00",
     "shape": "fireball",
     "duration_minutes": 20,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "IN",
@@ -77380,16 +77380,16 @@ var ufoShapes = [
     "date_time": "2016-12-17T22:00:00",
     "shape": "triangle",
     "duration_minutes": 20,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "Unknown",
     "date_time": "2016-12-17T22:00:00",
     "shape": "triangle",
     "duration_minutes": 20,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NM",
@@ -77476,8 +77476,8 @@ var ufoShapes = [
     "date_time": "2016-11-13T21:00:00",
     "shape": "triangle",
     "duration_minutes": 20,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "IA",
@@ -77572,8 +77572,8 @@ var ufoShapes = [
     "date_time": "2016-10-21T23:00:00",
     "shape": "light",
     "duration_minutes": 20,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "OK",
@@ -77596,8 +77596,8 @@ var ufoShapes = [
     "date_time": "2016-10-18T00:18:00",
     "shape": "other",
     "duration_minutes": 20,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NC",
@@ -77668,8 +77668,8 @@ var ufoShapes = [
     "date_time": "2016-09-17T20:33:00",
     "shape": "changing",
     "duration_minutes": 20,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MI",
@@ -77692,8 +77692,8 @@ var ufoShapes = [
     "date_time": "2016-09-13T03:00:00",
     "shape": "circle",
     "duration_minutes": 20,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "KS",
@@ -77804,8 +77804,8 @@ var ufoShapes = [
     "date_time": "2016-08-21T03:00:00",
     "shape": "unknown",
     "duration_minutes": 20,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MI",
@@ -77924,8 +77924,8 @@ var ufoShapes = [
     "date_time": "2016-07-16T12:45:00",
     "shape": "light",
     "duration_minutes": 20,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NH",
@@ -77948,8 +77948,8 @@ var ufoShapes = [
     "date_time": "2016-07-08T20:33:00",
     "shape": "diamond",
     "duration_minutes": 20,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "PA",
@@ -77964,8 +77964,8 @@ var ufoShapes = [
     "date_time": "2016-07-06T23:33:00",
     "shape": "circle",
     "duration_minutes": 20,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "AB",
@@ -77988,8 +77988,8 @@ var ufoShapes = [
     "date_time": "2016-07-04T21:45:00",
     "shape": "light",
     "duration_minutes": 20,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "IL",
@@ -78036,16 +78036,16 @@ var ufoShapes = [
     "date_time": "2016-06-28T22:30:00",
     "shape": "flash",
     "duration_minutes": 20,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "Unknown",
     "date_time": "2016-06-26T22:00:00",
     "shape": "light",
     "duration_minutes": 20,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "ID",
@@ -78164,8 +78164,8 @@ var ufoShapes = [
     "date_time": "2016-05-30T00:00:00",
     "shape": "changing",
     "duration_minutes": 20,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MA",
@@ -78212,8 +78212,8 @@ var ufoShapes = [
     "date_time": "2016-05-17T01:35:00",
     "shape": "triangle",
     "duration_minutes": 20,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NC",
@@ -78284,8 +78284,8 @@ var ufoShapes = [
     "date_time": "2016-04-22T14:10:00",
     "shape": "changing",
     "duration_minutes": 20,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "IL",
@@ -78324,8 +78324,8 @@ var ufoShapes = [
     "date_time": "2016-04-11T20:45:00",
     "shape": "unknown",
     "duration_minutes": 20,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MA",
@@ -78340,8 +78340,8 @@ var ufoShapes = [
     "date_time": "2016-04-06T23:30:00",
     "shape": "cigar",
     "duration_minutes": 20,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "FL",
@@ -78380,8 +78380,8 @@ var ufoShapes = [
     "date_time": "2016-03-23T23:00:00",
     "shape": "sphere",
     "duration_minutes": 20,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MD",
@@ -78484,8 +78484,8 @@ var ufoShapes = [
     "date_time": "2016-02-28T06:59:00",
     "shape": "light",
     "duration_minutes": 20,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MT",
@@ -78580,8 +78580,8 @@ var ufoShapes = [
     "date_time": "2016-01-16T03:00:00",
     "shape": "unknown",
     "duration_minutes": 20,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NC",
@@ -78700,8 +78700,8 @@ var ufoShapes = [
     "date_time": "2015-12-04T18:00:00",
     "shape": "cylinder",
     "duration_minutes": 20,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CT",
@@ -78868,8 +78868,8 @@ var ufoShapes = [
     "date_time": "2015-11-07T18:15:00",
     "shape": "egg",
     "duration_minutes": 20,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CA",
@@ -78940,8 +78940,8 @@ var ufoShapes = [
     "date_time": "2015-11-07T18:00:00",
     "shape": "circle",
     "duration_minutes": 20,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "IN",
@@ -78988,8 +78988,8 @@ var ufoShapes = [
     "date_time": "2015-10-29T05:30:00",
     "shape": "light",
     "duration_minutes": 20,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CA",
@@ -79100,8 +79100,8 @@ var ufoShapes = [
     "date_time": "2015-10-06T20:05:00",
     "shape": "light",
     "duration_minutes": 20,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MT",
@@ -79116,8 +79116,8 @@ var ufoShapes = [
     "date_time": "2015-10-01T20:40:00",
     "shape": "light",
     "duration_minutes": 20,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NS",
@@ -79204,8 +79204,8 @@ var ufoShapes = [
     "date_time": "2015-09-18T19:20:00",
     "shape": "oval",
     "duration_minutes": 20,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "KY",
@@ -79268,8 +79268,8 @@ var ufoShapes = [
     "date_time": "2015-09-06T21:00:00",
     "shape": "light",
     "duration_minutes": 20,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "PA",
@@ -79412,8 +79412,8 @@ var ufoShapes = [
     "date_time": "2015-08-08T01:15:00",
     "shape": "circle",
     "duration_minutes": 20,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "LA",
@@ -79436,8 +79436,8 @@ var ufoShapes = [
     "date_time": "2015-08-05T23:00:00",
     "shape": "sphere",
     "duration_minutes": 20,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "OH",
@@ -79524,8 +79524,8 @@ var ufoShapes = [
     "date_time": "2015-07-12T01:00:00",
     "shape": "light",
     "duration_minutes": 20,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NV",
@@ -79572,8 +79572,8 @@ var ufoShapes = [
     "date_time": "2015-07-04T21:00:00",
     "shape": "sphere",
     "duration_minutes": 20,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "AZ",
@@ -79612,8 +79612,8 @@ var ufoShapes = [
     "date_time": "2015-07-04T20:00:00",
     "shape": "circle",
     "duration_minutes": 20,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "VT",
@@ -79724,8 +79724,8 @@ var ufoShapes = [
     "date_time": "2015-06-15T22:45:00",
     "shape": "light",
     "duration_minutes": 20,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "VA",
@@ -79780,8 +79780,8 @@ var ufoShapes = [
     "date_time": "2015-06-01T22:00:00",
     "shape": "triangle",
     "duration_minutes": 20,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "TN",
@@ -79940,8 +79940,8 @@ var ufoShapes = [
     "date_time": "2015-04-05T14:00:00",
     "shape": "fireball",
     "duration_minutes": 20,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "BC",
@@ -79996,8 +79996,8 @@ var ufoShapes = [
     "date_time": "2015-03-18T19:22:00",
     "shape": "triangle",
     "duration_minutes": 20,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "IL",
@@ -80052,8 +80052,8 @@ var ufoShapes = [
     "date_time": "2015-03-07T04:00:00",
     "shape": "teardrop",
     "duration_minutes": 20,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "SC",
@@ -80116,8 +80116,8 @@ var ufoShapes = [
     "date_time": "2015-02-17T18:00:00",
     "shape": "light",
     "duration_minutes": 20,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "OR",
@@ -80292,8 +80292,8 @@ var ufoShapes = [
     "date_time": "2015-01-10T20:30:00",
     "shape": "sphere",
     "duration_minutes": 20,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "IL",
@@ -80380,8 +80380,8 @@ var ufoShapes = [
     "date_time": "2016-08-05T02:39:00",
     "shape": "unknown",
     "duration_minutes": 21,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "GA",
@@ -80404,8 +80404,8 @@ var ufoShapes = [
     "date_time": "2016-10-01T13:22:00",
     "shape": "disk",
     "duration_minutes": 23,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "OR",
@@ -80428,8 +80428,8 @@ var ufoShapes = [
     "date_time": "2015-11-22T22:00:00",
     "shape": "triangle",
     "duration_minutes": 24,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NV",
@@ -80444,8 +80444,8 @@ var ufoShapes = [
     "date_time": "2016-09-02T20:34:00",
     "shape": "unknown",
     "duration_minutes": 25,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MD",
@@ -80524,8 +80524,8 @@ var ufoShapes = [
     "date_time": "2016-08-14T03:00:00",
     "shape": "unknown",
     "duration_minutes": 25,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "RI",
@@ -80556,8 +80556,8 @@ var ufoShapes = [
     "date_time": "2016-06-11T21:45:00",
     "shape": "light",
     "duration_minutes": 25,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "WI",
@@ -80620,8 +80620,8 @@ var ufoShapes = [
     "date_time": "2016-03-21T00:00:00",
     "shape": "fireball",
     "duration_minutes": 25,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "AZ",
@@ -80636,8 +80636,8 @@ var ufoShapes = [
     "date_time": "2016-02-28T15:00:00",
     "shape": "triangle",
     "duration_minutes": 25,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CA",
@@ -80652,8 +80652,8 @@ var ufoShapes = [
     "date_time": "2016-02-06T05:35:00",
     "shape": "oval",
     "duration_minutes": 25,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NJ",
@@ -80692,8 +80692,8 @@ var ufoShapes = [
     "date_time": "2015-11-28T05:38:00",
     "shape": "triangle",
     "duration_minutes": 25,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "ND",
@@ -80820,16 +80820,16 @@ var ufoShapes = [
     "date_time": "2015-06-01T01:00:00",
     "shape": "unknown",
     "duration_minutes": 25,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "DE",
     "date_time": "2015-01-28T18:08:00",
     "shape": "light",
     "duration_minutes": 25,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "WA",
@@ -80852,8 +80852,8 @@ var ufoShapes = [
     "date_time": "2016-11-04T02:17:00",
     "shape": "chevron",
     "duration_minutes": 27,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "ID",
@@ -80924,8 +80924,8 @@ var ufoShapes = [
     "date_time": "2015-06-03T21:30:00",
     "shape": "unknown",
     "duration_minutes": 30,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MI",
@@ -80956,8 +80956,8 @@ var ufoShapes = [
     "date_time": "2016-11-13T23:20:00",
     "shape": "triangle",
     "duration_minutes": 30,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "KY",
@@ -81028,8 +81028,8 @@ var ufoShapes = [
     "date_time": "2016-07-18T22:10:00",
     "shape": "cylinder",
     "duration_minutes": 30,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "WI",
@@ -81148,8 +81148,8 @@ var ufoShapes = [
     "date_time": "2015-03-17T21:20:00",
     "shape": "light",
     "duration_minutes": 30,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NY",
@@ -81236,8 +81236,8 @@ var ufoShapes = [
     "date_time": "2016-11-28T18:48:00",
     "shape": "light",
     "duration_minutes": 30,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NJ",
@@ -81316,8 +81316,8 @@ var ufoShapes = [
     "date_time": "2016-11-18T10:45:00",
     "shape": "triangle",
     "duration_minutes": 30,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "WI",
@@ -81428,8 +81428,8 @@ var ufoShapes = [
     "date_time": "2016-10-30T22:30:00",
     "shape": "triangle",
     "duration_minutes": 30,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MS",
@@ -81516,8 +81516,8 @@ var ufoShapes = [
     "date_time": "2016-10-07T20:45:00",
     "shape": "formation",
     "duration_minutes": 30,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "GA",
@@ -81540,8 +81540,8 @@ var ufoShapes = [
     "date_time": "2016-10-01T22:00:00",
     "shape": "fireball",
     "duration_minutes": 30,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "TX",
@@ -81628,24 +81628,24 @@ var ufoShapes = [
     "date_time": "2016-09-15T21:00:00",
     "shape": "sphere",
     "duration_minutes": 30,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "FL",
     "date_time": "2016-09-15T21:00:00",
     "shape": "fireball",
     "duration_minutes": 30,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "VA",
     "date_time": "2016-09-14T21:30:00",
     "shape": "light",
     "duration_minutes": 30,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "OH",
@@ -81692,8 +81692,8 @@ var ufoShapes = [
     "date_time": "2016-09-06T22:00:00",
     "shape": "unknown",
     "duration_minutes": 30,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "PA",
@@ -81748,8 +81748,8 @@ var ufoShapes = [
     "date_time": "2016-08-23T15:30:00",
     "shape": "triangle",
     "duration_minutes": 30,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "KS",
@@ -81764,8 +81764,8 @@ var ufoShapes = [
     "date_time": "2016-08-20T23:45:00",
     "shape": "light",
     "duration_minutes": 30,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "IL",
@@ -81780,8 +81780,8 @@ var ufoShapes = [
     "date_time": "2016-08-20T21:45:00",
     "shape": "triangle",
     "duration_minutes": 30,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "HI",
@@ -81852,8 +81852,8 @@ var ufoShapes = [
     "date_time": "2016-07-27T03:33:00",
     "shape": "other",
     "duration_minutes": 30,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CA",
@@ -81868,8 +81868,8 @@ var ufoShapes = [
     "date_time": "2016-07-24T23:45:00",
     "shape": "unknown",
     "duration_minutes": 30,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "AZ",
@@ -81908,8 +81908,8 @@ var ufoShapes = [
     "date_time": "2016-07-16T19:45:00",
     "shape": "other",
     "duration_minutes": 30,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "WI",
@@ -81948,16 +81948,16 @@ var ufoShapes = [
     "date_time": "2016-07-10T14:01:00",
     "shape": "other",
     "duration_minutes": 30,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "WA",
     "date_time": "2016-07-09T22:15:00",
     "shape": "light",
     "duration_minutes": 30,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "WA",
@@ -81980,8 +81980,8 @@ var ufoShapes = [
     "date_time": "2016-07-08T13:00:00",
     "shape": "other",
     "duration_minutes": 30,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "KY",
@@ -82044,8 +82044,8 @@ var ufoShapes = [
     "date_time": "2016-06-23T13:10:00",
     "shape": "unknown",
     "duration_minutes": 30,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NC",
@@ -82268,8 +82268,8 @@ var ufoShapes = [
     "date_time": "2016-04-22T18:30:00",
     "shape": "disk",
     "duration_minutes": 30,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "ID",
@@ -82292,8 +82292,8 @@ var ufoShapes = [
     "date_time": "2016-04-16T21:00:00",
     "shape": "circle",
     "duration_minutes": 30,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CA",
@@ -82324,16 +82324,16 @@ var ufoShapes = [
     "date_time": "2016-04-06T06:00:00",
     "shape": "light",
     "duration_minutes": 30,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CO",
     "date_time": "2016-04-03T00:30:00",
     "shape": "light",
     "duration_minutes": 30,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CA",
@@ -82356,16 +82356,16 @@ var ufoShapes = [
     "date_time": "2016-03-31T01:00:00",
     "shape": "light",
     "duration_minutes": 30,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NY",
     "date_time": "2016-03-29T23:01:00",
     "shape": "circle",
     "duration_minutes": 30,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "AZ",
@@ -82420,8 +82420,8 @@ var ufoShapes = [
     "date_time": "2016-03-11T19:30:00",
     "shape": "rectangle",
     "duration_minutes": 30,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "UT",
@@ -82484,8 +82484,8 @@ var ufoShapes = [
     "date_time": "2016-02-15T19:00:00",
     "shape": "disk",
     "duration_minutes": 30,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CA",
@@ -82572,8 +82572,8 @@ var ufoShapes = [
     "date_time": "2016-01-28T00:30:00",
     "shape": "flash",
     "duration_minutes": 30,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MA",
@@ -82652,8 +82652,8 @@ var ufoShapes = [
     "date_time": "2016-01-06T19:00:00",
     "shape": "unknown",
     "duration_minutes": 30,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "ME",
@@ -82700,8 +82700,8 @@ var ufoShapes = [
     "date_time": "2016-01-03T21:00:00",
     "shape": "light",
     "duration_minutes": 30,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "WY",
@@ -82748,16 +82748,16 @@ var ufoShapes = [
     "date_time": "2015-12-24T15:00:00",
     "shape": "circle",
     "duration_minutes": 30,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MA",
     "date_time": "2015-12-20T23:23:00",
     "shape": "other",
     "duration_minutes": 30,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NC",
@@ -82796,8 +82796,8 @@ var ufoShapes = [
     "date_time": "2015-12-11T05:00:00",
     "shape": "light",
     "duration_minutes": 30,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "AK",
@@ -82812,8 +82812,8 @@ var ufoShapes = [
     "date_time": "2015-12-07T16:00:00",
     "shape": "circle",
     "duration_minutes": 30,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "GA",
@@ -82884,8 +82884,8 @@ var ufoShapes = [
     "date_time": "2015-11-12T23:30:00",
     "shape": "other",
     "duration_minutes": 30,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MI",
@@ -83004,8 +83004,8 @@ var ufoShapes = [
     "date_time": "2015-10-19T21:02:00",
     "shape": "sphere",
     "duration_minutes": 30,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "PA",
@@ -83036,8 +83036,8 @@ var ufoShapes = [
     "date_time": "2015-10-15T20:40:00",
     "shape": "light",
     "duration_minutes": 30,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CA",
@@ -83108,8 +83108,8 @@ var ufoShapes = [
     "date_time": "2015-10-08T21:00:00",
     "shape": "flash",
     "duration_minutes": 30,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "TX",
@@ -83212,8 +83212,8 @@ var ufoShapes = [
     "date_time": "2015-09-25T20:00:00",
     "shape": "circle",
     "duration_minutes": 30,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NH",
@@ -83236,8 +83236,8 @@ var ufoShapes = [
     "date_time": "2015-09-24T22:15:00",
     "shape": "light",
     "duration_minutes": 30,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CA",
@@ -83324,8 +83324,8 @@ var ufoShapes = [
     "date_time": "2015-09-15T23:00:00",
     "shape": "other",
     "duration_minutes": 30,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CT",
@@ -83340,8 +83340,8 @@ var ufoShapes = [
     "date_time": "2015-09-14T01:00:00",
     "shape": "light",
     "duration_minutes": 30,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "WI",
@@ -83452,16 +83452,16 @@ var ufoShapes = [
     "date_time": "2015-08-12T21:30:00",
     "shape": "rectangle",
     "duration_minutes": 30,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "TX",
     "date_time": "2015-08-11T05:30:00",
     "shape": "unknown",
     "duration_minutes": 30,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "OR",
@@ -83500,8 +83500,8 @@ var ufoShapes = [
     "date_time": "2015-08-07T21:00:00",
     "shape": "light",
     "duration_minutes": 30,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MN",
@@ -83588,8 +83588,8 @@ var ufoShapes = [
     "date_time": "2015-07-20T01:55:00",
     "shape": "light",
     "duration_minutes": 30,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CA",
@@ -83612,8 +83612,8 @@ var ufoShapes = [
     "date_time": "2015-07-05T23:30:00",
     "shape": "light",
     "duration_minutes": 30,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "WA",
@@ -83644,8 +83644,8 @@ var ufoShapes = [
     "date_time": "2015-07-04T21:30:00",
     "shape": "unknown",
     "duration_minutes": 30,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "AZ",
@@ -83668,8 +83668,8 @@ var ufoShapes = [
     "date_time": "2015-07-04T20:45:00",
     "shape": "circle",
     "duration_minutes": 30,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "IN",
@@ -83692,8 +83692,8 @@ var ufoShapes = [
     "date_time": "2015-07-03T22:00:00",
     "shape": "light",
     "duration_minutes": 30,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "RI",
@@ -83740,8 +83740,8 @@ var ufoShapes = [
     "date_time": "2015-06-29T04:30:00",
     "shape": "other",
     "duration_minutes": 30,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NV",
@@ -83828,8 +83828,8 @@ var ufoShapes = [
     "date_time": "2015-06-10T23:00:00",
     "shape": "light",
     "duration_minutes": 30,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MN",
@@ -83876,8 +83876,8 @@ var ufoShapes = [
     "date_time": "2015-06-06T22:57:00",
     "shape": "chevron",
     "duration_minutes": 30,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "ON",
@@ -83916,16 +83916,16 @@ var ufoShapes = [
     "date_time": "2015-06-01T21:00:00",
     "shape": "fireball",
     "duration_minutes": 30,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "TX",
     "date_time": "2015-05-29T23:00:00",
     "shape": "circle",
     "duration_minutes": 30,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NY",
@@ -84012,8 +84012,8 @@ var ufoShapes = [
     "date_time": "2015-04-29T00:00:00",
     "shape": "light",
     "duration_minutes": 30,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "PA",
@@ -84148,16 +84148,16 @@ var ufoShapes = [
     "date_time": "2015-04-01T12:00:00",
     "shape": "sphere",
     "duration_minutes": 30,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "OR",
     "date_time": "2015-03-29T21:45:00",
     "shape": "changing",
     "duration_minutes": 30,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CA",
@@ -84356,8 +84356,8 @@ var ufoShapes = [
     "date_time": "2015-01-29T15:00:00",
     "shape": "unknown",
     "duration_minutes": 30,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "AZ",
@@ -84380,8 +84380,8 @@ var ufoShapes = [
     "date_time": "2015-01-27T06:00:00",
     "shape": "triangle",
     "duration_minutes": 30,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "WA",
@@ -84412,8 +84412,8 @@ var ufoShapes = [
     "date_time": "2015-01-15T12:00:00",
     "shape": "sphere",
     "duration_minutes": 30,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CA",
@@ -84460,8 +84460,8 @@ var ufoShapes = [
     "date_time": "2016-11-24T19:00:00",
     "shape": "unknown",
     "duration_minutes": 35,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NC",
@@ -84548,8 +84548,8 @@ var ufoShapes = [
     "date_time": "2015-05-28T21:10:00",
     "shape": "sphere",
     "duration_minutes": 35,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NH",
@@ -84572,16 +84572,16 @@ var ufoShapes = [
     "date_time": "2015-03-18T21:30:00",
     "shape": "changing",
     "duration_minutes": 35,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "WA",
     "date_time": "2015-02-17T19:20:00",
     "shape": "sphere",
     "duration_minutes": 35,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "ID",
@@ -84596,8 +84596,8 @@ var ufoShapes = [
     "date_time": "2015-02-05T20:15:00",
     "shape": "formation",
     "duration_minutes": 35,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "WV",
@@ -84708,16 +84708,16 @@ var ufoShapes = [
     "date_time": "2016-10-13T19:00:00",
     "shape": "sphere",
     "duration_minutes": 40,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MD",
     "date_time": "2016-10-09T00:00:00",
     "shape": "egg",
     "duration_minutes": 40,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "OR",
@@ -84764,16 +84764,16 @@ var ufoShapes = [
     "date_time": "2016-04-17T21:00:00",
     "shape": "cigar",
     "duration_minutes": 40,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MO",
     "date_time": "2016-02-29T18:30:00",
     "shape": "unknown",
     "duration_minutes": 40,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CO",
@@ -84796,8 +84796,8 @@ var ufoShapes = [
     "date_time": "2015-12-31T19:00:00",
     "shape": "triangle",
     "duration_minutes": 40,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MS",
@@ -84836,8 +84836,8 @@ var ufoShapes = [
     "date_time": "2015-11-06T17:15:00",
     "shape": "sphere",
     "duration_minutes": 40,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NJ",
@@ -84852,8 +84852,8 @@ var ufoShapes = [
     "date_time": "2015-10-06T20:00:00",
     "shape": "cigar",
     "duration_minutes": 40,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NY",
@@ -85012,8 +85012,8 @@ var ufoShapes = [
     "date_time": "2015-02-09T20:20:00",
     "shape": "changing",
     "duration_minutes": 40,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CA",
@@ -85052,16 +85052,16 @@ var ufoShapes = [
     "date_time": "2016-11-06T18:30:00",
     "shape": "other",
     "duration_minutes": 45,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NC",
     "date_time": "2016-07-25T20:30:00",
     "shape": "circle",
     "duration_minutes": 45,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "WI",
@@ -85116,8 +85116,8 @@ var ufoShapes = [
     "date_time": "2016-11-04T23:00:00",
     "shape": "formation",
     "duration_minutes": 45,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "OH",
@@ -85268,24 +85268,24 @@ var ufoShapes = [
     "date_time": "2016-04-14T19:30:00",
     "shape": "light",
     "duration_minutes": 45,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "OR",
     "date_time": "2016-04-11T22:30:00",
     "shape": "light",
     "duration_minutes": 45,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NC",
     "date_time": "2016-03-13T20:30:00",
     "shape": "light",
     "duration_minutes": 45,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NY",
@@ -85300,16 +85300,16 @@ var ufoShapes = [
     "date_time": "2016-02-29T21:00:00",
     "shape": "triangle",
     "duration_minutes": 45,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MO",
     "date_time": "2016-02-29T18:45:00",
     "shape": "light",
     "duration_minutes": 45,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "FL",
@@ -85468,8 +85468,8 @@ var ufoShapes = [
     "date_time": "2015-10-02T04:51:00",
     "shape": "flash",
     "duration_minutes": 45,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "IN",
@@ -85484,24 +85484,24 @@ var ufoShapes = [
     "date_time": "2015-09-26T23:00:00",
     "shape": "fireball",
     "duration_minutes": 45,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CA",
     "date_time": "2015-09-24T08:00:00",
     "shape": "cylinder",
     "duration_minutes": 45,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "FL",
     "date_time": "2015-09-24T06:00:00",
     "shape": "other",
     "duration_minutes": 45,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CA",
@@ -85572,8 +85572,8 @@ var ufoShapes = [
     "date_time": "2015-08-05T01:00:00",
     "shape": "flash",
     "duration_minutes": 45,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "AK",
@@ -85644,8 +85644,8 @@ var ufoShapes = [
     "date_time": "2015-07-04T21:00:00",
     "shape": "circle",
     "duration_minutes": 45,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "VA",
@@ -85724,16 +85724,16 @@ var ufoShapes = [
     "date_time": "2015-06-02T21:30:00",
     "shape": "fireball",
     "duration_minutes": 45,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "FL",
     "date_time": "2015-06-02T21:15:00",
     "shape": "light",
     "duration_minutes": 45,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NC",
@@ -85780,8 +85780,8 @@ var ufoShapes = [
     "date_time": "2015-04-14T18:00:00",
     "shape": "changing",
     "duration_minutes": 45,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "OK",
@@ -85908,16 +85908,16 @@ var ufoShapes = [
     "date_time": "2016-02-15T03:37:00",
     "shape": "unknown",
     "duration_minutes": 50,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MN",
     "date_time": "2015-12-25T21:30:00",
     "shape": "other",
     "duration_minutes": 50,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "WI",
@@ -86020,8 +86020,8 @@ var ufoShapes = [
     "date_time": "2016-12-19T18:30:00",
     "shape": "cylinder",
     "duration_minutes": 60,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "LA",
@@ -86196,16 +86196,16 @@ var ufoShapes = [
     "date_time": "2016-09-24T03:00:00",
     "shape": "light",
     "duration_minutes": 60,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "Unknown",
     "date_time": "2016-09-18T22:00:00",
     "shape": "flash",
     "duration_minutes": 60,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MO",
@@ -86244,8 +86244,8 @@ var ufoShapes = [
     "date_time": "2016-09-09T20:55:00",
     "shape": "light",
     "duration_minutes": 60,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "TX",
@@ -86332,8 +86332,8 @@ var ufoShapes = [
     "date_time": "2016-08-20T21:00:00",
     "shape": "formation",
     "duration_minutes": 60,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "KS",
@@ -86436,8 +86436,8 @@ var ufoShapes = [
     "date_time": "2016-07-02T21:30:00",
     "shape": "light",
     "duration_minutes": 60,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CA",
@@ -86484,8 +86484,8 @@ var ufoShapes = [
     "date_time": "2016-06-13T04:00:00",
     "shape": "unknown",
     "duration_minutes": 60,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NC",
@@ -86596,8 +86596,8 @@ var ufoShapes = [
     "date_time": "2016-04-22T23:15:00",
     "shape": "light",
     "duration_minutes": 60,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "TN",
@@ -86716,8 +86716,8 @@ var ufoShapes = [
     "date_time": "2016-03-03T20:00:00",
     "shape": "other",
     "duration_minutes": 60,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MA",
@@ -86732,16 +86732,16 @@ var ufoShapes = [
     "date_time": "2016-02-01T11:58:00",
     "shape": "teardrop",
     "duration_minutes": 60,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "UT",
     "date_time": "2016-02-01T11:58:00",
     "shape": "changing",
     "duration_minutes": 60,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "AB",
@@ -86804,8 +86804,8 @@ var ufoShapes = [
     "date_time": "2015-12-15T03:00:00",
     "shape": "light",
     "duration_minutes": 60,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "VA",
@@ -86828,16 +86828,16 @@ var ufoShapes = [
     "date_time": "2015-12-07T02:00:00",
     "shape": "unknown",
     "duration_minutes": 60,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "ME",
     "date_time": "2015-12-05T21:00:00",
     "shape": "changing",
     "duration_minutes": 60,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "TX",
@@ -86852,8 +86852,8 @@ var ufoShapes = [
     "date_time": "2015-12-01T09:00:00",
     "shape": "unknown",
     "duration_minutes": 60,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CA",
@@ -86924,8 +86924,8 @@ var ufoShapes = [
     "date_time": "2015-11-07T19:00:00",
     "shape": "light",
     "duration_minutes": 60,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CA",
@@ -86964,8 +86964,8 @@ var ufoShapes = [
     "date_time": "2015-10-29T21:00:00",
     "shape": "unknown",
     "duration_minutes": 60,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "FL",
@@ -87060,8 +87060,8 @@ var ufoShapes = [
     "date_time": "2015-10-09T21:00:00",
     "shape": "triangle",
     "duration_minutes": 60,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "OR",
@@ -87108,24 +87108,24 @@ var ufoShapes = [
     "date_time": "2015-09-27T21:00:00",
     "shape": "formation",
     "duration_minutes": 60,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "AZ",
     "date_time": "2015-09-27T03:00:00",
     "shape": "diamond",
     "duration_minutes": 60,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MO",
     "date_time": "2015-09-26T10:30:00",
     "shape": "light",
     "duration_minutes": 60,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MA",
@@ -87180,8 +87180,8 @@ var ufoShapes = [
     "date_time": "2015-09-14T22:30:00",
     "shape": "circle",
     "duration_minutes": 60,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MD",
@@ -87220,16 +87220,16 @@ var ufoShapes = [
     "date_time": "2015-09-01T04:48:00",
     "shape": "circle",
     "duration_minutes": 60,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "UT",
     "date_time": "2015-08-30T23:00:00",
     "shape": "light",
     "duration_minutes": 60,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "SC",
@@ -87244,8 +87244,8 @@ var ufoShapes = [
     "date_time": "2015-08-20T23:00:00",
     "shape": "changing",
     "duration_minutes": 60,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MA",
@@ -87268,8 +87268,8 @@ var ufoShapes = [
     "date_time": "2015-08-15T11:30:00",
     "shape": "circle",
     "duration_minutes": 60,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NY",
@@ -87284,16 +87284,16 @@ var ufoShapes = [
     "date_time": "2015-08-12T00:45:00",
     "shape": "oval",
     "duration_minutes": 60,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MN",
     "date_time": "2015-08-09T22:30:00",
     "shape": "oval",
     "duration_minutes": 60,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MN",
@@ -87316,8 +87316,8 @@ var ufoShapes = [
     "date_time": "2015-08-05T23:45:00",
     "shape": "unknown",
     "duration_minutes": 60,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "SC",
@@ -87396,8 +87396,8 @@ var ufoShapes = [
     "date_time": "2015-07-04T21:00:00",
     "shape": "sphere",
     "duration_minutes": 60,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "WA",
@@ -87428,8 +87428,8 @@ var ufoShapes = [
     "date_time": "2015-06-27T21:30:00",
     "shape": "flash",
     "duration_minutes": 60,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "TX",
@@ -87452,8 +87452,8 @@ var ufoShapes = [
     "date_time": "2015-06-19T22:00:00",
     "shape": "unknown",
     "duration_minutes": 60,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "AZ",
@@ -87468,8 +87468,8 @@ var ufoShapes = [
     "date_time": "2015-06-11T01:06:00",
     "shape": "formation",
     "duration_minutes": 60,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NC",
@@ -87572,8 +87572,8 @@ var ufoShapes = [
     "date_time": "2015-04-23T02:30:00",
     "shape": "sphere",
     "duration_minutes": 60,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NY",
@@ -87604,16 +87604,16 @@ var ufoShapes = [
     "date_time": "2015-04-15T00:00:00",
     "shape": "other",
     "duration_minutes": 60,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "PA",
     "date_time": "2015-04-11T15:30:00",
     "shape": "oval",
     "duration_minutes": 60,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MO",
@@ -87684,8 +87684,8 @@ var ufoShapes = [
     "date_time": "2015-02-22T20:13:00",
     "shape": "disk",
     "duration_minutes": 60,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "SC",
@@ -87804,8 +87804,8 @@ var ufoShapes = [
     "date_time": "2016-03-05T17:45:00",
     "shape": "chevron",
     "duration_minutes": 60,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "KS",
@@ -87860,8 +87860,8 @@ var ufoShapes = [
     "date_time": "2015-08-10T03:00:00",
     "shape": "light",
     "duration_minutes": 60,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CA",
@@ -88012,8 +88012,8 @@ var ufoShapes = [
     "date_time": "2016-09-28T19:00:00",
     "shape": "changing",
     "duration_minutes": 60,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "OH",
@@ -88108,8 +88108,8 @@ var ufoShapes = [
     "date_time": "2015-11-20T14:00:00",
     "shape": "other",
     "duration_minutes": 60,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "IA",
@@ -88172,16 +88172,16 @@ var ufoShapes = [
     "date_time": "2016-10-07T01:00:00",
     "shape": "light",
     "duration_minutes": 60,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NY",
     "date_time": "2016-09-20T05:00:00",
     "shape": "light",
     "duration_minutes": 60,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "GA",
@@ -88220,8 +88220,8 @@ var ufoShapes = [
     "date_time": "2016-06-20T23:30:00",
     "shape": "circle",
     "duration_minutes": 60,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CA",
@@ -88388,8 +88388,8 @@ var ufoShapes = [
     "date_time": "2015-06-18T22:00:00",
     "shape": "light",
     "duration_minutes": 60,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "ON",
@@ -88436,8 +88436,8 @@ var ufoShapes = [
     "date_time": "2015-03-15T21:31:00",
     "shape": "unknown",
     "duration_minutes": 60,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "TX",
@@ -88460,8 +88460,8 @@ var ufoShapes = [
     "date_time": "2015-01-17T21:40:00",
     "shape": "light",
     "duration_minutes": 60,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MO",
@@ -88508,8 +88508,8 @@ var ufoShapes = [
     "date_time": "2016-04-18T21:00:00",
     "shape": "light",
     "duration_minutes": 60,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MA",
@@ -88572,8 +88572,8 @@ var ufoShapes = [
     "date_time": "2015-11-07T19:05:00",
     "shape": "light",
     "duration_minutes": 60,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "WI",
@@ -88628,16 +88628,16 @@ var ufoShapes = [
     "date_time": "2016-10-15T02:00:00",
     "shape": "circle",
     "duration_minutes": 60,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "WY",
     "date_time": "2016-10-01T06:00:00",
     "shape": "light",
     "duration_minutes": 60,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CA",
@@ -88684,24 +88684,24 @@ var ufoShapes = [
     "date_time": "2016-06-04T20:30:00",
     "shape": "fireball",
     "duration_minutes": 60,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "WA",
     "date_time": "2016-06-04T20:30:00",
     "shape": "fireball",
     "duration_minutes": 60,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "FL",
     "date_time": "2016-05-01T01:00:00",
     "shape": "unknown",
     "duration_minutes": 60,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "SC",
@@ -88796,16 +88796,16 @@ var ufoShapes = [
     "date_time": "2015-10-05T04:30:00",
     "shape": "unknown",
     "duration_minutes": 60,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "Unknown",
     "date_time": "2015-09-19T23:00:00",
     "shape": "fireball",
     "duration_minutes": 60,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CA",
@@ -88908,16 +88908,16 @@ var ufoShapes = [
     "date_time": "2015-04-02T04:00:00",
     "shape": "cylinder",
     "duration_minutes": 60,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NC",
     "date_time": "2015-03-17T21:23:00",
     "shape": "fireball",
     "duration_minutes": 60,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "AZ",
@@ -88940,8 +88940,8 @@ var ufoShapes = [
     "date_time": "2016-12-04T18:15:00",
     "shape": "circle",
     "duration_minutes": 60,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "OH",
@@ -88996,8 +88996,8 @@ var ufoShapes = [
     "date_time": "2015-01-20T20:00:00",
     "shape": "oval",
     "duration_minutes": 60,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CO",
@@ -89060,8 +89060,8 @@ var ufoShapes = [
     "date_time": "2015-08-12T22:00:00",
     "shape": "other",
     "duration_minutes": 75,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CO",
@@ -89084,8 +89084,8 @@ var ufoShapes = [
     "date_time": "2015-10-07T18:50:00",
     "shape": "oval",
     "duration_minutes": 80,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NC",
@@ -89100,8 +89100,8 @@ var ufoShapes = [
     "date_time": "2016-10-25T11:00:00",
     "shape": "disk",
     "duration_minutes": 90,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "IL",
@@ -89124,8 +89124,8 @@ var ufoShapes = [
     "date_time": "2015-11-19T04:00:00",
     "shape": "disk",
     "duration_minutes": 90,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CA",
@@ -89172,8 +89172,8 @@ var ufoShapes = [
     "date_time": "2016-07-08T01:00:00",
     "shape": "flash",
     "duration_minutes": 90,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "WI",
@@ -89316,16 +89316,16 @@ var ufoShapes = [
     "date_time": "2015-06-18T21:30:00",
     "shape": "circle",
     "duration_minutes": 90,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "Unknown",
     "date_time": "2015-02-28T19:25:00",
     "shape": "circle",
     "duration_minutes": 90,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CA",
@@ -89404,16 +89404,16 @@ var ufoShapes = [
     "date_time": "2016-12-28T05:00:00",
     "shape": "light",
     "duration_minutes": 120,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "TX",
     "date_time": "2016-12-27T19:45:00",
     "shape": "circle",
     "duration_minutes": 120,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "AZ",
@@ -89476,8 +89476,8 @@ var ufoShapes = [
     "date_time": "2016-11-12T18:00:00",
     "shape": "changing",
     "duration_minutes": 120,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MI",
@@ -89620,8 +89620,8 @@ var ufoShapes = [
     "date_time": "2016-09-18T23:20:00",
     "shape": "light",
     "duration_minutes": 120,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "PA",
@@ -89636,8 +89636,8 @@ var ufoShapes = [
     "date_time": "2016-09-11T02:45:00",
     "shape": "light",
     "duration_minutes": 120,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "AK",
@@ -89748,8 +89748,8 @@ var ufoShapes = [
     "date_time": "2016-08-11T01:00:00",
     "shape": "triangle",
     "duration_minutes": 120,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MA",
@@ -89764,8 +89764,8 @@ var ufoShapes = [
     "date_time": "2016-07-26T22:30:00",
     "shape": "triangle",
     "duration_minutes": 120,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NY",
@@ -89828,16 +89828,16 @@ var ufoShapes = [
     "date_time": "2016-06-24T20:00:00",
     "shape": "circle",
     "duration_minutes": 120,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "ID",
     "date_time": "2016-06-23T23:00:00",
     "shape": "triangle",
     "duration_minutes": 120,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "OR",
@@ -89908,8 +89908,8 @@ var ufoShapes = [
     "date_time": "2016-04-13T11:00:00",
     "shape": "sphere",
     "duration_minutes": 120,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "ON",
@@ -89948,16 +89948,16 @@ var ufoShapes = [
     "date_time": "2016-03-22T22:53:00",
     "shape": "triangle",
     "duration_minutes": 120,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "LA",
     "date_time": "2016-03-22T00:00:00",
     "shape": "rectangle",
     "duration_minutes": 120,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CA",
@@ -90036,8 +90036,8 @@ var ufoShapes = [
     "date_time": "2016-01-06T00:46:00",
     "shape": "light",
     "duration_minutes": 120,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "WA",
@@ -90084,8 +90084,8 @@ var ufoShapes = [
     "date_time": "2015-11-19T16:00:00",
     "shape": "disk",
     "duration_minutes": 120,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MI",
@@ -90116,8 +90116,8 @@ var ufoShapes = [
     "date_time": "2015-11-09T03:00:00",
     "shape": "light",
     "duration_minutes": 120,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "KS",
@@ -90188,8 +90188,8 @@ var ufoShapes = [
     "date_time": "2015-10-24T07:00:00",
     "shape": "oval",
     "duration_minutes": 120,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CO",
@@ -90284,8 +90284,8 @@ var ufoShapes = [
     "date_time": "2015-09-24T04:45:00",
     "shape": "changing",
     "duration_minutes": 120,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "OH",
@@ -90332,32 +90332,32 @@ var ufoShapes = [
     "date_time": "2015-09-05T20:00:00",
     "shape": "sphere",
     "duration_minutes": 120,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NY",
     "date_time": "2015-09-03T20:00:00",
     "shape": "light",
     "duration_minutes": 120,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NY",
     "date_time": "2015-09-03T20:00:00",
     "shape": "light",
     "duration_minutes": 120,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "SC",
     "date_time": "2015-08-28T22:00:00",
     "shape": "diamond",
     "duration_minutes": 120,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NJ",
@@ -90380,8 +90380,8 @@ var ufoShapes = [
     "date_time": "2015-08-09T20:30:00",
     "shape": "circle",
     "duration_minutes": 120,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NM",
@@ -90412,8 +90412,8 @@ var ufoShapes = [
     "date_time": "2015-07-24T00:00:00",
     "shape": "circle",
     "duration_minutes": 120,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NY",
@@ -90492,8 +90492,8 @@ var ufoShapes = [
     "date_time": "2015-06-02T01:40:00",
     "shape": "light",
     "duration_minutes": 120,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "GA",
@@ -90524,8 +90524,8 @@ var ufoShapes = [
     "date_time": "2015-05-17T04:00:00",
     "shape": "light",
     "duration_minutes": 120,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "ON",
@@ -90548,16 +90548,16 @@ var ufoShapes = [
     "date_time": "2015-05-07T22:00:00",
     "shape": "sphere",
     "duration_minutes": 120,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "IL",
     "date_time": "2015-05-03T16:00:00",
     "shape": "sphere",
     "duration_minutes": 120,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "OK",
@@ -90604,8 +90604,8 @@ var ufoShapes = [
     "date_time": "2015-04-22T23:00:00",
     "shape": "light",
     "duration_minutes": 120,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "WA",
@@ -90636,8 +90636,8 @@ var ufoShapes = [
     "date_time": "2015-04-13T23:00:00",
     "shape": "changing",
     "duration_minutes": 120,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CA",
@@ -90740,32 +90740,32 @@ var ufoShapes = [
     "date_time": "2015-01-23T02:30:00",
     "shape": "sphere",
     "duration_minutes": 120,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "OH",
     "date_time": "2015-01-13T19:05:00",
     "shape": "unknown",
     "duration_minutes": 120,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "OH",
     "date_time": "2015-01-13T19:05:00",
     "shape": "unknown",
     "duration_minutes": 120,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "ON",
     "date_time": "2015-01-12T00:30:00",
     "shape": "egg",
     "duration_minutes": 120,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "VT",
@@ -90916,16 +90916,16 @@ var ufoShapes = [
     "date_time": "2015-10-10T02:00:00",
     "shape": "triangle",
     "duration_minutes": 180,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "FL",
     "date_time": "2015-10-09T22:00:00",
     "shape": "flash",
     "duration_minutes": 180,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "TX",
@@ -90996,8 +90996,8 @@ var ufoShapes = [
     "date_time": "2016-11-21T18:00:00",
     "shape": "light",
     "duration_minutes": 180,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MI",
@@ -91020,8 +91020,8 @@ var ufoShapes = [
     "date_time": "2016-10-19T22:00:00",
     "shape": "light",
     "duration_minutes": 180,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NM",
@@ -91084,8 +91084,8 @@ var ufoShapes = [
     "date_time": "2016-09-05T04:00:00",
     "shape": "light",
     "duration_minutes": 180,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CA",
@@ -91332,8 +91332,8 @@ var ufoShapes = [
     "date_time": "2015-11-22T03:00:00",
     "shape": "formation",
     "duration_minutes": 180,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NC",
@@ -91404,8 +91404,8 @@ var ufoShapes = [
     "date_time": "2015-09-29T04:25:00",
     "shape": "changing",
     "duration_minutes": 180,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NJ",
@@ -91500,8 +91500,8 @@ var ufoShapes = [
     "date_time": "2015-06-05T16:00:00",
     "shape": "circle",
     "duration_minutes": 180,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CA",
@@ -91580,16 +91580,16 @@ var ufoShapes = [
     "date_time": "2015-02-03T01:00:00",
     "shape": "diamond",
     "duration_minutes": 180,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "ME",
     "date_time": "2015-01-28T19:30:00",
     "shape": "cigar",
     "duration_minutes": 180,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "FL",
@@ -91628,16 +91628,16 @@ var ufoShapes = [
     "date_time": "2016-02-19T00:45:00",
     "shape": "circle",
     "duration_minutes": 180,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CA",
     "date_time": "2015-10-13T04:30:00",
     "shape": "changing",
     "duration_minutes": 180,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "OH",
@@ -91652,8 +91652,8 @@ var ufoShapes = [
     "date_time": "2015-09-15T00:00:00",
     "shape": "light",
     "duration_minutes": 180,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "BC",
@@ -91700,8 +91700,8 @@ var ufoShapes = [
     "date_time": "2016-07-13T01:30:00",
     "shape": "oval",
     "duration_minutes": 180,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NY",
@@ -91740,8 +91740,8 @@ var ufoShapes = [
     "date_time": "2016-09-03T00:00:00",
     "shape": "other",
     "duration_minutes": 210,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MO",
@@ -91780,8 +91780,8 @@ var ufoShapes = [
     "date_time": "2016-11-24T00:00:00",
     "shape": "circle",
     "duration_minutes": 240,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CA",
@@ -91804,16 +91804,16 @@ var ufoShapes = [
     "date_time": "2016-09-26T16:00:00",
     "shape": "changing",
     "duration_minutes": 240,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MN",
     "date_time": "2016-09-09T23:39:00",
     "shape": "circle",
     "duration_minutes": 240,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "IL",
@@ -91836,24 +91836,24 @@ var ufoShapes = [
     "date_time": "2016-05-03T21:15:00",
     "shape": "other",
     "duration_minutes": 240,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NM",
     "date_time": "2016-04-04T22:30:00",
     "shape": "changing",
     "duration_minutes": 240,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "ME",
     "date_time": "2016-03-26T20:00:00",
     "shape": "unknown",
     "duration_minutes": 240,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CA",
@@ -91940,8 +91940,8 @@ var ufoShapes = [
     "date_time": "2015-08-20T23:00:00",
     "shape": "changing",
     "duration_minutes": 240,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "PA",
@@ -91956,16 +91956,16 @@ var ufoShapes = [
     "date_time": "2015-08-16T00:30:00",
     "shape": "other",
     "duration_minutes": 240,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "Unknown",
     "date_time": "2015-07-24T00:44:00",
     "shape": "light",
     "duration_minutes": 240,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CA",
@@ -91980,8 +91980,8 @@ var ufoShapes = [
     "date_time": "2015-07-02T00:30:00",
     "shape": "fireball",
     "duration_minutes": 240,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "TX",
@@ -92036,24 +92036,24 @@ var ufoShapes = [
     "date_time": "2015-04-06T01:00:00",
     "shape": "changing",
     "duration_minutes": 240,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "Unknown",
     "date_time": "2015-03-09T15:00:00",
     "shape": "other",
     "duration_minutes": 240,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "Unknown",
     "date_time": "2015-03-09T15:00:00",
     "shape": "other",
     "duration_minutes": 240,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "VA",
@@ -92140,16 +92140,16 @@ var ufoShapes = [
     "date_time": "2015-10-31T00:00:00",
     "shape": "light",
     "duration_minutes": 300,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "Unknown",
     "date_time": "2015-09-23T00:00:00",
     "shape": "changing",
     "duration_minutes": 300,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "VA",
@@ -92164,8 +92164,8 @@ var ufoShapes = [
     "date_time": "2015-07-26T13:00:00",
     "shape": "sphere",
     "duration_minutes": 300,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "TN",
@@ -92260,8 +92260,8 @@ var ufoShapes = [
     "date_time": "2015-10-23T23:00:00",
     "shape": "triangle",
     "duration_minutes": 360,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "IL",
@@ -92308,8 +92308,8 @@ var ufoShapes = [
     "date_time": "2015-02-19T23:00:00",
     "shape": "other",
     "duration_minutes": 420,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "IA",
@@ -92332,8 +92332,8 @@ var ufoShapes = [
     "date_time": "2016-12-31T23:00:00",
     "shape": "unknown",
     "duration_minutes": 480,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "AZ",
@@ -92372,8 +92372,8 @@ var ufoShapes = [
     "date_time": "2016-09-21T17:00:00",
     "shape": "diamond",
     "duration_minutes": 600,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "FL",
@@ -92412,8 +92412,8 @@ var ufoShapes = [
     "date_time": "2016-01-04T00:00:00",
     "shape": "unknown",
     "duration_minutes": 720,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MN",
@@ -92452,8 +92452,8 @@ var ufoShapes = [
     "date_time": "2015-04-10T00:00:00",
     "shape": "sphere",
     "duration_minutes": 720,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "TX",
@@ -92468,8 +92468,8 @@ var ufoShapes = [
     "date_time": "2016-02-19T11:00:00",
     "shape": "sphere",
     "duration_minutes": 720,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "ID",
@@ -92484,16 +92484,16 @@ var ufoShapes = [
     "date_time": "2015-01-30T00:00:00",
     "shape": "flash",
     "duration_minutes": 1500,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "Unknown",
     "date_time": "2015-01-18T03:00:00",
     "shape": "disk",
     "duration_minutes": 2160,
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "TX",
@@ -92676,8 +92676,8 @@ var ufoShapes = [
     "date_time": "2016-08-24T23:30:00",
     "shape": "formation",
     "duration_minutes": "Unknown",
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "GA",
@@ -92716,8 +92716,8 @@ var ufoShapes = [
     "date_time": "2016-08-07T02:30:00",
     "shape": "unknown",
     "duration_minutes": "Unknown",
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "SD",
@@ -92780,8 +92780,8 @@ var ufoShapes = [
     "date_time": "2016-03-01T04:08:00",
     "shape": "cigar",
     "duration_minutes": "Unknown",
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CA",
@@ -92796,8 +92796,8 @@ var ufoShapes = [
     "date_time": "2016-06-16T22:40:00",
     "shape": "circle",
     "duration_minutes": "Unknown",
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "IL",
@@ -92860,16 +92860,16 @@ var ufoShapes = [
     "date_time": "2016-07-22T01:00:00",
     "shape": "flash",
     "duration_minutes": "Unknown",
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "Unknown",
     "date_time": "2015-05-21T11:00:00",
     "shape": "rectangle",
     "duration_minutes": "Unknown",
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "WA",
@@ -92892,8 +92892,8 @@ var ufoShapes = [
     "date_time": "2015-02-11T22:00:00",
     "shape": "light",
     "duration_minutes": "Unknown",
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "LA",
@@ -92924,8 +92924,8 @@ var ufoShapes = [
     "date_time": "2016-07-09T22:30:00",
     "shape": "unknown",
     "duration_minutes": "Unknown",
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CA",
@@ -93004,8 +93004,8 @@ var ufoShapes = [
     "date_time": "2015-08-29T20:45:00",
     "shape": "circle",
     "duration_minutes": "Unknown",
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "FL",
@@ -93020,16 +93020,16 @@ var ufoShapes = [
     "date_time": "2015-05-15T21:00:00",
     "shape": "other",
     "duration_minutes": "Unknown",
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "TX",
     "date_time": "2015-10-01T08:00:00",
     "shape": "teardrop",
     "duration_minutes": "Unknown",
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CA",
@@ -93108,8 +93108,8 @@ var ufoShapes = [
     "date_time": "2015-07-05T22:15:00",
     "shape": "other",
     "duration_minutes": "Unknown",
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MD",
@@ -93180,16 +93180,16 @@ var ufoShapes = [
     "date_time": "2016-02-10T05:15:00",
     "shape": "triangle",
     "duration_minutes": "Unknown",
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "Unknown",
     "date_time": "2016-01-01T00:03:00",
     "shape": "light",
     "duration_minutes": "Unknown",
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "WA",
@@ -93316,8 +93316,8 @@ var ufoShapes = [
     "date_time": "2015-10-26T22:30:00",
     "shape": "fireball",
     "duration_minutes": "Unknown",
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "WA",
@@ -93436,8 +93436,8 @@ var ufoShapes = [
     "date_time": "2015-12-15T19:00:00",
     "shape": "fireball",
     "duration_minutes": "Unknown",
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "WV",
@@ -93452,8 +93452,8 @@ var ufoShapes = [
     "date_time": "2015-08-12T20:00:00",
     "shape": "unknown",
     "duration_minutes": "Unknown",
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "OH",
@@ -93476,16 +93476,16 @@ var ufoShapes = [
     "date_time": "2016-01-13T21:50:00",
     "shape": "fireball",
     "duration_minutes": "Unknown",
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "ID",
     "date_time": "2016-12-22T03:00:00",
     "shape": "flash",
     "duration_minutes": "Unknown",
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NC",
@@ -93516,16 +93516,16 @@ var ufoShapes = [
     "date_time": "2015-05-17T03:21:00",
     "shape": "circle",
     "duration_minutes": "Unknown",
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NM",
     "date_time": "2016-09-19T18:22:00",
     "shape": "disk",
     "duration_minutes": "Unknown",
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "IN",
@@ -93596,8 +93596,8 @@ var ufoShapes = [
     "date_time": "2015-08-11T00:00:00",
     "shape": "light",
     "duration_minutes": "Unknown",
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CO",
@@ -93636,8 +93636,8 @@ var ufoShapes = [
     "date_time": "2016-06-18T13:29:00",
     "shape": "formation",
     "duration_minutes": "Unknown",
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "WA",
@@ -93660,8 +93660,8 @@ var ufoShapes = [
     "date_time": "2015-04-09T23:30:00",
     "shape": "light",
     "duration_minutes": "Unknown",
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "FL",
@@ -93676,8 +93676,8 @@ var ufoShapes = [
     "date_time": "2015-05-06T22:35:00",
     "shape": "unknown",
     "duration_minutes": "Unknown",
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CO",
@@ -93724,24 +93724,24 @@ var ufoShapes = [
     "date_time": "2015-08-30T03:00:00",
     "shape": "light",
     "duration_minutes": "Unknown",
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "Unknown",
     "date_time": "2016-04-20T00:19:00",
     "shape": "sphere",
     "duration_minutes": "Unknown",
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "IN",
     "date_time": "2016-02-13T01:00:00",
     "shape": "circle",
     "duration_minutes": "Unknown",
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "AL",
@@ -93772,8 +93772,8 @@ var ufoShapes = [
     "date_time": "2015-01-03T10:05:00",
     "shape": "circle",
     "duration_minutes": "Unknown",
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CA",
@@ -93820,8 +93820,8 @@ var ufoShapes = [
     "date_time": "2015-12-01T13:25:00",
     "shape": "unknown",
     "duration_minutes": "Unknown",
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NJ",
@@ -93852,8 +93852,8 @@ var ufoShapes = [
     "date_time": "2015-04-29T00:00:00",
     "shape": "light",
     "duration_minutes": "Unknown",
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "PA",
@@ -93924,8 +93924,8 @@ var ufoShapes = [
     "date_time": "2015-05-14T17:30:00",
     "shape": "oval",
     "duration_minutes": "Unknown",
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "TX",
@@ -93940,8 +93940,8 @@ var ufoShapes = [
     "date_time": "2015-05-16T06:32:00",
     "shape": "oval",
     "duration_minutes": "Unknown",
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "SK",
@@ -93988,8 +93988,8 @@ var ufoShapes = [
     "date_time": "2016-08-22T01:17:00",
     "shape": "other",
     "duration_minutes": "Unknown",
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NC",
@@ -94004,16 +94004,16 @@ var ufoShapes = [
     "date_time": "2016-07-11T01:32:00",
     "shape": "flash",
     "duration_minutes": "Unknown",
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MO",
     "date_time": "2016-05-09T04:17:00",
     "shape": "unknown",
     "duration_minutes": "Unknown",
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MD",
@@ -94116,8 +94116,8 @@ var ufoShapes = [
     "date_time": "2016-11-13T23:00:00",
     "shape": "changing",
     "duration_minutes": "Unknown",
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "OH",
@@ -94228,32 +94228,32 @@ var ufoShapes = [
     "date_time": "2015-07-09T22:00:00",
     "shape": "circle",
     "duration_minutes": "Unknown",
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CA",
     "date_time": "2015-06-29T14:30:00",
     "shape": "circle",
     "duration_minutes": "Unknown",
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CA",
     "date_time": "2015-06-07T21:30:00",
     "shape": "light",
     "duration_minutes": "Unknown",
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NY",
     "date_time": "2015-06-04T00:30:00",
     "shape": "sphere",
     "duration_minutes": "Unknown",
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "SD",
@@ -94292,24 +94292,24 @@ var ufoShapes = [
     "date_time": "2015-11-05T22:00:00",
     "shape": "rectangle",
     "duration_minutes": "Unknown",
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "ME",
     "date_time": "2015-11-04T22:00:00",
     "shape": "rectangle",
     "duration_minutes": "Unknown",
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "TN",
     "date_time": "2016-12-10T21:00:00",
     "shape": "light",
     "duration_minutes": "Unknown",
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "FL",
@@ -94324,8 +94324,8 @@ var ufoShapes = [
     "date_time": "2016-11-23T23:00:00",
     "shape": "light",
     "duration_minutes": "Unknown",
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "ID",
@@ -94340,8 +94340,8 @@ var ufoShapes = [
     "date_time": "2016-11-05T20:15:00",
     "shape": "oval",
     "duration_minutes": "Unknown",
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CA",
@@ -94452,8 +94452,8 @@ var ufoShapes = [
     "date_time": "2016-03-17T04:00:00",
     "shape": "light",
     "duration_minutes": "Unknown",
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MO",
@@ -94492,8 +94492,8 @@ var ufoShapes = [
     "date_time": "2015-12-05T18:00:00",
     "shape": "circle",
     "duration_minutes": "Unknown",
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MO",
@@ -94548,8 +94548,8 @@ var ufoShapes = [
     "date_time": "2015-10-28T00:36:00",
     "shape": "changing",
     "duration_minutes": "Unknown",
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "GA",
@@ -94636,8 +94636,8 @@ var ufoShapes = [
     "date_time": "2015-06-30T00:00:00",
     "shape": "sphere",
     "duration_minutes": "Unknown",
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NV",
@@ -94676,8 +94676,8 @@ var ufoShapes = [
     "date_time": "2015-04-03T21:33:00",
     "shape": "light",
     "duration_minutes": "Unknown",
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CO",
@@ -94708,8 +94708,8 @@ var ufoShapes = [
     "date_time": "2015-03-20T00:15:00",
     "shape": "other",
     "duration_minutes": "Unknown",
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MB",
@@ -94748,8 +94748,8 @@ var ufoShapes = [
     "date_time": "2015-01-04T20:45:00",
     "shape": "diamond",
     "duration_minutes": "Unknown",
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MA",
@@ -94764,24 +94764,24 @@ var ufoShapes = [
     "date_time": "2015-06-28T12:47:00",
     "shape": "sphere",
     "duration_minutes": "Unknown",
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CT",
     "date_time": "2015-11-01T22:02:00",
     "shape": "circle",
     "duration_minutes": "Unknown",
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "Unknown",
     "date_time": "2015-01-05T22:00:00",
     "shape": "unknown",
     "duration_minutes": "Unknown",
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NY",
@@ -94844,8 +94844,8 @@ var ufoShapes = [
     "date_time": "2016-09-04T15:03:00",
     "shape": "sphere",
     "duration_minutes": "Unknown",
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MT",
@@ -94924,8 +94924,8 @@ var ufoShapes = [
     "date_time": "2016-08-26T20:45:00",
     "shape": "circle",
     "duration_minutes": "Unknown",
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "ID",
@@ -94980,16 +94980,16 @@ var ufoShapes = [
     "date_time": "2015-06-30T21:00:00",
     "shape": "disk",
     "duration_minutes": "Unknown",
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NJ",
     "date_time": "2016-11-04T01:00:00",
     "shape": "unknown",
     "duration_minutes": "Unknown",
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "AK",
@@ -95020,8 +95020,8 @@ var ufoShapes = [
     "date_time": "2016-12-03T17:15:00",
     "shape": "formation",
     "duration_minutes": "Unknown",
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "IL",
@@ -95068,8 +95068,8 @@ var ufoShapes = [
     "date_time": "2016-07-18T21:15:00",
     "shape": "unknown",
     "duration_minutes": "Unknown",
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "IL",
@@ -95148,8 +95148,8 @@ var ufoShapes = [
     "date_time": "2015-09-04T00:00:00",
     "shape": "light",
     "duration_minutes": "Unknown",
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CA",
@@ -95500,8 +95500,8 @@ var ufoShapes = [
     "date_time": "2016-11-02T18:00:00",
     "shape": "cylinder",
     "duration_minutes": "Unknown",
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NY",
@@ -95516,8 +95516,8 @@ var ufoShapes = [
     "date_time": "2016-10-22T12:00:00",
     "shape": "circle",
     "duration_minutes": "Unknown",
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NY",
@@ -95532,8 +95532,8 @@ var ufoShapes = [
     "date_time": "2016-09-27T20:30:00",
     "shape": "circle",
     "duration_minutes": "Unknown",
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "TX",
@@ -95564,8 +95564,8 @@ var ufoShapes = [
     "date_time": "2016-09-03T23:00:00",
     "shape": "light",
     "duration_minutes": "Unknown",
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MS",
@@ -95604,16 +95604,16 @@ var ufoShapes = [
     "date_time": "2016-08-04T20:30:00",
     "shape": "egg",
     "duration_minutes": "Unknown",
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NY",
     "date_time": "2016-08-03T21:22:00",
     "shape": "formation",
     "duration_minutes": "Unknown",
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MO",
@@ -95644,8 +95644,8 @@ var ufoShapes = [
     "date_time": "2016-07-18T20:00:00",
     "shape": "teardrop",
     "duration_minutes": "Unknown",
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "AZ",
@@ -95748,8 +95748,8 @@ var ufoShapes = [
     "date_time": "2015-11-29T01:22:00",
     "shape": "circle",
     "duration_minutes": "Unknown",
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "FL",
@@ -95836,8 +95836,8 @@ var ufoShapes = [
     "date_time": "2015-07-22T00:00:00",
     "shape": "disk",
     "duration_minutes": "Unknown",
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MI",
@@ -95852,8 +95852,8 @@ var ufoShapes = [
     "date_time": "2015-07-01T09:30:00",
     "shape": "egg",
     "duration_minutes": "Unknown",
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MO",
@@ -95876,8 +95876,8 @@ var ufoShapes = [
     "date_time": "2015-05-31T12:15:00",
     "shape": "disk",
     "duration_minutes": "Unknown",
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "RI",
@@ -95908,8 +95908,8 @@ var ufoShapes = [
     "date_time": "2015-04-08T03:30:00",
     "shape": "unknown",
     "duration_minutes": "Unknown",
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NC",
@@ -95932,24 +95932,24 @@ var ufoShapes = [
     "date_time": "2015-03-22T21:00:00",
     "shape": "formation",
     "duration_minutes": "Unknown",
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "OR",
     "date_time": "2015-02-16T17:44:00",
     "shape": "other",
     "duration_minutes": "Unknown",
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CA",
     "date_time": "2015-02-15T12:00:00",
     "shape": "sphere",
     "duration_minutes": "Unknown",
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "FL",
@@ -95988,8 +95988,8 @@ var ufoShapes = [
     "date_time": "2015-01-13T20:06:00",
     "shape": "other",
     "duration_minutes": "Unknown",
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MN",
@@ -96004,8 +96004,8 @@ var ufoShapes = [
     "date_time": "2015-10-25T04:00:00",
     "shape": "unknown",
     "duration_minutes": "Unknown",
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "PA",
@@ -96172,8 +96172,8 @@ var ufoShapes = [
     "date_time": "2016-11-28T06:00:00",
     "shape": "fireball",
     "duration_minutes": "Unknown",
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "GA",
@@ -96212,16 +96212,16 @@ var ufoShapes = [
     "date_time": "2016-11-14T17:56:00",
     "shape": "unknown",
     "duration_minutes": "Unknown",
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "IL",
     "date_time": "2016-11-11T08:30:00",
     "shape": "other",
     "duration_minutes": "Unknown",
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "FL",
@@ -96268,8 +96268,8 @@ var ufoShapes = [
     "date_time": "2016-10-25T18:42:00",
     "shape": "oval",
     "duration_minutes": "Unknown",
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MI",
@@ -96372,8 +96372,8 @@ var ufoShapes = [
     "date_time": "2016-08-25T21:00:00",
     "shape": "circle",
     "duration_minutes": "Unknown",
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "IL",
@@ -96484,8 +96484,8 @@ var ufoShapes = [
     "date_time": "2016-08-06T21:30:00",
     "shape": "unknown",
     "duration_minutes": "Unknown",
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NJ",
@@ -96500,8 +96500,8 @@ var ufoShapes = [
     "date_time": "2016-08-03T00:00:00",
     "shape": "circle",
     "duration_minutes": "Unknown",
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "TX",
@@ -96564,8 +96564,8 @@ var ufoShapes = [
     "date_time": "2016-07-08T00:00:00",
     "shape": "circle",
     "duration_minutes": "Unknown",
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CO",
@@ -96596,8 +96596,8 @@ var ufoShapes = [
     "date_time": "2016-06-30T00:00:00",
     "shape": "circle",
     "duration_minutes": "Unknown",
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MT",
@@ -96636,8 +96636,8 @@ var ufoShapes = [
     "date_time": "2016-06-04T21:00:00",
     "shape": "circle",
     "duration_minutes": "Unknown",
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "ME",
@@ -96668,8 +96668,8 @@ var ufoShapes = [
     "date_time": "2016-05-19T11:30:00",
     "shape": "unknown",
     "duration_minutes": "Unknown",
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "TX",
@@ -96684,24 +96684,24 @@ var ufoShapes = [
     "date_time": "2016-05-13T13:00:00",
     "shape": "unknown",
     "duration_minutes": "Unknown",
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MN",
     "date_time": "2016-05-11T21:30:00",
     "shape": "light",
     "duration_minutes": "Unknown",
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "TN",
     "date_time": "2016-05-11T04:00:00",
     "shape": "circle",
     "duration_minutes": "Unknown",
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NJ",
@@ -96716,8 +96716,8 @@ var ufoShapes = [
     "date_time": "2016-05-09T00:00:00",
     "shape": "unknown",
     "duration_minutes": "Unknown",
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "LA",
@@ -96748,8 +96748,8 @@ var ufoShapes = [
     "date_time": "2016-05-01T02:01:00",
     "shape": "unknown",
     "duration_minutes": "Unknown",
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CA",
@@ -96852,8 +96852,8 @@ var ufoShapes = [
     "date_time": "2016-04-01T22:30:00",
     "shape": "triangle",
     "duration_minutes": "Unknown",
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "TX",
@@ -96900,24 +96900,24 @@ var ufoShapes = [
     "date_time": "2016-03-15T00:00:00",
     "shape": "unknown",
     "duration_minutes": "Unknown",
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NM",
     "date_time": "2016-03-11T02:48:00",
     "shape": "formation",
     "duration_minutes": "Unknown",
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "Unknown",
     "date_time": "2016-03-10T19:30:00",
     "shape": "light",
     "duration_minutes": "Unknown",
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "FL",
@@ -96948,16 +96948,16 @@ var ufoShapes = [
     "date_time": "2016-03-06T06:00:00",
     "shape": "other",
     "duration_minutes": "Unknown",
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "Unknown",
     "date_time": "2016-03-03T22:30:00",
     "shape": "unknown",
     "duration_minutes": "Unknown",
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "KS",
@@ -97036,8 +97036,8 @@ var ufoShapes = [
     "date_time": "2016-02-08T18:30:00",
     "shape": "triangle",
     "duration_minutes": "Unknown",
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CA",
@@ -97076,8 +97076,8 @@ var ufoShapes = [
     "date_time": "2016-01-31T23:00:00",
     "shape": "other",
     "duration_minutes": "Unknown",
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MD",
@@ -97108,8 +97108,8 @@ var ufoShapes = [
     "date_time": "2016-01-22T12:00:00",
     "shape": "cylinder",
     "duration_minutes": "Unknown",
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CA",
@@ -97220,16 +97220,16 @@ var ufoShapes = [
     "date_time": "2015-12-21T06:50:00",
     "shape": "disk",
     "duration_minutes": "Unknown",
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "Unknown",
     "date_time": "2015-12-17T15:30:00",
     "shape": "disk",
     "duration_minutes": "Unknown",
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "LA",
@@ -97252,16 +97252,16 @@ var ufoShapes = [
     "date_time": "2015-12-14T20:00:00",
     "shape": "unknown",
     "duration_minutes": "Unknown",
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NS",
     "date_time": "2015-12-13T17:50:00",
     "shape": "unknown",
     "duration_minutes": "Unknown",
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "AL",
@@ -97276,8 +97276,8 @@ var ufoShapes = [
     "date_time": "2015-11-26T22:50:00",
     "shape": "unknown",
     "duration_minutes": "Unknown",
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "IL",
@@ -97308,8 +97308,8 @@ var ufoShapes = [
     "date_time": "2015-11-22T23:45:00",
     "shape": "circle",
     "duration_minutes": "Unknown",
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "AZ",
@@ -97380,8 +97380,8 @@ var ufoShapes = [
     "date_time": "2015-11-13T22:30:00",
     "shape": "unknown",
     "duration_minutes": "Unknown",
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "WA",
@@ -97420,8 +97420,8 @@ var ufoShapes = [
     "date_time": "2015-11-07T19:05:00",
     "shape": "unknown",
     "duration_minutes": "Unknown",
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "AZ",
@@ -97452,8 +97452,8 @@ var ufoShapes = [
     "date_time": "2015-10-30T23:56:00",
     "shape": "light",
     "duration_minutes": "Unknown",
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NY",
@@ -97468,8 +97468,8 @@ var ufoShapes = [
     "date_time": "2015-10-26T20:37:00",
     "shape": "light",
     "duration_minutes": "Unknown",
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MA",
@@ -97572,8 +97572,8 @@ var ufoShapes = [
     "date_time": "2015-10-06T21:30:00",
     "shape": "light",
     "duration_minutes": "Unknown",
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CA",
@@ -97660,8 +97660,8 @@ var ufoShapes = [
     "date_time": "2015-09-15T01:15:00",
     "shape": "light",
     "duration_minutes": "Unknown",
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "AL",
@@ -97692,8 +97692,8 @@ var ufoShapes = [
     "date_time": "2015-09-12T21:41:00",
     "shape": "light",
     "duration_minutes": "Unknown",
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "IL",
@@ -97724,24 +97724,24 @@ var ufoShapes = [
     "date_time": "2015-08-28T07:45:00",
     "shape": "unknown",
     "duration_minutes": "Unknown",
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "Unknown",
     "date_time": "2015-08-27T19:00:00",
     "shape": "unknown",
     "duration_minutes": "Unknown",
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "Unknown",
     "date_time": "2015-08-26T19:30:00",
     "shape": "light",
     "duration_minutes": "Unknown",
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MN",
@@ -97764,8 +97764,8 @@ var ufoShapes = [
     "date_time": "2015-08-19T22:58:00",
     "shape": "disk",
     "duration_minutes": "Unknown",
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "KY",
@@ -97820,8 +97820,8 @@ var ufoShapes = [
     "date_time": "2015-08-09T22:30:00",
     "shape": "circle",
     "duration_minutes": "Unknown",
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MN",
@@ -97852,16 +97852,16 @@ var ufoShapes = [
     "date_time": "2015-08-08T21:30:00",
     "shape": "light",
     "duration_minutes": "Unknown",
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "OH",
     "date_time": "2015-08-06T00:00:00",
     "shape": "cylinder",
     "duration_minutes": "Unknown",
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "IL",
@@ -97884,8 +97884,8 @@ var ufoShapes = [
     "date_time": "2015-07-28T21:08:00",
     "shape": "chevron",
     "duration_minutes": "Unknown",
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "WI",
@@ -97908,8 +97908,8 @@ var ufoShapes = [
     "date_time": "2015-07-16T01:00:00",
     "shape": "disk",
     "duration_minutes": "Unknown",
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "TX",
@@ -97948,32 +97948,32 @@ var ufoShapes = [
     "date_time": "2015-07-13T02:00:00",
     "shape": "light",
     "duration_minutes": "Unknown",
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "Unknown",
     "date_time": "2015-07-11T23:00:00",
     "shape": "changing",
     "duration_minutes": "Unknown",
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "Unknown",
     "date_time": "2015-07-11T11:45:00",
     "shape": "circle",
     "duration_minutes": "Unknown",
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "HI",
     "date_time": "2015-07-11T03:30:00",
     "shape": "light",
     "duration_minutes": "Unknown",
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "GA",
@@ -97996,8 +97996,8 @@ var ufoShapes = [
     "date_time": "2015-07-04T22:00:00",
     "shape": "fireball",
     "duration_minutes": "Unknown",
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "LA",
@@ -98012,8 +98012,8 @@ var ufoShapes = [
     "date_time": "2015-06-30T22:14:00",
     "shape": "triangle",
     "duration_minutes": "Unknown",
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MI",
@@ -98124,8 +98124,8 @@ var ufoShapes = [
     "date_time": "2015-05-12T07:10:00",
     "shape": "unknown",
     "duration_minutes": "Unknown",
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "PA",
@@ -98180,8 +98180,8 @@ var ufoShapes = [
     "date_time": "2015-04-19T20:10:00",
     "shape": "unknown",
     "duration_minutes": "Unknown",
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "OK",
@@ -98196,8 +98196,8 @@ var ufoShapes = [
     "date_time": "2015-04-18T22:15:00",
     "shape": "unknown",
     "duration_minutes": "Unknown",
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "TX",
@@ -98228,8 +98228,8 @@ var ufoShapes = [
     "date_time": "2015-04-08T00:23:00",
     "shape": "light",
     "duration_minutes": "Unknown",
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "OK",
@@ -98284,8 +98284,8 @@ var ufoShapes = [
     "date_time": "2015-03-18T19:40:00",
     "shape": "fireball",
     "duration_minutes": "Unknown",
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "AK",
@@ -98308,8 +98308,8 @@ var ufoShapes = [
     "date_time": "2015-03-14T01:00:00",
     "shape": "disk",
     "duration_minutes": "Unknown",
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "PA",
@@ -98348,8 +98348,8 @@ var ufoShapes = [
     "date_time": "2015-03-08T18:45:00",
     "shape": "cross",
     "duration_minutes": "Unknown",
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "FL",
@@ -98380,8 +98380,8 @@ var ufoShapes = [
     "date_time": "2015-02-18T00:00:00",
     "shape": "unknown",
     "duration_minutes": "Unknown",
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "AL",
@@ -98412,16 +98412,16 @@ var ufoShapes = [
     "date_time": "2015-02-05T07:17:00",
     "shape": "triangle",
     "duration_minutes": "Unknown",
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "KY",
     "date_time": "2015-02-03T20:00:00",
     "shape": "other",
     "duration_minutes": "Unknown",
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "GA",
@@ -98452,8 +98452,8 @@ var ufoShapes = [
     "date_time": "2015-01-21T05:00:00",
     "shape": "sphere",
     "duration_minutes": "Unknown",
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NM",
@@ -98484,8 +98484,8 @@ var ufoShapes = [
     "date_time": "2015-01-16T19:15:00",
     "shape": "circle",
     "duration_minutes": "Unknown",
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CO",
@@ -98508,16 +98508,16 @@ var ufoShapes = [
     "date_time": "2015-01-14T01:54:00",
     "shape": "unknown",
     "duration_minutes": "Unknown",
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MD",
     "date_time": "2015-01-13T16:20:00",
     "shape": "other",
     "duration_minutes": "Unknown",
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MO",
@@ -98612,8 +98612,8 @@ var ufoShapes = [
     "date_time": "2016-12-21T07:15:00",
     "shape": "circle",
     "duration_minutes": "Unknown",
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "ME",
@@ -98732,8 +98732,8 @@ var ufoShapes = [
     "date_time": "2016-11-07T17:49:00",
     "shape": "triangle",
     "duration_minutes": "Unknown",
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "LA",
@@ -98772,8 +98772,8 @@ var ufoShapes = [
     "date_time": "2016-06-21T19:00:00",
     "shape": "circle",
     "duration_minutes": "Unknown",
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CA",
@@ -98828,8 +98828,8 @@ var ufoShapes = [
     "date_time": "2016-02-20T20:00:00",
     "shape": "unknown",
     "duration_minutes": "Unknown",
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MO",
@@ -98852,16 +98852,16 @@ var ufoShapes = [
     "date_time": "2016-07-17T21:00:00",
     "shape": "circle",
     "duration_minutes": "Unknown",
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "AL",
     "date_time": "2016-06-03T00:00:00",
     "shape": "circle",
     "duration_minutes": "Unknown",
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "IL",
@@ -98908,8 +98908,8 @@ var ufoShapes = [
     "date_time": "2015-05-11T21:50:00",
     "shape": "circle",
     "duration_minutes": "Unknown",
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NJ",
@@ -99012,8 +99012,8 @@ var ufoShapes = [
     "date_time": "2015-09-30T19:25:00",
     "shape": "sphere",
     "duration_minutes": "Unknown",
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "SC",
@@ -99052,16 +99052,16 @@ var ufoShapes = [
     "date_time": "2016-10-28T19:00:00",
     "shape": "circle",
     "duration_minutes": "Unknown",
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MO",
     "date_time": "2016-10-14T22:00:00",
     "shape": "other",
     "duration_minutes": "Unknown",
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "OH",
@@ -99100,8 +99100,8 @@ var ufoShapes = [
     "date_time": "2016-02-17T20:00:00",
     "shape": "unknown",
     "duration_minutes": "Unknown",
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CA",
@@ -99156,8 +99156,8 @@ var ufoShapes = [
     "date_time": "2015-04-25T17:22:00",
     "shape": "oval",
     "duration_minutes": "Unknown",
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "NC",
@@ -99180,8 +99180,8 @@ var ufoShapes = [
     "date_time": "2015-01-15T23:00:00",
     "shape": "unknown",
     "duration_minutes": "Unknown",
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "MD",
@@ -99308,8 +99308,8 @@ var ufoShapes = [
     "date_time": "2015-06-08T21:47:00",
     "shape": "formation",
     "duration_minutes": "Unknown",
-    "city_latitude": "",
-    "city_longitude": ""
+    "city_latitude": "Unknown",
+    "city_longitude": "Unknown"
   },
   {
     "state": "CA",

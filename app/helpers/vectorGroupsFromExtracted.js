@@ -1,32 +1,73 @@
 const vectorsFromData = require('./vectorsFromData')
-
-module.exports = function vectorGroupsFromExtracted(extracted, dataType, numberOfGroups) {
+const compareObjects = require('./compareObjects')
+const groupData = require('./groupData')
+ 
+module.exports = function vectorGroupsFromExtracted(extracted, numberOfGroups, options) {
   // Takes single property array and returns groups of data as vectors
+
+  /*
+  options:
+    dataType
+    exclude
+    datePartName
+    min
+    max
+  */
+
+  // Round number datatypes:
+  if (options.dataType === 'number') {
+    extracted = extracted.map(i => {
+      if (i === options.exclude) {
+        return i
+      } else {
+        return Math.round(i * 1000) / 1000
+      }
+    })
+  }
+
 
   // Get vector array of names, values
   var vectors = vectorsFromData(extracted)
 
-  // If in vector item name is a number parse it
-  if (dataType === 'number') {
-    vectors = vectors.map(i => {
-      i.name = parseInt(i.name)
-      return i
-    })
-  }
-
   // Sort vectors
-  var sortedVectors = []
-  for (var i in vectorsArray) {
-    const vectors = vectorsArray[i]
-    vectors.sort(compareObjects.bind(
-      this,
-      'name',
-      primary.exclude,
-      primary.dataType,
-      primary.datePart.name
-    ))
-    sortedVectors.push(vectors)
+  vectors.sort(compareObjects.bind(
+    this,
+    'name',
+    options.exclude,
+    options.dataType,
+    options.datePartName
+  ))
+
+  // Remove excluded value:
+  var excluded
+  if (vectors[0] && vectors[0].name === options.exclude) {
+    excluded = vectors[0]
+    vectors = vectors.slice(1, vectors.length)
   }
 
+  var absMin = false
+  var absMax = false
+  if (options.dataType != 'number') {
+    var groupedVectors = vectors
+  } else {
 
+    absMin = Math.floor(vectors[0].name)
+    absMax = Math.ceil(vectors[vectors.length - 1].name)
+    var min = options.min === false ? absMin : options.min
+    var max =  options.max === false ? absMax : options.max
+
+    var groupedVectors = groupData(
+      vectors, numberOfGroups, min, max
+    )
+  }
+
+  if (excluded) {
+    groupedVectors.push(excluded)
+  }
+
+  return {
+    groupedVectors: groupedVectors,
+    absMin: absMin,
+    absMax: absMax
+  }
 }

@@ -21,21 +21,21 @@ function DatasetControls(props) {
   }
 
   var numberControls
-  if (dataType === 'number') {
-    const datasetSettings = props.datasetSettings
+  const ds = props.datasetSettings
+  if (dataType === 'number' && (ds.absMin && ds.absMax)) {
     numberControls = (
       <NumberDataSetControls
         label={dataName}
         key={dataName}
         type={props.type}
-        rangeMin={datasetSettings.min}
-        rangeMax={datasetSettings.max}
-        absMin={datasetSettings.absMin}
-        absMax={datasetSettings.absMax}
+        rangeMin={ds.min}
+        rangeMax={ds.max}
+        absMin={ds.absMin}
+        absMax={ds.absMax}
         onRangeMaxChanged={props.onRangeMaxChanged}
         onRangeMinChanged={props.onRangeMinChanged}
         dataLength={props.dataLength}
-        numberZoom={datasetSettings.numberZoom}
+        numberZoom={ds.numberZoom}
         maxNumberZoom={settings.maxNumberZoom}
         onNumberZoomChanged={props.onNumberZoomChanged}
       />

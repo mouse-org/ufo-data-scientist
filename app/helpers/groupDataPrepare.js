@@ -1,16 +1,6 @@
 const groupData = require('./groupData')
 module.exports = function groupDataPrepare(groupableVectorsArray, configs, dataset) {
-  // Hello
-  // Create variable to store output
   var chartData = []
-
-  console.log(dataset, "GVA:", groupableVectorsArray)
-
-  console.log("")
-
-  console.log("GVA[0]:", groupableVectorsArray[0])
-  console.log("CONFNIGS")
-  console.log(configs)
 
   // Find min/max in primary dataset
   // All of the vectors have the same names

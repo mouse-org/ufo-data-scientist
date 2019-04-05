@@ -1,4 +1,4 @@
-module.exports = [
+const testds = [
   {
     name: "state",
     type: "string",
@@ -7,7 +7,7 @@ module.exports = [
   {
     name: "date_time",
     type: "datetime",
-    exclude: "" // None in data
+    exclude: "Unknown" // None in data
   },
   {
     name: "duration_minutes",
@@ -16,7 +16,7 @@ module.exports = [
   }
 ]
 
-/*[
+const ds = [
   {
     name: "state",
     type: "string",
@@ -25,7 +25,7 @@ module.exports = [
   {
     name: "date_time",
     type: "datetime",
-    exclude: "" // None in data
+    exclude: "Unknown" // None in data
   },
   {
     name: "shape",
@@ -40,13 +40,13 @@ module.exports = [
   {
     name: "city_latitude",
     type: "number",
-    exclude: ""
+    exclude: "Unknown"
   },
   {
     name: "city_longitude",
     type: "number",
-    exclude: ""
+    exclude: "Unknown"
   }
 ]
 
-*/
+module.exports = ds
