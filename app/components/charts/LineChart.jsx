@@ -1,5 +1,6 @@
 const React = require('react')
-const d3 = require("d3")
+const d3 = require('d3')
+const randomColor = require('randomcolor')
 
 const findMaxInArrays = require('../../helpers/findMaxInArrays')
 
@@ -90,6 +91,7 @@ class LineChart extends React.Component {
         svg.append("path")
         .datum(ds) // 10. Binds data to the line 
         .attr("class", "line") // Assign a class for styling 
+        .attr("style", "stroke: " + randomColor())
         .attr("d", line); // 11. Calls the line generator
       }
 
