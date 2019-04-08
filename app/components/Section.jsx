@@ -1,53 +1,54 @@
 const React = require('react');
-
+const SeeAllData = require('./SeeAllData');
 const CleanData = require('./CleanData');
+const DataViz = require('./DataViz');
 
-//const Section = function(props) {
+function Section(props) {
+  var currentSection = null;
 
-class Section extends React.Component {
-  constructor(props) {
-    super(props);
+  if (props.currentSection === 'SeeAllData') {
+    currentSection =
+    <SeeAllData
+      dataGroups={props.shapeDataGroups}
+      data={props.data}
+    ></SeeAllData>
   }
 
 
+  if (props.currentSection === 'CleanData') {
 
-  render() {
+    currentSection =
+        <CleanData
+          dataGroups={props.shapeDataGroups}
+          groupActions={props.groupActions.CleanData}
 
-    var currentSection = null;
-    if (this.props.currentSection === 'CleanData') {
-
-      let validShapes = [];
-      let duplicateShapes = [];
-      this.props.shapeSets.map((shape, index) => {
-        shape.index = index;
-        if (shape.duplicate) {
-          duplicateShapes.push(shape);
-        } else {
-          //console.log(shape.shape);
-          validShapes.push(shape);
-        }
-      });
-
-
-
-
-      var currentSection =
-          <CleanData
-            validShapes={validShapes}
-            duplicateShapes={duplicateShapes}
-            moveShape={this.props.moveShape}
-            setActions={this.props.setActions}
-            pointActions={this.props.pointActions}
-          ></CleanData>
-    }
-
-
-    return (
-      <div className="section">
-        {currentSection}
-      </div>
-    );
+          moveDataPoint={props.moveDataPoint}
+          onDataGroupNameChange={props.onDataGroupNameChange}
+          toggleEditGroupName={props.toggleEditGroupName}
+          removeDataGroup={props.removeDataGroup}
+          toggleCollapse={props.toggleCollapse}
+          newDataGroup={props.newDataGroup}
+        ></CleanData>
   }
+
+  if (props.currentSection === 'DataViz') {
+
+    currentSection =
+      <DataViz
+        dataGroups={props.shapeDataGroups}
+        chartType={props.chartType}
+        onChartTypeChange={props.onChartTypeChange}
+      >
+      </DataViz>
+  }
+
+
+  return (
+    <div className="section">
+      {currentSection}
+    </div>
+  );
 }
+
 
 module.exports = Section;

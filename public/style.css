@@ -5,32 +5,173 @@
 body {
   font-family: arial, sans-serif;
   margin: 2em;
+  margin-bottom: 400px;
 }
+
+ul {
+  list-style: none;
+}
+
+ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+.step-nav {
+  border: 1px solid purple;
+  padding: .5em;
+}
+
+#viz > div {
+  margin: 2px;
+  border: 1px solid green;
+}
+
+.slider {
+  display: block;
+  width: 100%;
+}
+
+#min-max-sliders {
+  width: 100%;
+}
+
+/* D3 */
+
+/*
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+div#layout {
+  text-align: center;
+}
+
+div#container {
+  width: 1000px;
+  height: 600px;
+  margin: auto;
+  background-color: #2F4A6D;
+}
+
+svg {
+  width: 100%;
+  height: 100%;
+}
+
+.bar {
+  fill: #80cbc4;
+}
+
+text {
+  font-size: 12px;
+  fill: #fff;
+}
+
+path {
+  stroke: gray;
+}
+
+line {
+  stroke: gray;
+}
+
+line#limit {
+  stroke: #FED966;
+  stroke-width: 3;
+  stroke-dasharray: 3 6;
+}
+
+.grid path {
+  stroke-width: 0;
+}
+
+.grid .tick line {
+  stroke: #9FAAAE;
+  stroke-opacity: 0.3;
+}
+
+text.divergence {
+  font-size: 14px;
+  fill: #2F4A6D;
+}
+
+text.value {
+  font-size: 14px;
+}
+
+text.title {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+text.label {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+text.source {
+  font-size: 10px;
+}
+*/
+/* End D3 */
 
 
 
 /* CleanData */
 
-.clean-data-list {
+.data-group-list {
   display: inline-block;
   vertical-align: top;
 }
 
 .datapoint {
   border: 1px dotted blue;
-  padding: 5px;
+  padding: 5px 40px 5px 5px;
   margin: 5px;
+  position: relative;
+}
+
+.data-group-edit-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.collapse-expand-button {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.datapoint > ul > li {
+  display: inline-block;
+  padding: 0 5px;
+  margin: 0 5px;
 }
 
 .sighting-data-list {
   border: 1px dashed orange;
-  min-height: 50px;
+  padding: 0;
 }
 
 .sighting-data {
-  border: 1px dashed green;
-  padding: 5px;
-  margin: 5px;
+  background-color: #CED;
+  padding: 0;
+  margin: 1px;
+}
+
+.sighting-data > li {
+  display: inline-block;
+  padding: 0 5px 0 0;
+}
+
+.hidden-data-points {
+  display: none;
+}
+
+.shown-data-points {
+  display: list-item;
 }
 
 
@@ -53,6 +194,8 @@ body {
   .shape-data-point > ul
   but needs to be specific for when it is being dragged
 */
+
+/*
 ul.shape-data-point-list {
   list-style-type: none;
   display: inline-block;
@@ -68,4 +211,30 @@ ul.shape-data-point-list > li {
   border: 1px dotted blue;
   padding: 5px;
   margin: 5px;
+}
+*/
+
+#see-all-data ol {
+  display: inline-block;
+  vertical-align: top;
+}
+
+#viz .line {
+  fill: none;
+  stroke: #ffab00;
+  stroke-width: 3;
+}
+
+#chart-container {
+  position: fixed;
+  width: Calc(100% - 50px);
+  height: 350px;
+  overflow: scroll;
+  bottom: 0;
+  right: 0;
+  background-color: #E8E8E8;
+  border: 2px solid black;
+  padding: 5px;
+  margin: 10px 25px;
+  border-radius: 5px;
 }
